@@ -1,0 +1,171 @@
+# jido_edu_rels
+
+hosoda:
+  boy:          hosoda
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+sakaguchi:
+  boy:          sakaguchi
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+shimoyama:
+  boy:          shimoyama
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+matsumura:
+  boy:          matsumura
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+fujita:
+  boy:          fujita
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+tani:
+  boy:          tani
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+tom:
+  boy:          tom
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+
+# 男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+sugita:
+  boy:          sugita
+  edu_inst:     suzurandai_kou
+  val_flag:     1
+  date_expired: nil
+
+arai:
+  boy:          arai
+  edu_inst:     minatogawa_chu
+  val_flag:     1
+  date_expired: nil
+
+suzuki:
+  boy:          suzuki
+  edu_inst:     minatogawa_chu
+  val_flag:     1
+  date_expired: nil
+
+shiraishi:
+  boy:          shiraishi
+  edu_inst:     hyougo_chu
+  val_flag:     1
+  date_expired: nil
+
+kinoshita:
+  boy:          kinoshita
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+nishikawa:
+  boy:          nishikawa
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+  
+urakawa:
+  boy:          urakawa
+  edu_inst:     hirano_sho
+  val_flag:     1
+  date_expired: nil
+
+
+# 女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+adachi:
+  boy:          adachi
+  edu_inst:     koubeyamatejoshi_kou
+  val_flag:     1
+  date_expired: nil
+
+kojima:
+  boy:          kojima
+  edu_inst:     hyogo_kogyo
+  val_flag:     1
+  date_expired: nil
+
+yamamoto:
+  boy:          yamamoto
+  edu_inst:     kikusui_sho
+  val_flag:     1
+  date_expired: nil
+
+sunayama:
+  boy:          sunayama
+  edu_inst:     kikusui_sho
+  val_flag:     1
+  date_expired: nil
+
+susuda:
+  boy:          susuda
+  edu_inst:     kikusui_sho
+  val_flag:     1
+  date_expired: nil
+
+mizutani:
+  boy:          mizutani
+  edu_inst:     kikusui_sho
+  val_flag:     1
+  date_expired: nil
+
+nishio:
+  boy:          nishio
+  edu_inst:     kikusui_sho
+  val_flag:     1
+  date_expired: nil
+
+
+# 卒業生　1989以前出生 6人
+
+yasuda:
+  boy:          yasuda
+  edu_inst:     kansai_dai
+  val_flag:     1
+  date_expired: nil
+
+nakatani:
+  boy:          nakatani
+  edu_inst:     koshien_dai
+  val_flag:     1
+  date_expired: nil
+
+yasui:
+  boy:          yasui
+  edu_inst:     kansai_dai
+  val_flag:     1
+  date_expired: nil
+
+kato:
+  boy:          kato
+  edu_inst:     kansai_dai
+  val_flag:     1
+  date_expired: nil
+
+shimizu:
+  boy:          shimizu
+  edu_inst:     kansai_dai
+  val_flag:     1
+  date_expired: nil
+
+aida:
+  boy:          aida
+  edu_inst:     koshien_dai
+  val_flag:     1
+  date_expired: nil

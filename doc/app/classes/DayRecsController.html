@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: DayRecsController</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">DayRecsController</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/app/controllers/day_recs_controller_rb.html">
+                app/controllers/day_recs_controller.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="ApplicationController.html">
+                ApplicationController
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+date::2009.06.10 auth:yasui
+</p>
+<h4>業務記録</h4>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000040">create</a>&nbsp;&nbsp;
+      <a href="#M000042">destroy</a>&nbsp;&nbsp;
+      <a href="#M000039">edit</a>&nbsp;&nbsp;
+      <a href="#M000035">ft</a>&nbsp;&nbsp;
+      <a href="#M000036">index</a>&nbsp;&nbsp;
+      <a href="#M000038">new</a>&nbsp;&nbsp;
+      <a href="#M000037">show</a>&nbsp;&nbsp;
+      <a href="#M000041">update</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000040" class="method-detail">
+        <a name="M000040"></a>
+
+        <div class="method-heading">
+          <a href="#M000040" class="method-signature">
+          <span class="method-name">create</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■<a href="DayRecsController.html#M000040">create</a>
+</p>
+<pre>
+ POST /day_recs
+ POST /day_recs.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000040-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000040-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 142</span>
+142:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+143:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:day_rec</span>])
+144:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+145:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">save</span>
+146:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'登録に成功しました（業務記録）'</span>
+147:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'指導記録は正常に登録されました'</span>
+148:         <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">update_attribute</span>(<span class="ruby-value str">&quot;tenki&quot;</span>, <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:day_rec</span>][<span class="ruby-identifier">:tenki</span>].<span class="ruby-identifier">join</span>(<span class="ruby-value str">','</span>))
+149:         
+150:         
+151:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@day_rec</span>) }
+152:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span> }
+153:       <span class="ruby-keyword kw">else</span>
+154:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'DayRec was NOT successfully created.'</span>
+155:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
+156:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+157:       <span class="ruby-keyword kw">end</span>
+158:     <span class="ruby-keyword kw">end</span>
+159:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000042" class="method-detail">
+        <a name="M000042"></a>
+
+        <div class="method-heading">
+          <a href="#M000042" class="method-signature">
+          <span class="method-name">destroy</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■delete
+</p>
+<pre>
+ DELETE /day_recs/1
+ DELETE /day_recs/1.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000042-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000042-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 184</span>
+184:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
+185:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+186:     <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">destroy</span>
+187:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+188:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">day_recs_url</span>) }
+189:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+190:     <span class="ruby-keyword kw">end</span>
+191:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000039" class="method-detail">
+        <a name="M000039"></a>
+
+        <div class="method-heading">
+          <a href="#M000039" class="method-signature">
+          <span class="method-name">edit</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■EDIT
+</p>
+<pre>
+ GET /day_recs/1/edit
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000039-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000039-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 132</span>
+132:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
+133:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+134: <span class="ruby-comment cmt">#BELOW ADDED ON 2008.07.11</span>
+135:     <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke DESC&quot;</span>)
+136: 
+137:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000035" class="method-detail">
+        <a name="M000035"></a>
+
+        <div class="method-heading">
+          <a href="#M000035" class="method-signature">
+          <span class="method-name">ft</span><span class="method-args">(x, h, m)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■FT
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000035-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000035-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 10</span>
+10:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ft</span> (<span class="ruby-identifier">x</span>, <span class="ruby-identifier">h</span>, <span class="ruby-identifier">m</span>)
+11:     <span class="ruby-identifier">x</span>.<span class="ruby-identifier">select</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{i.hours}:#{i.minutes}&quot;</span> <span class="ruby-operator">==</span> <span class="ruby-node">&quot;#{h}:#{m}&quot;</span> }
+12:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000036" class="method-detail">
+        <a name="M000036"></a>
+
+        <div class="method-heading">
+          <a href="#M000036" class="method-signature">
+          <span class="method-name">index</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■INDEX
+</p>
+<pre>
+ GET /day_recs
+ GET /day_recs.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000036-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000036-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 17</span>
+17:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">index</span>
+18:     <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke DESC&quot;</span>)
+19: <span class="ruby-comment cmt"># recs to display is stored in session[:kk] sel.rjs should render it</span>
+20:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:knd</span>]       
+21:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:jj</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:jido</span>]  <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:jido</span>]
+22:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]  <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+23:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:mm</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]
+24: <span class="ruby-comment cmt"># params[:year]が設定されていない場合はyyを今年に設定する</span>
+25:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+26:       <span class="ruby-identifier">yy</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+27:     <span class="ruby-keyword kw">else</span>
+28:       <span class="ruby-identifier">yy</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-value str">&quot;%Y&quot;</span>)
+29:     <span class="ruby-keyword kw">end</span>
+30:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">yy</span>
+31: <span class="ruby-comment cmt"># get this week's from to date</span>
+32:     <span class="ruby-identifier">period_s</span> = <span class="ruby-value">1</span>.<span class="ruby-identifier">week</span>.<span class="ruby-identifier">ago</span>.<span class="ruby-identifier">to_date</span>           <span class="ruby-comment cmt">#集計開始日</span>
+33:     <span class="ruby-identifier">period_e</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_date</span>        <span class="ruby-comment cmt">#集計終了日</span>
+34: <span class="ruby-comment cmt"># 配列の降順指定のため末尾に.find(:all, :order =&gt; &quot;date Desc&quot;)を追加</span>
+35: <span class="ruby-comment cmt"># named_scopeはモデル名の直下に使用する</span>
+36:     <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]                
+37:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;aa&quot;</span>
+38:         <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">selected_year</span>(<span class="ruby-identifier">yy</span>).<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke Desc&quot;</span>)
+39:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;tm&quot;</span>
+40:         <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.
+41:           <span class="ruby-identifier">selected_year</span>(<span class="ruby-identifier">yy</span>).
+42:           <span class="ruby-identifier">selected_month</span>(<span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-value str">&quot;%m&quot;</span>)).
+43:           <span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>,<span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke Desc&quot;</span>)    
+44:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;td&quot;</span>
+45:         <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">of_today</span>.
+46:           <span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke Desc&quot;</span>)
+47:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;tw&quot;</span>
+48:         <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">between_dates</span>(<span class="ruby-identifier">period_s</span>, <span class="ruby-identifier">period_e</span>).
+49:           <span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke Desc&quot;</span>)
+50:       <span class="ruby-keyword kw">else</span>
+51:         <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.
+52:           <span class="ruby-identifier">selected_year</span>(<span class="ruby-identifier">yy</span>).
+53:           <span class="ruby-identifier">selected_month</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]).
+54:           <span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke Desc&quot;</span>) 
+55:     <span class="ruby-keyword kw">end</span>
+56:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+57:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># index.html.erb</span>
+58:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_recs</span> }
+59:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+60:         <span class="ruby-identifier">prawnto</span> <span class="ruby-identifier">:prawn</span> =<span class="ruby-operator">&gt;</span> {
+61:           <span class="ruby-identifier">:page_layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:portrait</span>, <span class="ruby-comment cmt"># 縦</span>
+62:           <span class="ruby-identifier">:page_size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;A4&quot;</span>,
+63:           <span class="ruby-identifier">:left_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">36</span>,
+64:           <span class="ruby-identifier">:right_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+65:           <span class="ruby-identifier">:top_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+66:           <span class="ruby-identifier">:bottom_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>},
+67:         <span class="ruby-identifier">:inline</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>
+68:       }
+69:     <span class="ruby-keyword kw">end</span>
+70:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000038" class="method-detail">
+        <a name="M000038"></a>
+
+        <div class="method-heading">
+          <a href="#M000038" class="method-signature">
+          <span class="method-name">new</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■NEW
+</p>
+<pre>
+ GET /day_recs/new
+ GET /day_recs/new.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000038-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000038-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 116</span>
+116:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
+117:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">new</span>
+118: <span class="ruby-comment cmt"># ログインユーザーがスタッフIDを持っている場合はstaff_idを先にセットする（2008.07.10）</span>
+119: <span class="ruby-comment cmt"># try表記を採用（2009.4.30）</span>
+120:     <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">staff_id</span> = <span class="ruby-identifier">try</span>(<span class="ruby-identifier">:current_user</span>).<span class="ruby-identifier">staff</span>.<span class="ruby-identifier">id</span>
+121:     <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>
+122: <span class="ruby-comment cmt"># 以上変更</span>
+123:     <span class="ruby-ivar">@day_recs</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>)
+124:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+125:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># new.html.erb</span>
+126:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span> }
+127:     <span class="ruby-keyword kw">end</span>
+128:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000037" class="method-detail">
+        <a name="M000037"></a>
+
+        <div class="method-heading">
+          <a href="#M000037" class="method-signature">
+          <span class="method-name">show</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■SHOW
+</p>
+<pre>
+ GET /day_recs/1
+ GET /day_recs/1.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000037-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000037-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 75</span>
+ 75:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
+ 76:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+ 77: <span class="ruby-comment cmt"># collection of the day</span>
+ 78:     <span class="ruby-ivar">@staff_recs</span> = <span class="ruby-constant">StaffRec</span>.
+ 79:                     <span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order=</span><span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hours&quot;</span>).
+ 80:                     <span class="ruby-identifier">select</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">i</span>.<span class="ruby-identifier">attend</span>.<span class="ruby-identifier">time_start</span>.<span class="ruby-identifier">to_date</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>} 
+ 81: <span class="ruby-comment cmt">#　hours and minuts for selection</span>
+ 82:     <span class="ruby-identifier">h</span> = <span class="ruby-node">%w{07 08 09 10 11 12 13 14 15 16 17 18 }</span>
+ 83:     <span class="ruby-identifier">m</span> = <span class="ruby-node">%w{00 15 30 45}</span>
+ 84:     <span class="ruby-ivar">@s</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">12</span>){[<span class="ruby-keyword kw">nil</span>,<span class="ruby-keyword kw">nil</span>,<span class="ruby-keyword kw">nil</span>,<span class="ruby-keyword kw">nil</span>]}   <span class="ruby-comment cmt">#2次元配列の初期化</span>
+ 85:     <span class="ruby-value">12</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+ 86:       <span class="ruby-value">4</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+ 87:         <span class="ruby-ivar">@s</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">ft</span>(<span class="ruby-ivar">@staff_recs</span>, <span class="ruby-identifier">h</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">m</span>[<span class="ruby-identifier">j</span>])
+ 88:       <span class="ruby-keyword kw">end</span>
+ 89:     <span class="ruby-keyword kw">end</span>
+ 90: <span class="ruby-comment cmt"># recs of the day</span>
+ 91:     <span class="ruby-ivar">@group_recs</span> = <span class="ruby-constant">GroupRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'hizuke=?'</span>,<span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>])
+ 92:     <span class="ruby-ivar">@shidou_recs</span> = <span class="ruby-constant">ShidouRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>,<span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'date=?'</span>,<span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>])
+ 93:     <span class="ruby-ivar">@school_recs</span> = <span class="ruby-constant">SchoolRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>,<span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'date=?'</span>,<span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>])
+ 94:     <span class="ruby-ivar">@med_recs</span> = <span class="ruby-constant">MedRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>,<span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'date=?'</span>,<span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>])
+ 95:     <span class="ruby-ivar">@stay_out_recs</span> = <span class="ruby-constant">StayOutRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>,<span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'date=?'</span>,<span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">hizuke</span>])
+ 96:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+ 97:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
+ 98:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span> }
+ 99:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+100:         <span class="ruby-identifier">prawnto</span> <span class="ruby-identifier">:prawn</span> =<span class="ruby-operator">&gt;</span> {
+101:                   <span class="ruby-identifier">:page_layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:portrait</span>, <span class="ruby-comment cmt"># 縦</span>
+102:                   <span class="ruby-identifier">:page_size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;A4&quot;</span>,
+103:                   <span class="ruby-identifier">:left_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">36</span>,
+104:                   <span class="ruby-identifier">:right_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+105:                   <span class="ruby-identifier">:top_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+106:                   <span class="ruby-identifier">:bottom_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>
+107:                 },
+108:                 <span class="ruby-identifier">:inline</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>
+109:         }
+110:     <span class="ruby-keyword kw">end</span>
+111:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000041" class="method-detail">
+        <a name="M000041"></a>
+
+        <div class="method-heading">
+          <a href="#M000041" class="method-signature">
+          <span class="method-name">update</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■<a href="DayRecsController.html#M000041">update</a>
+</p>
+<pre>
+ PUT /day_recs/1
+ PUT /day_recs/1.xml
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000041-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000041-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/day_recs_controller.rb, line 164</span>
+164:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
+165:     <span class="ruby-ivar">@day_rec</span> = <span class="ruby-constant">DayRec</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+166:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+167:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:day_rec</span>])
+168:         <span class="ruby-comment cmt">#■配列を文字列に変換してカテゴリーに入れる</span>
+169:         <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">update_attribute</span>(<span class="ruby-value str">&quot;tenki&quot;</span>, <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:day_rec</span>][<span class="ruby-identifier">:tenki</span>].<span class="ruby-identifier">join</span>(<span class="ruby-value str">','</span>))
+170:       
+171:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'登録に成功しました（業務記録）'</span>
+172:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@day_rec</span>) }
+173:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+174:       <span class="ruby-keyword kw">else</span>
+175:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+176:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@day_rec</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+177:       <span class="ruby-keyword kw">end</span>
+178:     <span class="ruby-keyword kw">end</span>
+179:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

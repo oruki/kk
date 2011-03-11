@@ -1,0 +1,17 @@
+﻿<%# for i in %w{00 15 30 45} %>
+    <%#= link_to_remote "#{p}:#{i}", :update => "",
+    :url => { :action => "reg_date", :thetime => "#{p}:#{i}:00", :id=>id } %>
+<%# end %>
+<% for i in %w{00 15 30 45} %>
+<%= link_to_function("#{p}:#{i}", nil, :id => "more_link") do |page|
+    page.replace_html ("baby", render(:text => "#{p}:#{i}", :locals => {}))
+  end %>
+<% end %>
+
+
+<%#= link_to_remote "back ", :update => "",
+    :url => { :action => "show_hh", :id=>@attend} %>
+
+<%= link_to_function("backe", nil, :id => "more_link") do |page|
+    page.replace_html ("baby", render(:partial => 'selecthh', :locals => {}))
+  end %>

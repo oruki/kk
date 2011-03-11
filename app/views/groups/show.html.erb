@@ -1,0 +1,28 @@
+<%= title_bar("mst", "児童グループ（表示）")%>
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<tr>
+  <% 32.times do %>
+    <td></td>
+  <% end %>
+</tr>
+<tr>
+  <th colspan=10>&#21517;&#12288;&#31216;</th>
+  <td colspan=22>
+    <%=h @group.name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>&#12459;&#12486;&#12468;&#12522;&#12540;</th>
+  <td colspan=22>
+    <%=h @group.cat %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>&#20633; &#32771;</th>
+  <td colspan=22>
+    <%=h @group.misc %>
+  </td>
+</tr>
+</TABLE>

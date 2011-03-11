@@ -1,0 +1,18 @@
+data3:
+  id: 1
+  date: 2009-05-28
+  boy_id: 327816171
+  staff_id: 851123180
+  status: 早退
+  message_to: to school
+  message_from: from school
+  misc: test
+
+data4:
+  id: 2
+  date: 2009-06-27
+  boy_id: 466024910
+  staff_id: 446796857
+  status: 遅刻
+  message_to: ぽぽぽぽっぽぽ
+

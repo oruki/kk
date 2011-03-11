@@ -1,0 +1,45 @@
+<!--
+出勤記録（ﾏｲﾍﾟｰｼﾞ）中staff_rec新規登録用のﾌｫｰﾑ描画用部分ﾃﾝﾌﾟﾚｰﾄ
+-->
+<% remote_form_for @staff_rec, :url => {:action => 'create_staff_rec', :attnd => new_staff_rec.attend_id } do |f| %>
+
+<TABLE class="part">
+  <%= table_col(32) %>
+
+  <tr>
+    <td colspan=6 style="font-size:11px;">
+      <%= f.select( :hours, hh ) %>&nbsp;:
+      <%= f.select( :minutes, %w{00 15 30 45} ) %>
+    </td>
+
+    <td colspan=7 style="font-size:11px;">
+      <label><%= f.radio_button :in_out, '外出' %>外出</label>
+      <label><%= f.radio_button :in_out, '帰院' %>帰院</label>
+      <label><%= f.radio_button :in_out, '在院' %>在院</label>
+    </td>
+
+    <td colspan=6 style="font-size:11px;">
+       用件
+       <% op = %w{出張 研修 会議 買物 届け物 送迎 行事 その他公用 その他私用} %>
+       <%= f.select :yoken, op, {:include_blank => true} %>
+    </td>
+
+    <td colspan=10 style="font-size:11px;">
+      内容
+      <%= f.text_field :naiyo %>
+    </td>
+
+    <td colspan=3 style="font-size:11px;">   
+      <%= submit_tag "入力" %>    
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan=32 style="display:none;">
+      <%#= Attend.find(new_staff_rec.attend_id).staff.name %>
+      <%= f.text_field :attend_id %> 
+    </td>
+  </tr>
+</TABLE>
+
+<% end -%>

@@ -1,0 +1,21 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>医療･健康記録（編集）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+<tr>
+  <td style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_list %>
+  </td>
+</tr>  
+</TABLE>
+
+<!-- ADDED BELW LINES(200.07.10)PARTIAL "school_rec(singular)" CREATED -->
+<%= render(:partial => "shared/med_rec",
+           :object => @med_rec) %>

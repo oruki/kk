@@ -1,0 +1,352 @@
+data45:
+  id: 27833913
+  name: yuya o
+  kana_name: ユウヤ　オ
+  birthdate: 1989-08-21
+  sex: 1
+  status: 10
+
+data46:
+  id: 37095312
+  name: Erika T
+  kana_name: エリカ　タ
+  birthdate: 1994-01-27
+  sex: 2
+  status: 10
+
+data47:
+  id: 63874043
+  name: aoi m
+  kana_name: アオイ　モ
+  birthdate: 1998-08-20
+  sex: 2
+  status: 10
+
+data48:
+  id: 117730041
+  name: yusuke k
+  kana_name: ユウスケ　コ
+  birthdate: 1996-02-12
+  sex: 1
+  status: 10
+
+data49:
+  id: 164594595
+  name: yuki m
+  kana_name: ユウキ　ミ
+  birthdate: 1994-01-25
+  sex: 1
+  status: 10
+
+data50:
+  id: 254941830
+  name: sarina k
+  kana_name: サリナ　コ
+  birthdate: 1998-12-29
+  sex: 2
+  status: 10
+
+data51:
+  id: 350387591
+  name: yuki s
+  kana_name: ユウキ　サ
+  birthdate: 1996-06-10
+  sex: 2
+  status: 10
+
+data52:
+  id: 360336189
+  name: koichi t
+  kana_name: コウイチ　タ
+  birthdate: 1997-03-14
+  sex: 1
+  status: 10
+
+data53:
+  id: 395264888
+  name: nozomi t
+  kana_name: ノゾミ　タ
+  birthdate: 1999-02-09
+  sex: 2
+  status: 10
+
+data54:
+  id: 439362928
+  name: shota k
+  kana_name: ショウタ　コ
+  birthdate: 1994-09-08
+  sex: 1
+  status: 10
+
+data55:
+  id: 458565970
+  name: Akie N
+  kana_name: アキエ　ナ
+  birthdate: 1991-01-10
+  sex: 2
+  status: 10
+
+data56:
+  id: 466024910
+  name: haruki t
+  kana_name: ハルキ　タ
+  birthdate: 1996-05-31
+  sex: 1
+  status: 00
+
+data57:
+  id: 520698337
+  name: sachika t
+  kana_name: サチカ　タ
+  birthdate: 2001-01-23
+  sex: 2
+  status: 10
+
+data58:
+  id: 588085587
+  name: maria m
+  kana_name: モ　マリア
+  birthdate: 2003-03-10
+  sex: 2
+  status: 10
+
+data59:
+  id: 635360669
+  name: misaki h
+  kana_name: ミサキ　ヒ
+  birthdate: 1998-04-16
+  sex: 2
+  status: 10
+
+data60:
+  id: 645013543
+  name: Reina M
+  kana_name: レイナ　モ
+  birthdate: 1996-01-16
+  sex: 2
+  status: 10
+
+data61:
+  id: 705786293
+  name: miyuna k
+  kana_name: ミユナ　コ
+  birthdate: 2002-07-01
+  sex: 2
+  status: 10
+
+data62:
+  id: 764059286
+  name: Shunpei T
+  kana_name: シュンペイ　タ
+  birthdate: 1999-01-13
+  sex: 1
+  status: 00
+
+data63:
+  id: 787183118
+  name: yuki h
+  kana_name: ユウキ　ヒ
+  birthdate: 1997-05-01
+  sex: 1
+  status: 10
+
+data64:
+  id: 802193531
+  name: kirara h
+  kana_name: キララ　ヒ
+  birthdate: 2000-03-16
+  sex: 2
+  status: 10
+
+data65:
+  id: 809963945
+  name: riona k
+  kana_name: リオナ　コ
+  birthdate: 2001-05-18
+  sex: 2
+  status: 10
+
+data66:
+  id: 824147294
+  name: Keiko T
+  kana_name: ケイコ　タ
+  birthdate: 1992-11-05
+  sex: 2
+  status: 10
+
+data67:
+  id: 886358289
+  name: mika t
+  kana_name: ミカ　タ
+  birthdate: 1995-04-13
+  sex: 2
+  status: 10
+
+data68:
+  id: 913586865
+  name: toya i
+  kana_name: トウヤ　イ
+  birthdate: 2001-01-18
+  sex: 1
+  status: 10
+
+data69:
+  id: 916769116
+  name: kota t
+  kana_name: タ　コウタ
+  birthdate: 2004-01-28
+  sex: 1
+  status: 10
+
+data70:
+  id: 946557366
+  name: Koichi M
+  kana_name: コウイチ　メ
+  birthdate: 1992-11-26
+  sex: 1
+  status: 10
+
+data71:
+  id: 952879928
+  name: masataka t
+  kana_name: マサタカ　タ
+  birthdate: 1990-04-22
+  sex: 1
+  status: 00
+
+data72:
+  id: 1023528313
+  name: yuji T
+  kana_name: ユウジ　タ
+  birthdate: 1994-08-09
+  sex: 1
+  status: 00
+
+data73:
+  id: 1023528314
+  name: kentaro Y
+  kana_name: ケンタロウ　ヤ
+  birthdate: 1995-10-10
+  sex: 1
+  status: 10
+
+data74:
+  id: 1023528315
+  name: Yutaro Y
+  kana_name: ユウタロウ　ヤ
+  birthdate: 1999-03-24
+  sex: 1
+  status: 10
+
+data75:
+  id: 1023528316
+  name: Ryuki Y
+  kana_name: リュウキ　ヤ
+  birthdate: 2005-05-07
+  sex: 1
+  status: 10
+
+data76:
+  id: 1023528317
+  name: Miyuki I
+  kana_name: ミユキ　イ
+  birthdate: 1991-01-23
+  sex: 2
+  status: 10
+
+data77:
+  id: 1023528321
+  name: Ｙ　Ｓuzuki
+  kana_name: ユ　スズキ
+  birthdate: 1990-03-01
+  sex: 1
+  status: 0
+
+data78:
+  id: 1023528322
+  name: Ｍ　Ｄｏｉ
+  kana_name: マ　ドイ
+  birthdate: 1990-02-07
+  sex: 1
+  status: 0
+
+data79:
+  id: 1023528323
+  name: Ken M
+  kana_name: ケン　マ
+  birthdate: 1990-01-08
+  sex: 1
+  status: 0
+
+data80:
+  id: 1023528324
+  name: M  Takuya
+  kana_name: モ　タクヤ
+  birthdate: 1995-08-31
+  sex: 1
+  status: 10
+
+data81:
+  id: 1023528325
+  name: ayuri y
+  kana_name: アユリ　ヨ
+  birthdate: 1996-11-15
+  sex: 2
+  status: 10
+
+data82:
+  id: 1023528326
+  name: Ｋ　Ｋｉｎｏｓｈｉｔａ
+  kana_name: カ　キノシタ
+  birthdate: 2001-06-19
+  sex: 1
+  status: 10
+
+data83:
+  id: 1023528327
+  name: Ｔａｋｕｍｉ　Ｙｏ
+  kana_name: タクミ　ヨ
+  birthdate: 1996-02-25
+  sex: 1
+  status: 10
+
+data84:
+  id: 1023528328
+  name: nonoka Ｆ
+  kana_name: フジイ　ノノカ
+  birthdate: 1999-05-15
+  sex: 2
+  status: 10
+
+data85:
+  id: 1023528329
+  name: nonoka Ｔ
+  kana_name: ノノカ　タ
+  birthdate: 1999-05-15
+  sex: 2
+  status: 10
+
+data86:
+  id: 1023528330
+  name: Ｙｏｓｈｉｈｉｒｏ　Ｎ
+  kana_name: ヨシヒロ　ニ
+  birthdate: 2000-06-02
+  sex: 1
+  status: 10
+
+data87:
+  id: 1023528331
+  name: Ｔ　Ｋiyo
+  kana_name: タイガ　キヨ
+  birthdate: 2000-02-18
+  sex: 1
+  status: 10
+
+data88:
+  id: 1023528335
+  name: Daiki Mashiro
+  kana_name: ダイキ　マシロ
+  birthdate: 1996-12-27
+  sex: 1
+  status: 10
+

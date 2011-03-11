@@ -1,0 +1,107 @@
+<!--　指導記録　部分ﾃﾝﾌﾟﾚｰﾄ変更版
+-->
+
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4 class="shidou_color">ID/児童名</th>
+    <th colspan=4 class="shidou_color">日付/ｽﾀｯﾌ</th>
+    <th colspan=4 class="shidou_color">ｶﾃｺﾞﾘｰ</th>
+    <th colspan=4 class="shidou_color">ｸﾞﾙｰﾌﾟ</th>
+    <th colspan=16 class="shidou_color">
+      記述
+    </th>
+  </tr>
+
+<% for s in shidou_recs2 %>
+  <tr>
+    <td colspan=4>
+    	<span style="font-size:8px">
+        <%= h s.boy.id %><br>
+      </sapn>  
+      <%= link_to_remote(
+            s.boy.try(:name),
+            :url =>{
+                    :action => "hit", 
+                    :id => s,
+                    :boy => s.boy},
+            :spinner => :spinner) %><br>   
+<!-- 期間ﾊﾟﾗﾒｰﾀｰ（mm yy）はｾｯｼｮﾝから取得するように変更 -->
+    </td>
+    <td colspan=4>
+      <%= h s.date.to_jdate %><br>
+      <%= link_to_remote(
+            s.staff.name,
+            :url =>{
+                    :action => "hit", 
+                    :id => s,
+                    :staff => s.staff},
+            :spinner => :spinner) %> 
+<!-- 期間ﾊﾟﾗﾒｰﾀｰ（mm yy）はｾｯｼｮﾝから取得するように変更 -->
+    </td>
+    
+    <td colspan=4>
+      <!-- h s.cat -->
+      <%#= h s.cat %>
+      <% cats = s.cat.split(/\s*,\s*/) %>
+      <% for i in cats %>
+        <% n =+ 1 %>
+        <%= link_to_remote(
+              i,:url=>{
+              :action=>"hit",
+              :cat => i})%>
+              <% if i!=cats.last %>
+                <br>
+              <% end %>
+      <% end %>      
+    </td>
+<!-- 児童の所属グループを追加 -->
+    <td colspan=4>
+      <% grps = s.boy.try(:groups).map{|i| i.name} %>
+      <% for i in grps %>
+        <% n =+ 1 %>
+        <%= link_to_remote(
+              i,:url=>{
+              :action=>"hit",
+              :grp => i})%>
+              <% if i!=grps.last %>
+                <br>
+              <% end %>
+      <% end %>      
+    </td>  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <td colspan=14>
+      <!-- h s.desc -->
+      <%= h s.desc %>
+    </td>
+    <td>
+      <% if s.staff == current_user.staff %>
+        <%= go_edit(s,"shidou_recs") %>
+      <% else %>
+        <%= image_tag("g_reply.gif", :border=>0) %>
+      <% end %>           
+    </td>   
+    <td>
+      <% if s.staff == current_user.staff %>  
+        <%= link_to image_tag("delete.gif", :border=>0),
+              s,
+              :confirm =>'本当に削除しますか?',
+              :method => :delete %>
+      <% else %>
+        <%= image_tag("g_delete.gif", :border=>0) %>
+      <% end %>                    
+    </td>
+  </tr>
+<% end %>
+</table>

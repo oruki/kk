@@ -1,0 +1,69 @@
+<%# med_recs = MedRec.between_dates(
+      get_period( session[:yy], session[:mm])[0],
+      get_period( session[:yy], session[:mm])[1] ) %>
+
+
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4 class="med_color">日付/児童</th>
+    <th colspan=4 class="med_color">ｽﾀｯﾌ名</th>
+    <th colspan=5 class="med_color">医療機関</th>
+    <th colspan=4 class="med_color">症状/状況</th>
+    <th colspan=4 class="med_color">体温/状態</th>
+    <!-- th colspan=4 class="med_color">保　険</th -->
+    <th colspan=7 class="med_color">備　考</th>
+  </tr>
+<% for med_rec in med_recs2 %>
+  <tr>
+    <td colspan=4>
+      <%=h med_rec.date %>
+      <%= link_to_remote (
+            med_rec.boy.name,
+            :url =>{
+                    :action => "med",
+                    :id => med_rec,
+                    :boy => med_rec.boy}) %>
+    </td>                 
+    <td colspan=4>
+      <%#=h med_rec.staff.name if med_rec.staff %>
+      <%= link_to_remote (
+            med_rec.staff.name,
+            :url =>{
+                    :action => "med",
+                    :id => med_rec,
+                    :staff => med_rec.staff}) %> 
+    </td>                                                
+    <td colspan=5>
+      <%=h med_rec.med_inst.name %>
+    </td>
+    <td colspan=4>
+      <%=h med_rec.symptom %><br>
+      <%=h med_rec.status %>
+    </td>
+    <td colspan=4>
+      <%=h med_rec.temperature %><br>
+      <%=h med_rec.condition %>
+    </td>
+    <!-- td colspan=4><%=h med_rec.insulance %></td -->
+    <td colspan=5><%=h med_rec.misc %></td>
+
+    <td>
+		<% if med_rec.staff == current_user.staff %>
+		  <%= go_edit(med_rec, "med_recs") %>
+		<% else %>
+		  <%= image_tag("g_reply.gif", :border=>0) %>
+		<% end %>
+    </td>
+
+    <td>
+	  <% if med_rec.staff == current_user.staff %>
+	    <%= link_to image_tag("delete.gif", :border=>0), med_rec, :confirm => '本当に削除しますか?', :method => :delete %>
+	  <% else %>
+        <%= image_tag("g_delete.gif", :border=>0) %>
+      <% end %>  
+    </td>
+  </tr>
+<% end %>
+
+</table>

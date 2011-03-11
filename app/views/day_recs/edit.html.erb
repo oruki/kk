@@ -1,0 +1,9 @@
+<%= title_bar("rec", "業務記録（編集）") %>  
+<%= fn_bar2 %>
+
+<%= render (:partial => 'shared/day_rec', 
+            :object => @day_rec,
+            :locals => {:cont => "day_recs", :act => "edit"}) -%>
+<%#= render (:partial => 'shared/day_recs', 
+            :object => @day_recs,
+            :locals => {:cont => "day_recs", :act => "edit"}) -%>

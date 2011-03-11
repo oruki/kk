@@ -1,0 +1,31 @@
+# groups
+
+grp-aa:
+  name:     幼児
+  cat:      指導ｸﾞﾙｰﾌﾟ
+  misc:     none 
+
+grp-bb:
+  name:     男子児童
+  cat:      指導ｸﾞﾙｰﾌﾟ
+  misc:     none
+
+grp-cc:
+  name:     女子児童
+  cat:      指導ｸﾞﾙｰﾌﾟ
+  misc:     none
+
+grp-dd:
+  name:     その他児童
+  cat:      指導ｸﾞﾙｰﾌﾟ
+  misc:     none
+
+grp-kumon:
+  name:     公文学習
+  cat:      学習ｸﾞﾙｰﾌﾟ
+  misc:     none
+  
+grp-soccer:
+  name:     少年ｻｯｶｰ
+  cat:      ｽﾎﾟｰﾂｸﾗﾌﾞ
+  misc:     none    

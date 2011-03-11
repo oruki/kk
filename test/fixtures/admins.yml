@@ -1,0 +1,25 @@
+data4:
+  id: 1
+  title: a
+  cat: a
+  pos: a
+  cont: a
+  reporter: a
+
+data5:
+  id: 2
+  title: c
+  cat: c
+  pos: c
+  cont: c
+  reporter: c
+
+data6:
+  id: 3
+  title: b backup and restore
+  cat: data
+  cont: |
+    フィクスチャーデータをYMLに書き出す機能
+    上書きするされること確認
+    データがあればそのテーブルはｙｍｌファイルに買出しOK
+

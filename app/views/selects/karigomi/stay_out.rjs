@@ -1,0 +1,21 @@
+#page.replace_html("stay_out_recs",
+#  :partial => "shared/stay_out_recs2",
+#  :object => @stay_out_recs
+#)
+#page.replace_html :recnbr, "レコード件数：#{@stay_out_recs.size}件"
+#page[:recnbr].visual_effect :highlight,:startcolor => "#ff9900",:endcolor => "#ffff99"  
+#page["stay_out_recs"].visual_effect :highlight,:startcolor => "#ff9900",:endcolor => "#ffff99"
+
+
+#recs_name=
+#page.replace_html(
+#  "#{recs_name}",
+#  :partial => "shared/#{recs_name}2",
+#  :object => eval("@#{recs_name}")
+#)
+#page.replace_html :recnbr, "レコード件数：@#{recs_name}.size}件"
+#page[:recnbr].visual_effect :highlight,:startcolor => "#ff9900",:endcolor => "#ffff99"  
+#page["#{recs_name}"].visual_effect :highlight,:startcolor => "#ff9900",:endcolor => "#ffff99"
+
+
+recs_rjs("stay_out_recs")

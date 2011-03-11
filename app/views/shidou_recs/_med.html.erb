@@ -1,0 +1,12 @@
+﻿  <tr ID="aux_02" style="display:none;">
+    <td colspan=4>医療・通院</td>
+    <td colspan=4></td>
+    <td colspan=24 style="color:green">
+      <%= check_box_tag(:aa, 1, false) %> 初診
+      <%= check_box_tag(:aa, 1, false) %> 通院	
+      <%= check_box_tag(:aa, 1, false) %> 入院
+      <% @med_insts= MedInst.all %>
+      <%= select_tag 'para', options_from_collection_for_select(@med_insts, :id, :name)%>
+      <%#= f.text_field :basho, :size=>30 %>
+    </td>
+  </tr>

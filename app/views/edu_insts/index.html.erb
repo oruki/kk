@@ -1,0 +1,37 @@
+<%= title_bar("mst", "教育機関（一覧）")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>ID／分類</th>
+    <th colspan=7>ﾌﾘｶﾞﾅ／名称</th>
+    <th colspan=14>ZIP／住所</th>
+    <th colspan=7>電話／ﾌｧｯｸｽ</th>
+  </tr>
+
+<% for edu_inst in @edu_insts %>
+  <tr>
+    <td colspan=4>
+      <span style="font-size:9px;"><%= edu_inst.id %></span><br>
+      <%=h edu_inst.cat %>
+    </td>
+    <td colspan=7>
+      <span style="font-size:7px;"><%=h edu_inst.kana_name %></span><br>
+      <%=h edu_inst.name %>
+    </td>
+    <td colspan=14>
+      <%=h edu_inst.zip %><br>
+      <%=h edu_inst.add %>
+    </td>
+    <td colspan=6>
+      T：<%=h edu_inst.tel %><br>
+      F：<%=h edu_inst.fax %>
+    </td>
+    <td colspan=1>
+      <%= go_edit(edu_inst) %>
+    </td>
+  </tr>
+<% end %>
+
+</TABLE>

@@ -1,0 +1,61 @@
+
+<%= javascript_include_tag :defaults %>
+  <table CLASS="part">
+    <%= table_col(32) %>
+  <tr>
+    <th colspan=4 class="school_color">日付/児童名</th>
+    <th colspan=4 class="school_color">ｽﾀｯﾌ名</th>
+    <th colspan=3 class="school_color">分類</th>
+    <th colspan=7 class="school_color">学校へ</th>
+    <th colspan=7 class="school_color">学校から</th>
+    <th colspan=7 class="school_color">備考</th>
+  </tr>
+
+<% for @school_rec in school_recs2 %>
+  <tr>
+    <td colspan=4>
+      <%=h @school_rec.date %><br>
+      <%= link_to_remote (
+            @school_rec.boy.try(:name),
+            :url =>{
+                    :action => "kick",
+                    :id => @school_rec,
+                    :boy => @school_rec.boy}) %>
+    <td colspan=4>
+      <%= link_to_remote (
+            @school_rec.staff.name,
+            :url =>{
+                    :action => "kick",
+                    :id => @school_rec,
+                    :staff => @school_rec.staff}) %>
+    </td>
+    <td colspan=3><%=h @school_rec.status %></td>
+<!-- next 2 lines added on 2008-07-26 -->
+    <td colspan=7>
+      <%= @school_rec.message_to %>
+    </td>
+    <td colspan=7>
+      <%= @school_rec.message_from %>
+    </td>
+    <td colspan=5><%=h @school_rec.misc %></td>
+    <td colspan=1>
+      <% if @school_rec.staff == current_user.staff %>
+        <%= go_edit(@school_rec,"school_recs") %>
+      <% else %>
+        <%= image_tag("g_reply.gif", :border=>0) %>
+      <% end %>  
+    </td>
+    <td colspan=1>
+      <% if @school_rec.staff == current_user.staff %>
+        <%= link_to image_tag("delete.gif", :border=>0),
+              @school_rec,
+              :confirm => '本当に削除してよいですか?',
+              :method => :delete %>
+      <% else %>
+        <%= image_tag("g_delete.gif", :border=>0) %>
+      <% end %> 
+    </td>
+  </tr>
+<% end %>
+
+  </table>

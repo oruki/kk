@@ -1,0 +1,2 @@
+module DayRecsHelper
+end

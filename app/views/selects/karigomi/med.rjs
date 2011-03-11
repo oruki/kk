@@ -1,0 +1,10 @@
+page.replace_html("med_recs",
+  :partial => "shared/med_recs",
+  :object => @med_recs
+)
+page.replace_html :recnbr, "レコード件数：#{@med_recs.size}件"
+page[:recnbr].visual_effect :highlight,:startcolor => "#ff9900",:endcolor   => "#ffff99"  
+page["med_recs"].visual_effect :highlight,:startcolor => "#ff9900",:endcolor   => "#ffff99"
+
+#THIS code is fully OK
+#troules come from routing

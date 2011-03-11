@@ -1,0 +1,38 @@
+<%= title_bar("mst", "医療機関（一覧）")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>ID/分類</th>
+    <th colspan=6>ﾌﾘｶﾞﾅ/名称</th>
+    <th colspan=15>郵便番号/住所</th>
+    <th colspan=7>電話/ﾌｧｯｸｽ</th>
+  </tr>
+<% for @med_inst in @med_insts %>
+  <tr>
+    <td colspan=4>
+      <span style="font-size:9px">
+        <%=h @med_inst.id %>
+      </span><br>
+      <%=h @med_inst.cat %>
+    </td>
+    <td colspan=6>
+      <span style="font-size:9px"><%=h @med_inst.kana_name %></span><br>
+      <!-- h @med_inst.name -->
+      <%=h @med_inst.name %>
+    </td>
+    <td colspan=15>
+      <%=h @med_inst.zip %><br>
+      <%=h @med_inst.add %>
+    </td>
+    <td colspan=6>
+      T:<%=h @med_inst.tel %><br>
+      F:<%=h @med_inst.fax %>
+    </td>
+    <td colspan=1>
+      <%= go_edit(@med_inst) %>
+    </td>
+  </tr>
+ <% end %>
+</TABLE>

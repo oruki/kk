@@ -1,0 +1,8 @@
+<!-- ■3■児童ｸﾞﾙｰﾌﾟの記録■■ --> 
+  <div ID="group_recs">
+    <%= render(
+          #:partial => "attends/grp_recs_today",
+          :partial => "shared/group_recs",
+          :object => @grp_recs_today ) if @grp_recs_today %>
+  </div>
+

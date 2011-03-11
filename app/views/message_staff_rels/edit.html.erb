@@ -1,0 +1,20 @@
+<h1>Editing message_staff_rel</h1>
+
+<% form_for(@message_staff_rel) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :message_id %><br />
+    <%= f.text_field :message_id %>
+  </p>
+  <p>
+    <%= f.label :staff_id %><br />
+    <%= f.text_field :staff_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @message_staff_rel %> |
+<%= link_to 'Back', message_staff_rels_path %>

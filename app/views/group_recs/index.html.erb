@@ -1,0 +1,27 @@
+
+<%= title_bar("rec", "ｸﾞﾙｰﾌﾟ記録（一覧）") %>
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext0].size, :ctrl => "group_recs"} %>
+
+<%= render(:partial => "shared/kikan_select",
+           :locals => {:ctrl => "group_recs", :act => "index"}) %>
+
+<TABLE CLASS="part">
+<tr>
+  <td style="text-align:right;">
+    <span　style="font-size:9px">
+      ｸﾞﾙｰﾌﾟ:&nbsp;
+      <% for i in @groups %>
+        <%= link_to(i[0], :action => "index", :grp => i[2])%>｜
+      <% end %>
+      <%= link_to('全ｸﾞﾙｰﾌﾟ', :action => "index") -%>
+    </span>
+  </td>
+</tr>
+</TABLE>
+
+<div ID = "group_recs">
+  <%= render :partial => "shared/group_recs", 
+             :object => @group_recs %>
+</div>           

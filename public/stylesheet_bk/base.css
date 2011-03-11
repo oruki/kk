@@ -1,0 +1,49 @@
+/* ページ全体　*/
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow-y:scroll; /* ｽｸﾛｰﾙﾊﾞｰを常駐し左右巾振れを無くす */
+  }
+
+/* リンク　*/
+a:link {
+  color: blue;
+  }
+
+/* 全体の枠　*/
+div#container {
+  background-color: white;
+  margin: 0 auto;
+  padding:5px 0 0;
+  /* width:760px */
+  width:904px;
+  border:1px solid #eee;
+  }
+
+/* ヘッダー　*/
+div#header {
+  padding-top: 4px;
+  /* border-top: 4px solid #6bb; */
+  /* background-color:grey; */
+  }
+
+/* 左の枠　*/
+div#left {
+  float: left;
+  /* width: 560px; */
+  width: 700px;
+  padding: 6px 6px 6px 0;
+  }
+
+
+/* 右の枠　*/
+div#right {
+  float: left;
+/*  width: 188px; */
+  width: 175px;
+  background-color: #efefef;
+  /* padding: 6px 0px 6px 6px; */
+  padding: 46px 0px 6px 6px;
+  }

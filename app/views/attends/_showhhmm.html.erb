@@ -1,0 +1,6 @@
+﻿<span style="margin-right:5px">
+  <%= "#{hh}:#{mm}" %>
+</span>
+<%= link_to_function("back",nil, :id => "") do |page|
+    page.replace_html (kubun[:dom], render(:partial => kubun[:par]))
+  end %>

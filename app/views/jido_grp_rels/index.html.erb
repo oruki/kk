@@ -1,0 +1,48 @@
+s<TABLE ID="mst" CLASS="title">
+  <tr>
+    <td>児童ｸﾞﾙｰﾌﾟ関係（一覧）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+  <tr>
+    <td colspan=32 style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+      <span style="margin-right:25px">レコード件数：<%= @jido_grp_rels.size %></span>   
+      <%= link_to_mypage %> &nbsp;
+      <%= go_new %>
+    </td>
+  </tr>
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=6>関係/児童/ｸﾞﾙｰﾌﾟid</th>
+    <th colspan=5>氏名</th>
+    <th colspan=3>年齢</th>
+    <th colspan=2>性別</th>
+
+    <th colspan=11>
+      <%= link_to "ｸﾞﾙｰﾌﾟ名", {:action => "index", :sort => "grp"}, :title =>"ｸﾞﾙｰﾌﾟ名で並べ替えます"%>
+    </th>
+    <th colspan=5>ｸﾞﾙｰﾌﾟ分類</th>
+  </tr>
+<% for jgr in @jido_grp_rels %>
+  <tr>
+    <td colspan=2 title = <%= "#{jgr.id}" %> >**</td>
+    <td colspan=2 title = <%= "#{jgr.boy_id}" %> >**</td>
+    <td colspan=2 title = <%= "#{jgr.group_id}" %> >**</td>    
+    <td colspan=5><%= jgr.boy.try(:name) %></td>
+    <td colspan=3 style="text-align:center">
+      <%= jgr.boy.try(:birthdate).try(:age) %>
+    </td>
+    <td colspan=2><%= jgr.boy.try(:sex).try(:to_jsex) %></td>
+
+    <td colspan=11><%= jgr.group.try(:name) %></td>
+    <td colspan=4><%= jgr.group.try(:cat) %></td>
+    <td><%= go_edit(jgr) %></td>
+  </tr>
+<% end %>
+</table>
+
+<!-- nil objecct error リレーション定義ファイルの場合対応するマスターファイルとデータの過不足をチェックしないとエラーとなる　-->

@@ -1,0 +1,16 @@
+<%= title_bar("rec", "面会・外出・外泊（登録）") %>  
+<%= fn_bar2 %>
+
+<!-- NEW -->
+<%= render(:partial => "shared/stay_out_rec", 
+           :object => @stay_out_rec) %>
+
+<!-- INDEX 
+原因不明だが一覧表示を同時に表示するとエラーが発生するので一時中止
+新規登録後のリロードで@stay_out_recsがセットされていないため？
+new create で再ｾｯﾄを試みる
+-->
+<div ID="StayOutRecaPart">
+  <%= render(:partial => "shared/stay_out_recs2", 
+             :object => @stay_out_recs) %>
+</div>

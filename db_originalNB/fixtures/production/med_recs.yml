@@ -1,0 +1,124 @@
+# med_rec.yml
+
+
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+# ----------------------------------------幼児ｸﾞﾙｰﾌﾟ　2003年以降出生　7人
+
+<% 1.upto(60) do |i| %>
+
+<% bb = boys_aa[rand(7)] %>
+<% ss = staffs_5[rand(4)] %>
+<% d1 = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% symp = %w{インフルエンザ 風邪 気管支炎 喘息 下痢 発疹 骨折 アレルギー 鼻炎}[rand(9)] %>
+<% stat = %w{入院 通院 安静 様子見}[rand(4)] %>
+<% temp = %w{高熱 微熱 平熱 その他}[rand(4)] %>
+<% conf = %w{確認済み 保留中 拒否 協議}[rand(4)] %>
+<% cat = %w{外出 外泊 面会 その他}[rand(4)] %>
+
+<%= i %>:
+  boy:         <%= bb %>
+  staff:       <%= ss %>
+  med_inst:    hamano_iin
+
+  date:        <%= d1 %>
+  symptom:     <%= symp %>
+  status:      <%= stat %>
+  temperature: <%= temp %>
+  insulance:   健康保険
+  condition:   風邪引きから喘息の発作を併発している
+  misc:        試験データ<%= i %>
+<% end %>
+
+# ----------------------------------------男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% 61.upto(120) do |i| %>
+
+<% bb = boys_bb[rand(7)] %>
+<% ss = staffs_3[rand(4)] %>
+<% d1 = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% symp = %w{インフルエンザ 風邪 気管支炎 喘息 下痢 発疹 骨折 アレルギー 鼻炎}[rand(9)] %>
+<% stat = %w{入院 通院 安静 様子見}[rand(4)] %>
+<% temp = %w{高熱 微熱 平熱 その他}[rand(4)] %>
+<% conf = %w{確認済み 保留中 拒否 協議}[rand(4)] %>
+<% cat = %w{外出 外泊 面会 その他}[rand(4)] %>
+
+<%= i %>:
+  boy:         <%= bb %>
+  staff:       <%= ss %>
+  med_inst:    hamano_iin
+
+  date:        <%= d1 %>
+  symptom:     <%= symp %>
+  status:      <%= stat %>
+  temperature: <%= temp %>
+  insulance:   健康保険
+  condition:   風邪引きから喘息の発作を併発している
+  misc:        試験データ<%= i %>
+<% end %>
+
+
+# ----------------------------------------女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% 121.upto(180) do |i| %>
+
+<% bb = boys_cc[rand(7)] %>
+<% ss = staffs_4[rand(4)] %>
+<% d1 = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% symp = %w{インフルエンザ 風邪 気管支炎 喘息 下痢 発疹 骨折 アレルギー 鼻炎}[rand(9)] %>
+<% stat = %w{入院 通院 安静 様子見}[rand(4)] %>
+<% temp = %w{高熱 微熱 平熱 その他}[rand(4)] %>
+<% conf = %w{確認済み 保留中 拒否 協議}[rand(4)] %>
+<% cat = %w{外出 外泊 面会 その他}[rand(4)] %>
+
+<%= i %>:
+  boy:         <%= bb %>
+  staff:       <%= ss %>
+  med_inst:    hamano_iin
+
+  date:        <%= d1 %>
+  symptom:     <%= symp %>
+  status:      <%= stat %>
+  temperature: <%= temp %>
+  insulance:   健康保険
+  condition:   風邪引きから喘息の発作を併発している
+  misc:        試験データ<%= i %>
+<% end %>
+
+
+# ----------------------------------------卒業生　1989以前出生
+
+<% 181.upto(240) do |i| %>
+
+<% bb = boys_dd[rand(6)] %>
+<% ss = staffs_1[rand(3)] %>
+<% d1 = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% symp = %w{インフルエンザ 風邪 気管支炎 喘息 下痢 発疹 骨折 アレルギー 鼻炎}[rand(9)] %>
+<% stat = %w{入院 通院 安静 様子見}[rand(4)] %>
+<% temp = %w{高熱 微熱 平熱 その他}[rand(4)] %>
+<% conf = %w{確認済み 保留中 拒否 協議}[rand(4)] %>
+<% cat = %w{外出 外泊 面会 その他}[rand(4)] %>
+
+<%= i %>:
+  boy:         <%= bb %>
+  staff:       <%= ss %>
+  med_inst:    hamano_iin
+
+  date:        <%= d1 %>
+  symptom:     <%= symp %>
+  status:      <%= stat %>
+  temperature: <%= temp %>
+  insulance:   健康保険
+  condition:   風邪引きから喘息の発作を併発している
+  misc:        試験データ<%= i %>
+<% end %>

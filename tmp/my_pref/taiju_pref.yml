@@ -1,0 +1,20 @@
+# これは設定ファイルです
+# http://www.oiax.jp/rails/for_web_designers/yaml.html
+# ハッシュ（連想配列）を表現する YAML コード
+
+reg_date:  2009-06-06
+inst_name:  社会福祉法人 基督教日本救霊隊 神戸実業学院
+inst_phone: 078-521-5478
+inst_zip: 652-0002
+inst_address: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+inst_email:  kjg4351@gmail.com
+#　2009-08-18　変更
+#　category:  日常生活 対人関係 生活習慣 問題行動 ヒヤリハット その他
+# category:  日常生活 問題行動 学校 外泊 外出 面会 連絡 ヒヤリハット 通院 健康 その他
+category:  学校 日常生活 問題行動 外泊・面会他 医療 健康 ヒヤリハット 
+category_for_group_rec: 健康 行事 行動記録
+weather:  晴れ 曇り 雨 豪雨 雪 台風 強風
+shokumei:  院長 副院長 書記 栄養士 保育士 指導員 セラピスト 心理療法担当職員 心理療法担当嘱託 家庭支援専門相談員
+# session_period:  7800
+session_period:  900 #20090830 changed
+groups:  1

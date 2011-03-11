@@ -1,0 +1,119 @@
+﻿<h2>勤務記録を入力してください</h2>
+<!--
+session    hh:<%= session[:hh] %><br>
+session mm_on:<%= session[:mm_on] %><br>
+session hh_off:<%= session[:hh_off] %><br>
+session mm_off:<%= session[:mm_off] %><br>
+<hr>
+@attend.time_start: <%= @attend.time_start %><br>
+@attend.time_end  : <%= @attend.time_end %><br>
+Time.zone.now ----: <%= Time.zone.now %><br>
+--> 
+<%= title_bar("bok", "指導員勤務記録（#{@attend.staff.name}）") %>  
+<%= fn_bar2 %>
+
+<% if @tes.blank? %>
+  <TABLE CLASS="part">
+    <% t=Time.now %>
+    <% d=Attend.find(:all).map{|i| [i.misc] } %>
+    <% a= Staff.find(:all).map{|k| [k.name, k.id]} %>
+    <%= error_messages_for :attend %>
+    <%= table_col(32) %>
+
+
+<%# form_for(@attend) do |f| %>
+<% form_tag :action =>'create', :man=> '1' do %>
+    <tr>
+      <th colspan=6>スタッフ</th>
+      <td colspan=26>
+<!--
+    <span style="display:none"><%#= f.select(:staff_id, a, {:include_blank=>true}) %></span>
+-->    
+        <span style="display:none">
+          <%= text_field :attend, :staff_id %>
+        </span>
+        <%= @attend.staff.name %>
+      </td>
+    </tr>
+    <tr>
+      <th colspan=6>出勤時間</th>
+      <td colspan=26>
+  	    <span style="float:left; display:none">  	
+<!--	
+    <%#= f.time_select 'time_start', {:minute_step => 15} %>
+--> 
+          <%= text_field :attend, :time_start %>
+        </span> 
+        <div id="workon" style="float:left; margin-left:15px">
+          <%= render (:partial => "hh") %>
+        </div>          
+      </td>
+    </tr>
+    <tr>
+      <th colspan=6>退出時間</th>
+      <td colspan=26>
+        <span style="float:left; display:none">
+<!--
+        <%#= f.time_select 'time_end', {:minute_step => 15} %>
+-->
+          <%= text_field :attend, :time_end %>
+        </span>
+        <div id="workoff" style="float:left; margin-left:15px">
+          <%= render (:partial => "ii") %>
+        </div>                
+      </td>
+    </tr>
+    <tr>
+      <th colspan=6>備　考</th>
+<!--
+      <td colspan=26><%#= f.text_field :misc %></td>
+-->
+      <td colspan=26>
+      	<%= text_field :attend, :misc %>
+  	  </td>
+    </tr>
+    <tr>
+      <td colspan=32 style="text-align:right">    
+        <%#= f.submit "新規登録" %>
+        <%= submit_tag "新規登録" %>
+      </td>
+    </tr>
+<% end %>
+  </TABLE>
+
+<% else %>
+  <TABLE CLASS="part">
+    <%= table_col(32) %>
+<% for k in @tes %>
+    <tr>
+      <td colspan=18>
+      	<%= "本日(#{k.created_at.strftime("%Y-%m-%d %X")})登録された勤務記録があります" %>
+  	  </td>
+      <td colspan=12>
+        <%= "#{k.time_start.strftime("%Y-%m-%d %X")}…#{k.time_end.strftime("%m-%d %X")}" %>
+      </td>
+      <td colspan=2>  
+        <%= link_to image_tag("reply.gif", :border=>0), k %>
+      </td>
+    </tr>
+<% end %>
+  </TABLE>
+
+<% end %>
+
+  <table class="part">
+	<tr>
+		<% 30.times do |i| %>
+    		<td onmouseover="this.style.background='red';
+    						this.style.cursor='pointer';
+    						$('hoge').innerHTML= <%= i.to_s %>;"
+        		onmouseout="this.style.background='white';"
+        		onclick="alert('bang')" >
+			</td>
+		<% end %>
+	</tr>	
+  </table>	
+  
+  
+  
+  

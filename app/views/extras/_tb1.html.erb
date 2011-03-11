@@ -1,0 +1,75 @@
+﻿<TABLE CLASS="part" style="padding:5px">
+  <%= table_col(32) %>
+  <tr>
+  	<td colspan=8>
+  	  施設の名称
+  	</td>	
+  	<td colspan=24>
+  	  <%= @inst_name %>
+  	</td>	  	
+  </tr>
+  <tr>
+  	<td colspan=8>
+  	  施設の住所
+  	</td>	
+  	<td colspan=24>
+  	  <%= @inst_address %>
+  	</td>	  	
+  </tr>
+  <tr>
+  	<td colspan=8>
+  	  郵便番号
+  	</td>	
+  	<td colspan=24>
+  	  <%= @inst_zip %>
+  	</td>	  	
+  </tr>  
+  <tr>
+  	<td colspan=8>
+  	  登録年月日
+  	</td>	
+  	<td colspan=24>
+  	  <%= @reg_date %>
+  	</td>	  	
+  </tr>    		
+  <tr>
+  	<td colspan=8>
+  	  メールアドレス
+  	</td>	
+  	<td colspan=24>
+  	  <%=mail_to "#{@inst_email}" %>
+  	</td>	  	
+  </tr> 
+  <tr>
+  	<td colspan=8>
+  	  カテゴリー
+  	</td>	
+  	<td colspan=24>
+  	  <%= @category %>
+  	</td>	  	
+  </tr> 
+  <tr>
+  	<td colspan=8>
+  	  天候
+  	</td>	
+  	<td colspan=24>
+  	  <%= @weather %>
+  	</td>	  	
+  </tr> 
+  <tr>
+  	<td colspan=8>
+  	  職名
+  	</td>
+  	<td colspan=24>
+  	  <%= @shokumei %> 
+    </td>	  	
+  </tr>  
+   <tr>
+  	<td colspan=8>
+  	  セッション制限
+  	</td>	
+  	<td colspan=24>
+  	  <%= @session_period %> 
+  	</td>	  	
+  </tr>  
+</table>  

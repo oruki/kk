@@ -1,0 +1,195 @@
+﻿
+<script type="text/javascript">
+	j$(function() {
+		j$("#datepicker").datepicker();
+	});
+</script>
+
+<%= javascript_include_tag "ui.datepicker-ja.js" %>
+<!-- End demo -->
+
+
+
+
+<%= @hizuke %>
+<%= title_bar("rec", "グループ業務日誌｜#{@hizuke.to_jdate}") %>
+
+
+
+
+<%#= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "reports"} %>  
+
+
+
+
+<% form_tag :action => "group_diary" do %>
+<TABLE CLASS="part">
+	<%= table_col(32) %>
+  <tr>
+    <th colspan=3>日 付</th>
+    <td colspan=11>
+      <%#= select_date(@hizuke) %>     
+       <%= text_field_tag 'datepicker', @hizuke, :class => 'special_input' %>
+
+       
+       
+       
+    </td>
+    
+    <th colspan=3>ｸﾞﾙｰﾌﾟ</th>
+    <td colspan=10>
+      <% yy = Group.all.map{|i| i.cat}.flatten.uniq %>
+      <%= select_tag :group_cat, options_for_select(yy,session[:cur_group_cat]) %> 
+    </td>
+<!--   
+    <td colspan=8>
+      <% xx = Group.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= select_tag :group_id, options_for_select(xx,session[:cur_group].id) %>   
+    </td>
+-->         
+
+    <td colspan=5>	
+      <%= submit_tag "登録/更新" %><br> 
+    </td>
+  </tr>
+</TABLE>
+<% end %>
+
+■ 日付：<%= @hizuke %> ■ グループ：<%= @cat %> ■ カレントグループ：<%= session[:cur_group_cat] %>
+<TABLE CLASS="part"> 
+  <%= table_col(32) %>
+  <tr>
+<!-- ■ 関係スタッフ -->
+    <td colspan=14 style="vertical-align:top">
+    	<%= "■ #{@cat}の指導員リスト" %>
+      <table CLASS="part">
+        <%= table_col(15) %>
+        <tr>
+          <th colspan=4>id</th>
+          <th colspan=5名前</th>    
+          
+          <th colspan=2>出勤</th>
+          <th colspan=2>公休</th>
+          <th colspan=2>出張</th>   
+        </tr>
+      <% for i in @staffs %>
+        <tr>
+          <td colspan=4 style="font-size:9px"><%= i.id %></td>
+          <td colspan=5><%= i.name %></td>  
+          <td colspan=2>
+          	<%#= Attend.of_attend(i.id).of_date(@hizuke).size %>
+          	<%= Attend.of_attend(i.id).select{|i| i.time_start.to_date==@hizuke}.size %>
+          </td>
+          
+          
+          
+          
+          
+          <td colspan=2><%= Attend.of_attend(i.id).size %></td>
+          <td colspan=2></td>      
+        </tr>
+      <% end %> 
+      </table>
+    </td>
+
+<!-- ■　スタッフ記録 -->
+    <td colspan=18 style="vertical-align:top">
+      <%= "■ #{@cat}の指導員外出記録" %>
+      <div CLASS="portal-250">
+        <%= render(:partial => "staff_recs",
+               :object => @staff_recs,
+               :locals => { :cont => 'day_recs', :act => 'show' }) %>
+      </div>
+    </td>
+  </tr>
+  
+   <tr> 
+<!-- ■　児　童 -->  	
+    <td colspan=14>
+    	<%= "■ #{@cat}の児童リスト" %>
+   	  <table CLASS="part">
+        <%= table_col(14) %>
+			  <tr>
+			    <th colspan=4>id</th>
+			    <th colspan=5>名前</th>    
+			    
+			    <th colspan=2>外泊</th>
+			    <th colspan=2>学校</th>
+			    <th colspan=2>医療</th>   
+			  </tr>
+				<% for i in @boys %>
+			  <tr>
+			    <td colspan=4 style="font-size:9px"><%= i.id %></td>
+			    <td colspan=5><%= i.name %></td>  	
+			    <td colspan=2><%= ShidouRec.of_date(@hizuke).of_boy(i.id).of_like_cat("外泊").size %></td>
+			    <td colspan=2><%= ShidouRec.of_date(@hizuke).of_boy(i.id).of_like_cat("学校").size %></td>
+			    <td colspan=2><%= ShidouRec.of_date(@hizuke).of_boy(i.id).of_like_cat("医療").size %></td>        
+			  </tr>
+				<% end %> 
+      </table>
+    </td>
+<!-- ■　 -->
+    <td colspan=18 style="vertical-align:top">
+  	
+    	
+      <%= "■ #{@cat}のレポート" %>
+      <div CLASS="portal-250">
+      	
+      	
+      	
+			<script type="text/javascript">
+				j$(function() {
+					j$("#tabs").tabs();
+				});
+			</script>
+
+      <div class="demo">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">行動記録</a></li>
+          <li><a href="#tabs-2">健　　康</a></li>
+          <li><a href="#tabs-3">児童　在院／不在</a></li>
+        </ul>
+        
+        <div id="tabs-1">
+          <% for i in @koudou do %>
+            <%= simple_format(h i.desc) %>
+          <% end %>
+        </div>        
+        <div id="tabs-2">
+          <% for i in @kenkou do %>
+            <%= i.desc %>
+          <% end %>
+        </div>
+        <div id="tabs-3">
+          <%= "グループ児童：　#{@boys.size} 人　内　在籍児童： #{@boys.size-@gaihaku_size} 人　　不在児童： #{@gaihaku_size}人" %>
+          <br><%= "外泊児童： #{@gaihaku_boys}" %>
+        </div>
+      </div>
+      </div><!-- End demo -->
+      	
+      	
+      	
+
+      </div>
+    </td>
+   </tr>  
+</TABLE>
+
+<%= "■ このグループカテゴリー#{@cat}のグループ記録" %>
+
+<div ID="grp_recs" style="display:normal;">
+  	<div ID="group_recs">
+      <%= render(
+          :partial => "shared/group_recs",
+          :object => @group_recs ) if @group_recs %>
+    </div>      
+</div>
+<div ID="shidou_recs" style="display:no8ne;">
+  	<div ID="shido_recs">
+      <%= render(
+          :partial => "shared/shidou_recs2",
+          :object => @shidou_recs ) if @shidou_recs %>
+    </div>      
+</div>

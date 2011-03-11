@@ -1,0 +1,9 @@
+﻿<h1><%= "#{INST_NAME} 担当者さま" %></h1>
+
+<p>大樹システムを利用いただき有難うございます。</p>
+
+添付ファイル：
+  "production.sqlite3"（データバックアップ　SQLITE3形式）<br>
+管理担当<hr>
+<% Time.zone = 'Tokyo'%>
+時間： <%= Time.zone.now.to_s %>

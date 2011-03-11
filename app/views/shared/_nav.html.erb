@@ -1,0 +1,146 @@
+<!-- Here Test Space -->
+
+<script type="text/javascript" src="/javascripts/dropdowntabs.js">
+
+/***********************************************
+* Drop Down Tabs Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<!-- CSS for Drop Down Tabs Menu #1 -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/ddcolortabs.css" />
+
+<!-- CSS for Drop Down Tabs Menu #2 -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/bluetabs.css" />
+
+<!-- CSS for Drop Down Tabs Menu #3 -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/slidingdoors.css" />
+
+
+<!-- CSS for Drop Down Tabs Menu #4 -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/glowtabs.css" />
+
+<!-- CSS for Drop Down Tabs Menu #5 -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/halfmoontabs.css" />
+
+
+<div id="bluemenu" class="bluetabs" style="margin-top:10px;">
+<ul>  
+<!-- <li><a href="" rel="dropmenu_1">ﾏｲﾍﾟｰｼﾞ</a></li> -->
+<li><%= link_to 'ﾏｲﾍﾟｰｼﾞ', new_attend_path,:rel=>"dropmenu_1" %></li>
+<li><a href="" rel="dropmenu_2">台　帳</a></li>
+<li><a href="" rel="dropmenu_3">記　録</a></li>
+<li><a href="" rel="dropmenu_4">報告書</a></li>
+
+<li style= <%="display:#{session[:dsp]}"%> ><a href="" rel="dropmenu_5">ﾏｽﾀｰA</a></li>
+<li style= <%="display:#{session[:dsp]}"%> ><a href="" rel="dropmenu_6">ﾏｽﾀｰB</a></li>
+<li><a href="" rel="dropmenu_7">管理</a></li>
+<!--
+<li><a href="" rel="dropmenu_8">ﾛｸﾞｲﾝ</a></li>
+-->
+<li><a href="" rel="dropmenu_9">ﾛｸﾞｱｳﾄ</a></li>
+
+<li><a href="" rel="dropmenu_10">？</a></li>
+</ul>
+</div>
+
+<!--1st drop down menu -->                                                   
+<div id="dropmenu_1" class="dropmenudiv_b">
+<%= link_to 'マイページ', new_attend_path %>
+</div>
+
+<!--2nd drop down menu -->                                                
+<div id="dropmenu_2" class="dropmenudiv_b">
+<%= link_to '児童預金台帳', { :controller => "accounts", :action => "index" } %>
+<%= link_to '児童台帳', { :controller => "daichos", :action => "index" } %>
+<%= link_to '職員出勤台帳', { :controller => "attends", :action => "index" } %>
+<%= link_to 'ケース記録簿', { :controller => "case_recs", :action => "index" } %>
+</div>
+
+<!--3nd drop down menu -->                                                
+<div id="dropmenu_3" class="dropmenudiv_b">
+<%= link_to '業務記録', { :controller => "day_recs", :action => "index" } %>
+<%= link_to 'ｸﾞﾙｰﾌﾟ記録', { :controller => "group_recs", :action => "index" } %>
+<%= link_to '指導記録', { :controller => "shidou_recs", :action => "index" } %>
+<%= link_to '学校記録', { :controller => "school_recs", :action => "index" } %>
+<%= link_to '医療記録', { :controller => "med_recs", :action => "index" } %>
+<%= link_to '面接外泊記録', { :controller => "stay_out_recs", :action => "index" } %>
+</div>
+
+<!--4th drop down menu -->                                                
+<div id="dropmenu_4" class="dropmenudiv_b">
+<%= link_to '支援計画', { :controller => "shien_keikakus", :action => "index" } %>
+<%= link_to '支援目標', { :controller => "tanki_shien_mokuhyos", :action => "index" } %>
+<%= link_to '児童構成表', { :controller => "reports", :action => "kosei" } %>
+<%= link_to 'グループ業務日誌', { :controller => "reports", :action => "group_diary"} %>
+<%= link_to '入退所状況', { :controller => "reports", :action => "index", :pending=>1 } %>
+<%= link_to '児童成長記録', { :controller => "reports", :action => "index", :pending=>1 } %>
+<%= link_to 'ヒヤリハット', { :controller => "reports", :action => "hiyari_hat" } %>
+<%= link_to 'その他', { :controller => "reports", :action => "abc" } %>
+</div>
+
+<!--5th drop down menu -->                                                
+<div id="dropmenu_5" class="dropmenudiv_b" >
+<%= link_to '児童', { :controller => "boys", :action => "index" } %>
+<%= link_to '指導員', { :controller => "staffs", :action => "index" } %>
+<%= link_to 'グループ', { :controller => "groups", :action => "index" } %>
+<%= link_to '保護者', { :controller => "guardians", :action => "index" } %>
+<%= link_to '教育機関', { :controller => "edu_insts", :action => "index" } %>
+<%= link_to '医療機関', { :controller => "med_insts", :action => "index" } %>
+</div>
+
+<!--6th drop down menu -->                                                
+<div id="dropmenu_6" class="dropmenudiv_b" style="width:120px;">
+  <%= link_to '児童指導員関係', { :controller => "rels", :action => "index" } %>
+  <%= link_to '児童ｸﾞﾙｰﾌﾟ関係', { :controller => "jido_grp_rels", :action => "index" } %>
+  <%#= link_to '児童登録の説明', { :controller => "jido_grp_rels", :action => "jido_reg" } %>
+  <%= link_to '児童保護者関係', { :controller => "jido_guardian_rels", :action => "index" } %>
+  <%= link_to '児童教育機関関係', { :controller => "jido_edu_rels", :action => "index" } %>
+  <%= link_to 'ユーザー', { :controller => "users", :action => "index" } %>
+</div>
+
+<!--7th drop down menu -->                                                
+<div id="dropmenu_7" class="dropmenudiv_b">
+  <%= link_to '設定', :controller => "extras", :action => "index" %>
+  <%= link_to '管理', admins_path %>
+  <%= link_to '伝言', messages_path %>
+  <%= link_to '伝言関係', message_staff_rels_path %>
+</div>
+
+<!--8th drop down menu -->                                                
+<div id="dropmenu_8" class="dropmenudiv_b">
+<%= link_to 'サインアップ', { :controller => "users", :action => "new" } %>
+<%= link_to 'ログイン', { :controller => "session", :action => "new" } %>
+<%= link_to 'ポータル', { :controller => "welcome", :action => "index" } %>
+</div>
+
+<!--9th drop down menu -->                                                
+<div id="dropmenu_9" class="dropmenudiv_b">
+<%= link_to 'ログアウト', logout_url %>
+</div>
+
+<!--10th drop down menu -->     
+                                     
+<div id="dropmenu_10" class="dropmenudiv_b">
+<%= link_to '大樹について', { :controller => "reports", :action => "taiju" } %>
+<%= link_to 'アイコンの説明', { :controller => "reports", :action => "icon" } %>
+<%= link_to '児童登録の説明', { :controller => "reports", :action => "jidou_reg" } %>
+<%= link_to 'スライド01', { :controller => "reports", :action => "slide_01" } %>
+<%= link_to 'スライド02', { :controller => "reports", :action => "slide_02" } %>
+<%= link_to 'スライド03', { :controller => "reports", :action => "slide_03" } %>
+<%= link_to 'スライド04', { :controller => "reports", :action => "slide_04" } %>
+<%= link_to 'スライド05', { :controller => "reports", :action => "slide_05" } %>
+<%= link_to 'スライド06', { :controller => "reports", :action => "slide_06" } %>
+<%= link_to 'スライド07', { :controller => "reports", :action => "slide_07" } %>
+<%= link_to 'coding memo', { :controller => "reports", :action => "pref" } %>
+</div> 
+
+<script type="text/javascript" >
+  //SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+  tabdropdown.init("bluemenu")
+</script>
+
+<%= params[:controller] %> > <%= params[:action] %>

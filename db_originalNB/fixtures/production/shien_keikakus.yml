@@ -1,0 +1,171 @@
+#支援計画／shien_keikaku.yml
+#-------------------------------------------------------------------------------------------------base data
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+#-------------------------------------------------------------------------------------------------SECTION-01
+#施設名　／定数として別クラスを参照する
+#作成者名
+#作成年月日　／created_atとは別にフィールドが必要
+#-------------------------------------------------------------------------------------------------SECTION-02
+#主たる問題
+<% shutaru_mondai = %w{被虐待体験によるトラウマ・行動上の問題} %>
+<% shutaru_mondai << "震災時のトラウマと肉親との死別による喪失感情" %>
+
+#本人の意向
+<% honnin_ikou = %w{母が自分の間違いを認め、誤りたいと言っていると聞いて、母に対するいやな気持ちは持っているが、} %>
+<% honnin_ikou << "父親が自分の間違いを認め、話し合いたいと言っているが、素直に対応できない" %>
+
+#保護者の意向
+<% hogosha_ikou = %w{母親としては、自分のこれまでの行動に対し、不適切であったことを認識し} %>
+<% hogosha_ikou << "父親としては、自分のこれまでの行動が子どもの感情をないがしろにして来たという反省と" %>
+
+#市町村・学校・保育所・職場などの意見
+<% school_iken= %w{出身学校としては、定期的な訪問などにより、家庭を含めて支援していきたい} %>
+<% school_iken<< "自己イメージが低く、コミュニケーションがうまくとれず、対人ストレスが蓄積すると、行動上の問題を起こす" %>
+
+#児童相談者との協議内容
+<% jidou_sodan_kyogi = %w{入所後の経過を見ると、本児も施設生活に適応し始めており、自分の問題性についても認識し、改善しようと取り組んでいる} %>
+<% jidou_sodan_kyogi << "自己イメージが低く、コミュニケーションがうまくとれず、対人ストレスが蓄積すると、行動上の問題を起こす" %>
+
+#支援方針
+<% shien_hoshin = %w{本児童の行動上の問題点の改善及びトラウマからの回復を図ると共に、父親の養育参加などによる母親の養育ストレスを} %>
+<% shien_hoshin << "暗がりの中で薔薇のとげが両腕をあちこち引っかき、男の子はひどい痛みをかんじました。" %>
+
+#-------------------------------------------------------------------------------------------------SECTION-03
+#支援計画の策定及び評価　回数
+<% sakutei_bango = 1 %>
+<% jikai_sakutei_date = 2008-11-15 %>
+#-------------------------------------------------------------------------------------------------SECTION-04
+#長期目標(子ども)　chouki_kodomo
+<% choki_kodomo = ["盗みなどの"] %>
+
+#長期目標(家庭)　choki_katei
+<% choki_katei = ["母親と本児童の関係"] %>
+
+#長期目標(地域)　chouki_chiiki
+<% choki_chiiki = ["定期的かつ必要に"] %>
+
+#長期目標(総合)　choki_sogo
+<% choki_sogo = ["地域からのフォローアップが受けられる"] %>
+
+#特記事項(総合)　tokki_sogo
+<% tokki_sogo = ["通信については開始する"] %>
+#-------------------------------------------------------------------------------------------------SECTION-05
+<% cats = %w{cat-01 cat-02 cat-03 cat-04} %>  #子ども　家庭　地域　総合
+<% dd = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+
+#-------------------------------------------------------------------------------------------------SECTION-06
+# c01:    本人の意向
+# c02:    保護者の意向
+# c03:    市町村・学校・保育所・職場などの意見
+# c04:    児童相談所との協議内容
+
+
+# ■■幼児ｸﾞﾙｰﾌﾟ■■　2003年以降出生　7人
+
+<% for boy in boys_aa %>
+
+shien_keikaku_<%= boy %>:
+  date:                "2008-11-15"
+  jikai_sakutei_date:  "2009-11-15"
+  boy:                 <%= boy %>
+  staff:               <%= staffs_5[rand(4)] %>
+  sakutei_bango:       5
+  shutaru_mondai:      <%= shutaru_mondai[0] %>
+  honnin_ikou:         <%= honnin_ikou[0] %>
+  hogosha_ikou:        <%= hogosha_ikou[0] %>
+  school_iken:         <%= school_iken[0] %>
+  jidou_sodan_kyogi:   <%= jidou_sodan_kyogi[0] %>
+  shien_hoshin:        <%= shien_hoshin[0] %>
+  choki_kodomo:        <%= choki_kodomo[0] %>
+  choki_katei:         <%= choki_katei[0] %>
+  choki_chiiki:        <%= choki_chiiki[0] %>
+  choki_sogo:          <%= choki_sogo[0] %>
+  tokki_sogo:          <%= tokki_sogo[0] %>
+  misc:                <%= boy %>の備考
+
+<% end %>
+
+# ■■男児ｸﾞﾙｰﾌﾟ■■　1990-2001年出生　7人
+
+<% for boy in boys_bb %>
+
+shien_keikaku_<%= boy %>:
+  date:                "2008-11-15"
+  jikai_sakutei_date:  "2009-11-15"
+  boy:                 <%= boy %>
+  staff:               <%= staffs_3[rand(4)] %>
+  sakutei_bango:       5
+  shutaru_mondai:      <%= shutaru_mondai[0] %>
+  honnin_ikou:         <%= honnin_ikou[0] %>
+  hogosha_ikou:        <%= hogosha_ikou[0] %>
+  school_iken:         <%= school_iken[0] %>
+  jidou_sodan_kyogi:   <%= jidou_sodan_kyogi[0] %>
+  shien_hoshin:        <%= shien_hoshin[0] %>
+  choki_kodomo:        <%= choki_kodomo[0] %>
+  choki_katei:         <%= choki_katei[0] %>
+  choki_chiiki:        <%= choki_chiiki[0] %>
+  choki_sogo:          <%= choki_sogo[0] %>
+  tokki_sogo:          <%= tokki_sogo[0] %>
+  misc:                <%= boy %>の備考
+  
+<% end %>
+
+# ■■女児ｸﾞﾙｰﾌﾟ■■　1990-2001年出生　7人
+
+<% for boy in boys_cc %>
+
+shien_keikaku_<%= boy %>:
+  date:                "2008-11-15"
+  jikai_sakutei_date:  "2009-11-15"
+  boy:                 <%= boy %>
+  staff:               <%= staffs_5[rand(4)] %>
+  sakutei_bango:       5
+  shutaru_mondai:      <%= shutaru_mondai[0] %>
+  honnin_ikou:         <%= honnin_ikou[0] %>
+  hogosha_ikou:        <%= hogosha_ikou[0] %>
+  school_iken:         <%= school_iken[0] %>
+  jidou_sodan_kyogi:   <%= jidou_sodan_kyogi[0] %>
+  shien_hoshin:        <%= shien_hoshin[0] %>
+  choki_kodomo:        <%= choki_kodomo[0] %>
+  choki_katei:         <%= choki_katei[0] %>
+  choki_chiiki:        <%= choki_chiiki[0] %>
+  choki_sogo:          <%= choki_sogo[0] %>
+  tokki_sogo:          <%= tokki_sogo[0] %>
+  misc:                <%= boy %>の備考
+  
+<% end %>
+
+# ■■卒業生■■　1989以前出生
+
+<% for boy in boys_dd %>
+
+shien_keikaku_<%= boy %>:
+  date:                "2008-11-15"
+  jikai_sakutei_date:  "2009-11-15"
+  boy:                 <%= boy %>
+  staff:               <%= staffs_1[rand(3)] %>
+  sakutei_bango:       5
+  shutaru_mondai:      <%= shutaru_mondai[0] %>
+  honnin_ikou:         <%= honnin_ikou[0] %>
+  hogosha_ikou:        <%= hogosha_ikou[0] %>
+  school_iken:         <%= school_iken[0] %>
+  jidou_sodan_kyogi:   <%= jidou_sodan_kyogi[0] %>
+  shien_hoshin:        <%= shien_hoshin[0] %>
+  choki_kodomo:        <%= choki_kodomo[0] %>
+  choki_katei:         <%= choki_katei[0] %>
+  choki_chiiki:        <%= choki_chiiki[0] %>
+  choki_sogo:          <%= choki_sogo[0] %>
+  tokki_sogo:          <%= tokki_sogo[0] %>
+  misc:                <%= boy %>の備考
+  
+<% end %>

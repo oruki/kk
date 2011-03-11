@@ -1,0 +1,326 @@
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+
+#---------------------------------------(3)管理ｽﾀｯﾌ（院長／副院長／書記）nogami shintani kazama
+nogami:
+  name:       野上　正也
+  kana_name:  ノガミ　マサヤ
+  birth_date: 1957-12-07
+  sex:        1
+  shokumei:   院長
+  saiyobi:    1980-04-01
+  resd_add:   神戸市東灘区岡崎通り
+  per_add:    神戸市東灘区咽島町
+  tel:        0000-1212-3838
+  tel_hp:     0000-1212-3838
+  user:       usr_nogami
+
+shintani:
+  name:       新谷　真
+  kana_name:  シンタニ　マコト
+  birth_date: 1961-10-28
+  sex:        1
+  shokumei:   副院長
+  saiyobi:    1984-05-12
+  resd_add:   神戸市須磨区古渚通
+  per_add:    神戸市須磨区古渚通
+  tel:        0000-9292-2828
+  tel_hp:     090-0000-0000
+  user:       usr_shintani
+
+kazama:
+  name:       風間　幸平
+  kana_name:  カザマ　コウヘイ
+  birth_date: 1963-04-21
+  sex:        1
+  shokumei:   書記
+  saiyobi:    1986-03-14
+  resd_add:   神戸市中央区南木町
+  per_add:    芦屋市木南岡町
+  tel:        0000-1313-7575
+  tel_hp:     0000-6767-1010
+  user:       usr_kazama
+
+#---------------------------------------(5)嘱託／顧問（特別顧問／嘱託医／家庭支援相談員／臨床心理士／心理士）
+#------------------------------------------fukami kunisaki kojima hasegawa kawanishi
+fukami:
+  name:       深見　貞彦
+  kana_name:  フカミ　サダヒコ
+  birth_date: 1956-04-26
+  sex:        1
+  shokumei:   特別顧問
+  saiyobi:    1995-07-07
+  resd_add:   神戸市中央区七平通
+  per_add:    神戸市中央区神港町
+  tel:        0000-242-8686
+  tel_hp:     090-8080-1010
+  user:       usr_fukami
+
+kunisaki:
+  name:       国崎　幹也
+  kana_name:  クニサキ　ミキヤ
+  birth_date: 1947-03-03
+  sex:        １
+  shokumei:   嘱託医
+  saiyobi:    1987-04-01
+  resd_add:   神戸市兵庫区鹿狩丘町
+  per_add:    神戸市中央区上山手町
+  tel:        0000-3030-8989
+  tel_hp:     0000-7777-3232
+  user:       usr_kunisaki
+
+kojima:
+  name:       小島　芳秀
+  kana_name:  コジマ　ヨシヒデ
+  birth_date: 1972-12-12
+  sex:        1
+  shokumei:   家庭支援相談員
+  saiyobi:    1995-04-01
+  resd_add:   神戸市中央区西新島町
+  per_add:    沖縄市南蛇城町
+  tel:        0000-7878-2424
+  tel_hp:     0000-0202-9797
+  user:       usr_kojima
+
+hasegawa:
+  name:       長谷川　恭子
+  kana_name:  ハセガワ　キョウコ
+  birth_date: 1974-09-06
+  sex:        2
+  shokumei:   臨床心理士
+  saiyobi:    2006-04-01
+  resd_add:   神戸市北区伊佐美町
+  per_add:    神戸市北区伊佐美町
+  tel:        0000-090909-134134
+  tel_hp:     0000-345345-567567
+  user:       usr_hasegawa
+
+kawanishi:
+  name:       川西　翔子
+  kana_name:  カワニシ　ショウコ
+  birth_date: 1977-12-08
+  sex:        2
+  shokumei:   心理士
+  saiyobi:    2005-04-01
+  resd_add:   神戸市中央区菱港町
+  per_add:    宝塚市奥野平通
+  tel:        0000-2525-2828
+  tel_hp:     0000-9090-8181
+  user:       usr_kawanishii
+
+#---------------------------------------(8)指導員miyadai ota mashima saigo takarada gotoda shirako takenaka
+miyadai:
+  name:       宮台　哲子
+  kana_name:  ミヤダイ　テツコ
+  birth_date: 1967-06-09
+  sex:        2
+  shokumei:   指導員
+  saiyobi:    1988-03-13
+  resd_add:   神戸市長田区勇儀町
+  per_add:    神戸市兵庫区丸野江通
+  tel:        0000-3131-4646
+  tel_hp:     0000-9090-7878
+  user:       usr_miyadai
+
+ota:
+  name:       太田　淳子
+  kana_name:  オオタ　アツコ
+  birth_date: 1977-11-29
+  sex:        2
+  shokumei:   指導員
+  saiyobi:    2000-04-12
+  resd_add:   神戸市灘区霧雨町
+  per_add:    神戸市東灘区博社丘
+  tel:        0000-9090-4040
+  tel_hp:     090-4040-9090
+  user:       usr_ota
+
+mashima:
+  name:       真島　瑠美子
+  kana_name:  マシマ　ルミコ
+  birth_date: 1979-03-23
+  sex:        2
+  shokumei:   指導員
+  saiyobi:    2002-04-15
+  resd_add:   神戸市中央区北山通
+  per_add:    西宮市祝社町
+  tel:        0000-5656-7979
+  tel_hp:     0000-2828-9090
+  user:       usr_mashima
+
+saigo:
+  name:       西郷　松太郎
+  kana_name:  サイゴウ　マツタロウ
+  birth_date: 1982-12-23
+  sex:        1
+  shokumei:   指導員
+  saiyobi:    2005-04-01
+  resd_add:   神戸市兵庫区清盛島町
+  per_add:    神戸市兵庫区清盛島町
+  tel:        0000-2929-3939
+  tel_hp:     090-4343-9090
+  user:       usr_saigo
+
+takarada:
+  name:       財田　圭一
+  kana_name:  タカラダ　ケイイチ
+  birth_date: 1981-10-26
+  sex:        1
+  shokumei:   指導員
+  saiyobi:    2004-07-01
+  resd_add:   神戸市北区糊貞町
+  per_add:    神戸市西区山波通
+  tel:        0000-3939-2424
+  tel_hp:     090-1212-2323
+  user:       usr_takarada
+
+gotoda:
+  name:       後藤田　信子
+  kana_name:  ゴトウダ　ノブコ
+  birth_date: 1986-09-22
+  sex:        2
+  shokumei:   指導員
+  saiyobi:    2008-04-01
+  resd_add:   神戸市長田区義正町
+  per_add:    神戸市垂水区梅宕町
+  tel:        0000-9898-0808
+  tel_hp:     0000-3838-3232
+  user:       usr_gotoda
+
+shirako:
+  name:       白子　護
+  kana_name:  シラコ　マモル
+  birth_date: 1983-09-05
+  sex:        1
+  shokumei:   指導員
+  saiyobi:    2006-04-23
+  resd_add:   神戸市中央区慈汪町
+  per_add:    神戸市西区百部町
+  tel:        0000-1010-4040
+  tel_hp:     090-5151-1515
+  user:       usr_shirako
+  
+
+takenaka:
+  name:       竹中　輝子
+  kana_name:  タケナカ　テルコ
+  birth_date: 1986-02-10
+  sex:        2
+  shokumei:   指導員
+  saiyobi:    2008-04-01
+  resd_add:   神戸市兵庫区蓬莱町
+  per_add:    神戸市兵庫区蓬莱町
+  tel:        0000-2121-1818
+  tel_hp:     0000-8080-2424
+  user:       usr_takenaka
+
+#---------------------------------------(4)保育士tsuji kurata tanashi fujikawa
+tsuji:
+  name:       辻　春香
+  kana_name:  ツジ　ハルカ
+  birth_date: 1985-02-26
+  sex:        2
+  shokumei:   保育士
+  saiyobi:    2004-04-01
+  resd_add:   神戸市長田区丸野丘町
+  per_add:    神戸市長田区丸野丘町
+  tel:        0000-4949-1111
+  tel_hp:     0000-7979-2080
+  user:       usr_tsuji
+
+kurata:
+  name:       倉田　紀子
+  kana_name:  クラタ　ノリコ
+  birth_date: 1984-05-18
+  sex:        2
+  shokumei:   保育士
+  saiyobi:    2005-04-01
+  resd_add:   神戸市垂水区斑鳩丘町
+  per_add:    三田市高野住町
+  tel:        0000-6464-3939
+  tel_hp:     0000-3838-4242
+  user:       usr_kurata
+
+tanashi:
+  name:       田無　芙美子
+  kana_name:  タナシ　フミコ
+  birth_date: 1976-09-30
+  sex:        2
+  shokumei:   保育士
+  saiyobi:    1999-04-12
+  resd_add:   神戸市兵庫区正成町
+  per_add:    奈良市如月丘
+  tel:        0000-7676-1010
+  tel_hp:     0000-0707-7676
+  user:       usr_tanashi
+
+fujikawa:
+  name:       藤川　良子
+  kana_name:  フジカワ　リョウコ
+  birth_date: 1986-07-28
+  sex:        2
+  shokumei:   保育士
+  saiyobi:    2008-05-21
+  resd_add:   神戸市中央区綾瀬町
+  per_add:    明石市岩戸湊町
+  tel:        0000-4848-8282
+  tel_hp:     0000-5353-7979
+  user:       usr_fujikawa
+
+#---------------------------------------(4)調理／栄養士fukushima matsuoka yamano yagi
+fukushima:
+  name:       福島　洋子
+  kana_name:  フクシマ　ヨウコ
+  birth_date: 1964-11-01
+  sex:        2
+  shokumei:   調理員
+  saiyobi:    1988-12-05
+  resd_add:   神戸市東灘区東新島町
+  per_add:    神戸市東灘区菱崎町
+  tel:        0000-3030-2929
+  tel_hp:     0000-4040-3939
+  user:       usr_fukushima
+
+matsuoka:
+  name:       松岡　瑠璃
+  kana_name:  マツオカ　ルリ
+  birth_date: 1972-12-31
+  sex:        2
+  shokumei:   調理員
+  saiyobi:    1992-03-27
+  resd_add:   神戸市中央区上山手町
+  per_add:    神戸市北区湯治町
+  tel:        0000-3939-4242
+  tel_hp:     0000-4949-0909
+  user:       usr_matsuoka
+
+yamano:
+  name:       山野　那津子
+  kana_name:  ヤマノ　ナツコ
+  birth_date: 1985-04-01
+  sex:        2
+  shokumei:   調理員
+  saiyobi:    2005-04-01
+  resd_add:   神戸市東灘区青野庄町
+  per_add:    神戸市東灘区青野庄町
+  tel:        0000-4747-5353
+  tel_hp:     0000-8989-9292
+  user:       usr_yamano
+
+yagi:
+  name:       八木　晋介
+  kana_name:  ヤギ　シンスケ
+  birth_date: 1973-02-25
+  sex:        1
+  shokumei:   栄養士
+  saiyobi:    1996-04-30
+  resd_add:   神戸市中央区千早台
+  per_add:    山口市大達磨町
+  tel:        0000-1212-9090
+  tel_hp:     0000-4343-5656
+  user:       usr_yagi

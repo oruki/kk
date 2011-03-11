@@ -1,0 +1,11 @@
+
+<%= title_bar("rec", "ヒヤリハット（一覧）") %>
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "reports"} %>           
+<%= render :partial => "shared/kikan_select",
+           :locals => {:ctrl => "reports", :act => "hiyari_hat"} %>
+<div ID = "shidou_recs">
+  <%= render :partial => "shared/hiyari_hat",
+             :object => @hiyari_hats %>     
+</div>

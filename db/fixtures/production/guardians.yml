@@ -1,0 +1,333 @@
+# guardians checked 2008.06.13
+hosoda:
+  name:        細田　良一
+  kana_name:   ホソダ　リョウイチ
+  birth_date:  1960-12-22
+  sex:         1
+  occupation:  会社員
+  cond_income: 400
+  cond_health: 療養中
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+sakaguchi:
+  name:        坂口　久子
+  kana_name:   サカグチ　ヒサコ
+  birth_date:  1965-12-22
+  sex:         2
+  occupation:  介護士
+  cond_income: 400
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+shimoyama:
+  name:        下山　一郎
+  kana_name:   シモヤマ　イチロウ
+  birth_date:  1938-12-22
+  sex:         1
+  occupation:  介護士
+  cond_income: 900
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+
+matsumura:
+  name:        松村　誠一
+  kana_name:   マツムラ　セイイチ
+  birth_date:  1953-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 300
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+fujita:
+  name:        藤田　和江
+  kana_name:   フジタ　カズエ
+  birth_date:  1940-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 300
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+tani:
+  name:        谷　静爾
+  kana_name:   タニ　セイジ
+  birth_date:  1970-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+tom:
+  name:        Jhon　Pendleton
+  kana_name:   ペンドルトン　ジョン
+  birth_date:  1959-09-30
+  sex:         1
+  occupation:  海運業
+  cond_income: 700
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+
+# 男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+sugita:
+  name:        杉田　正一
+  kana_name:   スギタ　ショウイチ
+  birth_date:  1963-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 600
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+arai:
+  name:        新井　信二
+  kana_name:   アライ　シンジ
+  birth_date:  1968-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+suzuki:
+  name:        鈴木　恵子
+  kana_name:   スズキ　ケイコ
+  birth_date:  1973-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+shiraishi:
+  name:        白石　順三
+  kana_name:   シライシ　ジュンゾウ
+  birth_date:  1980-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 700
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+kinoshita:
+  name:        木下　昇
+  kana_name:   キノシタ　ノボル
+  birth_date:  1980-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 400
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+nishikawa:
+  name:        西川　聖子
+  kana_name:   ニシカワ　セイコ
+  birth_date:  1978-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 400
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+  
+urakawa:
+  name:        浦河　道哉
+  kana_name:   ウラカワ　ミチヤ
+  birth_date:  1966-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+
+# 女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+adachi:
+  name:        足立　恵子
+  kana_name:   アダチ　ケイコ
+  birth_date:  1969-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 300
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+kojima:
+  name:        児島　健一
+  kana_name:   コジマ　ケンイチ
+  birth_date:  1971-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+yamamoto:
+  name:        山本　始
+  kana_name:   ヤマモト　ハジメ
+  birth_date:  1973-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 800
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+sunayama:
+  name:        砂山　真吾
+  kana_name:   スナヤマ　シンゴ
+  birth_date:  1979-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 800
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+susuda:
+  name:        須々田　かずえ
+  kana_name:   ススダ　カズエ
+  birth_date:  1944-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+mizutani:
+  name:        水谷　豊
+  kana_name:   ミズタニ　ユタカ
+  birth_date:  1975-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+nishio:
+  name:        西尾　善一郎
+  kana_name:   ニシオ　ゼンイチロウ
+  birth_date:  1955-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+
+# 卒業生　1989以前出生 6人
+
+yasuda:
+  name:        安田　満
+  kana_name:   ヤスダ　ミチル
+  birth_date:  1948-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+nakatani:
+  name:        中谷　浩二
+  kana_name:   ナカタニ　コウジ
+  birth_date:  1971-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+yasui:
+  name:        保井　文二
+  kana_name:   ヤスイ　ブンジ
+  birth_date:  1944-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+kato:
+  name:        加藤　智子
+  kana_name:   カトウ　トモコ
+  birth_date:  1985-02-05
+  sex:         2
+  occupation:  自営業
+  cond_income: 300
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+shimizu:
+  name:        清水　成一
+  kana_name:   シミズ　セイイチ
+  birth_date:  1977-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 400
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:
+
+aida:
+  name:        相田　翔
+  kana_name:   アイダ　ショウ
+  birth_date:  1965-02-05
+  sex:         1
+  occupation:  自営業
+  cond_income: 500
+  cond_health: 良好
+  tel:         000-000-0000
+  tel_hp:      000-0000-0000
+  misc:        特になし

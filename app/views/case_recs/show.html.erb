@@ -1,0 +1,59 @@
+﻿<!-- 
+params[:boy_id] ::<%= params[:boy_id]%><br>
+params[:id]    ::<%= params[:id]%><br>
+@case_rec   ::<%= @case_rec.id %><br>
+session[:cur_boy].to_i <%= session[:cur_boy].to_i %>
+session[:cur_boy].id <%= Boy.find(session[:cur_boy]).name if session[:cur_boy]%> 
+session[:cur_boy] <%= session[:cur_boy] %>
+
+mm|yy|kk|knd:<%= session[:mm]%>|<%= session[:yy]%>|<%= session[:kk]%>
+<%= params[:knd]%><br>
+ts:<%= @ts %><br>
+preiod:<%= get_period( session[:yy], session[:mm])[0] %>|
+<%= get_period( session[:yy], session[:mm])[1] %>
+
+-->
+<%= title_bar("rec", "児童ケース記録") %>
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "shidou_recs"} %>
+<%#= fn_bar3(@case_rec) %>
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=6>
+	  <% form_tag (
+	       {:action => :show, :id => @case_rec},
+	       {:method => :get}) do %>
+			<%= select_tag 	"case_rec_id",
+				options_for_select (@options_for_boy, session[:cur_case_rec].to_i),
+				:onchange => 'submit();' %>
+			<% submit_tag '選択する' %>
+		<% end %>
+
+		
+    </td>  
+    <td colspan=6><%=h @case_rec.boy_id %></td>
+    <td colspan=10 style="font-weight:bold;"><%=h @case_rec.boy.name %></td>
+    <td colspan=10><%=h @case_rec.boy.kana_name %></td>
+  </tr>
+
+</TABLE>
+
+
+<%= render(:partial => "shared/kikan_select",
+           :locals => {:ctrl => "case_recs", :act => "show", :id => @case_rec}) %>
+<%= render(:partial => "shared/selector2",
+           :locals => {:id => @case_rec}) %>
+
+<% x = "#{session_to_partial}" %>
+
+<div ID = <%= "#{session[:kk]}_recs" %> >
+<%= render :partial => "shared/#{session_to_partial}",   
+           :object => session_to_obj if session_to_obj %>
+</div>
+
+
+
+
+
+

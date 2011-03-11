@@ -1,0 +1,354 @@
+data60:
+  id: 1
+  title: 生活
+  subtitle: 対人関係
+  value: 交遊関係
+
+data61:
+  id: 2
+  title: 医療
+  subtitle: 医療
+  value: 診察
+
+data62:
+  id: 3
+  title: 医療
+  subtitle: 医療
+  value: 入院
+
+data63:
+  id: 4
+  title: 医療
+  subtitle: 医療
+  value: 通院
+
+data64:
+  id: 5
+  title: 医療
+  subtitle: 症状
+  value: 悪寒
+
+data65:
+  id: 6
+  title: 医療
+  subtitle: 症状
+  value: 腹痛
+
+data66:
+  id: 7
+  title: 医療
+  subtitle: 症状
+  value: 頭痛
+
+data67:
+  id: 8
+  title: 医療
+  subtitle: 症状
+  value: 発熱
+
+data68:
+  id: 9
+  title: 医療
+  subtitle: 症状
+  value: 発作
+
+data69:
+  id: 10
+  title: 医療
+  subtitle: 症状
+  value: めまい
+
+data70:
+  id: 11
+  title: 医療
+  subtitle: 症状
+  value: 外傷
+
+data71:
+  id: 12
+  title: 医療
+  subtitle: 症状
+  value: 歯痛
+
+data72:
+  id: 13
+  title: 医療
+  subtitle: 症状
+  value: せき・たん
+
+data73:
+  id: 14
+  title: 医療
+  subtitle: 症状
+  value: 動悸
+
+data74:
+  id: 15
+  title: 医療
+  subtitle: 症状
+  value: 喘息
+
+data75:
+  id: 16
+  title: 医療
+  subtitle: 症状
+  value: 下痢
+
+data76:
+  id: 17
+  title: 学校
+  subtitle: 出席
+  value: 遅刻
+
+data77:
+  id: 18
+  title: 学校
+  subtitle: 出席
+  value: 早退
+
+data78:
+  id: 19
+  title: 学校
+  subtitle: 出席
+  value: 病欠
+
+data79:
+  id: 20
+  title: 学校
+  subtitle: 出席
+  value: 欠席（その他）
+
+data80:
+  id: 21
+  title: 学校
+  subtitle: 学習
+  value: 試験
+
+data81:
+  id: 22
+  title: 学校
+  subtitle: 学習
+  value: 補習
+
+data82:
+  id: 23
+  title: 学校
+  subtitle: 行事
+  value: 運動会
+
+data83:
+  id: 24
+  title: 学校
+  subtitle: 行事
+  value: 文化祭
+
+data84:
+  id: 25
+  title: 生活
+  subtitle: 生活習慣
+  value: 言葉・態度
+
+data85:
+  id: 26
+  title: 生活
+  subtitle: 生活習慣
+  value: 睡眠・就寝
+
+data86:
+  id: 27
+  title: 生活
+  subtitle: 生活習慣
+  value: 食事・飲食
+
+data87:
+  id: 28
+  title: 生活
+  subtitle: 保護者関係
+  value: 母親
+
+data88:
+  id: 29
+  title: 生活
+  subtitle: 保護者関係
+  value: 父親
+
+data89:
+  id: 30
+  title: 生活
+  subtitle: 保護者関係
+  value: 兄弟姉妹
+
+data90:
+  id: 31
+  title: 学校
+  subtitle: 行事
+  value: 旅行
+
+data91:
+  id: 32
+  title: 学校
+  subtitle: 行事
+  value: 入学
+
+data92:
+  id: 33
+  title: 学校
+  subtitle: 行事
+  value: 卒業
+
+data93:
+  id: 34
+  title: 医療
+  subtitle: 投薬処方
+  value: 処方薬
+
+data94:
+  id: 35
+  title: 生活
+  subtitle: 対人関係
+  value: 学校友人
+
+data95:
+  id: 36
+  title: 医療
+  subtitle: 診断
+  value: 風邪
+
+data96:
+  id: 37
+  title: 医療
+  subtitle: 診断
+  value: インフルエンザ
+
+data97:
+  id: 38
+  title: 医療
+  subtitle: 診断
+  value: 食中毒
+
+data98:
+  id: 39
+  title: 医療
+  subtitle: 診断
+  value: はしか
+
+data99:
+  id: 40
+  title: 外泊等
+  subtitle: 外泊
+  value: 保護者の家
+
+data100:
+  id: 41
+  title: 外泊等
+  subtitle: 外泊
+  value: 旅行など
+
+data101:
+  id: 42
+  title: 外泊等
+  subtitle: 面接
+  value: 保護者
+
+data102:
+  id: 43
+  title: 外泊等
+  subtitle: 面接
+  value: 関係者
+
+data103:
+  id: 44
+  title: 外泊等
+  subtitle: 外出
+  value: 保護者と
+
+data104:
+  id: 45
+  title: 医療
+  subtitle: 投薬処方
+  value: 常備薬
+
+data105:
+  id: 46
+  title: 生活
+  subtitle: 部活動
+  value: 練習
+
+data106:
+  id: 47
+  title: 生活
+  subtitle: 部活動
+  value: 試合
+
+data107:
+  id: 48
+  title: 生活
+  subtitle: 部活動
+  value: 合宿
+
+data108:
+  id: 49
+  title: 生活
+  subtitle: よさこい
+  value: 練習
+
+data109:
+  id: 50
+  title: 生活
+  subtitle: よさこい
+  value: 出演発表
+
+data110:
+  id: 51
+  title: 学校
+  subtitle: 学習
+  value: 受験
+
+data111:
+  id: 52
+  title: 医療
+  subtitle: 診断
+  value: 骨折
+
+data112:
+  id: 53
+  title: 医療
+  subtitle: 診断
+  value: 熱中症
+
+data113:
+  id: 54
+  title: 医療
+  subtitle: 診断
+  value: アトピー
+
+data114:
+  id: 55
+  title: 医療
+  subtitle: 診断
+  value: 蕁麻疹
+
+data115:
+  id: 56
+  title: 生活
+  subtitle: 学園行事
+  value: 準備手伝
+
+data116:
+  id: 57
+  title: 生活
+  subtitle: 学園行事
+  value: クリスマス会
+
+data117:
+  id: 58
+  title: 生活
+  subtitle: 学園行事
+  value: 学園祭
+
+data118:
+  id: 59
+  title: 生活
+  subtitle: よさこい
+  value: 合宿
+

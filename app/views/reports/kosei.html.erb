@@ -1,0 +1,120 @@
+<%= title_bar("rep", "４月１日現在　在籍児童数") %>
+<TABLE CLASS="part">
+<tr　style="font-size:10px">
+  <th style="font-size:10px;text-align:center" colspan=1 rowspan=2>性別</td>
+  <th style="font-size:10px;text-align:center" colspan=1 rowspan=2>全体</td>
+  <th style="font-size:10px;text-align:center" colspan=1 rowspan=2>年少</td>    
+  <th style="font-size:10px;text-align:center" colspan=7>小　学　生</td>  
+  <th style="font-size:10px;text-align:center" colspan=4>中　学　生</td>
+  <th style="font-size:10px;text-align:center" colspan=4>高　校　生</td>	  
+  <th style="font-size:10px;text-align:center" colspan=3>その他</td>	
+</tr>  
+<% for k in %w{小１ 小２ 小３ 小４ 小５ 小６ 計 中１ 中２ 中３ 計 高１ 高２ 高３ 計 大学 他 他計} %>  	
+  <th style="font-size:10px;text-align:center"><%= k %></th>
+<% end %>
+</tr>
+<tr>
+  <th style="font-size:10px;text-align:center">男子</td>
+  <td><%= Boy.scoped_by_status('10').otoko.size %></td>
+<!-- ■　未就学（男）
+-->
+  <%= "<td title = '#{Boy.mishugaku.otoko.map{|i|[i.name]}.join(', ')}'>" %>
+  	<%= Boy.mishugaku.otoko.size %>
+  </td>
+<!-- ■　小学生（男）
+-->    
+<% for k in 6..11 %>
+  <%= "<td title = '#{Boy.gakurei(k).otoko.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).otoko.size %>
+  </td>
+<% end %>
+<!-- 計 --> 
+  <td style="color:orange"><%= Boy.gakurei_range(6,11).otoko.size %></td>
+<!-- ■　中学生（男）
+-->   
+<% for k in 12..14 %>
+  <%= "<td title = '#{Boy.gakurei(k).otoko.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).otoko.size %>
+  </td>
+<% end %>
+<!-- 計 -->
+  <td style="color:orange"><%= Boy.gakurei_range(12,14).otoko.size %></td>
+<!-- ■　高校生（男）
+-->
+<% for k in 15..17 %>
+  <%= "<td title = '#{Boy.gakurei(k).otoko.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).otoko.size %>
+  </td>
+<% end %>
+<!-- 計 -->
+  <td style="color:orange"><%= Boy.gakurei_range(15,17).otoko.size %></td>
+<!-- ■　大学生（男）
+-->  
+  <td title = <%= "#{@daigaku_otoko.join('/')}"%> >
+  	<%= @daigaku_otoko.size %></td>
+<!-- ■　大学生以外（男）
+-->
+  <td title = <%= "#{@daigaku_igai_otoko.join('/')}"%> >
+  	<%= @daigaku_igai_otoko.size %></td> 
+  </td>
+<!-- ■　学齢範囲18．．．25男子
+-->  
+  <td style="color:orange">
+  	<%= Boy.scoped_by_status('10').
+  	      gakurei_range(18,25).otoko.size %>
+  </td>
+</tr>
+
+<tr>
+  <th style="font-size:10px;text-align:center">女子</td>
+  <td><%= Boy.scoped_by_status('10').onna.size %></td>
+<!-- ■　未就学（女）
+-->
+  <%= "<td title = '#{Boy.mishugaku.onna.map{|i|[i.name]}.join(', ')}'>" %>
+  	<%= Boy.mishugaku.onna.size %>
+  </td>
+<!-- ■　小学生（女）
+-->  
+<% for k in 6..11 %>
+  <%= "<td title = '#{Boy.gakurei(k).onna.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).onna.size %>
+  </td>
+<% end %>
+<!-- 計 -->
+  <td style="color:orange"><%= Boy.gakurei_range(6,11).onna.size %></td>
+<!-- ■　中学生（女）
+-->   
+<% for k in 12..14 %>
+  <%= "<td title = '#{Boy.gakurei(k).onna.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).onna.size %>
+  </td>
+<% end %>
+<!-- 計 -->
+  <td style="color:orange"><%= Boy.gakurei_range(12,14).onna.size %></td>
+<!-- ■　高校生（女）
+-->  
+<% for k in 15..17 %>
+  <%= "<td title = '#{Boy.gakurei(k).onna.map{|i|[i.name]}.join(', ')}'>" %>  	
+  	<%= Boy.gakurei(k).onna.size %>
+  </td>
+<% end %>
+<!-- ■　合計
+-->  
+  <td style="color:orange"><%= Boy.gakurei_range(15,17).onna.size %></td>
+<!-- ■　大学生（女）
+-->  
+  <td title = <%= "#{@daigaku_onna.join('/')}"%> >
+  	<%= @daigaku_onna.size %></td>
+<!-- ■　大学生以外（女）
+-->  	
+  <td title = <%= "#{@daigaku_igai_onna.join('/')}"%> >
+  	<%= @daigaku_igai_onna.size %></td> 
+  <td style="color:orange">
+<!-- ■　学齢範囲18．．．25女子
+-->  	
+  	<%= Boy.scoped_by_status('10').
+  	      gakurei_range(18,25).onna.size %>
+  </td>
+</tr>
+
+</TABLE>

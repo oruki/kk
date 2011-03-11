@@ -1,0 +1,44 @@
+<div id='star' style="border:solid 1px green;">
+	
+</div>	
+<% cat=@cats[0] %>
+<%= @p %>
+  <%- form_remote_tag  :url => '/cats/showonly' do -%>
+    <%= check_box_tag(
+          "#{cat.value}",1554, false,
+          :title=>"#{cat.title} | #{cat.subtitle}"
+        ) %> 
+    <%= submit_tag 'sentakusuru' %>
+  <% end -%>
+
+
+ <% @cats.each do |cat| %>
+  <%= link_to_remote "#{cat.value}",
+      :url => {:action => 'boot', :v => "#{cat.value}(#{cat.subtitle})" },
+      :update => "star" %>	
+ <% end %>
+
+ <% form_tag 'helpme', :action => "showonly", :id => "helpme" do %>
+
+ <table CLASS="part">
+  <%= table_col(32) %>	
+
+  <% @cats.each do |cat| %>
+  <tr>
+    <td style="font-size:10px;color:#ccc" colspan=2><%=h cat.title %></td>
+    <td style="font-size:10px;color:#ccc" colspan=3><%=h cat.subtitle %></td>
+    <td style="font-size:10px;" colspan=4><%=h cat.value %></td>
+    <td>
+    	<%= check_box_tag(
+    	    "#{cat.value}", 5, false,
+    	    :title=>"#{cat.title} | #{cat.subtitle}"
+    	    ) %> 
+    </td>	
+  </tr>
+  <% end %>
+ </table>
+  <%= submit_tag '選択する' %>
+<% end %>
+ <%= observe_form 'helpme', :url => { :action => 'showonly' },
+      :frequency => 0.5,:update => "" %>
+<br />

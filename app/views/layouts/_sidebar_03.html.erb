@@ -1,0 +1,61 @@
+
+<!--■右のサイドボックス■ -->
+  <div id=right style="padding:3px;color:grey;text-align:center;background-color:#FBFBF6;z-index:9">
+<!-- ■01■
+current_user.staffの氏名表示と担当児童の氏名リスト表示
+-->
+    <div style="border:solid 1px green; margin-top:18px; padding:5px; font-size:10px; ">
+      <% if current_user %> 
+        <% if current_user.staff %>
+            こんにちわ&nbsp; <b><%= current_user.login %></b>&nbsp; さん、<br>
+            あなたは&nbsp;
+              <%= current_user.staff.name if current_user.staff %>
+              &nbsp; さんですね<br>
+
+<!--
+    session[:checktime]は各コントローラーのbefor_filterで更新される時刻
+    参照先：app/controller/application_controller
+    ■02■　ログイン時間、経過時間、直近操作以降の経過分数（アイドル時間）の表示
+-->
+    <table style="font-size:9px;">
+        <tr>
+            <td colspan=2>
+                <%# if current_user %>
+                    <%= "ﾛｸﾞｲﾝ中：#{current_user.login}" %> &nbsp;
+                    <%= link_to '(ﾛｸﾞｱｳﾄ)', logout_url %><br>
+                <%# end %>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <%= link_to 'ホーム',:controller=>'welcome', :action=>'index' %>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ﾛｸﾞｲﾝ時刻：
+            </td>
+            <td>
+                <%= session[:login_time].strftime( "%H：%M") %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ﾛｸﾞｲﾝ経過：
+            </td>
+            <td>
+                <%= (Time.zone.now - session[:login_time]).div 60 %>分
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ｱｲﾄﾞﾙ時間：
+            </td>
+            <td>
+                <%=(Time.zone.now - session[:timecheck]).div 60 if session[:timecheck] %>
+            </td>
+        </tr>					
+    </table>       
+    </div>
+  </div>

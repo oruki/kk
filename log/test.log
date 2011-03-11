@@ -1,0 +1,13 @@
+  [4;36;1mBoy Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: boys: SELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: boys: SELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: boys: SELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (16.4ms)[0m   [0;1mSELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;35;1mBoy Load (1.5ms)[0m   [0mSELECT * FROM "boys" WHERE ("boys"."sex" = 2) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (3.7ms)[0m   [0;1mSELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;35;1mBoy Load (1.5ms)[0m   [0mSELECT * FROM "boys" WHERE ("boys"."sex" = 2) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (3.7ms)[0m   [0;1mSELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;35;1mBoy Load (1.6ms)[0m   [0mSELECT * FROM "boys" WHERE ("boys"."sex" = 2) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (3.5ms)[0m   [0;1mSELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;35;1mBoy Load (1.5ms)[0m   [0mSELECT * FROM "boys" WHERE ("boys"."sex" = 2) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mBoy Load (3.5ms)[0m   [0;1mSELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;35;1mBoy Load (1.5ms)[0m   [0mSELECT * FROM "boys" WHERE ("boys"."sex" = 2) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m

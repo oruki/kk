@@ -1,0 +1,75 @@
+
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>申請日<br>受付日</th>  
+    <th colspan=4>ID<br>児 童</th>
+    <th colspan=4>受付者</th>
+    <th colspan=4>ID<br>保護者</th>
+    <th colspan=4>外泊(出)先<br>氏名</th>
+    <th colspan=4>期間（自）<br>期間（至）</th>
+    <th colspan=4>申請者住所<br>区分</th>
+    <th colspan=4>確認</th>
+  </tr>
+
+<% for stay_out_rec in stay_out_recs2 %>
+  <tr>
+    <td colspan=4>
+      <%=h stay_out_rec.date %><br>
+      <%=h stay_out_rec.app_date %><br>
+      <%=h stay_out_rec.rcv_date %>
+    </td>
+    <td colspan=4>
+      <%=h stay_out_rec.boy_id %><br>
+      <%= link_to_remote (
+            stay_out_rec.boy.try(:name),
+            :url =>{:action => "stay_out",
+                    :id => stay_out_rec,
+                    :boy => stay_out_rec.boy}) %>
+    </td>
+    <td colspan=4>
+      <%#=h stay_out_rec.rcv_name %><br>
+      <%= link_to_remote (
+            stay_out_rec.staff.try(:name),
+            :url =>{:action => "stay_out",
+                    :id => stay_out_rec,
+                    :staff => stay_out_rec.staff}) %>  
+    </td>
+
+    <td colspan=4>
+      <%=h stay_out_rec.try(:guardian_id) %><br>
+      <%=h stay_out_rec.guardian.try(:name) %>
+    </td>
+    <td colspan=4>
+      <%=h stay_out_rec.place %><br>
+      <%=h stay_out_rec.app_name %>
+    </td>
+    <td colspan=4>
+      <%=h stay_out_rec.period_from %><br>
+      <%=h stay_out_rec.period_to %>
+    </td>
+    <td colspan=4>
+      <%=h stay_out_rec.app_address %><br>
+      <%=h stay_out_rec.case_category %>
+    </td>
+
+    <td colspan=2><%=h stay_out_rec.confirmation %> </td>
+
+    <td>  
+      <% if stay_out_rec.staff == current_user.staff %>
+        <%= go_edit(stay_out_rec, "stay_out_recs") %>
+      <% else %>
+        <%= image_tag("g_reply.gif", :border=>0) %>
+      <% end %>  
+    </td>
+    <td>
+      <% if stay_out_rec.staff == current_user.staff %>
+        <%= link_to image_tag("delete.gif", :border=>0), stay_out_rec, :confirm => '本当に削除してよいですか?', :method => :delete %>
+      <% else %>
+        <%= image_tag("g_delete.gif", :border=>0) %>
+      <% end %>        
+    </td>
+  </tr>
+
+<% end %>
+</table>

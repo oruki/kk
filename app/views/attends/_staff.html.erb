@@ -1,0 +1,37 @@
+<TABLE CLASS="part" width="100%">
+
+<tr>
+  <th colspan=4>氏　　名</th>
+  <td colspan=5><%= @attend.staff.name %></td>
+</tr>
+<tr>
+  <th colspan=4>勤務区分</th>
+  <td colspan=5><%= @attend.misc %></td>
+</tr>
+<tr>
+  <th colspan=4>
+    勤務開始：<br>勤務終了：
+  </th>
+  <td colspan=5>
+    <%= @attend.time_start.strftime('%m.%d-%H:%M') %><br>
+    <%= @attend.time_end.strftime  ('%m.%d-%H:%M') %>
+  </td>
+</tr>
+<tr>
+  <th colspan=4>勤務時間</th>
+  <td colspan=5><%= @dif %>時間</td>
+</tr>
+<tr>
+  <th colspan=4>ﾕｰｻﾞｰID</th>
+  <td colspan=5><%= @attend.staff.user_id %></td>
+</tr>
+<tr>
+  <th colspan=4>ﾛｸﾞｲﾝ名</th>
+  <td colspan=5><%= @attend.staff.user.login if @attend.staff.user %></td>
+</tr>
+<tr>
+  <th colspan=4>勤務台帳ID</th>
+  <td colspan=5><%= @attend.id %></td>
+</tr>
+<%= table_col(9) %>
+</TABLE>

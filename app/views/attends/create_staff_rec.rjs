@@ -1,0 +1,8 @@
+#ＵＴＦ
+#page.replace_html("diary", "createstaffrec")
+page.replace_html("diary", :partial => "diary", 
+                                        :object => @staff_recs,
+                                        :locals => {} )                                                                     
+page["diary"].visual_effect :highlight,
+                            :startcolor => "#ff9900",
+                            :endcolor   => "#ffff99"

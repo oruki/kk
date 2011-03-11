@@ -1,0 +1,77 @@
+<TABLE CLASS="part">
+<tr>
+  <td style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <span style="margin-right:25px">レコード件数：<%#= @tanki_shien_mokuhyo.size %></span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_list %>
+  </td>
+</tr>
+</TABLE>
+
+<% form_for(@tanki_shien_mokuhyo) do |f| %>
+  <%= f.error_messages %>
+<table CLASS="part">
+  <tr>
+    <% 32.times do %>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr>
+    <td colspan=32>
+      カテゴリー：
+      <%#= f.text_field :shien_keikaku_id, :cols=>6 %>
+      <%= f.select(
+            :cat,
+            ['cat-01', 'cat-02', 'cat-03', 'cat-04'],
+            {:include_blank => true} 
+          ) %>  &nbsp;   
+      <%#= f.text_field :cat, :cols=>3 %>
+    <!-- 下記の変更を6.30追加したがなぜか反映しない　-->
+    支援計画ID:
+      <%= f.select(
+            :shien_keikaku_id,
+            ShienKeikaku.find(
+              :all,:order => "boy_id, sakutei_bango"
+            ).map{|i| ["#{i.boy.name}（no.#{i.sakutei_bango}）", i.id]},
+            {:include_blank => true} 
+          ) %>&nbsp; 
+             
+            作成日：   
+      <%= f.date_select(:date,{ :include_blank => true, 
+                                :use_month_numbers => true,
+                                :start_year => Date.today.years_ago(3).year, 
+                                :end_year   => Date.today.year})  %>&nbsp; 
+             
+      <%= f.submit "更新" %>
+      <%= link_to 'このレコードを削除', @tanki_shien_mokuhyo, :confirm => '本当に削除しますか?', :method => :delete %> 
+    </td>
+  </tr>  
+  <tr>
+    <th colspan=8>支援上の課題</th>
+    <th colspan=8>支援目標</th>
+    <th colspan=8>支援内容・方法</th>
+    <th colspan=8>評価・期日</th>    
+  </tr>
+
+  <tr>
+    <td colspan=8>
+      <%= f.text_area :kadai, :cols => "18", :rows => 6 %>
+    </td>
+    <td colspan=8>
+      <%= f.text_area :mokuhyo, :cols => "18", :rows => 6 %>
+    </td>    
+    <td colspan=8>
+      <%= f.text_area :naiyou, :cols => "18", :rows => 6 %>
+    </td>    
+    <td colspan=8>
+      <%= f.text_area :hyoka, :cols => "18", :rows => 6 %><br>
+      
+    </td>       
+  </tr>
+
+</table>
+
+<% end %>

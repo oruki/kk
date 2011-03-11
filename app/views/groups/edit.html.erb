@@ -1,0 +1,36 @@
+<%= title_bar("mst", "児童グループ（編集）")%>
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<%= error_messages_for :group %>
+
+<% form_for(@group) do |f| %>
+<%= table_col(32) %>
+<tr>
+  <th colspan=10>名　称</th>
+  <td colspan=22>
+    <%= f.text_field :name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>カテゴリー</th>
+  <td colspan=22>
+    <%= f.text_field :cat %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>備 考</th>
+  <td colspan=22>
+    <%= f.text_field :misc %>
+  </td>
+</tr>
+
+<tr>
+  <th colspan=10>登録／更新;</th>
+  <td colspan=22>
+    <%= f.submit "登録／更新" %>
+    <%= link_to 'このレコードを削除する', @group, :confirm => '本当に削除しますか?', :method => :delete %> 
+  </td>
+</tr>
+<% end %>
+</TABLE>

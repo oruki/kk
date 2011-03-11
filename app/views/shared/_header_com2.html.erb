@@ -1,0 +1,38 @@
+<!-- used in the header of *rec views -->
+<% id_for_cnt="recnbr" %>
+<% id_for_cnt="recnbr_for_grp_recs" if ctrl == "group_recs" %>
+
+<TABLE class="part">
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=32 style="vertical-align:center; text-align:right; font-size:11px;">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+      <span style="margin-right:25px" ID = <%= "#{id_for_cnt}" %> >
+        レコード件数：<%= cnt %>件
+      </span>
+        <% case params[:month]
+        when "aa" -%> 
+          全月
+        <% when "tm" -%> 
+          今月             
+        <% else -%>
+          <%= session[:yy] if session[:yy] %>年<%= params[:month] %>月 
+        <% end -%>  
+      <span style="margin-left:10px;"> 
+        <%= link_to_mypage %> &nbsp;
+        <% if params[:controller] == "case_recs" %>
+        <% obj = @case_rec %>
+        
+        <%= go_edit(obj) %> &nbsp;
+        <%= go_list %>
+        
+        
+        <% end %>
+        <%= go_new %>  
+        <%= link_pdf %>   
+      </span>  
+    </td>
+  </tr>
+</table>

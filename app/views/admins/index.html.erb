@@ -1,0 +1,183 @@
+<%= debug(session) if session[:manage_mode] == "admin" %>
+<TABLE ID="adm" CLASS="title">
+  <tr>
+    <td title="ﾌﾟﾛｸﾞﾗﾑのﾊﾞｸﾞ報告やﾒﾓを記入してください">システム運用履歴</td>
+  </tr>  
+</TABLE>
+<!-- session data list -->
+<TABLE class="admin">
+  <%= table_col(32) %> 	
+  <tr>
+    <th colspan=7> session[:xxx] </th>
+    <th colspan=5> sessionの値 </th>
+    <th colspan=8> 説　明 </th>
+    <th colspan=8> 関係するｺﾝﾄﾛｰﾗｰ </th>
+    <th colspan=5> session参考値 </th>
+  </tr>
+ <tr>
+    <td colspan=7> [:manage_mode]</td>
+    <td colspan=5>
+    	<%= session[:manage_mode].to_s if session[:manage_mode] %>
+    </td>
+    <td colspan=8> 管理モード</td>
+    <td colspan=8> Admin </td>
+    <td colspan=5>
+    	 <%=session[:manage_mode] if session[:manage_mode] %>
+     </td>
+  </tr>
+ <tr>
+    <td colspan=7> [:timecheck]</td>
+    <td colspan=5>
+    	<%= session[:timecheck].strftime( "%H：%M") if session[:timecheck] %>
+    </td>
+    <td colspan=8> ｱｸｼｮﾝ更新時間</td>
+    <td colspan=8> sessions_controller </td>
+    <td colspan=5>
+    	 <%=(Time.zone.now - session[:timecheck]).div 60 if session[:timecheck] %>
+     </td>
+  </tr>
+  
+  <tr>
+    <td colspan=7> [:login_time]</td>
+    <td colspan=5> <%= session[:login_time].strftime( "%H：%M") %> </td>
+    <td colspan=8> ログイン時間</td>
+    <td colspan=8> sessions_controller </td>
+    <td colspan=5> <%= (Time.zone.now - session[:login_time]). div 60 %></td>
+  </tr>
+    
+  <tr>
+    <td colspan=7> [:jj]</td>
+    <td colspan=5> <%= session[:jj]%> </td>    
+    <td colspan=8> 対象児童か否か</td>
+    <td colspan=8> attend, day_/group_・shidou_・school_・med_・stay_out_rec </td>
+    <td colspan=5> n/a </td>
+  </tr>
+  <tr>
+    <td colspan=7> [:mm]</td>
+    <td colspan=5> <%= session[:mm]%> </td>    
+    <td colspan=8> 選択対象の月など</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> n/a</td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:yy]</td>
+    <td colspan=5> <%= session[:yy]%> </td>    
+    <td colspan=8> 選択対象の年</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> n/a </td>
+  </tr> 
+<br>
+  <tr>
+    <td colspan=7> [:kk]</td>
+    <td colspan=5> <%= session[:kk]%> </td>    
+    <td colspan=8> 選択対象のｶﾃｺﾞﾘｰ</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> n/a </td>
+  </tr>
+  <tr>
+    <td colspan=7> [:attend] </td>
+    <td colspan=5> <%= session[:attend]%> </td>    
+    <td colspan=8> 現在の指導員の出勤票 </td>
+    <td colspan=8> controller </td>
+    <td colspan=5> 氏名:<br>
+      <% if session[:attend] %>
+        <%#= Attend.find(session[:attend]).staff.name %>
+      <% else %>
+        not set  
+      <% end %>
+    </td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:att_id] </td>
+    <td colspan=5> <%= session[:att_id]%> </td>    
+    <td colspan=8>  </td>
+    <td colspan=8> controller </td>
+    <td colspan=5>
+      <% if session[:att_id] %>
+      
+      
+
+      
+        <%#= Attend.find(session[:att_id]).staff.name %>
+      <% else %>
+        not set  
+      <% end %>
+    </td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:grp] </td>
+    <td colspan=5> <%= session[:grp]%> </td>    
+    <td colspan=8> 選択対象のｸﾞﾙｰﾌﾟ </td>
+    <td colspan=8> controller </td>
+    <td colspan=5> n/a </td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:ext0] </td>
+    <td colspan=5> <%#= "#{session[:ext0][0][0].to_s}..." if session[:ext0][0] %> </td>    
+    <td colspan=8> 現在抽出されているIDs（group_rec専用）</td>
+    <td colspan=8> Attend GroupRec </td>
+    <td colspan=5> SIZE：<br><%= session[:ext0].size if session[:ext0] %> </td>
+  </tr>
+  <tr>
+    <td colspan=7> [:ext] </td>
+    <td colspan=5> <%= "#{session[:ext][0]}..." if session[:ext] %> </td>    
+    <td colspan=8> 現在抽出されているIDs（*recs用）</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> ｶｳﾝﾄ数：<br><%= session[:ext].size if session[:ext] %> </td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:user_id]</td>
+    <td colspan=5> <%= session[:user_id] %> </td>    
+    <td colspan=8> 現在のﾕｰｻﾞｰID</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> n/a </td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:cur_boy] </td>
+    <td colspan=5> <%= session[:cur_boy] %> </td>    
+    <td colspan=8> 選択対象の児童ID</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> 氏名：<br> <%= Boy.find(session[:cur_boy]).name if session[:cur_boy] %></td>
+  </tr> 
+  <tr>
+    <td colspan=7> [:cur_shien_keikaku] </td>
+    <td colspan=5> <%= session[:cur_shien_keikaku] if session[:cur_shien_keikaku] %> </td>    
+    <td colspan=8> 選択対象の支援計画票ID</td>
+    <td colspan=8> controller </td>
+    <td colspan=5> 児童氏名：<br> 
+        <%= ShienKeikaku.find(session[:cur_shien_keikaku]).boy.name if session[:cur_shien_keikaku] %>
+    </td>
+  </tr> 
+</TABLE>
+
+
+<table class="part">
+  <%= table_col(32) %> 
+  <tr>
+    <th colspan=2>Date</th>  
+    <th colspan=4>Title</th>
+    <th colspan=5>Cat</th>
+    <th colspan=5>Pos</th>
+    <th colspan=10>Cont</th>
+    <th colspan=6>Reporter</th>
+  </tr>
+
+<% for admin in @admins %>
+  <tr>
+    <td colspan=2><%=h admin.created_at.strftime("%m-%d") %></td>
+    <td colspan=4><%=h admin.title %></td>
+    <td colspan=5><%=h admin.cat %></td>
+    <td colspan=5><%=h admin.pos %></td>
+    <td colspan=10 style="font-size:10px"><%=h admin.cont %></td>
+    <td colspan=3 style="font-size:10px"><%=h admin.reporter %></td>
+
+    <td><%= link_to image_tag("show.gif", :border=>0), admin %></td>
+    <td><%= go_edit(admin) %></td>
+    <td><%= link_to image_tag("delete.gif", :border=>0), admin, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New admin', new_admin_path %>
+<%= link_to 'sessionList', {:action=>:session_list}, {:method=>:get} %>
+<br>

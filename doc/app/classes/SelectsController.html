@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: SelectsController</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">SelectsController</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/app/controllers/selects_controller_rb.html">
+                app/controllers/selects_controller.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="ApplicationController.html">
+                ApplicationController
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <ul>
+<li>このｺﾝﾄﾛｰﾗｰを利用するﾋﾞｭｰ：部分ﾃﾝﾌﾟﾚｰﾄ（_shidou;_school_recs;_med_recs;_stay_out_recs）から参照される
+
+</li>
+<li>用途：対象児童／指導員のみを含むｵﾌﾞｼﾞｪｸﾄ（ﾚｺｰﾄﾞ）を抽出する
+
+</li>
+<li>rout:各ｱｸｼｮﾝに対するﾋﾞｭｰは.rjsﾌｧｲﾙでreplace_htmlを実行する（AJAX）
+
+</li>
+</ul>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000204">group_rec</a>&nbsp;&nbsp;
+      <a href="#M000200">hit</a>&nbsp;&nbsp;
+      <a href="#M000201">kick</a>&nbsp;&nbsp;
+      <a href="#M000202">med</a>&nbsp;&nbsp;
+      <a href="#M000197">sel</a>&nbsp;&nbsp;
+      <a href="#M000198">select_accounts</a>&nbsp;&nbsp;
+      <a href="#M000199">select_jido_in_jido_edu_rels</a>&nbsp;&nbsp;
+      <a href="#M000203">stay_out</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+    <div id="includes">
+      <h3 class="section-bar">Included Modules</h3>
+
+      <div id="includes-list">
+        <span class="include-name"><a href="SelectsHelper.html">SelectsHelper</a></span>
+      </div>
+    </div>
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000204" class="method-detail">
+        <a name="M000204"></a>
+
+        <div class="method-heading">
+          <a href="#M000204" class="method-signature">
+          <span class="method-name">group_rec</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000204-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000204-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 122</span>
+122:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">group_rec</span>
+123:     <span class="ruby-ivar">@group_recs</span> = <span class="ruby-identifier">recs</span>(<span class="ruby-value str">&quot;group_rec&quot;</span>,<span class="ruby-value str">&quot;hizuke&quot;</span>)
+124:     <span class="ruby-ivar">@group_recs_cnt</span> = <span class="ruby-ivar">@group_recs</span>.<span class="ruby-identifier">size</span>   
+125:     <span class="ruby-identifier">recs_rjs2</span>(<span class="ruby-value str">&quot;group_recs&quot;</span>)    
+126:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000200" class="method-detail">
+        <a name="M000200"></a>
+
+        <div class="method-heading">
+          <a href="#M000200" class="method-signature">
+          <span class="method-name">hit</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000200-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000200-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 77</span>
+77:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hit</span>
+78:     <span class="ruby-ivar">@shidou_recs</span> = <span class="ruby-identifier">recs</span>(<span class="ruby-value str">&quot;shidou&quot;</span>)
+79:     <span class="ruby-ivar">@shidou_recs_cnt</span> = <span class="ruby-ivar">@shidou_recs</span>.<span class="ruby-identifier">size</span>   
+80:     <span class="ruby-identifier">recs_rjs</span>(<span class="ruby-value str">&quot;shidou_recs&quot;</span>)    
+81:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000201" class="method-detail">
+        <a name="M000201"></a>
+
+        <div class="method-heading">
+          <a href="#M000201" class="method-signature">
+          <span class="method-name">kick</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000201-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000201-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 91</span>
+91:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">kick</span>
+92:     <span class="ruby-ivar">@school_recs</span> = <span class="ruby-identifier">recs</span>(<span class="ruby-value str">&quot;school&quot;</span>)
+93:     <span class="ruby-ivar">@school_recs_cnt</span> = <span class="ruby-ivar">@school_recs</span>.<span class="ruby-identifier">size</span>
+94:     <span class="ruby-identifier">recs_rjs</span>(<span class="ruby-value str">&quot;school_recs&quot;</span>) 
+95:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000202" class="method-detail">
+        <a name="M000202"></a>
+
+        <div class="method-heading">
+          <a href="#M000202" class="method-signature">
+          <span class="method-name">med</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000202-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000202-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 100</span>
+100:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">med</span>
+101:     <span class="ruby-ivar">@med_recs</span> = <span class="ruby-identifier">recs</span>(<span class="ruby-value str">&quot;med&quot;</span>)
+102:     <span class="ruby-ivar">@med_recs_cnt</span> = <span class="ruby-ivar">@med_recs</span>.<span class="ruby-identifier">size</span>
+103:     <span class="ruby-identifier">recs_rjs</span>(<span class="ruby-value str">&quot;med_recs&quot;</span>)   
+104:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000197" class="method-detail">
+        <a name="M000197"></a>
+
+        <div class="method-heading">
+          <a href="#M000197" class="method-signature">
+          <span class="method-name">sel</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000197-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000197-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 18</span>
+18:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sel</span>
+19:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:knd</span>]   <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:knd</span>]
+20:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:jj</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:jido</span>]  <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:jido</span>]
+21:     <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:mm</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]
+22: <span class="ruby-comment cmt"># params[:year]が設定されていない場合はsession[:yy]を今年に設定する</span>
+23:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+24:       <span class="ruby-identifier">yy</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+25:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] = <span class="ruby-identifier">yy</span>
+26:     <span class="ruby-keyword kw">else</span>
+27:       <span class="ruby-identifier">yy</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-value str">&quot;%Y&quot;</span>)
+28:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] = <span class="ruby-identifier">yy</span>
+29:     <span class="ruby-keyword kw">end</span>
+30: <span class="ruby-comment cmt">#</span>
+31:     <span class="ruby-identifier">model_name</span> = {
+32:       <span class="ruby-value str">'shidou'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'ShidouRec'</span>, <span class="ruby-value str">'school'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'SchoolRec'</span>,
+33:       <span class="ruby-value str">'med'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'MedRec'</span>, <span class="ruby-value str">'stay_out'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'StayOutRec'</span> 
+34:     }
+35:     <span class="ruby-identifier">rec_object</span> = {
+36:       <span class="ruby-value str">'shidou'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'@shidou_recs'</span>, <span class="ruby-value str">'school'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'@school_recs'</span>,
+37:       <span class="ruby-value str">'med'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'@med_recs'</span>, <span class="ruby-value str">'stay_out'</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value str">'@stay_out_recs'</span>
+38:     }
+39: <span class="ruby-comment cmt"># {rec_object[params[:knd]]} = #{model_name[params[:knd]]}.selected_year('2008')</span>
+40: <span class="ruby-comment cmt"># get this week's from to date</span>
+41:     <span class="ruby-identifier">period_s</span> = <span class="ruby-value">1</span>.<span class="ruby-identifier">week</span>.<span class="ruby-identifier">ago</span>.<span class="ruby-identifier">to_date</span>          <span class="ruby-comment cmt">#集計開始日</span>
+42:     <span class="ruby-identifier">period_e</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_date</span>       <span class="ruby-comment cmt">#集計終了日</span>
+43:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000198" class="method-detail">
+        <a name="M000198"></a>
+
+        <div class="method-heading">
+          <a href="#M000198" class="method-signature">
+          <span class="method-name">select_accounts</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■SELECT_ACCOUNTS
+</p>
+<pre>
+ method for extracting specific boy in list
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000198-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000198-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 47</span>
+47:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">select_accounts</span>
+48:     <span class="ruby-ivar">@accounts</span> = <span class="ruby-constant">Account</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke DESC&quot;</span>)
+49:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:boy</span>]
+50:       <span class="ruby-ivar">@accounts</span> = <span class="ruby-constant">Account</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'boy_id=?'</span>,<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:boy</span>]], <span class="ruby-identifier">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;hizuke DESC&quot;</span>)
+51:     <span class="ruby-keyword kw">end</span>
+52:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000199" class="method-detail">
+        <a name="M000199"></a>
+
+        <div class="method-heading">
+          <a href="#M000199" class="method-signature">
+          <span class="method-name">select_jido_in_jido_edu_rels</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■SELECT_JIDO_IN_JIDO_EDU_RELS
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000199-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000199-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 55</span>
+55:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">select_jido_in_jido_edu_rels</span>
+56:     <span class="ruby-ivar">@jido_edu_rels</span> = <span class="ruby-constant">JidoEduRel</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>)
+57:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:boy</span>]
+58:       <span class="ruby-ivar">@jido_edu_rels</span> = <span class="ruby-constant">JidoEduRel</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'boy_id=?'</span>,<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:boy</span>]])
+59:     <span class="ruby-keyword kw">end</span>
+60:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:edu_inst_name</span>]
+61:       <span class="ruby-ivar">@jido_edu_rels</span> = <span class="ruby-constant">JidoEduRel</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>, <span class="ruby-identifier">:conditions=</span><span class="ruby-operator">&gt;</span>[<span class="ruby-value str">'edu_inst_id=?'</span>,<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:edu_inst_name</span>]])
+62:     <span class="ruby-keyword kw">end</span>
+63:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:edu_inst_cat</span>]
+64:       <span class="ruby-ivar">@jido_edu_rels</span> = <span class="ruby-constant">JidoEduRel</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>).<span class="ruby-identifier">select</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">i</span>.<span class="ruby-identifier">edu_inst</span>.<span class="ruby-identifier">cat</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:edu_inst_cat</span>]} 
+65:     <span class="ruby-keyword kw">end</span>
+66:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000203" class="method-detail">
+        <a name="M000203"></a>
+
+        <div class="method-heading">
+          <a href="#M000203" class="method-signature">
+          <span class="method-name">stay_out</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000203-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000203-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/selects_controller.rb, line 111</span>
+111:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">stay_out</span>
+112:     <span class="ruby-ivar">@stay_out_recs</span> = <span class="ruby-identifier">recs</span>(<span class="ruby-value str">&quot;stay_out&quot;</span>)
+113:     <span class="ruby-ivar">@stay_out_recs_cnt</span> = <span class="ruby-ivar">@stay_out_recs</span>.<span class="ruby-identifier">size</span>
+114:     <span class="ruby-identifier">recs_rjs</span>(<span class="ruby-value str">&quot;stay_out_recs&quot;</span>) 
+115:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

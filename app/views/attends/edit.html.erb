@@ -1,0 +1,49 @@
+
+<%= title_bar("bok", "指導員勤務記録（編集）") %>  
+<%= fn_bar2 %>
+
+<% t=Time.now %>
+<% d=Attend.find(:all).map{|i| [i.misc] } %>
+<% a= Staff.find(:all).map{|k| [k.name, k.id]} %>
+<%= error_messages_for :attend %>
+
+<TABLE CLASS="part">
+<%= table_col(32) %> 
+
+<% form_for(@attend) do |f| %>
+<tr>
+  <th colspan=6>スタッフ</th>
+  <td colspan=26><%= f.select(:staff_id, a, {:include_blank=>true}) %></td>
+</tr>
+<tr>
+  <th colspan=6>出勤時間</th>
+  <td colspan=26>
+    <%= f.datetime_select :time_start, :use_month_numbers => true,
+                          :minute_step =>15,
+                          :start_year => Date.today.years_ago(3).year, 
+                          :end_year => Date.today.years_since(3).year %>
+  </td>
+</tr>
+<tr>
+  <th colspan=6>退出時間</th>
+  <td colspan=26>
+     <%= f.datetime_select :time_end, :use_month_numbers => true, 
+                           :minute_step =>15,
+                           :start_year => Date.today.years_ago(3).year, 
+                           :end_year => Date.today.years_since(3).year %>
+  </td>
+</tr>
+<tr>
+  <th colspan=6>備　考</th>
+  <td colspan=26><%= f.text_field :misc %></td>
+</tr>
+
+<tr>
+  <td colspan=32 style="text-align:right">    
+    <%= f.submit "更新" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= link_to 'このレコードを削除する', @attend, :confirm => '本当に削除しますか?', :method => :delete %>
+  </td>
+</tr>
+
+<% end %>
+</TABLE>

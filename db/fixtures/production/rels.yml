@@ -1,0 +1,65 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# base data for case_rec
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+# ----------------------------------------幼児ｸﾞﾙｰﾌﾟ　2003年以降出生　7人
+
+<% for i in boys_aa %>
+<% for j in staffs_5 %>
+<%= i+j %>:
+  boy:          <%= i %>
+  staff:        <%= j %>
+  relation:     1
+  date_expired: nil
+  misc:         幼児ｸﾞﾙｰﾌﾟ
+<% end %>
+<% end %>
+
+# ----------------------------------------男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% for i in boys_bb %>
+<% for j in staffs_3 %>
+<%= i+j %>:
+  boy:          <%= i %>
+  staff:        <%= j %>
+  relation:     2
+  date_expired: nil
+  misc:         男児ｸﾞﾙｰﾌﾟ
+<% end %>
+<% end %>
+
+# ----------------------------------------女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% for i in boys_cc %>
+<% for j in staffs_4 %>
+<%= i+j %>:
+  boy:          <%= i %>
+  staff:        <%= j %>
+  relation:     3
+  date_expired: nil
+  misc:         女児ｸﾞﾙｰﾌﾟ
+<% end %>
+<% end %>
+
+# ----------------------------------------卒業生　1989以前出生
+
+<% for i in boys_dd %>
+<% for j in staffs_1 %>
+<%= i+j %>:
+  boy:          <%= i %>
+  staff:        <%= j %>
+  relation:     4
+  date_expired: nil
+  misc:         卒業生ｸﾞﾙｰﾌﾟ
+<% end %>
+<% end %>

@@ -1,0 +1,55 @@
+<div id="hoge">
+	
+	
+	at first
+</div>	
+	
+
+
+<TABLE ID="mst" CLASS="title">
+  <tr>
+    <td>児童保護者関係（一覧）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part"> 
+  <tr>
+    <td colspan=32 style="text-align:right; ">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+      <span style="margin-right:25px">レコード件数：<%= @jido_guardian_rels.size %></span>     
+      <%= link_to_mypage %> &nbsp;
+      <%= go_new %>
+    </td>
+  </tr>
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=5>児童ID/氏名</th>
+    <th colspan=5>保護者ID/氏名</th>
+    <th colspan=3>関係</th>
+    <th colspan=3>続柄</th>
+    <th colspan=5>終了日</th>
+    <th colspan=11>作成日/更新日</th>
+  </tr>
+<% for jido_guardian_rel in @jido_guardian_rels %>
+  <tr>
+    <td colspan=5>
+      <%=h jido_guardian_rel.boy_id %><br>
+      <%=h jido_guardian_rel.boy.name %>
+    </td>
+    <td colspan=5>
+      <%=h jido_guardian_rel.guardian_id %><br>
+      <%=h jido_guardian_rel.guardian.name %>
+    </td>
+    <td colspan=3><%=h jido_guardian_rel.relation %></td>
+    <td colspan=3><%=h jido_guardian_rel.zokugara %></td>
+    <td colspan=5><%=h jido_guardian_rel.date_expired %></td>
+    <td colspan=10>
+      <%=h jido_guardian_rel.created_at %><br>
+      <%=h jido_guardian_rel.updated_at %>
+    </td>
+    <td><%= go_edit(jido_guardian_rel) %></td>
+  </tr>
+<% end %>
+</table>

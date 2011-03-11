@@ -1,0 +1,11 @@
+<%= title_bar("rec", "学校記録（一覧）") %>  
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "school_recs"} %>
+
+<%= render :partial => "shared/kikan_select",
+           :locals => {:ctrl => "school_recs", :act => "index"} %>
+<div ID = "school_recs">
+  <%= render :partial => "shared/school_recs2",
+             :object => @school_recs %>              
+</div>

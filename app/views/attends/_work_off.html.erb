@@ -1,0 +1,14 @@
+﻿<!--
+退出時間セレクトボックス
+-->
+
+<span style="float:left;">
+<%= select_tag 'hour_off',
+      options_for_select(
+        (5..24).to_a,session[:hh_off].to_i #default
+      ) %>
+<%= select_tag "min_off",
+      options_for_select (
+        %w{00 15 30 45},session[:mm_off]
+      )%>
+</span>  

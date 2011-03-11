@@ -1,0 +1,5 @@
+﻿<% for i in (5..28)%>
+<%#= link_to_function("#{i.to_s} ", nil, :id => "") do |page|
+    page.replace_html ("dog", render(:partial => "setmm", :locals => {:p => i}))
+  end %><%=  i %>
+<% end %>

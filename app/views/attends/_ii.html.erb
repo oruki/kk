@@ -1,0 +1,11 @@
+﻿<% if session[:hh] %>
+  <% x = session[:hh].to_i %>
+<% else %>
+  <% x = 5 %>
+<% end %> 
+
+<% for i in (x..24)%>
+  <span style="margin-right:5px">
+   <%= link_to_remote "#{i.to_s}", :update => "",
+    :url => {:action => "show_mm", :hh=>i, :kubun=>"workoff"} %></span>
+<% end %>

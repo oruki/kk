@@ -1,0 +1,46 @@
+
+<%= title_bar("mst", "児童指導員関係（一覧）") %>  
+<TABLE CLASS="part">
+  <tr>
+    <td colspan=32 style="text-align:right">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+      <span style="padding:0 10px 0 15px;">
+        <%= link_to "担当児童", :action=>:index, :staff_id=>current_user.staff.id %>
+      </span>  
+      <span style="padding:0 30px 0 10px;">
+        <%= link_to "全児童", :action=>:index %>
+      </span>
+
+      <span style="margin-right:20px">
+        レコード数：<%= @rels.size %>件
+      </span>
+      <%= go_new %>
+    </td>
+  </tr>
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=8>児童ID/氏名</th>
+    <th colspan=8>ｽﾀｯﾌID/氏名</th>
+    <th colspan=4>関　係</th>
+    <th colspan=6>期　限</th>
+    <th colspan=6>備　考</th>
+  </tr>
+<% for rel in @rels %>
+  <tr>
+    <td colspan=8>
+      <%= link_to(rel.boy.id, :action => "index", :boy_id => rel.boy_id) %><br>
+      <%=h rel.try(:boy).try(:name) %>
+    </td>
+    <td colspan=8>
+      <%= link_to(rel.staff.id, :action => "index", :staff_id => rel.staff_id) %><br>
+      <%=h rel.staff.name %><br>
+    </td>
+    <td colspan=4><%=h rel.relation %></td>
+    <td colspan=6><%=h rel.date_expired %></td>
+    <td colspan=5><%=h rel.misc %></td>
+    <td colspan=1><%= go_edit(rel) %></td>
+  </tr>
+<% end %>
+</table>

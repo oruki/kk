@@ -1,0 +1,56 @@
+<%= title_bar("rep", "児童支援計画（一覧）") %>  
+<%= fn_bar %>
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>児童ID/氏名</th>
+    <th colspan=5>作成/更新/担当</th>
+    <th colspan=15>本人/保護者/学校/児童相談所の意向・意見</th>
+    <th colspan=8>備考欄</th>
+  </tr>
+<% a="height:80px; overflow:auto;" %>
+<% for shien_keikaku in @shien_keikakus %>
+  <tr>
+    <td colspan=4>
+      <div style="height:50px">
+        <%=h shien_keikaku.boy.name %><br>
+        <span style="font-size:8px;line-height:10px">
+          <%=h shien_keikaku.boy_id %>
+        </span>  <br>
+        
+        <span style="font-size:10px;line-height:12px;color:#ff9966">
+          <%="Vol.#{shien_keikaku.sakutei_bango}"%>
+        </span>  <br>
+        <span style="font-size:8px;line-height:10px">
+          <%=h shien_keikaku.id %>
+        </span>  <br>
+      </div>
+    </td>
+    <td colspan=5>
+      <div style="font-size:10px;">
+        作成：<%=h shien_keikaku.date %><br>
+        更新：<%=h shien_keikaku.updated_at.to_date %>
+        担当：<%=h shien_keikaku.staff.name %>
+      </div>
+    </td>
+    <td colspan=15>
+      <div style="font-size:10px;line-height:11px; padding:2px;">
+        <span style="color:#ff9966;">
+          ■<%=h shien_keikaku.shutaru_mondai.max_char(27) if shien_keikaku.shutaru_mondai %><br>
+        </span>
+        1.<%=h shien_keikaku.honnin_ikou.max_char(27) if shien_keikaku.honnin_ikou %><br>
+        2.<%=h shien_keikaku.hogosha_ikou.max_char(27) if shien_keikaku.hogosha_ikou %><br>
+        3.<%=h shien_keikaku.school_iken.max_char(27) if shien_keikaku.school_iken %><br>
+        4.<%=h shien_keikaku.jidou_sodan_kyogi.max_char(27) if shien_keikaku.jidou_sodan_kyogi %>
+      </div>
+    </td>
+    <td colspan=6>
+      <div style="font-size:10px;line-height:11px; overflow:auto; padding:2px;">
+        <%=h shien_keikaku.misc %>
+      </div>
+    </td>
+    <td style="padding-right:3px;"><%= go_report(shien_keikaku) %></td>
+    <td><%= go_edit(shien_keikaku) %></td>
+  </tr>
+<% end %>
+</TABLE>

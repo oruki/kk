@@ -1,0 +1,3242 @@
+data334:
+  id: 1
+  staff_id: 446796857
+  tenki: 晴れ
+  dekigoto: １７時より理事会あり
+  misc: 小学生ハイキングは中止
+  hizuke: 2009-05-23
+
+data335:
+  id: 2
+  staff_id: 446796857
+  tenki: 晴れ
+  dekigoto: |
+    大樹のシステムについて打合せ
+    その他
+  misc: 特になし
+  hizuke: 2009-05-30
+
+data336:
+  id: 3
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    新任職員研修（高寺） 
+       Ｓ：お話会  
+       湊中ふれあい懇談会（院長）
+  hizuke: 2009-06-25
+
+data337:
+  id: 5
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    評議員会（院長）
+    特別支援学級保護者の集い（森本）
+    プール指導員説明会（鳥取）
+    福原遷都準備（船野）
+    平小５年ミシン実習（鳥取、高寺）
+  hizuke: 2009-06-24
+
+data338:
+  id: 6
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｅちゃん通所（鳥取）
+    フットサル大会打ち合わせ（船野）
+  hizuke: 2009-06-26
+
+data339:
+  id: 7
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 福原遷都祭り
+  hizuke: 2009-06-27
+
+data340:
+  id: 8
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    ケース検討会（Ｍ.Ｎちゃん）（Ｋ.Ｍ君）
+    平野小学校自然学校説明会（中野）
+  hizuke: 2009-06-29
+
+data341:
+  id: 9
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    児童館運営員会（院長、副院長）
+    家庭支援専門相談員連絡会（小栗）
+  hizuke: 2009-06-30
+
+data342:
+  id: 10
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    平野小七夕集会（上田）
+    ＭちゃんＢＴＰ・祖母来院
+    避難訓練
+  misc: 
+  hizuke: 2009-07-01
+
+data343:
+  id: 11
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: 湊中３年修学旅行（４日まで）
+  hizuke: 2009-07-02
+
+data344:
+  id: 12
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    あんすこ来院
+    兵くす幼はっぴい保育
+    Ｙちゃん通所（鳥取）
+    児童館館長研修（院長）
+    神戸まつり打ち合わせ（浦辺）
+  hizuke: 2009-07-03
+
+data345:
+  id: 13
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    るんるんクラブ
+    平野市バザール
+    プール指導員（船野）
+  hizuke: 2009-07-04
+
+data346:
+  id: 14
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子どもフェティバル・よさこい出演・１２名（院長、小栗、船野）
+  hizuke: 2009-07-05
+
+data347:
+  id: 15
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    経営協研修（院長）８日迄
+    職員会議→中止
+    湊中２年トライやる（１０日まで）
+    Ｅちゃん通所（鳥取）
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  hizuke: 2009-07-06
+
+data348:
+  id: 16
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    兵くすのき幼七夕集会（宮崎）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-07-07
+
+data349:
+  id: 17
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    平野小３年学年行事（栄永、森本）
+    ダイエーユ二オン打ち合せ
+  hizuke: 2009-07-09
+
+data350:
+  id: 18
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: Ａちゃん通所（鳥取）
+  hizuke: 2009-07-10
+
+data351:
+  id: 19
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    海光園訪問児童　名（鳥取、森本、中野、高寺、）
+    平小ＰＴＡバレーボール大会（森本）
+    就職フェアー（院長、副院長）
+    神戸よさこい打ち合せ（浦辺）
+  hizuke: 2009-07-11
+
+data352:
+  id: 20
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ　手品教室
+  hizuke: 2009-07-12
+
+data353:
+  id: 21
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵くすのき幼弁当参観（宮崎、木下）
+    湊中個別懇談
+    祇園まつりみたらし手伝い（女児、小栗）
+    親和大カウンセリング（Ｙちゃん鳥取）
+  misc: 
+  hizuke: 2009-07-13
+
+data354:
+  id: 22
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    祇園まつりみたらし手伝い　（男児、）
+    平小見守り活動（栄永）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-07-14
+
+data355:
+  id: 23
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    祇園まつり見物（女児）
+    職員部会学習会（鳥取、中野）交流会（鳥取）
+    激励会（中野、上田）
+  hizuke: 2009-07-15
+
+data356:
+  id: 25
+  staff_id: 221246546
+  tenki: 晴れ,曇り,雨
+  dekigoto: |
+    評議員会（院長）
+    平野小給食最終日
+  hizuke: 2009-07-16
+
+data357:
+  id: 26
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    就業式
+    兵くす幼保護者会（栄永）
+    フットサル準備（船野）
+    兵庫区婦人会盆踊り
+  hizuke: 2009-07-17
+
+data358:
+  id: 27
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    フットサル大会（しあわせの村）
+    平野商店街夏祭りよさこい出演６名
+    簡保実習オリエンテーション
+  hizuke: 2009-07-18
+
+data359:
+  id: 29
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: 定期受け取り
+  hizuke: 2009-08-05
+
+data360:
+  id: 30
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子ども福祉体験（小学生女児、鳥取）
+  hizuke: 2009-08-06
+
+data361:
+  id: 31
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    関西国際大実習生受け入れ男子1名（１５日迄）
+    　バレーボール練習（王子）
+    　鈴蘭台高校三者面談（副院長）
+  hizuke: 2009-08-05
+
+data362:
+  id: 32
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    関西保専実習生受け入れ（男子１名女子２名）  　森川ＴＨカウンセリング
+  hizuke: 2009-08-04
+
+data363:
+  id: 33
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 高知キャンプ最終日（馬路村川遊び）
+  hizuke: 2009-08-03
+
+data364:
+  id: 34
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: 高知キャンプ２日目（野市動物園、安芸納涼祭）
+  hizuke: 2009-08-02
+
+data365:
+  id: 35
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: 高知キャンプ１日目（内原野陶芸館にてお茶碗絵付け体験、わかなご会交流会）
+  hizuke: 2009-08-01
+
+data366:
+  id: 36
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: |
+    祇園みこし（小学生、船野、高寺）
+    神戸まつり三宮パレード
+  hizuke: 2009-07-19
+
+data367:
+  id: 37
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: 海の日
+  hizuke: 2009-07-20
+
+data368:
+  id: 38
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    兵くすのき幼登園日（２３日迄）
+    平野小登校日（２３日迄）
+    子育てサロンクッキング
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-07-21
+
+data369:
+  id: 39
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    中島ＣＷ来院
+    卓球大会反省会（院長、鳥取）
+  hizuke: 2009-07-22
+
+data370:
+  id: 40
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中３年学習会（２９日迄）
+    バレーボール練習（平野小）→中止
+  hizuke: 2009-07-23
+
+data371:
+  id: 41
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    弁護士ケース研究会（院長）
+    バレーボール練習（平野小）
+  hizuke: 2009-07-24
+
+data372:
+  id: 42
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    福原遷都祭反省会（小栗）
+    子ども福祉体験（小学生女児、鳥取）
+  hizuke: 2009-07-25
+
+data373:
+  id: 43
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野小バレーボール大会（Ｎちゃん出場）
+  hizuke: 2009-07-26
+
+data374:
+  id: 44
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 職員会議
+  hizuke: 2009-07-27
+
+data375:
+  id: 45
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    湊中２年登校日
+    バレーボール大会打ち合せ（鳥取）
+    衛生管理調査
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-07-28
+
+data376:
+  id: 46
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小同窓会
+    児童館夏祭り手伝い（鳥取、森本）
+    海釣り招待（小学生、中学生男児、船野、高寺）
+  hizuke: 2009-07-30
+
+data377:
+  id: 47
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 性教育講座（小栗、中野、上田）
+  hizuke: 2009-07-31
+
+data378:
+  id: 48
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野ふれまち盆踊り
+  hizuke: 2009-08-08
+
+data379:
+  id: 49
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ダイエーユニオン来院
+    　平野ふれまち盆踊り準備（中高生男児、小栗、船野）
+  hizuke: 2009-08-07
+
+data380:
+  id: 50
+  staff_id: 110392546
+  tenki: 曇り
+  dekigoto: |
+    鳥取：幸通院
+    鳥取・上田・高寺：平野盆踊り
+  hizuke: 2009-08-08
+
+data381:
+  id: 51
+  staff_id: 110392546
+  tenki: 雨
+  dekigoto: 上田：望ステーション送り
+  hizuke: 2009-08-09
+
+data382:
+  id: 53
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: 職員会議
+  hizuke: 2009-08-10
+
+data383:
+  id: 438291921
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: フィーリングアーツ
+  hizuke: 2009-08-13
+
+data384:
+  id: 438291923
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    就職実習受け入れ（大阪医専）
+    バレーボール練習（平小）
+  hizuke: 2009-08-12
+
+data385:
+  id: 438291924
+  staff_id: 110392546
+  tenki: 曇り
+  dekigoto: |
+    森本：ＤＶＤ上映会
+    高寺：プリキュアショー
+    上田：風呂屋
+  hizuke: 2009-08-15
+
+data386:
+  id: 438291925
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: 高寺：手品教室
+  hizuke: 2009-08-16
+
+data387:
+  id: 438291926
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: 鳥取：sarina買い物
+  hizuke: 2009-08-17
+
+data388:
+  id: 438291927
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    就職実習受け入れ
+    　　プリキュアショー招待（森本、高寺）
+  hizuke: 2009-08-15
+
+data389:
+  id: 438291928
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: 上田：mika通所・erika通院
+  hizuke: 2009-08-18
+
+data390:
+  id: 438291929
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    　関西保専実習受け入れ（３名）
+    　子ども総合専門学院実習オリエンテーション
+    　子ども家庭センター安田ＣＷ来院
+  hizuke: 2009-08-17
+
+data391:
+  id: 438291930
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子育てサロンクッキング（院長、副院長、森本、浦辺）　　森川ＴＨカウンセリング　　Ｍ．Ｔ判定
+  hizuke: 2009-08-18
+
+data392:
+  id: 438291931
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    要保護児童対策協議会（副院長）
+    　バレーボール練習（王子）
+    　野田高登校日
+  hizuke: 2009-08-19
+
+data393:
+  id: 438291932
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    福祉健康フェア打ち合せ（小栗）
+    　バレーボール練習（平小）
+    　プール指導員反省会（船野）
+    　Ａ・ＭちゃんＢＴＰ
+    　
+  misc: 
+  hizuke: 2009-08-20
+
+data394:
+  id: 438291933
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    バレーボール練習（平小）
+    　Ａちゃん通所（鳥取）
+  hizuke: 2009-08-21
+
+data395:
+  id: 438291934
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: |
+    婦人会市政懇談会（上田）
+  hizuke: 2009-08-19
+
+data396:
+  id: 438291935
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: |
+    バレーボール練習・aoi通所（鳥取）
+    同朋学園夏祭り（高寺）
+  misc: 女子部
+  hizuke: 2009-08-21
+
+data397:
+  id: 438291936
+  staff_id: 446796857
+  tenki: 晴れ
+  dekigoto: |
+    16:00  子ども会西條氏よりＴＥＬあり
+    　　　　　ＢＢＱ会、日時の確認について
+    16:30　青少協向氏よりＴＥＬあり
+    　　　　　明日の地蔵盆にいついての人数確認
+  hizuke: 2009-08-22
+
+data398:
+  id: 438291937
+  staff_id: 446796857
+  tenki: 晴れ
+  dekigoto: リフレッシュ引取り迎え　１６時
+  hizuke: 2009-08-23
+
+data399:
+  id: 438291938
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: |
+    バレー練習（鳥取・森本・高寺・上田）
+    平野買い物（鳥取）
+  hizuke: 2009-08-24
+
+data400:
+  id: 438291939
+  staff_id: 110392546
+  tenki: 晴れ
+  dekigoto: バレーボール大会（鳥取・森本・高寺・上田）
+  hizuke: 2009-08-28
+
+data401:
+  id: 438291940
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    バレーボール練習（平小）　　Ａちゃん通所（鳥取）　　同朋学園夏祭り（幼児、小学生、中野、高寺）
+  hizuke: 2009-08-21
+
+data402:
+  id: 438291941
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 神戸空港ミニライブ（女児、上田）
+  hizuke: 2009-08-22
+
+data403:
+  id: 438291942
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議　　バレーボール練習（平小）　　湊中登校日（２６日迄）
+  hizuke: 2009-08-24
+
+data404:
+  id: 438291943
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｓ・フィーリングアーツ　　森川ＴＨカウンセリング
+  hizuke: 2009-08-25
+
+data405:
+  id: 438291944
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: キャンプ（２７日迄）　　バーベキュー大会　　児：ビーフン流し　　
+  hizuke: 2009-08-26
+
+data406:
+  id: 438291945
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 湊中２、３年学習会　　ｓ：あんすこ利用　　バレーボール練習（平小）　　　Ｅちゃん通所（鳥取）
+  hizuke: 2009-08-27
+
+data407:
+  id: 438291947
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: バレーボール大会　　兵くす幼登園日　　センポ理容店散髪ボランティア
+  hizuke: 2009-08-28
+
+data408:
+  id: 438291948
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 追悼式
+  hizuke: 2009-08-29
+
+data409:
+  id: 438291949
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵くすのき幼登園日・同窓会
+  hizuke: 2009-08-31
+
+data410:
+  id: 438291950
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    森川ＴＨカウンセリング
+    避難訓練
+  misc: 
+  hizuke: 2009-08-11
+
+data411:
+  id: 438291951
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 始業式　　兵くすのき幼保護者会（宮崎）　　森川ＴＨカウンセリング　　　　子ども総合専門学院実習受け入れ（５日迄）　　流通科学大学実習受け入れ（２６日迄）
+  hizuke: 2009-09-01
+
+data412:
+  id: 438291952
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｓ：湯舟先生来院
+  hizuke: 2009-09-02
+
+data413:
+  id: 438291953
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: ホストライオンズ理事会（院長）
+  hizuke: 2009-09-03
+
+data414:
+  id: 438291954
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: Ｓ：フィーリングアーツ（学童）
+  hizuke: 2009-09-04
+
+data415:
+  id: 438291955
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：るんるんクラブ
+  misc: 
+  hizuke: 2009-09-05
+
+data416:
+  id: 438291956
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: こいやまつり
+  misc: 
+  hizuke: 2009-09-06
+
+data417:
+  id: 438291957
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議　　
+    親和大カウンセリング（Yちゃん、鳥取）
+    福原遷都実行員会（小栗）
+    平野小５年自然学校（１１日迄）
+  misc: 
+  hizuke: 2009-09-07
+
+data418:
+  id: 438291958
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    平野小見守り活動
+    大阪児相　　ＣＷ来院
+    Ｓ・Ｋ君ＢＴＰ
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-09-08
+
+data419:
+  id: 438291959
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    四県市交流会（鳥取、松下、浦辺）
+    Ｓ：お話会
+  misc: 
+  hizuke: 2009-09-09
+
+data420:
+  id: 438291960
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    野田高創立記念日
+    兵庫区子育て支援連絡会議（院長）
+    大慈理事会（副院長）
+  misc: 
+  hizuke: 2009-09-10
+
+data421:
+  id: 438291961
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子育てサロンクッキング（院長、副院長、木下、森本、浦辺）
+  misc: 
+  hizuke: 2009-09-11
+
+data422:
+  id: 438291962
+  staff_id: 221246546
+  tenki: 雨,豪雨
+  dekigoto: |
+    野田高校修学旅行説明会(栄永）
+    関西保専実習受け入れ（２４日迄）
+    運河祭歌舞伎出演
+    神戸よさこい（ハーバーランド会場）
+  misc: 
+  hizuke: 2009-09-12
+
+data423:
+  id: 438291964
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 神戸よさこい（垂水会場）
+  misc: 
+  hizuke: 2009-09-13
+
+data424:
+  id: 438291965
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    感染症対策連絡会（院長）
+    平小修学旅行説明会
+    Мちゃん通所（鳥取）
+    親和大カウンセリング（Yちゃん、鳥取）
+  misc: 
+  hizuke: 2009-09-14
+
+data425:
+  id: 438291966
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    森川ＴＨカウンセリング
+    Ｓ：将棋教室
+    職員旅行Ａ
+    矢田市長を囲む会（院長、金子、浦辺）
+  misc: 
+  hizuke: 2009-09-15
+
+data426:
+  id: 438291967
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    神戸市社会福祉大会（院長）
+    海星女子実習受け入れ（迄）
+  misc: 
+  hizuke: 2009-09-16
+
+data427:
+  id: 438291968
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    評議員会（院長）
+    避難訓練
+  misc: 
+  hizuke: 2009-09-17
+
+data428:
+  id: 438291969
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    あんすこ庭造り
+    當間先生来院
+    鈴蘭台高校体育祭
+    兵くすのき幼ＰＴＡ大掃除（木下）
+  misc: 
+  hizuke: 2009-09-18
+
+data429:
+  id: 438291970
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中体育祭
+    高知よさこい練習（高校生、大学生、小栗、浦辺、船野）
+  misc: 
+  hizuke: 2009-09-19
+
+data430:
+  id: 438291971
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    passionate alive
+  misc: 
+  hizuke: 2009-09-20
+
+data431:
+  id: 438291972
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: kobe alive
+  misc: 
+  hizuke: 2009-09-21
+
+data432:
+  id: 438291973
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: Ｓ：おはなし会
+  misc: 
+  hizuke: 2009-09-23
+
+data433:
+  id: 438291974
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中代休
+    新型インフルエンザ対策基礎講座（浦辺）
+  misc: 
+  hizuke: 2009-09-24
+
+data434:
+  id: 438291975
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼ハッピー保育
+    職員会議
+    誕生会
+  misc: 
+  hizuke: 2009-09-25
+
+data435:
+  id: 438291976
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 同朋理事会（院長）
+  misc: 
+  hizuke: 2009-09-26
+
+data436:
+  id: 438291977
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    平野子ども会バス旅行（Ｔ君、Ｓちゃん、小栗）
+  misc: 
+  hizuke: 2009-09-27
+
+data437:
+  id: 438291978
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    野田高校修学旅行（１０/２迄）
+    職員旅行Ｂ（２９日迄）
+  misc: 
+  hizuke: 2009-09-28
+
+data438:
+  id: 438291979
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    Ｓ：園田大実習受け入れ（３０日迄）
+    Ｓ：フィーリングアーツ（子育て）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-09-29
+
+data439:
+  id: 438291980
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    矢田たつおを励ます福祉のつどい（院長、副院長、小栗、宮崎、鳥取、金子、浦辺）
+  misc: 
+  hizuke: 2009-09-30
+
+data440:
+  id: 438291981
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: スマイルフェスタ実行委員会
+  misc: 
+  hizuke: 2009-10-01
+
+data441:
+  id: 438291982
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    兵庫くすのき幼保護者会（木下）
+    Ｓ：フィーリングアーツ（学童）
+  misc: 
+  hizuke: 2009-10-02
+
+data442:
+  id: 438291983
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    平野小代休
+    兵庫くすのき幼ハッピー保育
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-10-05
+
+data443:
+  id: 438291984
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    Ｓ：しょうぎ教室
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-10-06
+
+data444:
+  id: 438291985
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    湊中中間考査
+    平野保育所運動会（院長）
+    光都学園施設見学（副院長、宮崎、中野、上田）
+  misc: 
+  hizuke: 2009-10-07
+
+data445:
+  id: 438291986
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 風見鶏の館１００年記念イベント（幼児、小学生、栄永、鳥取）
+  misc: 
+  hizuke: 2009-10-03
+
+data446:
+  id: 438291987
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野小運動会
+  misc: 
+  hizuke: 2009-10-04
+
+data447:
+  id: 438291988
+  staff_id: 221246546
+  tenki: 曇り,雨,豪雨
+  dekigoto: |
+    台風上陸
+    ホストライオンズ理事会（院長）
+    栗田ＣＷ来院
+  misc: 
+  hizuke: 2009-10-08
+
+data448:
+  id: 438291989
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 兵庫くすのき幼運動会（院長、松下、木下）
+  misc: 
+  hizuke: 2009-10-09
+
+data449:
+  id: 438291990
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    Ｓ：るんるんクラブ
+    Ｋ・Ｙ君ＢＴＰ
+  misc: 
+  hizuke: 2009-10-10
+
+data450:
+  id: 438291991
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 兵庫区民運動会
+  misc: 
+  hizuke: 2009-10-11
+
+data451:
+  id: 438291992
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    体育の日
+    ふれまち秋まつり実行委員会（小栗、船野、高寺）
+  misc: 
+  hizuke: 2009-10-12
+
+data452:
+  id: 438291993
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    近養協（鳥取）
+    平野小５年稲刈り（森本）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-10-13
+
+data453:
+  id: 438291994
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    親和大学実習オリエンテーション
+    七五三記念撮影（Ｒ君、宮崎、木下）
+    Ｓ：読み聞かせ→中止
+    平野小６年修学旅行
+    ホストライオンズ勉強会（院長）
+  misc: 
+  hizuke: 2009-10-14
+
+data454:
+  id: 438291995
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    神戸市特定給食協議会（浦辺）
+    Ｍちゃん通所（鳥取）
+    フットサル大会打ち合せ（船野）
+    
+  misc: 
+  hizuke: 2009-10-16
+
+data455:
+  id: 438291996
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    神戸市特定給食協議会（浦辺）
+    Ｍちゃん通所（鳥取）
+    フットサル大会打ち合せ（船野）
+    
+  misc: 
+  hizuke: 2009-10-16
+
+data456:
+  id: 438291997
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    福祉健康フェア（歌舞伎出演、バザー出店）
+    平野商店街秋まつり（よさこい出演）
+  misc: 
+  hizuke: 2009-10-17
+
+data457:
+  id: 438291998
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: ふれあい秋まつり（よさこい出演、焼きそば出店）
+  misc: 
+  hizuke: 2009-10-18
+
+data458:
+  id: 438291999
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    子育てサロンクッキング
+    子育て公開講座
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-10-20
+
+data459:
+  id: 438292000
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員健康診断
+    Ａちゃん通所（鳥取）
+  misc: 
+  hizuke: 2009-10-21
+
+data460:
+  id: 438292001
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小１～４年校外学習
+    兵庫くすのき幼園外保育
+  misc: 
+  hizuke: 2009-10-22
+
+data461:
+  id: 438292002
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 苦情解決セミナー（小栗）
+  misc: 
+  hizuke: 2009-10-23
+
+data462:
+  id: 438292003
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    キャンプ（２５日迄）
+    児童健康診断
+    湊中文化祭
+  misc: 
+  hizuke: 2009-10-24
+
+data463:
+  id: 438292004
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    白百合理事会（院長）
+    Ｊリーグサッカー教室（小学生男児、船野）
+    
+  misc: 
+  hizuke: 2009-10-25
+
+data464:
+  id: 438292005
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    職員会議
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-10-26
+
+data465:
+  id: 438292006
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    ｓ：フィーリングアーツ（子育て）
+    通所（Ｍちゃん）
+    森川ＴＨカウンセリング
+    スマイルフェスタ実行委員会（Ｍ君、Ｙ君、Ａちゃん、Ｅちゃん）
+  misc: 
+  hizuke: 2009-10-27
+
+data466:
+  id: 438292007
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    全養協（院長）30日まで
+    救急安全講座（木下）
+  misc: 
+  hizuke: 2009-10-28
+
+data467:
+  id: 438292008
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子育て市民講座（副院長、宮崎、鳥取、高寺）
+  misc: 
+  hizuke: 2009-10-29
+
+data468:
+  id: 438292009
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 職員健康診断
+  misc: 
+  hizuke: 2009-10-30
+
+data469:
+  id: 438292010
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野市バザール
+    兵庫ふれあいハイキングコース下見
+    避難訓練
+  misc: 
+  hizuke: 2009-10-31
+
+data470:
+  id: 438292011
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    荒田エコフェスタ
+    アイススケート招待
+    野田高文化祭
+  misc: 
+  hizuke: 2009-11-01
+
+data471:
+  id: 438292012
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    兵庫くすのき幼保育公開（宮崎、木下）
+  misc: 
+  hizuke: 2009-11-02
+
+data472:
+  id: 438292013
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: こべっ子文化の集い（歌舞伎、よさこい出演）
+  misc: 
+  hizuke: 2009-11-03
+
+data473:
+  id: 438292014
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    弁護士ケース研究会（院長）
+    沖縄旅行説明会（栄永）
+    給食サービス（小栗）
+    兵庫くすのき幼保育公開（宮崎、木下）
+    S：園田大学実習受け入れ（５日迄）
+  misc: 
+  hizuke: 2009-11-04
+
+data474:
+  id: 438292015
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員部会勉強会（鳥取）
+    兵庫くすのき幼園外保育
+    るんるん秋祭り打ち合せ（小栗）
+    職員健康診断
+    Ｋ・ＴちゃんＢＴＰ
+  misc: 
+  hizuke: 2009-11-05
+
+data475:
+  id: 438292016
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ケースカンファレンス（大島先生）
+    第三者委員研修（副院長）
+    ＦＳＷ連絡会（小栗）
+    Ｓ：お話会・フィーリングアーツ
+  misc: 
+  hizuke: 2009-11-06
+
+data476:
+  id: 438292017
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    防災訓練（小学生、院長、鳥取、中野、佐藤）
+    神港高１年保護者会（栄永）
+  misc: 
+  hizuke: 2009-11-07
+
+data477:
+  id: 438292018
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 兵庫区ふれあいハイキング（小学生高学年、院長、船野、高寺）
+  misc: 
+  hizuke: 2009-11-08
+
+data478:
+  id: 438292019
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    ケース検討会
+    兵庫くすのき幼親子クリーン作戦（宮崎、木下）
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-11-09
+
+data479:
+  id: 438292020
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    クッキング教室
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-11-10
+
+data480:
+  id: 438292021
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    評議員会（院長）
+    湊中授業参観
+    
+  misc: 
+  hizuke: 2009-11-12
+
+data481:
+  id: 438292022
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 経営協（千野）
+  misc: 
+  hizuke: 2009-11-13
+
+data482:
+  id: 438292023
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小音楽会
+  misc: 
+  hizuke: 2009-11-14
+
+data483:
+  id: 438292024
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    Ｓ：手品ショー
+    避難訓練
+  misc: 
+  hizuke: 2009-11-15
+
+data484:
+  id: 438292025
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    親和大カウンセリング（Ｙちゃん、鳥取）
+    平野小、湊中代休
+    職員会議
+  misc: 
+  hizuke: 2009-11-16
+
+data485:
+  id: 438292026
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    西日本研修（船野）１９日迄
+    キッザニア甲子園招待（小学生、院長、栄永、中野）
+    Ｍちゃん通所
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-11-17
+
+data486:
+  id: 438292027
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：つくろう会
+    竹取り手伝い（中野）
+  misc: 
+  hizuke: 2009-11-18
+
+data487:
+  id: 438292028
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小入学前健康診断（Ｋ君、木下）
+    るんるん秋まつり実行員会（小栗）
+  misc: 
+  hizuke: 2009-11-19
+
+data488:
+  id: 438292029
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    あんすこボランティア来院
+    同朋学園理事会（院長）
+    Ｓ：おはなし会
+    るんるん秋まつり手伝い（小栗、船野）
+    学校懇談会
+  misc: 
+  hizuke: 2009-11-20
+
+data489:
+  id: 438292030
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    いも掘り大会（小学生女児、男児１名　栄永、木下、森本、佐藤）
+    外出
+  misc: 
+  hizuke: 2009-11-21
+
+data490:
+  id: 438292031
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: 特記事項なし
+  misc: 
+  hizuke: 2009-11-22
+
+data491:
+  id: 438292032
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野るんるん秋まつり　歌舞伎出演、よさこい出演　焼きそばお手伝い　片づけお手伝い
+  misc: 
+  hizuke: 2009-11-23
+
+data492:
+  id: 438292033
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    養育状況調査８名来院
+    Ｓ：フィーリングアーツ（子育て）
+    Ｓ：加西社協施設見学
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-11-24
+
+data493:
+  id: 438292034
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中３年全体保護者会（栄永）
+    Ｓ：園田大実習受け入れ（２６日迄）
+  misc: 
+  hizuke: 2009-11-25
+
+data494:
+  id: 438292035
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼はっぴい保育
+    経営塾(院長）
+  misc: 
+  hizuke: 2009-11-27
+
+data495:
+  id: 438292036
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ノースライオンズ年末チャリティーバザー打ち合せ（浦辺）
+    Ｋ・Ｍ君ＢＴＰ
+  misc: 
+  hizuke: 2009-11-26
+
+data496:
+  id: 438292037
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: リフレッシュキャンプ（２９日迄）
+  misc: 
+  hizuke: 2009-11-28
+
+data497:
+  id: 438292038
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：将棋教室
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-12-01
+
+data498:
+  id: 438292039
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    湊中期末考査
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-11-30
+
+data499:
+  id: 438292040
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: 平野小４、５年しあわせ駅伝（院長、副院長、栄永、鳥取、森本、高寺、佐藤）
+  misc: 
+  hizuke: 2009-12-05
+
+data500:
+  id: 438292041
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ホストライオンズ理事会
+    平野小個別懇談
+  misc: 
+  hizuke: 2009-12-03
+
+data501:
+  id: 438292042
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    兵庫くすのき幼
+    四県市野球大会（鳥取、船野、高寺）
+    Ｓ：フィーリングアーツ（学童）
+  misc: 
+  hizuke: 2009-12-04
+
+data502:
+  id: 438292043
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    平野町もちつき大会
+    大阪モーターショー招待男児（船野）
+    フィーリングアーツコンサート招待（院長）
+  misc: 
+  hizuke: 2009-12-06
+
+data503:
+  id: 438292044
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    青少年を地域で讃える賞授賞式（小栗）
+    職員会議
+    講演会（副院長、宮崎、中野）
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-12-07
+
+data504:
+  id: 438292045
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    クッキング教室（副院長、木下、森本、浦辺）
+    同朋学園忘年会（院長、副院長）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-12-08
+
+data505:
+  id: 438292046
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：子育てクリスマス会
+    Ｍちゃん判定返し（鳥取）
+  misc: 
+  hizuke: 2009-12-09
+
+data506:
+  id: 438292047
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平小５年校外学習
+    兵庫くすのき幼音楽会（宮崎、木下）
+  misc: 
+  hizuke: 2009-12-10
+
+data507:
+  id: 438292048
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：しょうぎ教室
+    歳末助け合い贈呈式
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-12-15
+
+data508:
+  id: 438292049
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-12-14
+
+data509:
+  id: 438292050
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: キッズフェスタ打ち合せ
+  misc: 
+  hizuke: 2009-12-13
+
+data510:
+  id: 438292051
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：クリスマスゲーム会
+    大慈理事会（副院長）
+  misc: 
+  hizuke: 2009-12-12
+
+data511:
+  id: 438292052
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    評議員会・忘年会（院長）
+    兵庫くすのき幼個別懇談（宮崎）
+    平野保育所クリスマス会（院長）
+  misc: 
+  hizuke: 2009-12-16
+
+data512:
+  id: 438292053
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼もちつき大会（船野）
+    湊中個別懇談
+  misc: 
+  hizuke: 2009-12-17
+
+data513:
+  id: 438292054
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: クリスマス会
+  misc: 
+  hizuke: 2009-12-19
+
+data514:
+  id: 438292055
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：手品教室
+    大阪児相池田ＣＷ来院
+  misc: 
+  hizuke: 2009-12-20
+
+data515:
+  id: 438292056
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員部会忘年会（鳥取、船野、佐藤）
+    ケース検討会
+  misc: 
+  hizuke: 2009-12-21
+
+data516:
+  id: 438292057
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    湊中個別懇談
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2009-12-22
+
+data517:
+  id: 438292059
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: ノースライオンズチャリティーバザー（バザー出店・よさこい出演）
+  misc: 
+  hizuke: 2009-12-23
+
+data518:
+  id: 438292060
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: |
+    兵庫くすのき幼終業式・保護者会（宮崎）
+    平野小給食最終日
+    平野小５年クリスマス会（栄永、鳥取、森本）
+  misc: 
+  hizuke: 2009-12-24
+
+data519:
+  id: 438292061
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 新年挨拶会
+  misc: 
+  hizuke: 2010-01-01
+
+data520:
+  id: 438292062
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 帰寮児・残留児すきやき会
+  misc: 
+  hizuke: 2010-01-02
+
+data521:
+  id: 438292063
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    外出
+  misc: 
+  hizuke: 2010-01-03
+
+data522:
+  id: 438292064
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: もちつき大会
+  misc: 
+  hizuke: 2009-12-28
+
+data523:
+  id: 438292065
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    始業式
+    ホストライオンズ理事会（院長）
+    Ｔ．Ｓ君判定（栄永）
+  misc: 
+  hizuke: 2010-01-07
+
+data524:
+  id: 438292066
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    どんど祭り
+    職員会議
+    新年挨拶会
+  misc: 
+  hizuke: 2010-01-09
+
+data525:
+  id: 438292067
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    沖縄旅行（Ｙ君・栄永）
+    どんど祭り
+    職員会議
+    新年挨拶会
+  misc: 
+  hizuke: 2010-01-09
+
+data526:
+  id: 438292068
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼始業式
+    ホストライオンズ合同例会→欠席
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-01-12
+
+data527:
+  id: 438292069
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼始業式
+    ホストライオンズ合同例会→欠席
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-01-12
+
+data528:
+  id: 438292070
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ君通所（栄永）
+    Ｍちゃん通所（副院長・鳥取職員のみ）
+    Ｓ・Ｈ君ＢＴＰ
+  misc: 
+  hizuke: 2010-01-13
+
+data529:
+  id: 438292071
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    １．１７コンサート打ち合せ
+    弁護士ケース研究会（院長）
+    Ａちゃん通所（鳥取）
+    Ｓ：おはなし会・フィーリングアーツ
+  misc: 
+  hizuke: 2010-01-15
+
+data530:
+  id: 438292072
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    県兵庫工業高校修学旅行
+    Ｒ・ＭちゃんＢＴＰ
+  misc: 
+  hizuke: 2010-01-16
+
+data531:
+  id: 438292073
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    1.17いのちの灯コンサート
+  misc: 
+  hizuke: 2010-01-17
+
+data532:
+  id: 438292074
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    湊中２年全体保護者会（鳥取）
+    親和大カウンセリング（Ｙちゃん・鳥取）
+    Ｔ・Ｉ君ＢＴＰ
+  misc: 
+  hizuke: 2010-01-18
+
+data533:
+  id: 438292075
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    クッキング教室（木下・森本・浦辺）
+    職員部会一泊研修（鳥取・高寺）
+    Ｓ：しょうぎ教室
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-01-19
+
+data534:
+  id: 438292076
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｓ：つくろう会
+  misc: 
+  hizuke: 2010-01-20
+
+data535:
+  id: 438292077
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    評議員会（院長）
+    Ｍちゃん通所（副院長・鳥取）
+  misc: 
+  hizuke: 2010-01-21
+
+data536:
+  id: 438292078
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    グリーンカップ打ち合せ（船野）
+    中２スキーキャンプ打ち合せ（栄永）
+  misc: 
+  hizuke: 2010-01-22
+
+data537:
+  id: 438292079
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    グリーンカップ打ち合せ（船野）
+    中２スキーキャンプ打ち合せ（栄永）
+  misc: 
+  hizuke: 2010-01-22
+
+data538:
+  id: 438292080
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    どんど祭り反省会（小栗・中野）
+    理事会
+  misc: 
+  hizuke: 2010-01-23
+
+data539:
+  id: 438292081
+  staff_id: 221246546
+  tenki: 晴れ,曇り,雨
+  dekigoto: |
+    ケンミン食品お別れ会（院長・副院長）
+    親和大カウンセリング（Ｙちゃん・鳥取）
+    Ｙ・Ｍ君ＢＴＰ
+  misc: 
+  hizuke: 2010-01-25
+
+data540:
+  id: 438292082
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ホストライオンズ例会（院長）
+    樋口ＣＰ来院
+    中央児相来院
+    Ｓ：フィーリングアーツ
+    Ｓ：園田大実習受け入れ
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-01-26
+
+data541:
+  id: 438292083
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼保育公開・講演会（宮崎）
+    Ｍちゃん通所（鳥取）
+    親和大実習オリエンテーション
+    誕生会
+  misc: 
+  hizuke: 2010-01-27
+
+data542:
+  id: 438292084
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    職員会議
+    職員部会スキー研修会２日迄（鳥取）
+    入所（Ａちゃん）
+    
+  misc: 
+  hizuke: 2010-02-01
+
+data543:
+  id: 438292085
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小３年森でもりもり（高寺）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-02-02
+
+data544:
+  id: 438292086
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: 節分
+  misc: 
+  hizuke: 2010-02-03
+
+data545:
+  id: 438292087
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ・Ｔ君判定返し（栄永）
+    平野小入学説明会（宮崎）
+  misc: 
+  hizuke: 2010-02-04
+
+data546:
+  id: 438292088
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：おはなし会
+    Ｓ：フィーリングアーツ（学童）
+  misc: 
+  hizuke: 2010-02-05
+
+data547:
+  id: 438292089
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ハーバーライフ贈呈式（よさこい出演）
+    Ｓ：るんるんクラブ
+  misc: 
+  hizuke: 2010-02-06
+
+data548:
+  id: 438292090
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊川キッズフェスタ
+  misc: 
+  hizuke: 2010-02-07
+
+data549:
+  id: 438292091
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    親和大実習生３名受け入れ（１８日迄）
+  misc: 
+  hizuke: 2010-02-08
+
+data550:
+  id: 438292092
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: |
+    クッキング教室（森本、浦辺）
+    養連スキー大会打ち合せ（鳥取）
+    Ｎ・ＴちゃんＢＴＰ
+  misc: 
+  hizuke: 2010-02-09
+
+data551:
+  id: 438292093
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    私立高校入試
+    虐待防止シンポジウム（宮崎、栄永、佐藤）
+  misc: 
+  hizuke: 2010-02-10
+
+data552:
+  id: 438292094
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    私学高校合格発表
+    センポ理容店散髪ボランティア
+    Ｙ・Ｋ君ＢＴＰ（祖母来院）
+  misc: 
+  hizuke: 2010-02-12
+
+data553:
+  id: 438292095
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    関西保専実習オリエンテーション
+    Ｓ：るんるんクラブ
+  misc: 
+  hizuke: 2010-02-13
+
+data554:
+  id: 438292096
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: Ｓ：手品教室
+  misc: 
+  hizuke: 2010-02-14
+
+data555:
+  id: 438292097
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    湊中新入学説明会（栄永）
+    ケース検討会議（Ｓ・Ｔ）
+    職員会議
+    親和大学カウンセリング（Ｙちゃん・鳥取）
+  misc: 
+  hizuke: 2010-02-15
+
+data556:
+  id: 438292098
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    同朋理事会（院長）
+    県中央児相来院
+    Ｓ：園田大実習受け入れ（１８日迄）
+    Ｓ：しょうぎ教室
+  misc: 
+  hizuke: 2010-02-16
+
+data557:
+  id: 438292099
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｓ：つくろう会
+  misc: 
+  hizuke: 2010-02-17
+
+data558:
+  id: 438292100
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: Ｙ・Ｔ君ＢＴＰ
+  misc: 
+  hizuke: 2009-08-09
+
+data559:
+  id: 438292101
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｓ・ＫちゃんＢＴＰ
+  misc: 
+  hizuke: 2009-12-29
+
+data560:
+  id: 438292102
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: Ｅ・Ｔちゃん　Ｋ・Ｔ君ＢＴＰ
+  misc: 
+  hizuke: 2010-01-28
+
+data561:
+  id: 438292103
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    親和大実習受け入れ（２９日迄）
+    職員健康診断
+    親和大カウンセリング(Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2009-10-19
+
+data562:
+  id: 438292104
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: ふれまち施設見学（小栗・中野）
+  misc: 
+  hizuke: 2010-01-29
+
+data563:
+  id: 438292105
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    グリーンカップ
+    ミュゼ交流会
+  misc: 
+  hizuke: 2010-01-30
+
+data564:
+  id: 438292106
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: みかん摘果ボランティア（栄永、中野）
+  misc: 
+  hizuke: 2010-01-31
+
+data565:
+  id: 438292107
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-01-05
+
+data566:
+  id: 438292108
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 避難訓練
+  misc: 
+  hizuke: 2010-01-14
+
+data567:
+  id: 438292109
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 避難訓練
+  misc: 
+  hizuke: 2009-12-26
+
+data568:
+  id: 438292111
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    S：フィーリングアーツ（子育て）
+    家庭支援専門相談員連絡会（小栗）
+  misc: 
+  hizuke: 2010-02-18
+
+data569:
+  id: 438292112
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    関西保育専門学校実習受け入れ（３/４迄）
+    兵庫くすのき幼生活発表会（宮崎・木下）
+    大慈理事会（副院長）
+  misc: 
+  hizuke: 2010-02-20
+
+data570:
+  id: 438292113
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: スマイルフェスタ（よさこい出演１２名）
+  misc: 
+  hizuke: 2010-02-21
+
+data571:
+  id: 438292114
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    神戸市行政監査
+    湊中期末考査
+  misc: 
+  hizuke: 2010-02-22
+
+data572:
+  id: 438292115
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    大阪公立高校入試（ＹＴ君）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-02-23
+
+data573:
+  id: 438292116
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 大阪児相養育状況調査
+  misc: 
+  hizuke: 2010-02-24
+
+data574:
+  id: 438292117
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 兵庫くすのき幼園外保育
+  misc: 
+  hizuke: 2010-02-25
+
+data575:
+  id: 438292118
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    養連スキー大会２８日迄（中二３名、鳥取、船野）
+    平野小１年ミニ運動会（宮崎、森本）
+    Ｓ：お話会
+  misc: 
+  hizuke: 2010-02-26
+
+data576:
+  id: 438292119
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    福原遷都実行委員会（小栗）
+    こべっこランド卓球大会（小５ＭＨちゃん、ＹＹ君、森本）
+    ミステリーツアー（小学生低学年、高寺）
+    みかん配送特養慰問（中高生、院長、中野）
+  misc: 
+  hizuke: 2010-02-27
+
+data577:
+  id: 438292120
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 入所（小２ＫＫ君）
+  misc: 
+  hizuke: 2010-03-01
+
+data578:
+  id: 438292121
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    心理担当職員連絡会（森川、鳥取、高寺）
+    生野工業高校合格発表
+  misc: 
+  hizuke: 2010-03-02
+
+data579:
+  id: 438292122
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    中堅職員研修（鳥取）
+    湊中三送会（栄永・中野）
+  misc: 
+  hizuke: 2010-03-03
+
+data580:
+  id: 438292123
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    トィンクル来院
+    ホストライオンズ理事会（院長）
+  misc: 
+  hizuke: 2010-03-04
+
+data581:
+  id: 438292124
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小お別れ遠足
+    キッザニア招待（小学生、中学生２名、副院長、鳥取、船野、高寺）
+  misc: 
+  hizuke: 2010-03-05
+
+data582:
+  id: 438292125
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    理事会
+    外出
+  misc: 
+  hizuke: 2010-03-06
+
+data583:
+  id: 438292126
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    親和大カウンセリング（Ｙちゃん・鳥取）
+    平野るんるんクラブ運営員会（小栗）
+    イシハラ防災来院
+    神戸花物語苗寄贈（船野）
+    
+  misc: 
+  hizuke: 2010-03-08
+
+data584:
+  id: 438292127
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    クッキング教室（院長、木下、森本、浦辺）
+    森川ＴＨカウンセリング
+  misc: 
+  hizuke: 2010-03-09
+
+data585:
+  id: 438292128
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    湊中卒業式（院長、副院長、宮崎、栄永、中野、船野）
+    小１ＭＭちゃんＢＴＰ
+  misc: 
+  hizuke: 2010-03-10
+
+data586:
+  id: 438292129
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    高１ＥＴちゃん通所（鳥取）
+    職員部会スキー・反省会（鳥取、船野）
+  misc: 
+  hizuke: 2010-03-11
+
+data587:
+  id: 438292130
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    院内研修
+    公立高校入試
+    平野小６年茶話会（栄永、船野）
+    小５Ｓ・Ｔ君家庭訪問（栄永）
+  misc: 
+  hizuke: 2010-03-12
+
+data588:
+  id: 438292131
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：平野市バザール
+    香風高校面接
+    福原遷都実行委員会
+    外出
+  misc: 
+  hizuke: 2010-03-13
+
+data589:
+  id: 438292132
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    フィーリングアーツ（学院）
+    親和大カウンセリング（Ｙ・Ｓちゃん、鳥取）
+    Ｋ・Ｔ君ＢＴＰ
+  misc: 
+  hizuke: 2010-03-15
+
+data590:
+  id: 438292133
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    同朋理事会
+    湊中１年地域学習会（鳥取）
+  misc: 
+  hizuke: 2010-03-17
+
+data591:
+  id: 438292134
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    評議員会（院長）
+    兵庫くすのき幼卒園式（院長、宮崎、木下）
+    卓球台寄贈受け取り（中野）
+    Ｋ・ＨちゃんＢＴＰ
+    
+    
+  misc: 
+  hizuke: 2010-03-18
+
+data592:
+  id: 438292135
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野地域福祉を進める会
+    Ｓ：お話会
+  misc: 
+  hizuke: 2010-03-19
+
+data593:
+  id: 438292136
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    キャンプ（２１日迄）
+    頌栄短大実習受け入れ（３０日迄）
+    平野児童館入会説明会（院長）
+    新１年生お祝い会（Ｋ・Ｔ君、院長、宮崎）
+    大慈理事会（副院長）
+    
+  misc: 
+  hizuke: 2010-03-20
+
+data594:
+  id: 438292137
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    平野小卒業式
+    村野工業高校学用品販売（Ｔ・Ｍ君、船野）
+  misc: 
+  hizuke: 2010-03-24
+
+data595:
+  id: 438292138
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    手品教室
+  misc: 
+  hizuke: 2010-03-22
+
+data596:
+  id: 438292139
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    終業式
+    兵庫くすのき幼保護者会（船野）
+    クッキング反省会（副院長、小栗、浦辺）
+  misc: 
+  hizuke: 2010-03-25
+
+data597:
+  id: 438292140
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    Ｓ：映画上映会（となりのトトロ）
+  misc: 
+  hizuke: 2010-03-26
+
+data598:
+  id: 438292141
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    理事会
+    春休み手話教室（小学生女児、鳥取）
+    ミュージカル招待（小学生、中学生女児、鳥取、森本、高寺）
+  misc: 
+  hizuke: 2010-03-27
+
+data599:
+  id: 438292142
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    職員会議
+    Ｔ・Ｙ君入所
+    区社協理事会・評議員会（院長）
+    職員健康診断
+  misc: 
+  hizuke: 2010-03-29
+
+data600:
+  id: 438292143
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    かよう会来院
+    ２，３月誕生会
+    措置費担当者会議（千野）
+    Ｓ・Ｍ君入所
+  misc: 
+  hizuke: 2010-03-30
+
+data601:
+  id: 438292144
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ホームカミングデイ
+    Ｓ：つくろう会（エコキャンドル作り）
+    
+  misc: 
+  hizuke: 2010-03-31
+
+data602:
+  id: 438292145
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平小新６年生登校日
+  misc: 
+  hizuke: 2010-04-01
+
+data603:
+  id: 438292146
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: Ｓ：フィーリングアーツ
+  misc: 
+  hizuke: 2010-04-02
+
+data604:
+  id: 438292147
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ハイキング（トィィンクル）
+    Ｓ：ＤＶＤ上映会
+  misc: 
+  hizuke: 2010-04-03
+
+data605:
+  id: 438292148
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    兵庫くすのき幼離任式
+  misc: 
+  hizuke: 2010-04-05
+
+data606:
+  id: 438292149
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小離任式（木下、鷲野）
+    村野高校登校日（中野）
+  misc: 
+  hizuke: 2010-04-06
+
+data607:
+  id: 438292150
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    平野小・湊中始業式・着任式
+    湊中新１年生クラス分け
+  misc: 
+  hizuke: 2010-04-07
+
+data608:
+  id: 438292151
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小入学式（院長、副院長、小栗、宮崎、木下和）
+    湊中入学式（院長、栄永、木下知）
+    村野高校入学式（船野）
+    神戸北高校入学式（中野）
+  misc: 
+  hizuke: 2010-04-08
+
+data609:
+  id: 438292152
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 香風高校入学式（鳥取）
+  misc: 
+  hizuke: 2010-04-09
+
+data610:
+  id: 438292155
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：るんるんクラブ
+    福原遷都実行委員
+  misc: 
+  hizuke: 2010-04-10
+
+data611:
+  id: 438292156
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: 学院お花見　
+  misc: 
+  hizuke: 2010-04-11
+
+data612:
+  id: 438292157
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小学級懇談会・低学年（宮崎、木下）
+    職員会議
+    兵くすのき幼保護者会（高寺）
+    親和大カウンセリング（Ｙちゃん、鳥取）
+    神戸まつりはっぴい広場打ち合せ（小栗）
+  misc: 
+  hizuke: 2010-04-12
+
+data613:
+  id: 438292158
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    ホストライオンズ例会・晩餐会（院長）
+    シャルレ子育て講話（院長）
+    兵庫くすのき幼入園式（宮崎、木下）
+    平野小給食開始
+  misc: 
+  hizuke: 2010-04-13
+
+data614:
+  id: 438292159
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：お話会
+    評議員会・総会（院長）
+  misc: 
+  hizuke: 2010-04-14
+
+data615:
+  id: 438292160
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 兵くすのき幼保護者会
+  misc: 
+  hizuke: 2010-04-15
+
+data616:
+  id: 438292161
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    弁護士ケース研究会（院長）
+    Ｓ：つくろう会
+    兵庫くすのき幼家庭訪問
+    湊中授業参観
+  misc: 
+  hizuke: 2010-04-16
+
+data617:
+  id: 438292162
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    入園入学お祝い会
+    よさこい出演１６名（舞子ビラ）
+    神戸まつり説明会（中野）
+    福原遷都実行員会（小栗）
+    
+  misc: 
+  hizuke: 2010-04-17
+
+data618:
+  id: 438292163
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中家庭訪問１７名来院
+    兵庫くすのき幼保育参観（宮崎、栄永）
+  misc: 
+  hizuke: 2010-04-21
+
+data619:
+  id: 438292164
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    職員部会総会（鳥取、船野、鷲野）
+    小学生ハイキング打ち合せ（鳥取、船野）
+    平野小授業参観
+  misc: 
+  hizuke: 2010-04-22
+
+data620:
+  id: 438292165
+  staff_id: 221246546
+  tenki: 晴れ,雨
+  dekigoto: |
+    大阪児相小川ＣＷ来院
+    小６Ｙ・Ｎ君入所
+    あんすこ庭ボランティア来院
+  misc: 
+  hizuke: 2010-04-23
+
+data621:
+  id: 438292166
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ネイチャースペースキャンプ（２５日迄）
+  misc: 
+  hizuke: 2010-04-24
+
+data622:
+  id: 438292167
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 民商まつりよさこい出演
+  misc: 
+  hizuke: 2010-04-25
+
+data623:
+  id: 438292168
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    新採用者歓迎会
+  misc: 
+  hizuke: 2010-04-26
+
+data624:
+  id: 438292169
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    Ｓ：フィーリングアーツ
+    平野小家庭訪問
+  misc: 
+  hizuke: 2010-04-27
+
+data625:
+  id: 438292170
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼保育参観・保護者会（宮崎）
+  misc: 
+  hizuke: 2010-04-27
+
+data626:
+  id: 438292171
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼保育参観・保護者会（宮崎）
+    松井先生お祝い会（院長、副院長）
+  misc: 
+  hizuke: 2010-04-28
+
+data627:
+  id: 438292172
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野町子ども会・自治会総会（小栗）
+  misc: 
+  hizuke: 2010-04-29
+
+data628:
+  id: 438292173
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中部活動保護者会（栄永、高寺）
+    学院祭打ち合せ
+  misc: 
+  hizuke: 2010-04-30
+
+data629:
+  id: 438292174
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    福原遷都実行委員会（小栗）
+    防災訓練打ち合せ
+  misc: 
+  hizuke: 2010-05-01
+
+data630:
+  id: 438292175
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: ハイキング（淡路イングランドの丘）
+  misc: 
+  hizuke: 2010-05-02
+
+data631:
+  id: 438292176
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    名生先生告別式
+  misc: 
+  hizuke: 2010-05-03
+
+data632:
+  id: 438292177
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 子どもの日・外出・外食
+  misc: 
+  hizuke: 2010-05-05
+
+data633:
+  id: 438292178
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: ホストライオンズ理事会（院長）
+  misc: 
+  hizuke: 2010-05-06
+
+data634:
+  id: 438292179
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小スポーツフェスティバル
+    ケース検討会
+    S：フィーリングアーツ
+  misc: 
+  hizuke: 2010-05-07
+
+data635:
+  id: 438292180
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    小学生ハイキング（船野、森本）
+    おみこし手伝い（中野、高大校生）
+  misc: 
+  hizuke: 2010-05-08
+
+data636:
+  id: 438292181
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    おみこし手伝い（中野、高校生）
+    Ｓ：手品教室
+  misc: 
+  hizuke: 2010-05-09
+
+data637:
+  id: 438292182
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    神戸祭り打ち合せ
+    湊中学年保護者会
+    親和大カウンセリング（Ｙ・Ｓちゃん、鳥取）
+  misc: 
+  hizuke: 2010-05-10
+
+data638:
+  id: 438292183
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: 共同募金配分事務説明会（千野）
+  misc: 
+  hizuke: 2010-05-11
+
+data639:
+  id: 438292184
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: Ｓ：おはなし会
+  misc: 
+  hizuke: 2010-05-12
+
+data640:
+  id: 438292185
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    兵庫くすのき幼園外保育
+  misc: 
+  hizuke: 2010-05-13
+
+data641:
+  id: 438292186
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    白百合監事監査（院長）
+    湊中１年宿泊教室（１５日迄）
+  misc: 
+  hizuke: 2010-05-14
+
+data642:
+  id: 438292187
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 神戸まつりはっぴいひろば（よさこい、おみこし、時代行列出演）
+  misc: 
+  hizuke: 2010-05-15
+
+data643:
+  id: 438292188
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    区社協監事監査
+  misc: 
+  hizuke: 2010-05-17
+
+data644:
+  id: 438292189
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    民間児童館協議会総会（院長）
+    ハーバー大慈監事監査
+    子育てサロンクッキング（森本、浦辺）
+    Ｋ・Ｍ君通所（本児のみ）
+    
+  misc: 
+  hizuke: 2010-05-18
+
+data645:
+  id: 438292190
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    兵庫くすのき幼園外保育
+    監査説明会（千野）
+    スポーツ大会打ち合せ
+    昔あそび来院
+  misc: 
+  hizuke: 2010-05-19
+
+data646:
+  id: 438292191
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: |
+    青少協総会（船野）
+  misc: 
+  hizuke: 2010-05-20
+
+data647:
+  id: 438292192
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小校外学習
+    Ｓ：つくろう会
+    Ａ・ＹちゃんＣＰ来院
+  misc: 
+  hizuke: 2010-05-21
+
+data648:
+  id: 438292193
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    兵庫くすのき幼わくわくサタデー（宮崎、森本）
+    大慈理事会（副院長）
+    福原遷都実行員会（小栗）
+  misc: 
+  hizuke: 2010-05-22
+
+data649:
+  id: 438292194
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: |
+    神戸市小学生卓球大会
+    ふれあいまちづくり協議会総会（院長、小栗）
+    福原遷都リハーサル（小栗）
+  misc: 
+  hizuke: 2010-05-23
+
+data650:
+  id: 438292195
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    Ｔ・Ｙ君通所（栄永）
+  misc: 
+  hizuke: 2010-05-24
+
+data651:
+  id: 438292196
+  staff_id: 221246546
+  tenki: 晴れ,曇り
+  dekigoto: |
+    ホストライオンズ例会（院長）
+    ホストライオンズダンス同好会
+    監事監査
+    Ｎ・Ｆちゃん通所（鳥取）
+    平野小４年社会見学
+    Ｓ：フィーリングアーツ
+  misc: 
+  hizuke: 2010-05-25
+
+data652:
+  id: 438292197
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    区社協理事会（院長）
+    白百合評議員会（院長）
+    湊中３年修学旅行（２８日迄）
+    Ｓ：お話し会
+  misc: 
+  hizuke: 2010-05-26
+
+data653:
+  id: 438292198
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    区社協理事会（院長）
+    白百合評議員会（院長）
+    湊中３年修学旅行（２８日迄）
+    Ｓ：お話し会
+  misc: 
+  hizuke: 2010-05-26
+
+data654:
+  id: 438292199
+  staff_id: 221246546
+  tenki: 曇り
+  dekigoto: |
+    るんるん運営委員会（小栗）
+    平野小３年社会見学
+    坂本ＣＷ　Ｍ・Ｓ（母）来院
+  misc: 
+  hizuke: 2010-05-27
+
+data655:
+  id: 438292200
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    家庭支援専門相談員連絡会（小栗）
+    庭ボランティア来院
+  misc: 
+  hizuke: 2010-05-28
+
+data656:
+  id: 438292201
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 理事会
+  misc: 
+  hizuke: 2010-05-29
+
+data657:
+  id: 438292202
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: ふれまち防災訓練
+  misc: 
+  hizuke: 2010-05-30
+
+data658:
+  id: 438292203
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    学院祭打ち合わせ
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2010-05-31
+
+data659:
+  id: 438292204
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    職員会議
+    学院祭打ち合わせ
+    親和大カウンセリング（Ｙちゃん、鳥取）
+  misc: 
+  hizuke: 2010-05-31
+
+data660:
+  id: 438292205
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    ホストライオンズ例会（院長）
+    森川TH　Ｃ.Ｃ.
+  misc: 
+  hizuke: 2010-09-28
+
+data661:
+  id: 438292206
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    平野小代休
+    職員会議
+    木下サーカス招待（小学生）
+  misc: 
+  hizuke: 2010-09-27
+
+data662:
+  id: 438292207
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: 平野小運動会
+  misc: 
+  hizuke: 2010-09-26
+
+data663:
+  id: 438292208
+  staff_id: 221246546
+  tenki: 雨
+  dekigoto: 高２Y・M通所（栄永）
+  misc: 
+  hizuke: 2010-09-24
+
+data664:
+  id: 438292209
+  staff_id: 221246546
+  tenki: 曇り,雨
+  dekigoto: S：なつかし映画会
+  misc: 
+  hizuke: 2010-09-23
+
+data665:
+  id: 438292210
+  staff_id: 221246546
+  tenki: 晴れ
+  dekigoto: |
+    湊中代休
+    木下サーカス招待（中学生、中野、上田）
+    森川THカウンセリング
+    S：将棋教室
+  misc: 
+  hizuke: 2010-09-21
+
+data666:
+  id: 438292211
+  staff_id: 970894038
+  tenki: 晴れ
+  dekigoto: mailer test for checking counter for data entries.
+  misc: 1:00
+  hizuke: 2011-01-08
+

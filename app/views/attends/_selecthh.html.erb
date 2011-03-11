@@ -1,0 +1,5 @@
+﻿  <% for i in (5..24)%>
+   <%= link_to_remote "#{i.to_s} ", :update => "",
+    :url => { :action => "show_mm", :pp=>i, :id=>@attend} %>
+
+  <% end %>

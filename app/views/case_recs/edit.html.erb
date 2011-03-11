@@ -1,0 +1,30 @@
+<%= title_bar("bok", "児童ケース記録（編集）") %>  
+<%= fn_bar2 %>
+
+
+<TABLE CLASS="part">
+  <tr>
+    <% 32.times do %>
+    <td></td>
+    <% end %>
+  </tr>    
+<% form_for(@case_rec) do |f| %>
+<%= f.error_messages %>
+  <tr>
+    <th colspan=12>児童</th>
+    <td colspan=20><%= f.select(:boy_id, Boy.find(:all).map{|i|[i.name,i.id]}, {:include_blank => true} ) %></td>
+  </tr>
+  <tr>
+    <th colspan=12>備考</th>
+    <td colspan=20><%= f.text_area :misc, :rows => 3, :cols => 50 %></td>
+  </tr>
+  <tr>
+    <th colspan=12>登録／更新</th>
+    <td colspan=20>
+      <%= f.submit "登録／更新" %>
+      <%= link_to 'このレコードを削除する', @case_rec, :confirm => '本当に削除しますか?', :method => :delete %> 
+
+    </td>
+  </tr>
+<% end %>
+</TABLE>

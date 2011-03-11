@@ -1,0 +1,25 @@
+<%= title_bar("mst", "伝言板（一覧）")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>日付</th>
+    <th colspan=4>ｽﾀｯﾌ名</th>
+    <th colspan=4>あて先</th>
+    <th colspan=20>メッセージ</th>
+  </tr>
+
+<% for message in @messages %>
+  <tr>
+    <td colspan=4><%=h message.date %></td>
+    <td colspan=4>
+      <%=h message.staff_id if message.staff_id %><br>
+      <%=h message.staff.name if message.staff %>
+    </td>
+    <td colspan=4><%=h message.msg_to %></td>
+    <td colspan=19><%=h message.msg %></td>
+    <td colspan=1><%= go_edit(message) %></td>
+  </tr>
+<% end %>
+</TABLE>

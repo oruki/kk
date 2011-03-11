@@ -1,0 +1,29 @@
+<%= go_prev("date") %>
+<%= go_next %>
+
+
+<%= title_bar("mst", "伝言（表示）") %>  
+<%= fn_bar2 %>
+<table CLASS="part">
+<%= table_col(32) %>
+<tr>
+  <th colspan=10>日　付:</th>
+  <td colspan=22><%=h @message.date %></td>
+</tr>
+
+<tr>
+  <th colspan=10>指導員:</th>
+  <td colspan=22><%=h @message.staff_id %></td>
+</tr>
+
+<tr>
+  <th colspan=10>伝言あて先:</th>
+  <td colspan=22><%=h @message.msg_to %></td>
+</tr>
+
+<tr>
+  <th colspan=10>伝言内容:</th>
+  <td colspan=22><%=h @message.msg %></td>
+</tr>
+</table>
+

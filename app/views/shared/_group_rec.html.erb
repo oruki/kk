@@ -1,0 +1,169 @@
+<!--
+<% form_for(group_rec) do |f| -%>
+<%= f.error_messages %>
+<table CLASS="part">
+  <tr>
+    <th colspan=12>日付</th>
+    <td colspan=20>
+      <%= f.date_select(:hizuke,{ :include_blank => true, 
+                                  :use_month_numbers => true,
+                                  :start_year => Date.today.years_ago(3).year, 
+                                  :end_year   => Date.today.year})  %>
+    </td>    
+  </tr>
+  
+  <tr> 
+    <th colspan=12>ｸﾞﾙｰﾌﾟ</th>
+    <td colspan=20>
+      <% xx = Group.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= f.select :group_id, xx, {:include_blank => true} %>   
+     
+    </td>
+  </tr>
+
+  <tr> 
+    <th colspan=12>指導員</th>  
+    <td colspan=20>
+      <% ss = Staff.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= f.select(:staff_id, ss, {:include_blank => true}) %></td>
+  </tr>
+  
+  <tr> 
+    <th colspan=12>記録</th>
+    <td colspan=20><%= f.text_area :desc, :rows => 4, :cols =>50 %></td>
+  </tr>  
+ 
+  <tr> 
+    <th colspan=12>伺 い</th>
+    <td colspan=20><%= f.text_area :query, :rows => 2, :cols =>50 %></td>
+  </tr>
+  
+  <tr>      
+    <th colspan=12>備考</th>
+    <td colspan=20><%= f.text_area :misc, :rows => 2, :cols =>50 %></td>
+  </tr>
+
+  <tr>
+    <th colspan=12>登録／更新</th>
+    <td colspan=20>
+      <%= f.submit "登録／更新" %>
+      <%= link_to 'このレコードを削除する', @group_rec, :confirm => '本当に削除しますか？', :method => :delete %></td>&nbsp;&nbsp;&nbsp;    
+    </td>
+  </tr>
+
+  <%= table_col(32) %>
+</table>
+<% end %>
+
+
+-->
+
+
+
+
+
+
+<!--
+	指導記録登録用部分テンプレート
+-->
+<% form_for(group_rec) do |f| %>
+  <%= f.error_messages %>
+<table CLASS="part">
+  <%= table_col(32) %>
+
+  <tr>
+    <td colspan=3>日 付</td>
+    <td colspan=9>
+      <%= f.date_select(:hizuke,{ :include_blank => true, 
+                                  :use_month_numbers => true,
+                                  :start_year => Date.today.years_ago(3).year, 
+                                  :end_year   => Date.today.year})  %>      
+    </td>
+
+    <td colspan=3>グループ</td>
+    <td colspan=7>
+      <% xx = Group.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= f.select :group_id, xx, {:include_blank => true} %> 
+    </td>
+    
+    <td colspan=3>ｽﾀｯﾌ</td>
+    <td colspan=7>
+	  <% ss = Staff.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= f.select(:staff_id, ss, {:include_blank => true}) %>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan=3 rowspan=1>ｶﾃｺﾞﾘｰ</td>
+
+    <td colspan=9 rowspan=1>
+  	
+      <% cats = YAML.load_file(RAILS_ROOT + "/tmp/my_pref/taiju_pref.yml") %>
+      <% k = cats['category_for_group_rec'].split %> 
+      <% for item in k %> 
+        <% flag = group_rec.try(:cat)%>
+        <% if flag %>
+          <% flag = flag.include?(item) %>
+        <% else %>
+          <% flag = false %>
+        <% end %> 
+        <div style="text-align:left; float:left;"> 
+        <div style="text-align:left; width:90px;">	  
+          <%= check_box_tag("group_rec[cat][]", item, flag) %> 
+          <%= item %>
+        </div>  
+        </div>
+      <% end %>
+
+    </td>
+    <td colspan=3>記録</td>
+    <td colspan=17 style="color:green">
+      <%= f.text_area :desc, :rows => 4, :cols =>40 %>
+    </td>
+  </tr>
+
+<!--
+  <tr>
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        ヒヤリハットの場合は記入→
+    </td>    	
+    <td colspan=3>
+        伺 い
+    </td>
+    <td colspan=17 style="color:green">
+      <%= f.text_area :query, :rows => 2, :cols =>40 %>
+    </td>
+  </tr>
+  <tr>
+    
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        ヒヤリハットの場合は記入→
+    </td> 
+    <td colspan=3>備考</td>
+    
+    <td colspan=17 style="color:green">
+      <%= f.text_area :misc, :rows => 2, :cols =>40 %>
+    </td>
+  </tr>
+-->
+
+<!-- ■ -->
+
+  <tr>
+    <td colspan=32>
+    	<%= f.submit "登録/更新" %>
+    	<%= link_to 'このレコードを削除する', @group_rec, :confirm => '本当に削除しますか？', :method => :delete %></td>&nbsp;&nbsp;&nbsp;  
+    </td>   
+  </tr>
+ 
+</table>
+<% end %>
+
+
+
+
+
+
+

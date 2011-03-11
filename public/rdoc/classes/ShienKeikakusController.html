@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: ShienKeikakusController</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">ShienKeikakusController</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/app/controllers/shien_keikakus_controller_rb.html">
+                app/controllers/shien_keikakus_controller.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="ApplicationController.html">
+                ApplicationController
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000130">create</a>&nbsp;&nbsp;
+      <a href="#M000133">destroy</a>&nbsp;&nbsp;
+      <a href="#M000128">edit</a>&nbsp;&nbsp;
+      <a href="#M000125">index</a>&nbsp;&nbsp;
+      <a href="#M000124">kaigyo</a>&nbsp;&nbsp;
+      <a href="#M000127">new</a>&nbsp;&nbsp;
+      <a href="#M000129">putbox</a>&nbsp;&nbsp;
+      <a href="#M000126">show</a>&nbsp;&nbsp;
+      <a href="#M000132">update</a>&nbsp;&nbsp;
+      <a href="#M000131">updateAlt</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000130" class="method-detail">
+        <a name="M000130"></a>
+
+        <div class="method-heading">
+          <a href="#M000130" class="method-signature">
+          <span class="method-name">create</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+POST /shien_keikakus POST /shien_keikakus.xml
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000130-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000130-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 112</span>
+112:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+113:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:shien_keikaku</span>])
+114: 
+115:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+116:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">save</span>
+117:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ShienKeikaku was successfully created.'</span>
+118:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@shien_keikaku</span>) }
+119:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span> }
+120:       <span class="ruby-keyword kw">else</span>
+121:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
+122:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+123:       <span class="ruby-keyword kw">end</span>
+124:     <span class="ruby-keyword kw">end</span>
+125:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000133" class="method-detail">
+        <a name="M000133"></a>
+
+        <div class="method-heading">
+          <a href="#M000133" class="method-signature">
+          <span class="method-name">destroy</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+DELETE /shien_keikakus/1 DELETE /shien_keikakus/1.xml
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000133-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000133-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 170</span>
+170:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
+171:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+172:     <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">destroy</span>
+173: 
+174:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+175:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">shien_keikakus_url</span>) }
+176:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+177:     <span class="ruby-keyword kw">end</span>
+178:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000128" class="method-detail">
+        <a name="M000128"></a>
+
+        <div class="method-heading">
+          <a href="#M000128" class="method-signature">
+          <span class="method-name">edit</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000128-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000128-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 90</span>
+90:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
+91:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+92:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000125" class="method-detail">
+        <a name="M000125"></a>
+
+        <div class="method-heading">
+          <a href="#M000125" class="method-signature">
+          <span class="method-name">index</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000125-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000125-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 23</span>
+23:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">index</span>
+24:     <span class="ruby-ivar">@shien_keikakus</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>)
+25: 
+26:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+27:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># index.html.erb</span>
+28:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikakus</span> }
+29:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+30:         <span class="ruby-identifier">prawnto</span> <span class="ruby-identifier">:prawn</span> =<span class="ruby-operator">&gt;</span> {
+31:           <span class="ruby-identifier">:page_layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:portrait</span>, <span class="ruby-comment cmt"># 縦</span>
+32:           <span class="ruby-identifier">:page_size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;A4&quot;</span>,
+33:           <span class="ruby-identifier">:left_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">36</span>,
+34:           <span class="ruby-identifier">:right_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+35:           <span class="ruby-identifier">:top_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+36:           <span class="ruby-identifier">:bottom_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>},
+37:         <span class="ruby-identifier">:inline</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>
+38:       }
+39:     <span class="ruby-keyword kw">end</span>
+40:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000124" class="method-detail">
+        <a name="M000124"></a>
+
+        <div class="method-heading">
+          <a href="#M000124" class="method-signature">
+          <span class="method-name">kaigyo</span><span class="method-args">(str, n)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000124-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000124-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 6</span>
+ 6:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">n</span>)
+ 7:     <span class="ruby-identifier">st</span>=<span class="ruby-value str">&quot;&quot;</span>
+ 8:     <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+ 9:     <span class="ruby-identifier">str</span>.<span class="ruby-identifier">each_char</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+10:       <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+11:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span><span class="ruby-operator">%</span><span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> 
+12:         <span class="ruby-identifier">st</span> = <span class="ruby-identifier">st</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;#{x}\n&quot;</span>
+13:       <span class="ruby-keyword kw">else</span>
+14:         <span class="ruby-identifier">st</span> = <span class="ruby-identifier">st</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span>
+15:       <span class="ruby-keyword kw">end</span>
+16:     <span class="ruby-keyword kw">end</span>  
+17:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">st</span>
+18:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000127" class="method-detail">
+        <a name="M000127"></a>
+
+        <div class="method-heading">
+          <a href="#M000127" class="method-signature">
+          <span class="method-name">new</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000127-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000127-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 80</span>
+80:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
+81:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">new</span>
+82: 
+83:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+84:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># new.html.erb</span>
+85:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span> }
+86:     <span class="ruby-keyword kw">end</span>
+87:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000129" class="method-detail">
+        <a name="M000129"></a>
+
+        <div class="method-heading">
+          <a href="#M000129" class="method-signature">
+          <span class="method-name">putbox</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+GET
+/shien_keikakus/1/putbox&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<a
+href="ShienKeikakusController.html#M000129">putbox</a>
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000129-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000129-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 96</span>
+ 96:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">putbox</span>
+ 97:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+ 98:     <span class="ruby-ivar">@attr</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:attr</span>]
+ 99:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+100:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># edit_item.html.erb</span>
+101:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span> }
+102:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span>
+103:     <span class="ruby-keyword kw">end</span>
+104:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000126" class="method-detail">
+        <a name="M000126"></a>
+
+        <div class="method-heading">
+          <a href="#M000126" class="method-signature">
+          <span class="method-name">show</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000126-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000126-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 44</span>
+44:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
+45:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+46:     <span class="ruby-ivar">@boy</span> = <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">boy</span>
+47:     <span class="ruby-ivar">@attr</span> <span class="ruby-operator">||=</span> <span class="ruby-value str">'honnin_ikou'</span>
+48:     <span class="ruby-ivar">@seisakusha</span> = <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">staff</span>.<span class="ruby-identifier">name</span>
+49:     <span class="ruby-ivar">@code</span> = <span class="ruby-node">&quot;ID: #{@shien_keikaku.id}－作成番号：第 #{@shien_keikaku.sakutei_bango} 号&quot;</span>
+50:     
+51:     <span class="ruby-identifier">tsm_1</span> = <span class="ruby-constant">TankiShienMokuhyo</span>.<span class="ruby-identifier">cat_01</span>.<span class="ruby-identifier">shien_keikaku_id</span> (<span class="ruby-ivar">@shien_keikaku</span>)
+52:     <span class="ruby-identifier">tsm_2</span> = <span class="ruby-constant">TankiShienMokuhyo</span>.<span class="ruby-identifier">cat_01</span>.<span class="ruby-identifier">shien_keikaku_id</span> (<span class="ruby-ivar">@shien_keikaku</span>)
+53:     <span class="ruby-identifier">tsm_3</span> = <span class="ruby-constant">TankiShienMokuhyo</span>.<span class="ruby-identifier">cat_01</span>.<span class="ruby-identifier">shien_keikaku_id</span> (<span class="ruby-ivar">@shien_keikaku</span>)
+54:     <span class="ruby-identifier">tsm_4</span> = <span class="ruby-constant">TankiShienMokuhyo</span>.<span class="ruby-identifier">cat_01</span>.<span class="ruby-identifier">shien_keikaku_id</span> (<span class="ruby-ivar">@shien_keikaku</span>)
+55:     <span class="ruby-ivar">@my_data_1</span> = <span class="ruby-identifier">tsm_1</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">i</span>.<span class="ruby-identifier">id</span>, <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">kadai</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">mokuhyo</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">naiyou</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">hyoka</span>,<span class="ruby-value">12</span>) ] }
+56:     <span class="ruby-ivar">@my_data_2</span> = <span class="ruby-identifier">tsm_2</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">i</span>.<span class="ruby-identifier">id</span>, <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">kadai</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">mokuhyo</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">naiyou</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">hyoka</span>,<span class="ruby-value">12</span>) ] }
+57:     <span class="ruby-ivar">@my_data_3</span> = <span class="ruby-identifier">tsm_3</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">i</span>.<span class="ruby-identifier">id</span>, <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">kadai</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">mokuhyo</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">naiyou</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">hyoka</span>,<span class="ruby-value">12</span>) ] }
+58:     <span class="ruby-ivar">@my_data_4</span> = <span class="ruby-identifier">tsm_4</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">i</span>.<span class="ruby-identifier">id</span>, <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">kadai</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">mokuhyo</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">naiyou</span>,<span class="ruby-value">12</span>), <span class="ruby-identifier">kaigyo</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">hyoka</span>,<span class="ruby-value">12</span>) ] }
+59:     
+60: <span class="ruby-comment cmt">#   @my_data = tsm.map{|i| [i.id,i.kadai.kaigyo(12), i.mokuhyo.kaigyo(12), i.naiyou.kaigyo(12), i.hyoka.kaigyo(12) ] }</span>
+61:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+62:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
+63:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span> }
+64:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span>
+65:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+66:         <span class="ruby-identifier">prawnto</span> <span class="ruby-identifier">:prawn</span> =<span class="ruby-operator">&gt;</span> {
+67:           <span class="ruby-identifier">:page_layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:portrait</span>, <span class="ruby-comment cmt"># 縦</span>
+68:           <span class="ruby-identifier">:page_size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;A4&quot;</span>,
+69:           <span class="ruby-identifier">:left_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">56</span>,
+70:           <span class="ruby-identifier">:right_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+71:           <span class="ruby-identifier">:top_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>,
+72:           <span class="ruby-identifier">:bottom_margin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">24</span>},
+73:         <span class="ruby-identifier">:inline</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>
+74:       }
+75:     <span class="ruby-keyword kw">end</span>
+76:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000132" class="method-detail">
+        <a name="M000132"></a>
+
+        <div class="method-heading">
+          <a href="#M000132" class="method-signature">
+          <span class="method-name">update</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+PUT /shien_keikakus/1 PUT /shien_keikakus/1.xml
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000132-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000132-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 152</span>
+152:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
+153:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+154:    <span class="ruby-comment cmt"># render(:partial =&gt; &quot;comm&quot;, :object =&gt; @shien_keikaku)</span>
+155: 
+156:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+157:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:shien_keikaku</span>])
+158:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] =<span class="ruby-value str">'正常に更新されました（支援計画）'</span>
+159:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@shien_keikaku</span>) }
+160:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+161:       <span class="ruby-keyword kw">else</span>
+162:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+163:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+164:       <span class="ruby-keyword kw">end</span>
+165:     <span class="ruby-keyword kw">end</span>
+166:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000131" class="method-detail">
+        <a name="M000131"></a>
+
+        <div class="method-heading">
+          <a href="#M000131" class="method-signature">
+          <span class="method-name">updateAlt</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+PUT /shien_keikakus/1 PUT
+/shien_keikakus/1.xml&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<a
+href="ShienKeikakusController.html#M000132">update</a>
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000131-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000131-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/shien_keikakus_controller.rb, line 130</span>
+130:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">updateAlt</span>
+131:     <span class="ruby-ivar">@shien_keikaku</span> = <span class="ruby-constant">ShienKeikaku</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+132:     <span class="ruby-ivar">@attr</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:attr</span>]
+133:   <span class="ruby-comment cmt"># GETTING THE ATTR VALUE</span>
+134:     <span class="ruby-ivar">@attrval</span> = <span class="ruby-identifier">eval</span> <span class="ruby-value str">'@shien_keikaku'</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'.'</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@attr</span>
+135:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+136:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:shien_keikaku</span>]) <span class="ruby-keyword kw">then</span>
+137:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ShienKeikaku was successfully updated(2008.07.06).'</span>
+138:     <span class="ruby-ivar">@attrval</span> = <span class="ruby-identifier">eval</span> <span class="ruby-value str">'@shien_keikaku'</span> <span class="ruby-operator">+</span> <span class="ruby-value str">'.'</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@attr</span>
+139:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@shien_keikaku</span>) }
+140:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+141:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span>
+142:       <span class="ruby-keyword kw">else</span>
+143:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+144:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@shien_keikaku</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+145:       <span class="ruby-keyword kw">end</span>
+146:     <span class="ruby-keyword kw">end</span>
+147:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

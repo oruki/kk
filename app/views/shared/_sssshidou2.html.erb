@@ -1,0 +1,83 @@
+<!--　指導記録　部分ﾃﾝﾌﾟﾚｰﾄ変更版
+-->
+<%= javascript_include_tag :defaults %>
+
+<%# shidou=ShidouRec.between_dates(
+      get_period( session[:yy], session[:mm])[0],
+      get_period( session[:yy], session[:mm])[1] ) %>
+
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>ID/児童名</th>
+    <th colspan=4>日付/ｽﾀｯﾌ</th>
+    <th colspan=4>ｶﾃｺﾞﾘｰ</th>
+    <th colspan=20>
+      記述
+    </th>
+  </tr>
+
+<% for s in shidou2 %>
+  <tr>
+    <td colspan=4>
+      <%= h s.boy.id %><br>
+      <%= link_to_remote(
+            s.boy.try(:name),
+            :url =>{:controller => :selects, 
+                    :action => "hit", 
+                    :id => s,
+                    :boy => s.boy},
+            :spinner => :spinner) %> 
+<!-- 期間ﾊﾟﾗﾒｰﾀｰ（mm yy）はｾｯｼｮﾝから取得するように変更 -->
+    </td>
+    <td colspan=4>
+      <%= h s.date %><br>
+      <%= link_to_remote(
+            s.staff.name,
+            :url =>{:controller => :selects, 
+                    :action => "hit", 
+                    :id => s,
+                    :staff => s.staff},
+            :spinner => :spinner) %> 
+<!-- 期間ﾊﾟﾗﾒｰﾀｰ（mm yy）はｾｯｼｮﾝから取得するように変更 -->
+    </td>
+    <td colspan=4>
+      <!-- h s.cat -->
+      <%#= h s.cat %>
+      <% cats = s.cat.split(/\s*,\s*/) %>
+      <% for i in cats %>
+        <% n =+ 1 %>
+        <%= link_to_remote(
+              i,:url=>{:controller=>:selects,
+              :action=>"hit",
+              :cat => i})%>
+              <% if i!=cats.last %>
+                <br>
+              <% end %>
+      <% end %>      
+      
+    </td>
+    <td colspan=18>
+      <!-- h s.desc -->
+      <%= h s.desc %>
+    </td>
+    <td>
+      <% if s.staff == current_user.staff %>
+        <%= go_edit(s,"shidou_recs") %>
+      <% else %>
+        <%= image_tag("g_reply.gif", :border=>0) %>
+      <% end %>           
+    </td>   
+    <td>
+      <% if s.staff == current_user.staff %>  
+        <%= link_to image_tag("delete.gif", :border=>0),
+              s,
+              :confirm =>'本当に削除しますか?',
+              :method => :delete %>
+      <% else %>
+        <%= image_tag("g_delete.gif", :border=>0) %>
+      <% end %>                    
+    </td>
+  </tr>
+<% end %>
+</table>

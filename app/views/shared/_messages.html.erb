@@ -1,0 +1,39 @@
+<!--
+この部分テンプレートが受け取るローカル変数messagesは実質はsesssion[:message]
+-->
+<span style="font-size:10px">伝言板<br>
+<%= messages.size %>　件伝言があります </span>&nbsp;
+<%= link_to image_tag ("action_add.gif", :border=>0, :title=>"新規作成"), :controller=>"messages", :action=>"new" %> 
+<table class="part">
+<% for message in messages %>
+  <tr>
+    <td>
+      <table style="width:100%;font-weight:normal;color:#777;">
+        <tr>
+          <td colspan=2 style="font-weight:bold;font-size:10px;color:#ff9933">
+          	<%=h message.date.to_jdate %>
+          </td>
+        </tr>        	
+        <tr>
+      	  <td style="font-size:10px;width:30%;">作　成</td>
+      	  <td style="font-size:10px;"><%= message.staff.name if message.staff %></td>
+        </tr>
+        <tr>
+      	  <td style="font-size:10px;width:36%;">あて先</td>
+      	  <!--
+      	  <td style="font-size:10px;color:#ff6600"><%= "#{message.msg_to}さん" if message.msg_to %></td>
+  	      -->
+      	  <td style="color:#ff9933;font-size:10px;">
+      	  	<%= message.msg_to == "" ? nil:"#{message.msg_to}さん" %>
+  	  	  </td>
+        </tr>
+        <tr>
+          <td colspan=2 style="color:#ff9933;font-size:11px;">
+          	<%=h message.msg %>
+          </td>
+        </tr>  	    	  
+      </table>			
+    </td>
+  </tr>
+<% end %>
+</table>

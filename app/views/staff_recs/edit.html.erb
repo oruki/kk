@@ -1,0 +1,73 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>指導員日誌（編集）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+  <tr>
+    <td style="text-align:right; ">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+      <%= link_to_mypage %> &nbsp;
+      <%= go_list %>
+    </td>
+  </tr>
+</TABLE>
+
+<TABLE CLASS="part">  
+  <tr>
+  <% 32.times do %>
+    <td></td>
+  <% end %>
+  </tr>
+<% form_for(@staff_rec) do |f| %>
+  <%= f.error_messages %>
+  
+  <tr>
+    <th colspan=12>時間</th>
+    <td colspan=20>
+      <%= f.select (:hours, %w{06 07 08 09 10 11 12 13 14 15 16 17 18}) %>&nbsp;:
+      <%= f.select (:minutes, %w{00 15 30 45}) %>
+    </td>
+  </tr>
+  
+  <tr>
+    <th colspan=12>出勤記録ID</th>
+    <td colspan=20>
+      <%= f.text_field :attend_id %>
+    </td>
+  </tr> 
+    
+  <tr>
+    <th colspan=12>外出記録</th>
+    <td colspan=20>
+      <%= f.text_field :in_out %>
+    </td>
+  </tr> 
+  <tr>
+    <th colspan=12>用件</th>
+    <td colspan=20>
+      <%= f.text_field :yoken %>
+    </td>
+  </tr> 
+  <tr>
+    <th colspan=12>内容</th>
+    <td colspan=20>
+      <%= f.text_field :naiyo %>
+    </td>
+  </tr> 
+  <tr>
+    <th colspan=12>登録</th>
+    <td colspan=20>
+      <%= f.submit "登録／更新" %>
+        <label style="margin-left:60px">
+          <%= link_to image_tag("delete.gif", :border=>0), @staff_rec, :confirm => '本当に削除しますか?', :method => :delete %>
+          削除する
+        </label>  
+    </td>
+  </tr> 
+<% end %>
+
+</TABLE>

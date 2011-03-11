@@ -1,0 +1,32 @@
+#ユーザ   
+#20080828 ymlファイルでerbを使い動的なフィクスチャーを生成する
+#requireで特定のファイル（クラス）を要求するとそのクラスにアクセス可能となる
+
+<% require 'application.rb' %>
+<% require 'users_controller.rb' %>
+<% require 'boy.rb' %>
+#crypted password for yasui
+#------------------------------------------------------------
+<% staffs_0 = %w{admin} %> #管理
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+<% users_ids = staffs_0 + staffs_1 + staffs_2 + staffs_3 + staffs_4 + staffs_5 + staffs_6  %>
+
+<% cpy = User.encrypt('linchan','94e7fd6a22d3153e6527d287999f4e4c3cc43bfd') %>
+
+
+<% for i in users_ids %>
+usr_<%= i %>:
+  login:                     <%= i %>
+  email:                     <%= i %>@emu.com
+  crypted_password:          <%= User.encrypt( i + '0000', 'emu' ) %>  #encryptはUserクラスのクラスメソッド
+  salt:                      emu
+  remember_token:
+  remember_token_expires_at:
+<% end %>  
+  

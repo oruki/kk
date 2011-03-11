@@ -1,0 +1,51 @@
+<%= title_bar("rep", "短期支援目標（#{@title}）") %>  
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=32 style="text-align:right;">
+      <% form_tag({:action => :index}, {:method => :get}) do %>
+      	<!--
+      		radio_button_tag(name, value, checked = false, options = {})
+      	-->
+        <label style="margin-left:10px;">
+        	<%= radio_button_tag (:cat, 'cat-01', checked = (params[:cat]=='cat-01'),
+									:onchange => 'submit();') %>  
+        	子ども</label>
+        <label style="margin-left:10px;">
+        	<%= radio_button_tag (:cat, 'cat-02', checked = (params[:cat]=='cat-02'),
+									:onchange => 'submit();') %>
+        	家庭</label>
+        <label style="margin-left:10px;">
+        	<%= radio_button_tag (:cat, 'cat-03', checked = (params[:cat]=='cat-03'),
+									:onchange => 'submit();') %>
+        	地域</label>
+        <label style="margin-left:10px;">
+        	<%= radio_button_tag (:cat, 'cat-04', checked = (params[:cat]=='cat-04'),
+									:onchange => 'submit();') %>
+        	総合</label>       
+		&nbsp;&nbsp;
+			<!--
+				@options_for_mokuhyoは児童名と支援計画IDのｾｯﾄでｾﾚｸﾄﾍﾙﾊﾟｰで使用する
+				ﾍﾟｰｼﾞﾀｲﾄﾙに児童名を表示できるように@titleなどをｺﾝﾄﾛﾗｰでｾｯﾄする
+				select_tagが選択されたときsubmitボタンを押さないで作動するように変更した
+				select_tag(name, option_tags = nil, options = {}) 
+				submit_tag '選択する'は非表示に変更（4/24）
+			-->
+		<%= select_tag "shien_keikaku_id",
+						options_for_select(@options_for_mokuhyo,
+        							session[:cur_shien_keikaku].to_i),
+        							:onchange => 'submit();' %>      							
+			<% submit_tag '選択する' %>
+		<% end %>
+    </td>	
+  </tr>
+</TABLE>
+
+<%= render(:partial => "shared/tanki_shien_mokuhyos", :object=> @tanki_shien_mokuhyos) %>
+
+
+
+
+

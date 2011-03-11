@@ -1,0 +1,947 @@
+# Logfile created on Thu Dec 11 02:19:30 -0500 2008DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.009892)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005402)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005370)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005484)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005548)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.008355)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.007426)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005281)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005625)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.005394)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.007288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /usr/local/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/initializer.rb:464)
+  [4;36;1mSQL (0.005360)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001492)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoys (20080802125620)
+Migrating to CreateStaffs (20080802131105)
+Migrating to CreateGuardians (20080802133735)
+Migrating to CreateGroups (20080802134547)
+Migrating to CreateEduInsts (20080802135016)
+Migrating to CreateMedInsts (20080802135535)
+Migrating to CreateUsers (20080802135925)
+Migrating to CreateRels (20080802140155)
+Migrating to CreateJidoGrpRels (20080802141056)
+Migrating to CreateJidoGuardianRels (20080802141650)
+Migrating to CreateJidoEduRels (20080802142109)
+Migrating to CreateShidouRecs (20080802142626)
+Migrating to CreateSchoolRecs (20080802143209)
+Migrating to CreateMedRecs (20080802144035)
+Migrating to CreateStayOutRecs (20080802144923)
+Migrating to CreateGroupRecs (20080802145457)
+Migrating to CreateDayRecs (20080802150113)
+Migrating to CreateCaseRecs (20080802150428)
+Migrating to CreateAccounts (20080802150903)
+Migrating to CreateShienKeikakus (20080802151643)
+Migrating to CreateDaichos (20080802152150)
+Migrating to CreateAttends (20080802152829)
+Migrating to CreateTankiShienMokuhyos (20080826060930)
+Migrating to CreateAdmins (20080911002611)
+Migrating to CreateStaffRecs (20080923081344)
+Migrating to CreateTtts (20081009001813)
+Migrating to CreateMessages (20081030094714)
+Migrating to CreateMessageStaffRels (20081117123422)
+Migrating to CreateSessions (20090428080931)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090428080931')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("admins")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("attends")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("boys")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("case_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("daichos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("day_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("edu_insts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("group_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("groups")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("guardians")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("jido_edu_rels")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("jido_grp_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("jido_guardian_rels")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("med_insts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("med_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("message_staff_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("school_recs")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("shidou_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("shien_keikakus")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("staff_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("staffs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("stay_out_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tanki_shien_mokuhyos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ttts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoys (20080802125620)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "boys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthdate" date, "sex" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802125620')[0m
+Migrating to CreateStaffs (20080802131105)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "staffs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "resd_add" varchar(255), "per_add" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "shokumei" varchar(255), "saiyobi" date, "user_id" integer, "imgd" blob, "imgf" varchar(255), "photo_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802131105')[0m
+Migrating to CreateGuardians (20080802133735)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "guardians" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "occupation" varchar(255), "cond_income" varchar(255), "cond_health" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802133735')[0m
+Migrating to CreateGroups (20080802134547)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "cat" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802134547')[0m
+Migrating to CreateEduInsts (20080802135016)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "edu_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135016')[0m
+Migrating to CreateMedInsts (20080802135535)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "med_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135535')[0m
+Migrating to CreateUsers (20080802135925)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802135925')[0m
+Migrating to CreateRels (20080802140155)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "relation" varchar(255), "date_expired" date, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802140155')[0m
+Migrating to CreateJidoGrpRels (20080802141056)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "jido_grp_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "group_id" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141056')[0m
+Migrating to CreateJidoGuardianRels (20080802141650)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "jido_guardian_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "relation" varchar(255), "zokugara" varchar(255), "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141650')[0m
+Migrating to CreateJidoEduRels (20080802142109)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "jido_edu_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "edu_inst_id" integer, "val_flag" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142109')[0m
+Migrating to CreateShidouRecs (20080802142626)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "shidou_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "cat" varchar(255), "desc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142626')[0m
+Migrating to CreateSchoolRecs (20080802143209)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "school_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "status" varchar(255), "message_to" text, "message_from" text, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802143209')[0m
+Migrating to CreateMedRecs (20080802144035)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "med_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "med_inst_id" integer, "date" date, "symptom" varchar(255), "status" varchar(255), "temperature" varchar(255), "insulance" varchar(255), "condition" text, "misc" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144035')[0m
+Migrating to CreateStayOutRecs (20080802144923)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "stay_out_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "staff_id" integer, "place" varchar(255), "case_category" varchar(255), "app_address" varchar(255), "app_name" varchar(255), "rcv_name" varchar(255), "confirmation" varchar(255), "date" date, "app_date" date, "rcv_date" date, "period_from" date, "period_to" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144923')[0m
+Migrating to CreateGroupRecs (20080802145457)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "group_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_id" integer, "staff_id" integer, "desc" varchar(255), "misc" varchar(255), "query" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802145457')[0m
+Migrating to CreateDayRecs (20080802150113)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "day_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "tenki" varchar(255), "dekigoto" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150113')[0m
+Migrating to CreateCaseRecs (20080802150428)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "case_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "flag" integer, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150428')[0m
+Migrating to CreateAccounts (20080802150903)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "amount" integer, "rcv_name" varchar(255), "acnt" varchar(255), "desc" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150903')[0m
+Migrating to CreateShienKeikakus (20080802151643)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "shien_keikakus" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "jikai_sakutei_date" date, "boy_id" integer, "staff_id" integer, "sakutei_bango" integer, "shutaru_mondai" varchar(255), "honnin_ikou" varchar(255), "hogosha_ikou" varchar(255), "school_iken" varchar(255), "jidou_sodan_kyogi" varchar(255), "shien_hoshin" varchar(255), "choki_kodomo" varchar(255), "choki_katei" varchar(255), "choki_chiiki" varchar(255), "choki_sogo" varchar(255), "tokki_sogo" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802151643')[0m
+Migrating to CreateDaichos (20080802152150)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "daichos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "desc1" text, "desc2" text, "desc3" text, "desc4" text, "day_ent" date, "day_ext" date, "add_perm" varchar(255), "add_prev" varchar(255), "place_born" varchar(255), "sochi" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152150')[0m
+Migrating to CreateAttends (20080802152829)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "attends" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "time_start" datetime, "time_end" datetime, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152829')[0m
+Migrating to CreateTankiShienMokuhyos (20080826060930)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tanki_shien_mokuhyos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shien_keikaku_id" integer, "cat" varchar(255), "code" varchar(255), "kadai" varchar(255), "mokuhyo" varchar(255), "naiyou" varchar(255), "hyoka" varchar(255), "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080826060930')[0m
+Migrating to CreateAdmins (20080911002611)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "cat" varchar(255), "pos" varchar(255), "cont" varchar(255), "reporter" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080911002611')[0m
+Migrating to CreateStaffRecs (20080923081344)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "staff_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hours" varchar(255), "minutes" varchar(255), "attend_id" integer, "in_out" varchar(255), "yoken" varchar(255), "naiyo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080923081344')[0m
+Migrating to CreateMessages (20081030094714)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "staff_id" integer, "msg_to" varchar(255), "msg" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081030094714')[0m
+Migrating to CreateMessageStaffRels (20081117123422)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "message_staff_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_id" integer, "staff_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117123422')[0m
+Migrating to CreateSessions (20090428080931)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090428080931')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("admins")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("attends")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("boys")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("case_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("daichos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("day_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("edu_insts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("group_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("groups")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("guardians")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("jido_edu_rels")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("jido_grp_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("jido_guardian_rels")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("med_insts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("med_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("message_staff_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("school_recs")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("shidou_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("shien_keikakus")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("staff_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("staffs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("stay_out_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tanki_shien_mokuhyos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (11.4ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;36;1mSQL (12.3ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mSELECT * FROM sessions ORDER BY id[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT * FROM case_recs ORDER BY id[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mSELECT * FROM staffs ORDER BY id[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT * FROM messages ORDER BY id[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT * FROM staff_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM guardians ORDER BY id[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT * FROM groups ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM school_recs ORDER BY id[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT * FROM med_recs ORDER BY id[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT * FROM med_insts ORDER BY id[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSELECT * FROM edu_insts ORDER BY id[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT * FROM shidou_recs ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM message_staff_rels ORDER BY id[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM jido_edu_rels ORDER BY id[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT * FROM day_recs ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM accounts ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM tanki_shien_mokuhyos ORDER BY id[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT * FROM group_recs ORDER BY id[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSELECT * FROM boys ORDER BY id[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT * FROM attends ORDER BY id[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSELECT * FROM users ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM stay_out_recs ORDER BY id[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSELECT * FROM rels ORDER BY id[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT * FROM jido_guardian_rels ORDER BY id[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT * FROM admins ORDER BY id[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSELECT * FROM jido_grp_rels ORDER BY id[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM shien_keikakus ORDER BY id[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSELECT * FROM daichos ORDER BY id[0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (21.7ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoys (20080802125620)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "boys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthdate" date, "sex" integer, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802125620')[0m
+Migrating to CreateStaffs (20080802131105)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "staffs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "resd_add" varchar(255), "per_add" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "shokumei" varchar(255), "saiyobi" date, "user_id" integer, "imgd" blob, "imgf" varchar(255), "photo_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802131105')[0m
+Migrating to CreateGuardians (20080802133735)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "guardians" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "occupation" varchar(255), "cond_income" varchar(255), "cond_health" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802133735')[0m
+Migrating to CreateGroups (20080802134547)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "cat" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802134547')[0m
+Migrating to CreateEduInsts (20080802135016)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "edu_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135016')[0m
+Migrating to CreateMedInsts (20080802135535)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "med_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135535')[0m
+Migrating to CreateUsers (20080802135925)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802135925')[0m
+Migrating to CreateRels (20080802140155)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "relation" varchar(255), "date_expired" date, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802140155')[0m
+Migrating to CreateJidoGrpRels (20080802141056)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_grp_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "group_id" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141056')[0m
+Migrating to CreateJidoGuardianRels (20080802141650)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "jido_guardian_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "relation" varchar(255), "zokugara" varchar(255), "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141650')[0m
+Migrating to CreateJidoEduRels (20080802142109)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_edu_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "edu_inst_id" integer, "val_flag" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142109')[0m
+Migrating to CreateShidouRecs (20080802142626)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "shidou_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "cat" varchar(255), "desc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142626')[0m
+Migrating to CreateSchoolRecs (20080802143209)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "school_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "status" varchar(255), "message_to" text, "message_from" text, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802143209')[0m
+Migrating to CreateMedRecs (20080802144035)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "med_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "med_inst_id" integer, "date" date, "symptom" varchar(255), "status" varchar(255), "temperature" varchar(255), "insulance" varchar(255), "condition" text, "misc" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144035')[0m
+Migrating to CreateStayOutRecs (20080802144923)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "stay_out_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "staff_id" integer, "place" varchar(255), "case_category" varchar(255), "app_address" varchar(255), "app_name" varchar(255), "rcv_name" varchar(255), "confirmation" varchar(255), "date" date, "app_date" date, "rcv_date" date, "period_from" date, "period_to" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144923')[0m
+Migrating to CreateGroupRecs (20080802145457)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "group_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_id" integer, "staff_id" integer, "desc" varchar(255), "misc" varchar(255), "query" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802145457')[0m
+Migrating to CreateDayRecs (20080802150113)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "day_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "tenki" varchar(255), "dekigoto" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150113')[0m
+Migrating to CreateCaseRecs (20080802150428)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "case_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "flag" integer, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150428')[0m
+Migrating to CreateAccounts (20080802150903)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "amount" integer, "rcv_name" varchar(255), "acnt" varchar(255), "desc" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150903')[0m
+Migrating to CreateShienKeikakus (20080802151643)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "shien_keikakus" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "jikai_sakutei_date" date, "boy_id" integer, "staff_id" integer, "sakutei_bango" integer, "shutaru_mondai" varchar(255), "honnin_ikou" varchar(255), "hogosha_ikou" varchar(255), "school_iken" varchar(255), "jidou_sodan_kyogi" varchar(255), "shien_hoshin" varchar(255), "choki_kodomo" varchar(255), "choki_katei" varchar(255), "choki_chiiki" varchar(255), "choki_sogo" varchar(255), "tokki_sogo" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802151643')[0m
+Migrating to CreateDaichos (20080802152150)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "daichos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "desc1" text, "desc2" text, "desc3" text, "desc4" text, "day_ent" date, "day_ext" date, "add_perm" varchar(255), "add_prev" varchar(255), "place_born" varchar(255), "sochi" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152150')[0m
+Migrating to CreateAttends (20080802152829)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "attends" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "time_start" datetime, "time_end" datetime, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152829')[0m
+Migrating to CreateTankiShienMokuhyos (20080826060930)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "tanki_shien_mokuhyos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shien_keikaku_id" integer, "cat" varchar(255), "code" varchar(255), "kadai" varchar(255), "mokuhyo" varchar(255), "naiyou" varchar(255), "hyoka" varchar(255), "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080826060930')[0m
+Migrating to CreateAdmins (20080911002611)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "cat" varchar(255), "pos" varchar(255), "cont" varchar(255), "reporter" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080911002611')[0m
+Migrating to CreateStaffRecs (20080923081344)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "staff_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hours" varchar(255), "minutes" varchar(255), "attend_id" integer, "in_out" varchar(255), "yoken" varchar(255), "naiyo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080923081344')[0m
+Migrating to CreateMessages (20081030094714)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "staff_id" integer, "msg_to" varchar(255), "msg" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081030094714')[0m
+Migrating to CreateMessageStaffRels (20081117123422)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "message_staff_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_id" integer, "staff_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117123422')[0m
+Migrating to CreateSessions (20090428080931)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090428080931')[0m
+Migrating to CreateCats (20090623092625)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "subtitle" varchar(255), "value" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090623092625')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("admins")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("attends")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("boys")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("case_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cats")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("daichos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("day_recs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edu_insts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("group_recs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("guardians")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("jido_edu_rels")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("jido_grp_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("jido_guardian_rels")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("med_insts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("med_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("message_staff_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("messages")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("school_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("shidou_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("shien_keikakus")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("staff_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("staffs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stay_out_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tanki_shien_mokuhyos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (15.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoys (20080802125620)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "boys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthdate" date, "sex" integer, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802125620')[0m
+Migrating to CreateStaffs (20080802131105)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "staffs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "resd_add" varchar(255), "per_add" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "shokumei" varchar(255), "saiyobi" date, "user_id" integer, "imgd" blob, "imgf" varchar(255), "photo_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802131105')[0m
+Migrating to CreateGuardians (20080802133735)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "guardians" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "occupation" varchar(255), "cond_income" varchar(255), "cond_health" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802133735')[0m
+Migrating to CreateGroups (20080802134547)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "cat" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802134547')[0m
+Migrating to CreateEduInsts (20080802135016)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "edu_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135016')[0m
+Migrating to CreateMedInsts (20080802135535)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "med_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135535')[0m
+Migrating to CreateUsers (20080802135925)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802135925')[0m
+Migrating to CreateRels (20080802140155)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "relation" varchar(255), "date_expired" date, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802140155')[0m
+Migrating to CreateJidoGrpRels (20080802141056)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_grp_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "group_id" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141056')[0m
+Migrating to CreateJidoGuardianRels (20080802141650)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_guardian_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "relation" varchar(255), "zokugara" varchar(255), "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141650')[0m
+Migrating to CreateJidoEduRels (20080802142109)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_edu_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "edu_inst_id" integer, "val_flag" integer, "date_expired" date, "date_entered" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142109')[0m
+Migrating to CreateShidouRecs (20080802142626)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "shidou_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "cat" varchar(255), "desc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142626')[0m
+Migrating to CreateSchoolRecs (20080802143209)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "school_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "status" varchar(255), "message_to" text, "message_from" text, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802143209')[0m
+Migrating to CreateMedRecs (20080802144035)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "med_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "med_inst_id" integer, "date" date, "symptom" varchar(255), "status" varchar(255), "temperature" varchar(255), "insulance" varchar(255), "condition" text, "misc" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144035')[0m
+Migrating to CreateStayOutRecs (20080802144923)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "stay_out_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "staff_id" integer, "place" varchar(255), "case_category" varchar(255), "app_address" varchar(255), "app_name" varchar(255), "rcv_name" varchar(255), "confirmation" varchar(255), "date" date, "app_date" date, "rcv_date" date, "period_from" date, "period_to" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144923')[0m
+Migrating to CreateGroupRecs (20080802145457)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "group_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_id" integer, "staff_id" integer, "desc" varchar(255), "misc" varchar(255), "query" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802145457')[0m
+Migrating to CreateDayRecs (20080802150113)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "day_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "tenki" varchar(255), "dekigoto" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150113')[0m
+Migrating to CreateCaseRecs (20080802150428)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "case_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "flag" integer, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150428')[0m
+Migrating to CreateAccounts (20080802150903)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "amount" integer, "rcv_name" varchar(255), "acnt" varchar(255), "desc" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150903')[0m
+Migrating to CreateShienKeikakus (20080802151643)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "shien_keikakus" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "jikai_sakutei_date" date, "boy_id" integer, "staff_id" integer, "sakutei_bango" integer, "shutaru_mondai" varchar(255), "honnin_ikou" varchar(255), "hogosha_ikou" varchar(255), "school_iken" varchar(255), "jidou_sodan_kyogi" varchar(255), "shien_hoshin" varchar(255), "choki_kodomo" varchar(255), "choki_katei" varchar(255), "choki_chiiki" varchar(255), "choki_sogo" varchar(255), "tokki_sogo" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802151643')[0m
+Migrating to CreateDaichos (20080802152150)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "daichos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "desc1" text, "desc2" text, "desc3" text, "desc4" text, "day_ent" date, "day_ext" date, "add_perm" varchar(255), "add_prev" varchar(255), "place_born" varchar(255), "sochi" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152150')[0m
+Migrating to CreateAttends (20080802152829)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "attends" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "time_start" datetime, "time_end" datetime, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152829')[0m
+Migrating to CreateTankiShienMokuhyos (20080826060930)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "tanki_shien_mokuhyos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shien_keikaku_id" integer, "cat" varchar(255), "code" varchar(255), "kadai" varchar(255), "mokuhyo" varchar(255), "naiyou" varchar(255), "hyoka" varchar(255), "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080826060930')[0m
+Migrating to CreateAdmins (20080911002611)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "cat" varchar(255), "pos" varchar(255), "cont" varchar(255), "reporter" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080911002611')[0m
+Migrating to CreateStaffRecs (20080923081344)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "staff_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hours" varchar(255), "minutes" varchar(255), "attend_id" integer, "in_out" varchar(255), "yoken" varchar(255), "naiyo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080923081344')[0m
+Migrating to CreateMessages (20081030094714)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "staff_id" integer, "msg_to" varchar(255), "msg" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081030094714')[0m
+Migrating to CreateMessageStaffRels (20081117123422)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "message_staff_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_id" integer, "staff_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117123422')[0m
+Migrating to CreateSessions (20090428080931)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090428080931')[0m
+Migrating to CreateCats (20090623092625)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "subtitle" varchar(255), "value" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090623092625')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("admins")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("attends")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("boys")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("case_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cats")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("daichos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("day_recs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edu_insts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("group_recs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("guardians")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("jido_edu_rels")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("jido_grp_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("jido_guardian_rels")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("med_insts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("med_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("message_staff_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("messages")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("school_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("shidou_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("shien_keikakus")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("staff_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("staffs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stay_out_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tanki_shien_mokuhyos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mBoy Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: boys: SELECT * FROM "boys" WHERE ("boys"."sex" = 1) ORDER BY status DESC, birthdate DESC, sex ASC, name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (9.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBoys (20080802125620)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "boys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthdate" date, "sex" integer, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802125620')[0m
+Migrating to CreateStaffs (20080802131105)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "staffs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "resd_add" varchar(255), "per_add" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "shokumei" varchar(255), "saiyobi" date, "user_id" integer, "imgd" blob, "imgf" varchar(255), "photo_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802131105')[0m
+Migrating to CreateGuardians (20080802133735)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "guardians" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birth_date" date, "sex" integer, "occupation" varchar(255), "cond_income" varchar(255), "cond_health" varchar(255), "tel" varchar(255), "tel_hp" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802133735')[0m
+Migrating to CreateGroups (20080802134547)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "cat" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802134547')[0m
+Migrating to CreateEduInsts (20080802135016)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "edu_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135016')[0m
+Migrating to CreateMedInsts (20080802135535)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "med_insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "cat" varchar(255), "zip" varchar(255), "add" varchar(255), "tel" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080802135535')[0m
+Migrating to CreateUsers (20080802135925)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802135925')[0m
+Migrating to CreateRels (20080802140155)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "relation" varchar(255), "date_expired" date, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802140155')[0m
+Migrating to CreateJidoGrpRels (20080802141056)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_grp_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "group_id" integer, "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141056')[0m
+Migrating to CreateJidoGuardianRels (20080802141650)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_guardian_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "relation" varchar(255), "zokugara" varchar(255), "date_expired" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802141650')[0m
+Migrating to CreateJidoEduRels (20080802142109)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "jido_edu_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "edu_inst_id" integer, "val_flag" integer, "date_expired" date, "date_entered" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142109')[0m
+Migrating to CreateShidouRecs (20080802142626)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "shidou_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "cat" varchar(255), "desc" varchar(255), "taisaku" varchar(255), "basho" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802142626')[0m
+Migrating to CreateSchoolRecs (20080802143209)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "school_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "boy_id" integer, "staff_id" integer, "status" varchar(255), "message_to" text, "message_from" text, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802143209')[0m
+Migrating to CreateMedRecs (20080802144035)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "med_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "staff_id" integer, "med_inst_id" integer, "date" date, "symptom" varchar(255), "status" varchar(255), "temperature" varchar(255), "insulance" varchar(255), "condition" text, "misc" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144035')[0m
+Migrating to CreateStayOutRecs (20080802144923)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "stay_out_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "staff_id" integer, "place" varchar(255), "case_category" varchar(255), "app_address" varchar(255), "app_name" varchar(255), "rcv_name" varchar(255), "confirmation" varchar(255), "date" date, "app_date" date, "rcv_date" date, "period_from" date, "period_to" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802144923')[0m
+Migrating to CreateGroupRecs (20080802145457)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "group_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_id" integer, "staff_id" integer, "desc" varchar(255), "misc" varchar(255), "query" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802145457')[0m
+Migrating to CreateDayRecs (20080802150113)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "day_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "tenki" varchar(255), "dekigoto" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150113')[0m
+Migrating to CreateCaseRecs (20080802150428)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "case_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "flag" integer, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150428')[0m
+Migrating to CreateAccounts (20080802150903)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "guardian_id" integer, "amount" integer, "rcv_name" varchar(255), "acnt" varchar(255), "desc" varchar(255), "misc" varchar(255), "hizuke" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802150903')[0m
+Migrating to CreateShienKeikakus (20080802151643)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "shien_keikakus" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "jikai_sakutei_date" date, "boy_id" integer, "staff_id" integer, "sakutei_bango" integer, "shutaru_mondai" varchar(255), "honnin_ikou" varchar(255), "hogosha_ikou" varchar(255), "school_iken" varchar(255), "jidou_sodan_kyogi" varchar(255), "shien_hoshin" varchar(255), "choki_kodomo" varchar(255), "choki_katei" varchar(255), "choki_chiiki" varchar(255), "choki_sogo" varchar(255), "tokki_sogo" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802151643')[0m
+Migrating to CreateDaichos (20080802152150)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "daichos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "boy_id" integer, "desc1" text, "desc2" text, "desc3" text, "desc4" text, "day_ent" date, "day_ext" date, "add_perm" varchar(255), "add_prev" varchar(255), "place_born" varchar(255), "sochi" varchar(255), "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152150')[0m
+Migrating to CreateAttends (20080802152829)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "attends" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer, "time_start" datetime, "time_end" datetime, "misc" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080802152829')[0m
+Migrating to CreateTankiShienMokuhyos (20080826060930)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "tanki_shien_mokuhyos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shien_keikaku_id" integer, "cat" varchar(255), "code" varchar(255), "kadai" varchar(255), "mokuhyo" varchar(255), "naiyou" varchar(255), "hyoka" varchar(255), "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080826060930')[0m
+Migrating to CreateAdmins (20080911002611)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "cat" varchar(255), "pos" varchar(255), "cont" varchar(255), "reporter" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080911002611')[0m
+Migrating to CreateStaffRecs (20080923081344)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "staff_recs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hours" varchar(255), "minutes" varchar(255), "attend_id" integer, "in_out" varchar(255), "yoken" varchar(255), "naiyo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080923081344')[0m
+Migrating to CreateMessages (20081030094714)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "staff_id" integer, "msg_to" varchar(255), "msg" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081030094714')[0m
+Migrating to CreateMessageStaffRels (20081117123422)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "message_staff_rels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_id" integer, "staff_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117123422')[0m
+Migrating to CreateSessions (20090428080931)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090428080931')[0m
+Migrating to CreateCats (20090623092625)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "subtitle" varchar(255), "value" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090623092625')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("admins")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("attends")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("boys")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("case_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cats")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("daichos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("day_recs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("edu_insts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("group_recs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("groups")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("guardians")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("jido_edu_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("jido_grp_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("jido_guardian_rels")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("med_insts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("med_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("message_staff_rels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("messages")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("rels")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("school_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("shidou_recs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("shien_keikakus")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("staff_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("staffs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stay_out_recs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tanki_shien_mokuhyos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m

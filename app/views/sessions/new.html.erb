@@ -1,0 +1,86 @@
+<!--
+ログイン画面（2008.05.02/安井）width:780px;
+margin-left:auto;
+margin-right:auto;
+-->
+
+
+<div style="width:270px;
+	margin-left:auto; margin-right:auto; margin-top:10%; 
+	border:solid 1px #DDDDDD; padding:30px;
+	background-color:yellow">
+	TAIJU
+	<span style="margin-left:6px">
+		大<span style="font-size:8px;">きな</span>樹
+	</span>
+	<span style="color:grey; font-size:9px; margin-left:6px">
+		児童養護施設業務支援システム
+	</span>
+	
+	<hr>
+	<div>
+		<span style="color:grey; font-size:11px">
+			このシステムは次の施設に試験提供されています：　K.J.G
+		</span><br>
+		<table>
+			<tr>
+				<td style="text-align:right;color:orange;">login:</td>
+				<td style="color:yellow;">****</td>
+			</tr>
+			<tr>
+				<td style="text-align:right;color:orange;">password:</td>
+				<td style="color:yellow;">****</td>
+			</tr>
+			<tr style="font-size*10px">
+				<td style="text-align:right;color:orange;">help_site:</td>
+				<td style="color:orange;">
+					<a href= "http://taiju.wordpress.com/">TaijuTutorial</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<hr>
+	<% form_tag session_path do -%>
+		<p>
+			<label for="login">ログイン</label><br/>
+			<%= text_field_tag 'login' %>
+		</p>
+		<p>
+			<label for="password">パスワード</label><br/>
+			<%= password_field_tag 'password' %>
+		</p>
+	
+		<!-- Uncomment this if you want this functionality
+		<p><label for="remember_me">Remember me:</label>
+		<%= check_box_tag 'remember_me' %></p>
+		-->
+	
+		<p><%= submit_tag 'Log in' %></p>
+	<% end -%>
+	
+	<hr>
+	<span style="font-size:75%;">
+		<%#= link_to 'ユーザーの新規登録', :action => "new",  :controller => "users" %>
+	</span>
+
+	<div STYLE="width:270px; margin-left:auto; margin-right:auto;
+		font-size:11.5px; color:#000; font-family:Arial; 
+		text-align:center; padding:10px;"
+		>
+		Copyright &copy; 2008 
+		<A HREF="#Your-Site-URL" STYLE="color:#000; text-decoration:none;">
+			e.m.u.
+		</A> 
+		All Rights Reserved.
+		<br>email: ikuro.yasui@gmail.com
+	</div>
+	
+	<hr>
+    <div style="font-size:10px;">
+		2008.11.15 β版　ver.0.95 バグフィックス<br>
+		2008.10.29 β版　ver.0.93 バグフィックス<br>
+		2008.10.23 β版　ver.0.91 バグフィックス<br>
+		2008.10.19 β版　ver.0.90 バグフィックス<br>
+	</div>	
+</div>	

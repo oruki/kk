@@ -1,0 +1,44 @@
+<%= title_bar("bok", "児童ケース記録（一覧）") %>  
+<%= fn_bar %>
+
+<TABLE CLASS="part"> 
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>児童ID</th>
+    <th colspan=5>児童名/ﾌﾘｶﾞﾅ</th>
+    <th colspan=5>生年月日</td>
+    <th colspan=2 style="text-align:center;">年齢</td>
+    <th colspan=2 style="text-align:center;">性別</td>
+    <th colspan=14>備　考</th>
+  </tr>
+
+<% for case_rec in @case_recs %>
+  <tr>
+    <td colspan=4>
+      <%=h case_rec.boy_id %>
+    </td>
+    <td colspan=5>
+      <%=h case_rec.try(:boy).try(:name) %><br>
+      <%=h case_rec.try(:boy).try(:kana_name) %>
+    </td>
+    <td colspan=5>
+      <%=h case_rec.boy.try(:birthdate) %>
+    </td>
+    <td colspan=2 style="text-align:center;">
+      <%=h case_rec.boy.try(:birthdate).try(:age) %>
+    </td>
+    <td colspan=2 style="text-align:center;">
+      <%=h case_rec.boy.try(:sex) %>
+    </td>
+    <td colspan=12>
+      <%=h case_rec.misc %>
+    </td>
+    <td colspan=1>
+      <%= link_to image_tag("report.png", :border=>0), case_rec %>
+    </td>
+    <td colspan=1>
+      <%= go_edit(case_rec) %>
+    </td>
+  </tr>
+<% end %>
+</table>

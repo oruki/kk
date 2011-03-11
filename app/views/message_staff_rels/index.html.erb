@@ -1,0 +1,76 @@
+<h1>Listing message_staff_rels</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th>Staff</th>
+  </tr>
+
+<% for message_staff_rel in @message_staff_rels %>
+  <tr>
+    <td><%=h message_staff_rel.message_id %></td>
+    <td><%=h message_staff_rel.staff_id %></td>
+    <td><%= link_to 'Show', message_staff_rel %></td>
+    <td><%= link_to 'Edit', edit_message_staff_rel_path(message_staff_rel) %></td>
+    <td><%= link_to 'Destroy', message_staff_rel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New message_staff_rel', new_message_staff_rel_path %>
+
+
+
+
+<TABLE ID="mst" CLASS="title">
+  <tr>
+    <td>伝言指導員関係（一覧）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+  <tr>
+    <td colspan=32 style="text-align:right">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+ 
+
+      <span style="margin-right:20px">
+        レコード数：<%= @message_staff_rels.size %>件
+      </span>
+      <%= go_new %>
+    </td>
+  </tr>
+  <tr>
+    <% 31.times do |i| %>
+    <td></td>
+    <% end %>
+    <td onmouseover="this.style.background='red';this.style.cursor='pointer'"
+        onmouseout="this.style.background='white';" onclick="alert('bang')"></td>
+  </tr>
+  <tr>
+    <th colspan=4>伝言ID</th>
+    <th colspan=12>伝言</th>
+    <th colspan=4>宛先ｽﾀｯﾌID</th>
+    <th colspan=12>宛先ｽﾀｯﾌ名</th>
+  </tr>
+<% for msr in @message_staff_rels %>
+  <tr>
+    <td colspan=4>
+      <%=h msr.message_id %>
+    </td>
+    <td colspan=12>
+      <%#=h msr.message.msg %><br>
+    </td>
+    <td colspan=4>
+      <%=h msr.staff_id %>
+    </td>
+    <td colspan=12>
+      <%#=h msr.staff.name %>
+    </td>
+  </tr>
+<% end %>
+</table>

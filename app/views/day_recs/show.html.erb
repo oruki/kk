@@ -1,0 +1,204 @@
+<%= go_prev("hizuke") %>
+<%= go_next %>
+<LINK rel="stylesheet" type="text/css" href="/stylesheets/table_a.css">
+<%= title_bar("rec", "業務記録(#{@day_rec.hizuke.to_jdate})") %>  
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<%= table_col(32) %>
+<tr>
+  <th colspan=5>日付/記録者</td>
+  <th colspan=5>天気</td>
+  <th colspan=11>出来事</td>
+  <th colspan=11>備考</td>
+</tr>
+<tr>
+  <td colspan=5>
+    <%=h @day_rec.hizuke %><br>
+    <%=h @day_rec.staff.name %>
+  </td>
+  <td colspan=5><%=h @day_rec.tenki %></td>
+  <td colspan=11><%=h @day_rec.dekigoto %></td>
+  <td colspan=11><%=h @day_rec.misc %></td>
+</tr>
+
+<!-- ■00■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/staff_recs）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+               <%= stretch ('staff_rec') %>
+               <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "staff_rec") %>
+               <%= collapse ('staff_rec') %>
+               <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "staff_rec") %>                     
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    指導員の記録:<span style="color:blue;"><%#= @staff_recs.count %></span>
+  </th>
+</tr>
+
+
+<tr ID='staff_rec' style="display:none;">
+ <td colspan=32>
+  <div CLASS="portal-250">
+    <%= render(:partial => "shared/staff_recs",
+           :object => @staff_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+  <br>
+  <span ID="showicon01">
+    <%= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "chart") %>
+    <%= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "chart") %>                     
+  </span>
+	<div ID="chart">        
+		<%= render :partial=>"shared/staff_recs_chart"%>
+	</div>
+ </td>
+</tr> 
+
+
+
+<!-- ■00■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/group_recs）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+               <%= stretch ('grp_rec') %>
+               <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "grp_rec") %>
+               <%= collapse ('grp_rec') %>
+               <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "grp_rec") %>                        
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    ｸﾞﾙｰﾌﾟの記録:<span style="color:blue;"><%#= @group_recs.count %></span>
+  </th>
+</tr>
+
+<tr ID='grp_rec' style="display:none;">
+ <td colspan=32>
+  <div CLASS="portal-100">
+    <%= render(:partial => "shared/group_recs",
+           :object => @group_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+ </td>
+</tr>
+
+<!-- ■01■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/school_recs）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+               <%= stretch ('school_rec') %>
+               <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "school_rec") %>
+               <%= collapse ('school_rec') %>
+               <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "school_rec") %>                        
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    学校記録:<span style="color:blue;"><%#= @school_recs.count %></span>
+  </th>
+</tr>
+
+<tr ID='school_rec' style="display:none;">
+ <td colspan=32>
+  <div CLASS="portal-100">
+    <%= render(:partial => "shared/school_recs2",
+           :object => @school_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+ </td>
+</tr>
+
+<!-- ■02■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/shidou）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+               <%= stretch ('shidou_rec') %>
+               <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "shidou_rec") %>
+               <%= collapse ('shidou_rec') %>
+               <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "shidou_rec") %>                        
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    指導記録:<span style="color:blue;"><%#= @shidou_recs.count %></span>
+  </th>
+</tr>
+
+<tr ID='shidou_rec' style="display:no0ne;">
+ <td colspan=32>
+  <div CLASS="portal-100">
+    <%= render(:partial => "shared/shidou_recs2",
+           :object => @shidou_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+ </td>
+</tr>
+
+<!-- ■03■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/med_recs）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+               <%= stretch ('med_rec') %>
+               <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "med_rec") %>
+               <%= collapse ('med_rec') %>
+               <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "med_rec") %>                        
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    医療記録:<span style="color:blue;"><%#= @med_recs.count %></span>
+  </th>
+</tr>
+
+<tr ID='med_rec' style="display:none;">
+ <td colspan=32>
+  <div CLASS="portal-100">
+    <%= render(:partial => "shared/med_recs",
+           :object => @med_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+ </td>
+</tr>
+
+<!-- ■04■ｽｸﾛｰﾙﾃｽﾄ＋部分ﾃﾝﾌﾟﾚｰﾄ（shared/stay_out_recs）■■ -->
+<tr>
+  <th colspan=32>
+    <span style="float:right; font-weight:normal;">
+      <!-- 折畳み用のアイコン -->
+        <span ID="show_icon01">
+        <%= stretch ('stay_out_rec') %>
+        <%#= link_to_function image_tag ("maximize.gif", :border=>0) ,visual_effect(:appear, "stay_out_rec") %>
+        <%= collapse ('stay_out_rec') %>
+        <%#= link_to_function image_tag ("minimize.gif", :border=>0) ,visual_effect(:fade, "stay_out_rec") %>                        
+        </span>      
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+    </span>
+    外泊･外出記録:<span style="color:blue;"><%#= @stay_out_recs.count %></span>
+  </th>
+</tr>
+
+<tr ID='stay_out_rec' style="display:none;">
+ <td colspan=32>
+  <div CLASS="portal-100">
+    <%= render(:partial => "shared/stay_out_recs2",
+           :object => @stay_out_recs,
+           :locals => { :cont => 'day_recs', :act => 'show' }) %>
+  </div>
+ </td>
+</tr>
+
+</table>

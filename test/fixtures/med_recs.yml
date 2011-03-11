@@ -1,0 +1,19 @@
+data3:
+  id: 1
+  boy_id: 439362928
+  staff_id: 446796857
+  med_inst_id: 326940857
+  date: 2009-05-25
+
+data4:
+  id: 2
+  boy_id: 1023528317
+  staff_id: 110392546
+  med_inst_id: 16641993
+  date: 2009-07-25
+  symptom: その他
+  status: 安静
+  temperature: 平熱
+  condition: おたふく風邪
+  misc: 右耳下の腫れ強い。痛みが引けば外出可
+

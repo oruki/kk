@@ -1,0 +1,110 @@
+
+
+<%= session[:manage_mode] if session[:manage_mode] %>
+
+<!--
+<%= title_bar("mst", "extra") %>  
+<TABLE CLASS="part">
+  <tr>
+    <td width="55%">
+      <%= render (:partial => "tb1" ) %>    </td>
+    </td>
+    <td>
+      <%= render (:partial => "tb2" ) %>    </td>
+    </td>
+  </tr>
+</TABLE>
+-->
+
+
+
+
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<script type="text/javascript">
+				j$(function() {
+					j$("#tabs").tabs();
+				});
+			</script>
+
+      <div class="demo">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">環境設定</a></li>
+          <li><a href="#tabs-2">データ状況</a></li>
+          <li><a href="#tabs-3">データ管理</a></li>
+          <li><a href="#tabs-4">データ送信</a></li>
+          <li><a href="#tabs-5">表示設定</a></li>
+          <li><a href="#tabs-6">自動メール設定</a></li>  
+        </ul>
+        
+        <div id="tabs-1">
+          <%= render (:partial => "tb1" ) %> 
+        </div>
+               
+        <div id="tabs-2">
+        	<table CLASS="part" style="padding:5px">
+        		<%= table_col(32) %>
+        		<tr>
+			  	    <td colspan=12>指導記録:</td>
+			  	    <td colspan=20> <%= ShidouRec.all.size %>件</td>
+		  	    </tr>
+        		<tr>
+			  	    <td colspan=12>グループ記録:</td>
+			  	    <td colspan=20> <%= GroupRec.all.size %>件</td>
+		  	    </tr>
+        		<tr>
+			  	    <td colspan=12>業務記録:</td>
+			  	    <td colspan=20> <%= DayRec.all.size %>件</td>
+		  	    </tr>
+		  	  </table>    	    
+        </div>
+        
+        <div id="tabs-3">
+  	      <%= link_to ('ＤＢ>>フィクスチャー｜保存', {:action => "extract_fixture"}) %><br>
+  	      <%= link_to ('フィクスチャー>>ＤＢ｜読込', {:action => "load_fixture"}) %><br>
+        </div>
+        
+        <div id="tabs-4">
+		  	  <%= link_to (
+		  	    "YMLデータ作成圧縮",{:action=>'extract_ymls_to_zip_return'},
+		  	    :title=>"全テーブルのＹＭＬデータから１つの圧縮ファイルを作成DLします") %><br>  		
+		  	  <%= link_to (
+		  	     "YMLデータDL",{:action=>'download_ymls'},
+		  	     :title => "ＹＭＬデータ圧縮ファイルをﾀﾞｳﾝﾛｰﾄﾞします")%><br>  	  
+		  	  <%= link_to "データベースDL",:action=>'download_db' %><br>
+		  	  <%= link_to "設定ファイルDL",:action=>'download_pref' %><br>
+		  	  <%= link_to "添付メール発信",:action=>'send_mail' %><br> 
+        </div>
+        
+        <div id="tabs-5">
+		  	  <%= check_box_tag 'receive_email', 'yes', true%> 在籍児童のみ表示<br>
+		      <%= check_box_tag 'receive_email', 'yes', true%> 措置外児童のみ表示<br>
+		      <%= check_box_tag 'receive_email', 'yes', true%> 全登録児童を表示
+        </div>        
+         
+        <div id="tabs-6">
+					<%= link_to "create_mail(notice)", :controller => "test", :action => "create_mail" %><hr>
+					<%= link_to "create_mail2(notice2)", :controller => "test", :action => "create_mail2" %><hr>
+					<%= link_to "create_auto_mail(auto)", :controller => "test", :action => "create_auto_mail" %><hr>
+        </div>                
+      </div>
+      </div><!-- End demo -->

@@ -1,0 +1,76 @@
+<%= title_bar("rec", "面会・外出・外泊記録") %>  
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<%= table_col(32) %>
+<tr>
+  <th colspan=12>日付</th>
+  <td colspan=20><%=h @stay_out_rec.date %></td>
+</tr>
+
+<tr>
+  <th colspan=12>児童</th>
+  <td colspan=20><%=h @stay_out_rec.boy.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>指導員</th>
+  <td colspan=20><%=h @stay_out_rec.staff.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>期間（自）</th>
+  <td colspan=20><%=h @stay_out_rec.period_from %></td>
+</tr>
+
+<tr>
+  <th colspan=12>期間（至）</th>
+  <td colspan=20><%=h @stay_out_rec.period_to %></td>
+</tr>
+
+<tr>
+  <th colspan=12>場所</th>
+  <td colspan=20><%=h @stay_out_rec.place %></td>
+</tr>
+
+<tr>
+  <th colspan=12>カテゴリー</th>
+  <td colspan=20><%=h @stay_out_rec.case_category %></td>
+</tr>
+
+<tr>
+  <th colspan=12>保護者</th>
+  <td colspan=20><%=h @stay_out_rec.guardian.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>申請者住所</th>
+  <td colspan=20><%=h @stay_out_rec.app_address %></td>
+</tr>
+
+<tr>
+  <th colspan=12>申請者氏名</th>
+  <td colspan=20><%=h @stay_out_rec.app_name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>申請日</th>
+  <td colspan=20><%=h @stay_out_rec.app_date %></td>
+</tr>
+
+<tr>
+  <th colspan=12>受取日</th>
+  <td colspan=20><%=h @stay_out_rec.rcv_date %></td>
+</tr>
+
+<tr>
+  <th colspan=12>受付担当者</th>
+  <td colspan=20><%=h @stay_out_rec.staff.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>確認欄</th>
+  <td colspan=20><%=h @stay_out_rec.confirmation %></td>
+</tr>
+
+</TABLE>

@@ -1,0 +1,58 @@
+<%= title_bar("mst", "医療機関（編集）")%>
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<%= error_messages_for :med_inst %>
+<% form_for(@med_inst) do |f| %>
+<%= table_col(32) %>
+<tr>
+  <th colspan=10>フリガナ</th>
+  <td colspan=22>
+    <%= f.text_field :kana_name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>名　称</th>
+  <td colspan=22>
+    <%= f.text_field :name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>区　分</th>
+  <td colspan=22>
+　　<%= f.select (:cat, ['内科','外科','整形','外科','歯科','その他'], {:include_blank => true}) %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>郵便番号</th>
+  <td colspan=22>
+    <%= f.text_field :zip %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>住　所</th>
+  <td colspan=22>
+    <%= f.text_field :add, :size=>50 %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>電話番号</th>
+  <td colspan=22>
+    <%= f.text_field :tel %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>ﾌｧｯｸｽ番号</th>
+  <td colspan=22>
+    <%= f.text_field :fax %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>登録／更新</th>
+  <td colspan=22>
+     <%= f.submit "登録／更新" %>
+     <%= link_to 'このレコードを削除する', @med_inst, :confirm => '本当に削除しますか?', :method => :delete %> 
+  </td>
+</tr>
+<% end %>
+</TABLE>

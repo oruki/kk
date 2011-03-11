@@ -1,0 +1,14 @@
+﻿  <tr ID="aux_01" style="display:none;">
+    <td colspan=4>学校</td>
+
+    <td colspan=4></td>
+    <td colspan=24 style="color:green">
+      <%#= f.text_field :basho, :size=>64 %>
+      <%#= check_box_tag("school_rec[status][]", '欠席', flag) %>
+    	<%= check_box_tag(:aa, 1, false) %> 欠席
+    	<%= check_box_tag(:aa, 1, false) %> 遅刻
+    	<%= check_box_tag(:aa, 1, false) %> 早退
+    	<%= check_box_tag(:aa, 1, false) %> 連絡
+    	<%#= f.text_field :basho, :size=>30 %>   	　
+    </td>
+  </tr>

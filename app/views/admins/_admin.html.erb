@@ -1,0 +1,51 @@
+﻿<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <% form_for(@admin) do |f| %>  <%= f.error_messages %>
+  <tr>
+    <th colspan=12>
+        title
+    </td>
+    <td colspan=20>
+        <%= f.text_field :title %>
+    </td>
+  </tr>
+  
+  <tr>
+    <th colspan=12>
+        cat
+    </td>
+    <td colspan=20>
+        <%= f.text_field :cat, :size => "50"  %> 	
+    </td>	
+  </tr>
+  
+  <tr>
+    <th colspan=12>
+        pos
+    </td>
+    <td colspan=20>
+        <%= f.text_field :pos, :size => "50"  %>	
+    </td>	
+  </tr>
+
+  <tr>
+    <th colspan=12>
+        cont
+    </td>
+    <td colspan=20>
+        <%= f.text_area :cont, :rows => "3"  %>
+    </td>	
+  </tr>	
+  
+  <tr>
+    <th colspan=12>
+        reporter
+    </td>
+    <td colspan=20>
+        <%= f.text_field :reporter %>
+    </td>	
+  </tr>	
+
+</TABLE>
+    <%= f.submit "Create" %>
+<% end %>

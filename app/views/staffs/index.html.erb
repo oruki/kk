@@ -1,0 +1,45 @@
+
+
+<%= title_bar("mst", "指導員（一覧）")%>
+<%= fn_bar %>
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=5>UsrID<br>職名</th>
+    <th colspan=5>名前<br>ﾌﾘｶﾞﾅ</th>
+    <th colspan=4>生年月日<br>年齢/性別</th>
+    <th colspan=10>住　所<br>本　籍</th>
+    <th colspan=8>電話番号<br>携帯番号</th>
+  </tr>
+
+<% for staff in @staffs %>
+  <tr>
+    <td colspan=5>
+      <span style="color:orange;font-size:8px"><%=h "●"+staff.try(:user_id).to_s %></span><br>
+
+      <%=h staff.shokumei %>
+    </td>
+    <td colspan=5>
+      <span style="font-size:9px"><%=h staff.kana_name %></span><br>
+      <%=h staff.name %>
+    </td>
+    <td colspan=4>
+      <%=h staff.birth_date %><br>
+      <span style="margin-right:24px">
+        <%=h staff.birth_date.age %>才
+      </span>
+      <%=h staff.sex.to_jsex %>
+    </td>
+    <td colspan=10>
+      <%=h staff.resd_add %><br>
+      本）<%=h staff.per_add %>
+    </td>
+    <td colspan=7>
+       &nbsp;H:<%=h staff.tel %><br>
+       HP:<%=h staff.tel_hp %>
+    </td>
+    <td colspan=1><%= go_edit(staff) %></td>
+  </tr>
+
+<% end %>
+</TABLE>

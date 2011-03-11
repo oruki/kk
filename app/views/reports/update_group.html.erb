@@ -1,0 +1,14 @@
+<!-- ＵＴＦ 
+  <% if !params[:grp]=="all" %>
+    <%= "Group.find(params[:grp].to_i.name は #{Group.find(params[:grp].to_i).name}です" %><br>
+    <%= "@selgrp.name は #{@selgrp.name}です" %><br>
+    <%= "@selgrp.boys[0].name は #{@selgrp.boys[0].name}です" %><br>
+    <%= "@selgrp.boys.size は #{@selgrp.boys.size}です" %><br>
+    <%= "@selgrp.boys.map{|i| [i.id]}.to_s は　#{@selgrp.boys.map{|i| [i.id]}.to_s }です" %><br>
+    これは「update_group.html.erb」がレンダーしています<br>
+    <%= "@boysの数は#{@boys.size}です" %><br>
+    <%= current_user.staff.name %>
+    <%= "params[:grp]は#{params[:grp]}です" -%><br>
+  <% end %>
+-->
+<%#= render :partial => "jido_list", :object => @boys %>

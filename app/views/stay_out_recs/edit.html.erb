@@ -1,0 +1,27 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>面会・外出・外泊　編集画面（編集）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+  <td style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %>&nbsp;
+    <%= go_list %>
+  </td>
+  
+
+</TABLE>
+
+<!-- EDIT -->
+  <%= render(:partial => "shared/stay_out_rec", 
+             :object => @stay_out_rec) %>
+
+<!-- INDEX -->
+<div ID="StayOutRecaPart">
+  <%= render(:partial => "shared/stay_out_recs", 
+             :object => @stay_out_recs) %>
+</div>

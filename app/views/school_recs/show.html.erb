@@ -1,0 +1,55 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>学校記録</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part"
+<tr>
+  <td style="text-align:right;">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_edit(@school_rec) %> &nbsp;
+    <%= go_list %>
+  </td>
+</tr>
+</TABLE>
+
+<TABLE CLASS="part">
+<tr>
+  <% 32.times do %>
+    <td></td>
+  <% end %> 
+</tr>
+<tr>
+  <th colspan=12>日付</th>
+  <td colspan=20><%=h @school_rec.date %></td>
+</tr>
+
+<tr>
+  <th colspan=12>児童</th>
+    <td colspan=20><%=h @school_rec.boy.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>指導員</th>
+  <td colspan=20><%=h @school_rec.staff.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>状況</th>
+  <td colspan=20><%=h @school_rec.status %></td>
+</tr>
+
+<tr>
+  <th colspan=12>連絡（学校へ）</th>
+  <td colspan=20><%=h @school_rec.message_to %></td>
+</tr>
+
+<tr>
+  <th colspan=12>連絡（学校から）</th>
+  <td colspan=20><%=h @school_rec.message_from %></td>
+</tr>
+</TABLE>

@@ -1,0 +1,48 @@
+<TABLE ID="mst" CLASS="title">
+  <tr>
+    <td>児童保護者関係（表示）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part"> 
+  <tr>
+    <td colspan=32 style="text-align:right; ">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>  
+      <%= link_to_mypage %> &nbsp;
+      <%= go_list %>
+    </td>
+  </tr>
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=12>児 童</th>
+    <td colspan=20>
+      <%=h @jido_guardian_rel.boy.name %>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=12>保護者</th>
+    <td colspan=20>
+      <%=h @jido_guardian_rel.guardian.name %>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=12>関係</th>
+    <td colspan=20>
+      <%=h @jido_guardian_rel.relation %>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=12>続柄</th>
+    <td colspan=20>
+      <%=h @jido_guardian_rel.zokugara %>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=12>期限</th>
+    <td colspan=20>
+      <%=h @jido_guardian_rel.date_expired %>
+    </td>
+  </tr>
+</TABLE> 

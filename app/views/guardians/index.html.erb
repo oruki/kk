@@ -1,0 +1,5 @@
+<%= title_bar("mst", "保護者（一覧）")%>
+<%= fn_bar %>
+<%= render(:partial => "shared/guardians",
+           :object => @guardians,
+           :locals => { :cont => 'guardians', :act => 'index' }) %>

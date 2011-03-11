@@ -1,0 +1,160 @@
+<%#= debug(params) %>
+
+<!--
+	指導記録登録用部分テンプレート
+-->
+■<span ID="here" style="font-size:12px"></span>■
+
+<%# form_for (shidou_rec), :url=>{},:html=>{:id=>"abc"} do |f| %>
+
+<% form_for(shidou_rec,:html=>{:id=>"abcd"}) do |f| %>
+	
+  <%= f.error_messages %>
+<table CLASS="part">
+  <%= table_col(32) %>
+
+  <tr>
+    <td colspan=3>日 付</td>
+    <td colspan=9>
+      <%#= calendar_date_select :shidou_rec, :date %> 
+      <%= f.date_select(:date,{ :include_blank => true, 
+                                  :use_month_numbers => true,
+                                  :start_year => Date.today.years_ago(3).year, 
+                                  :end_year   => Date.today.year})  %>      
+    </td>
+    <td colspan=3>児　童</td>
+    <td colspan=7>
+          <% bb = Boy.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+          <%#= f.select(:boy_id, bb, {:include_blank => true}) %>
+
+<select name="shidou_rec[boy_id]" id="shidou_rec_boy_id">
+ <%=option_groups_from_collection_for_select(Boy::OPTIONS,
+            :options, :type_name,:id, :name, @shidou_rec.boy_id)%>
+</select>	
+
+    </td>
+    <td colspan=3>ｽﾀｯﾌ</td>
+    <td colspan=7>
+	      <% ss = Staff.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+	      <%= f.select(:staff_id, ss, {:include_blank => true}) %>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan=3 rowspan=1>ｶﾃｺﾞﾘｰ</td>
+
+      <!--
+      	カテゴリーの入力をあらかじめ決めてある選択肢の中からチェックボックスで重複選択可能で入力させる
+      	カテゴリー項目はここでなく別の設定ファイルから読み込む形としたい
+      	include?メソッドにより現在のカテゴリーの値の有無をチェックしフォームに反映させている
+      	これはreportの児童職員関係の入力画面と同じ方法だが_jido_list.htmlではindexメソッドを使っている
+      	YAMLから取り込んだカテゴリーを列挙した文字列を配列に変換する必要あり
+      	空白文字をデリミッタとして配列生成　cats['category'].split ←「split」を用いる
+
+    <td colspan=3>      
+      <%= check_box_tag("生活", 01, false) %>生活<br>
+      <%= check_box_tag("生活", 01, false) %>学校<br>      
+      <%= check_box_tag("生活", 01, false) %>医療<br>
+      <%= check_box_tag("生活", 01, false) %>外泊<br>       
+    </td>
+      -->
+    <td colspan=9 rowspan=1>
+
+    	
+      <% cats = YAML.load_file(RAILS_ROOT + "/tmp/my_pref/taiju_pref.yml") %>
+      <% k = cats['category'].split %> 
+      <% for item in k %> 
+        <% flag = shidou_rec.try(:cat)%>
+        <% if flag %>
+          <% flag = flag.include?(item) %>
+        <% else %>
+          <% flag = false %>
+        <% end %> 
+        <div style="text-align:left; float:left;"> 
+        <div style="text-align:left; width:90px;">	  
+          <%= check_box_tag("shidou_rec[cat][]", item, flag) %> 
+          <%= item %>
+        </div>  
+        </div>
+      <% end %>
+      
+
+    </td>
+    <td colspan=3>内容</td>
+    <td colspan=17 style="color:green">
+      <%= f.text_area :desc, :cols=>44, :rows=>5 %>
+    </td>
+  </tr>
+
+<%= observe_form 'abcd', :url => { :action => 'show_aux_fields', :id => @shidou_rec },
+      :frequency => 0.5,:update => "" %>
+      	
+<!-- ■ -->
+
+  <tr ID="hiyari_0" style = "display:none">
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        ヒヤリハットの場合は記入→
+    </td>    	
+    <td colspan=3>
+        対策
+    </td>
+    
+    <td colspan=17 style="color:green">
+      <%= f.text_area :taisaku, :cols=>44, :rows=>3 %>
+    </td>
+  </tr>
+  
+  <tr ID="hiyari_1" style = "display:none">
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        ヒヤリハットの場合は記入→
+    </td> 
+    <td colspan=3>場所</td>
+    
+    <td colspan=17 style="color:green">
+      <%= f.text_field :basho, :size=>64 %>
+    </td>
+  </tr>
+
+<!-- ■ -->
+
+<!-- ■ -->
+
+  <tr ID="school" style = "display:none">
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        学校の場合は記入→
+    </td>    	
+    <td colspan=3>
+        学校
+    </td>
+    <td colspan=17 style="color:green">
+      <%= f.text_field :basho, :size=>64 %>
+    </td>    
+  </tr>
+
+<!-- ■ -->
+  <tr ID="med" style = "display:none">
+    <td colspan=3></td>
+    <td colspan=9　style= "color:red;font-size:10px;text-align:right">
+        医療の場合は記入→
+    </td>    	
+    <td colspan=3>
+        医療
+    </td>
+    <td colspan=17 style="color:green">
+      <%= f.text_field :basho, :size=>64 %>
+    </td>    
+  </tr>
+
+<!-- ■ --> 
+
+
+  <tr>
+    <td colspan=32><%= f.submit "登録/更新" %>   	
+    </td>   
+  </tr>
+ 
+</table>
+<% end %>

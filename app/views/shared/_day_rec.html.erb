@@ -1,0 +1,69 @@
+<%- form_for(day_rec) do |f| -%>
+<%= f.error_messages %>
+
+<TABLE CLASS="part">
+
+  <tr>
+    <th colspan=12>日　付</th>
+    <td colspan=20>
+      <%= f.date_select(:hizuke,{ :include_blank => true, 
+                                  :use_month_numbers => true,
+                                  :start_year => Date.today.years_ago(3).year, 
+                                  :end_year   => Date.today.year})  %>
+    </td>                                  
+  </tr>
+  <!-- <tr>
+    <th colspan=12>天　気</th>
+    <td colspan=20><%= f.text_field :tenki %></td>
+  </tr> -->
+  
+  <tr>
+    <th colspan=12>天　気</th>
+    <td colspan=20>
+        <!--
+      	カテゴリーの入力をあらかじめ決めてある選択肢の中からチェックボックスで重複選択可能で入力させる
+      	カテゴリー項目はここでなく別の設定ファイルから読み込む形としたい
+      	include?メソッドにより現在のカテゴリーの値の有無をチェックしフォームに反映させている
+      	これはreportの児童職員関係の入力画面と同じ方法だが_jido_list.htmlではindexメソッドを使っている
+      -->
+      <% tmp= "day_rec[tenki][]" %>　         <!--チェックボックスのパラメーター-->
+      <% cont=day_rec.try(:tenki) %>         <!--現在のフィールド値-->
+
+      <% for item in TENKI %> <!--application_controllerの定数TENKIより-->
+        <% if cont %>
+          <% flag = cont.include?(item) %>
+        <% else %>
+          <% flag = false %>
+        <% end %>     
+        <%= check_box_tag(tmp, item, flag) %>
+        <%= item %>
+      <% end %>
+    </td>
+  </tr>    
+  
+  <tr>
+    <th colspan=12>出来事</th>
+    <td colspan=20><%= f.text_area :dekigoto, :cols=>50, :rows=>4 %></td>
+  </tr>
+  
+  <tr> 
+    <th colspan=12>指導員</th>  
+    <td colspan=20>
+      <% ss = Staff.find(:all, :order => "id").map {|u| [u.name, u.id] } %>
+      <%= f.select(:staff_id, ss, {:include_blank => true}) %></td>
+  </tr>
+    
+  <tr>
+    <th colspan=12>備　考</th>
+    <td colspan=20><%= f.text_field :misc %></td>
+  </tr>
+  <tr>
+    <th colspan=12>登録／更新</th>
+    <td colspan=20>
+      <%= f.submit "登録／更新" %>
+      <%= link_to 'このレコードを削除する', @day_rec, :confirm => '本当に削除しますか？', :method => :delete %>&nbsp;&nbsp;&nbsp;
+    </td>
+  </tr>
+  <%= table_col(32) %>
+</TABLE>
+<% end %>

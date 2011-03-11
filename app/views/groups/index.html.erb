@@ -1,0 +1,24 @@
+
+<%= title_bar("mst", "児童グループ")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=4>ｸﾞﾙｰﾌﾟID</th>
+    <th colspan=7>ｸﾞﾙｰﾌﾟ名</th>
+    <th colspan=7>ｶﾃｺﾞﾘｰ</th>
+    <th colspan=14>備　考</th>
+  </tr>
+
+<% for group in @groups %>
+  <tr>
+    <td colspan=4><%=h group.id %></td>
+    <td colspan=7><%=h group.name %></td>
+    <td colspan=7><%=h group.cat %></td>
+    <td colspan=13><%=h group.misc %></td>
+    <td colspan=1><%= go_edit(group) %></td>
+
+  </tr>
+<% end %>
+</TABLE>

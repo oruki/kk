@@ -1,0 +1,28 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>学校記録（登録）</td>
+  </tr>  
+</TABLE>
+<TABLE CLASS="part"
+<tr>
+  <td style="text-align:right;">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %>&nbsp;
+    <%= go_list %>
+  </td>
+</tr>
+</TABLE>
+
+<!-- ADDED BELW LINES(200.07.10)PARTIAL "school_rec(singular)" CREATED -->
+<%= render(:partial => "shared/school_rec",
+           :object => @school_rec) %>
+
+<!-- ADDED BELW LINES(200.07.10) -->
+<% if @school_recs %>
+<div ID="SchoolRecsPart">
+  <%= render(:partial => "shared/school_recs2",
+             :object => @school_recs) %>
+</div>
+<% end %>

@@ -1,0 +1,31 @@
+﻿<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=3>日付</th>
+    <th colspan=3>時間</th>
+    <th colspan=4>勤務日誌ID</th>
+    <th colspan=5>指導員氏名</th>
+    <th colspan=5>外出</th>
+    <th colspan=6>用件</th>
+    <th colspan=6>内容</th>
+  </tr>
+<% for staff_rec in staff_recs %>
+  <tr>
+    <td colspan=3 style="font-size:8px">
+      <%=h staff_rec.attend.time_start.to_date %><br>
+    </td>
+    <td colspan=3>
+      <%=h "#{staff_rec.hours}:#{staff_rec.minutes}" %>
+    </td>
+    <td colspan=4 style="font-size:8px"><%=h staff_rec.attend_id %></td>
+    <td colspan=5><%=h staff_rec.attend.staff.name if staff_rec.attend %></td>
+
+    <td colspan=5><%=h staff_rec.in_out %></td>
+    <td colspan=6><%=h staff_rec.yoken %></td>
+    <td colspan=4><%=h staff_rec.naiyo %></td>
+    <!-- <td colspan=1><%= go_edit(staff_rec) %></td> -->
+    <td colspan=1><%= link_to image_tag ("reply.gif", :border=>0, :title=>"編　集"), :controller=>"staff_recs", :action => "edit", :id => staff_rec %></td>
+    <td colspan=1><%= link_to image_tag("delete.gif", :border=>0), staff_rec, :confirm => '本当に削除してよいですか?', :method => :delete %></td>
+  </tr>
+<% end %>
+</TABLE>

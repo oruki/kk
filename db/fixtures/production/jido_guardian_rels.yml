@@ -1,0 +1,197 @@
+# jido_guardians_rels
+hosoda:
+  boy:          hosoda
+  guardian:     hosoda
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+sakaguchi:
+  boy:          sakaguchi
+  guardian:     sakaguchi
+  relation:     1
+  zokugara:     母
+  date_expired: nil
+
+shimoyama:
+  boy:          shimoyama
+  guardian:     shimoyama
+  relation:     1
+  zokugara:     祖父
+  date_expired: nil
+
+matsumura:
+  boy:          matsumura
+  guardian:     matsumura
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+fujita:
+  boy:          fujita
+  guardian:     fujita
+  relation:     1
+  zokugara:     祖母
+  date_expired: nil
+
+tani:
+  boy:          tani
+  guardian:     tani
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+tom:
+  boy:          tom
+  guardian:     tom
+  relation:     1
+  zokugara:     おじ
+  date_expired: nil
+
+
+# 男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+sugita:
+  boy:          sugita
+  guardian:     sugita
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+arai:
+  boy:          arai
+  guardian:     arai
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+suzuki:
+  boy:          suzuki
+  guardian:     suzuki
+  relation:     1
+  zokugara:     母
+  date_expired: nil
+
+shiraishi:
+  boy:          shiraishi
+  guardian:     shiraishi
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+kinoshita:
+  boy:          kinoshita
+  guardian:     kinoshita
+  relation:     1
+  zokugara:     義兄
+  date_expired: nil
+
+nishikawa:
+  boy:          nishikawa
+  guardian:     nishikawa
+  relation:     1
+  zokugara:     姉
+  date_expired: nil
+  
+urakawa:
+  boy:          urakawa
+  guardian:     urakawa
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+
+# 女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+adachi:
+  boy:          adachi
+  guardian:     adachi
+  relation:     1
+  zokugara:     母
+  date_expired: nil
+
+kojima:
+  boy:          kojima
+  guardian:     kojima
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+yamamoto:
+  boy:          yamamoto
+  guardian:     yamamoto
+  relation:     1
+  zokugara:     おじ
+  date_expired: nil
+
+sunayama:
+  boy:          sunayama
+  guardian:     sunayama
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+susuda:
+  boy:          susuda
+  guardian:     susuda
+  relation:     1
+  zokugara:     祖母
+  date_expired: nil
+
+mizutani:
+  boy:          mizutani
+  guardian:     mizutani
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+nishio:
+  boy:          nishio
+  guardian:     nishio
+  relation:     1
+  zokugara:     祖父
+  date_expired: nil
+
+
+# 卒業生　1989以前出生 6人
+
+yasuda:
+  boy:          yasuda
+  guardian:     yasuda
+  relation:     1
+  zokugara:     祖父
+  date_expired: nil
+
+nakatani:
+  boy:          nakatani
+  guardian:     nakatani
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+yasui:
+  boy:          yasui
+  guardian:     yasui
+  relation:     1
+  zokugara:     父
+  date_expired: nil
+
+kato:
+  boy:          kato
+  guardian:     kato
+  relation:     1
+  zokugara:     母
+  date_expired: nil
+
+shimizu:
+  boy:          shimizu
+  guardian:     shimizu
+  relation:     1
+  zokugara:     おじ
+  date_expired: nil
+
+aida:
+  boy:          aida
+  guardian:     aida
+  relation:     1
+  zokugara:     おじ
+  date_expired: nil

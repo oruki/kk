@@ -1,0 +1,176 @@
+<TABLE width="90%" class="part"> 
+
+<tr>
+	<th colspan=5>名前</th>      <!-- 0 -->
+	<th colspan=4>生活</th>      <!-- 1 -->
+	<th colspan=4>学校</th>      <!-- 2 -->
+	<th colspan=4>医療</th>      <!-- 3 -->
+	<th colspan=4>外泊</th>      <!-- 4 -->
+	<th colspan=5>ｸﾞﾙｰﾌﾟ</th>    <!-- 5 -->
+</tr>
+<!-- myjido is @boysincharge5 which is @boys selected and mapped in attends_controller.rb -->
+<% for jido in myjido %>
+<tr>
+	<!-- 児童氏名 -->
+	<td colspan=5>
+		<%#=h jido[0] %>
+		<% if Boy.find(jido[6]).case_recs[0] %>
+		<%= link_to jido[0],
+		{
+			:controller => "case_recs", :action => "show", 
+			:id => Boy.find(jido[6]).case_recs[0]
+		},
+  			:title => "#{jido[0]}のケース記録に移動します" %>
+  		<% else %>
+  		  <%= jido[0] %>
+		<% end %>
+	</td>
+	
+    <!-- 生活 -->    
+    <td colspan=4 class="part">
+		<!-- 配列jido[1]が'-'つまり要素を持たない場合 -->	
+		<% if jido[1]=='-' %>    
+			<%= link_to image_tag (
+				"action_add.gif", :border=>0, :title => "新規：指導記録"
+			),{ 
+				:controller => "shidou_recs", :action => "new", 
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			}%>
+		<% else %>
+			<!-- それが担当スタッフの記録である場合は濃い色のアイコン,他のスタッフの記録なら薄い色のアイコン　-->
+			<% for i in jido[1] %>
+				<% if current_user.staff.id==i.staff_id %>
+					<% pict="emoticon_smile.png" %>
+				<% else %>
+					<% pict="ff_emoticon_smile.png" %>
+				<% end %>
+				<%= link_to image_tag(
+					pict, :border=>0, :title => "#{i.staff.name}■#{i.cat} ： #{i.desc}"
+				),{
+					:controller => "shidou_recs", :action => "edit", 
+					:boy_id =>jido[6], :id => i
+				} %>
+			<% end %>
+			<!-- 最後に新規登録用のアイコンを加える -->
+			<%= link_to image_tag (
+				"s_action_add.gif", :border=>0, :title => "新規：指導記録"
+			),{
+				:controller => "shidou_recs", :action => "new", 
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			} %>
+		<% end %>                       
+	</td>
+	
+    <!-- 学校 -->
+	<td colspan=4>
+		<% if jido[2]=='-' %>      
+			<%= link_to image_tag (
+				"action_add.gif", :border=>0, :title => "新規：学校記録"
+			),{ 
+				:controller => "school_recs", :action => "new", 
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			} %>
+		<% else %>
+			<% for i in jido[2] %>
+				<% if current_user.staff.id==i.staff_id %>
+					<% pict="emoticon_smile.png" %>
+				<% else %>
+					<% pict="ff_emoticon_smile.png" %>
+				<% end %>
+				<%= link_to image_tag (
+					pict, :border=>0, :title => "#{i.staff.name}■#{i.status} ： #{i.message_to}"
+				),{
+					:controller => "school_recs", :action => "edit", 
+					:boy_id =>jido[6], :id => i
+				}%>
+			<% end %>
+			<%= link_to image_tag (
+				"s_action_add.gif", :border=>0, :title => "新規：学校記録"
+			),{
+				 :controller => "school_recs", :action => "new", 
+				 :date => @attend.time_start.to_date, :boy_id => jido[6]
+			}%>
+		<% end %>  
+	</td>
+	
+    <!-- 医療 -->
+	<td colspan=4>
+		<% if jido[3]=='-' %>
+			<%= link_to image_tag (
+				"action_add.gif", :border=>0, :title => "新規：医療記録"
+			),{
+				:controller => "med_recs", :action => "new", 
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			} %>
+		<% else %>
+			<% for i in jido[3] %>
+				<% if current_user.staff.id==i.staff_id %>
+					<% pict="emoticon_smile.png" %>
+				<% else %>
+					<% pict="ff_emoticon_smile.png" %>
+				<% end %>
+				<%= link_to image_tag (
+					pict, :border=>0, :title => "#{i.symptom} ： #{i.condition}(#{i.staff.name})"
+				),{
+					:controller => "med_recs", :action => "edit", :boy_id =>jido[6], :id => i
+				} %>
+		<% end %>
+         <%= link_to image_tag (
+               "s_action_add.gif", :border=>0, :title => "新規：医療記録"
+                ),{
+                :controller => "med_recs",
+                :action => "new",
+                :date => @attend.time_start.to_date,
+                :boy_id => jido[6]} %>
+      <% end %>     
+	</td>
+
+    <!-- 外泊 -->
+	<td colspan=4>
+		<% if jido[4]=='-' %>
+			<%= link_to image_tag(
+				"action_add.gif", :border=>0, :title => "新規：面接・外泊記録"
+			),{ 
+				:controller => "stay_out_recs", :action => "new", 
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			} %>
+		<% else %>
+			<% for i in jido[4] %>
+				<% if current_user.staff.id==i.staff_id %>
+					<% pict="emoticon_smile.png" %>
+				<% else %>
+					<% pict="ff_emoticon_smile.png" %>
+				<% end %>
+				<%= link_to image_tag(
+					pict, :border=>0, 
+					:title => "#{i.case_category} ： #{i.confirmation}(#{i.staff.name})"
+				),{
+					:controller => "stay_out_recs", :action => "edit", 
+					:boy_id =>jido[6], :id => i
+				} %>
+			<% end %>
+			<%= link_to image_tag (
+				"s_action_add.gif", :border=>0, :title => "新規：面接・外泊記録"
+			),{
+				:controller => "stay_out_recs", :action => "new",
+				:date => @attend.time_start.to_date, :boy_id => jido[6]
+			} %>
+			<%#= link_to(
+				jido[4][0].case_category+jido[1].size.to_s ,
+					{
+					:controller => "stay_out_recs", :action => "edit",  
+					:boy_id =>jido[6], :id => jido[4][0]
+					},
+				:title => "作成者：#{jido[4][0].staff.name}" 
+			) %>
+		<% end %>
+	</td>
+
+    <!-- グループ -->
+	<td colspan=5>
+		<%=h jido[5] %>
+	</td>    
+</tr>
+<% end %>
+<%= table_col(26) %>
+</TABLE>

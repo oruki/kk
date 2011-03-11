@@ -1,0 +1,90 @@
+<%= javascript_include_tag :defaults %>  
+
+<div style="padding:5px">
+  <b><%= "#{current_user.staff.name}さん、担当児童を選んでください" %></b>
+  &nbsp;&nbsp;&nbsp;※この機能は暫定的（作業中）です。児童のグループへの登録と更新が可能です。
+</div>
+<% grp_ids=[428321002,428388652,428456302,428523952] %>
+グループカテゴリーの選択
+<% @cat=%w{指導ｸﾞﾙｰﾌﾟ 学習ｸﾞﾙｰﾌﾟ ｽﾎﾟｰﾂｸﾞﾙｰﾌﾟ}%>
+<% form_tag 'form_group_ck', :action => "update_group", :id => 'form_group_ck' do %>
+<label><%= check_box_tag 'g_00', 'show', true %><%=@cat[0]%></label>
+<label><%= check_box_tag 'g_01', 'show', true %><%=@cat[1]%></label>
+<label><%= check_box_tag 'g_02', 'show', true %><%=@cat[2]%></label>
+<!--
+<span style="margin-left:50px">
+   <%= link_to_function "全てみせる" do |page|
+      page['00'].show
+      page['01'].show
+      page['02'].show
+      page['03'].show
+    end %>
+   <%= link_to_function "全てかくす" do |page|
+      page['00'].hide
+      page['01'].hide
+      page['02'].hide
+      page['03'].hide
+    end %>
+</span>
+-->
+<% end %>
+<br>
+
+
+<%= observe_form 'form_group_ck', :url => { :action => 'update_group' },
+      :frequency => 0.5,
+      :update => ""
+      %>
+  
+<div id="group">  
+
+<% form_tag :action => :sett do %>
+<table>
+  <tr>
+    <td style="text-align:right; padding-right:100px">
+      <%=@cat[0]%><%= stretch ('00') %><%= collapse ('00') %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <div id='00'>
+        <%= render (:partial => "jido_list", :object => @boys) %>
+      </div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:right; padding-right:100px">
+      <%=@cat[1]%><%= stretch ('01') %><%= collapse ('01') %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <div id='01'>
+        <%= render (:partial => "jido_list", :object => @boys) %>
+      </div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:right; padding-right:100px">
+      <%=@cat[2]%><%= stretch ('02') %><%= collapse ('02') %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <div id='02'>
+        <%= render (:partial => "jido_list", :object => @boys) %>
+      </div>
+    </td>
+  </tr>
+  
+</table>  
+
+<%= submit_tag "更新する" %>
+<% end %>  
+
+</div>

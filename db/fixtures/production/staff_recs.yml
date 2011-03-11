@@ -1,0 +1,37 @@
+# attends
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# base data for attends
+
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+
+<% staffs_1 = %w{nogami shintani kazama} %>                    #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %>                 #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %>          #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %>             #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %>            #調理士
+
+<% staffs_all = staffs_1 + staffs_3 + staffs_4 + staffs_5 + staffs_6 %>
+<% hh = %w{'06' '07' '08' '09' '10' '10' '10' '11' '12' '12' '13' '13' '13' '14' '14' '15' '15' '16' '17' '17' '18' '18' '18' '19' '20'} %>
+<% mm = %w{'00' '15' '30' '45'} %>
+<% a = %w{出張 研修 会議 買物 届け物 送迎 行事 その他公用 その他私用} %>
+<% b = %w{展示会見学 定期講習会 協会会合 定例会議 行事出席 児童送迎 事務用品購入 食品購入 銀行会計事務} %>
+#all-group
+
+<% for k in staffs_all %>
+  <% 1.upto(60) do |i| %>
+
+<%= k %>_<%= i %>_rec:
+  attend:       <%= k %>_<%= i %>
+  in_out:       <%= a[rand(9)] %>
+  yoken:        <%= b[rand(9)] %>
+  naiyo:        内容の簡単な記録
+  hours:        <%= hh[rand(25)] %>
+  minutes:      <%= mm[rand(4)] %>
+  <% end %>
+<% end %>
+ 

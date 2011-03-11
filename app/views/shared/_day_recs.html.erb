@@ -1,0 +1,40 @@
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=5>日付/天気</th>
+    <th colspan=17>出来事</th>
+    <th colspan=10>備　考</th>
+  </tr>
+
+<% for day_rec in @day_recs %>
+  <tr>
+    <td colspan=5>
+      <%=h day_rec.hizuke.to_jdate %><br>
+      <%=h day_rec.tenki %>
+    </td>
+<!--
+    <td colspan=17>
+      <%=h day_rec.dekigoto %>
+    </td>
+simple_formatで改行を表示     
+-->
+ 
+    <td colspan=17 style="font-size:12px">
+      <%=simple_format(h day_rec.dekigoto) %>
+    </td>
+    
+    
+    
+    <td colspan=8>
+      <%=h day_rec.misc %>
+    </td>
+    <td colspan=1>
+      <%#= link_to image_tag("report.png", :border=>0), day_rec %>
+      <%= go_report(day_rec) %>
+    </td>
+    <td colspan=1 align="center">
+      <%= go_edit(day_rec) %>
+    </td>
+  </tr>
+<% end %>
+</table>

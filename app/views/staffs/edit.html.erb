@@ -1,0 +1,10 @@
+<%= title_bar("mst", "指導員（編集）")%>
+<%= fn_bar2 %>
+<!-- v.2.3.2 modification
+If you have an instance of a model to render into a partial, you can use a shorthand syntax:
+	<%= render :partial => @customer %>
+	Assuming that the @customer instance variable contains an instance of the Customer model, this will use _customer.html.erb to render it.
+	これにより以前のコード（次行）を新記法に変更する（2009-6-10）
+<%#= render(:partial => "staff", :object => @staff ) %>	
+-->
+<%= render :partial => @staff %>

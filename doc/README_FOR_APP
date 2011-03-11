@@ -1,0 +1,10 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run run run "rake doc:app" to generate API documentation for your models, controllers, helpers, and librariess.
+
+memo
+2009-06-09
+category selection at shidou_rec/new edit still under construction
+must find way to retrive each of the items from pref file
+expiration duration time setting is working and you can change the session duration time in pref file.
+2009-06-15
+Ritriving fixtures to DB created_at is refreshed to the time of retrival.

@@ -1,0 +1,24 @@
+<h1>Editing cat</h1>
+
+<% form_for(@cat) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :subtitle %><br />
+    <%= f.text_field :subtitle %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cat %> |
+<%= link_to 'Back', cats_path %>

@@ -1,0 +1,29 @@
+<%# form_tag :action => :sett do %>
+<table CLASS="part" style="margin-left:85px; width:75%">
+  <% for k in jido_list do %>
+  <tr>
+    <% flag = (k.staffs.map{|i| i.id}).index(current_user.staff.id) %>  <!-- ある児童の担当指導員ID（配列）中の当該指導員IDの位置（なければnil) -->
+    <% flag = !(flag.nil?) %>                                           <!--  nil => false  not nil => true ：ﾁｪｯｸﾎﾞｯｸｽの初期値（現在の設定）-->
+    
+    <td colspan=5 style="font-size:11px; line-height:11.5px;">
+      <%= check_box_tag "id_#{k.id}", 'yes', flag, :style => "width:10px;height:10px" %> <%= k.name %>(<%= flag %>)
+    </td>
+    <td colspan=2 style="text-align:center">
+      <%= k.birthdate.age %>
+    </td>
+    <td colspan=2 style="text-align:center">
+      <%= %w{男 女}[k.sex.to_i-1] %>
+    </td>    
+    <td colspan=3>
+      <%= k.groups.map{|i| i.name}.join('/') %>
+    </td>
+  </tr>
+  <% end %>
+
+  <tr display="none">
+    <% 12.times do %>
+      <td></td>
+    <% end %>
+  </tr>
+</table>
+<%# end %>

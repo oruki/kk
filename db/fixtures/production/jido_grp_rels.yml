@@ -1,0 +1,145 @@
+#児童ｸﾞﾙｰﾌﾟ関係
+
+# aa
+
+hosoda-01:
+  boy:           hosoda
+  group:         grp-aa
+  date_expired:  nil
+
+sakaguchi-01:
+  boy:           sakaguchi
+  group:         grp-aa
+  date_expired:  nil
+
+shimoyama-01:
+  boy:           shimoyama
+  group:         grp-aa
+  date_expired:  nil
+
+matsumura-01:
+  boy:           matsumura
+  group:         grp-aa
+  date_expired:  nil
+
+fujita-01:
+  boy:           fujita
+  group:         grp-aa
+  date_expired:  nil
+
+tani-01:
+  boy:           tani
+  group:         grp-aa
+  date_expired:  nil
+
+tom-01:
+  boy:           tom
+  group:         grp-aa
+  date_expired:  nil
+
+# bb
+
+sugita-01:
+  boy:           sugita
+  group:         grp-bb
+  date_expired:  nil
+
+arai-01:
+  boy:           arai
+  group:         grp-bb
+  date_expired:  nil
+
+suzuki-01:
+  boy:           suzuki
+  group:         grp-bb
+  date_expired:  nil
+
+shiraishi-01:
+  boy:           shiraishi
+  group:         grp-bb
+  date_expired:  nil
+
+kinoshita-01:
+  boy:           kinoshita
+  group:         grp-bb
+  date_expired:  nil
+
+nishikawa-01:
+  boy:           nishikawa
+  group:         grp-bb
+  date_expired:  nil
+  
+urakawa-01:
+  boy:           urakawa
+  group:         grp-bb
+  date_expired:  nil
+
+# cc
+
+adachi-01:
+  boy:           adachi
+  group:         grp-cc
+  date_expired:  nil
+
+kojima-01:
+  boy:           kojima
+  group:         grp-cc
+  date_expired:  nil
+
+yamamoto-01:
+  boy:           yamamoto
+  group:         grp-cc
+  date_expired:  nil
+
+sunayama-01:
+  boy:           sunayama
+  group:         grp-cc
+  date_expired:  nil
+
+susuda-01:
+  boy:           susuda
+  group:         grp-cc
+  date_expired:  nil
+
+mizutani-01:
+  boy:           mizutani
+  group:         grp-cc
+  date_expired:  nil
+
+nishio-01:
+  boy:           nishio
+  group:         grp-cc
+  date_expired:  nil
+
+
+# dd
+
+yasuda-01:
+  boy:           yasuda
+  group:         grp-dd
+  date_expired:  nil
+
+nakatani-01:
+  boy:           nakatani
+  group:         grp-dd
+  date_expired:  nil
+
+yasui-01:
+  boy:           yasui
+  group:         grp-dd
+  date_expired:  nil
+
+kato-01:
+  boy:           kato
+  group:         grp-dd
+  date_expired:  nil
+
+shimizu-01:
+  boy:           shimizu
+  group:         grp-dd
+  date_expired:  nil
+
+aida-01:
+  boy:           aida
+  group:         grp-dd
+  date_expired:  nil

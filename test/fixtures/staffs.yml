@@ -1,0 +1,300 @@
+data27:
+  id: 3169793
+  name: 米満　美恵
+  kana_name: ヨネミツ　ミエ
+  birth_date: 1974-07-30
+  sex: 2
+  resd_add: 
+  tel: 
+  tel_hp: 
+  shokumei: 
+  saiyobi: 2004-04-01
+
+data28:
+  id: 62373612
+  name: 川上　ミドリ
+  kana_name: カワカミ　ミドリ
+  birth_date: 1945-05-31
+  sex: 2
+  resd_add: 神戸市中央区再筋町９‐５
+  shokumei: 心理担当嘱託
+  saiyobi: 2004-04-01
+
+data29:
+  id: 110392546
+  name: 中野　遙
+  kana_name: ウエダ　ハルカ
+  birth_date: 1983-02-17
+  sex: 2
+  resd_add: 神戸市
+  shokumei: 保育士
+  saiyobi: 2005-04-01
+  user_id: 3314848
+
+data30:
+  id: 221246546
+  name: 浦邊　由郁子
+  kana_name: ウラベ　ユイコ
+  birth_date: 1980-02-16
+  sex: 2
+  resd_add: 神戸市垂水区山手４丁目４‐９
+  shokumei: 栄養士
+  saiyobi: 2000-04-01
+  user_id: 3314855
+
+data31:
+  id: 231413149
+  name: 森本　恵子
+  kana_name: モリモト　ケイコ
+  birth_date: 1975-03-09
+  sex: 2
+  resd_add: 神戸市兵庫区東山町１丁目１２‐１０
+  shokumei: 保育士
+  saiyobi: 2004-03-21
+  user_id: 51
+
+data32:
+  id: 256673475
+  name: 船野　英一郎
+  kana_name: フナノ　エイイチロウ
+  birth_date: 1984-11-10
+  sex: 1
+  resd_add: 川西市水明台３丁目５‐５５
+  shokumei: 指導員
+  saiyobi: 2007-04-01
+  user_id: 56
+
+data33:
+  id: 386354247
+  name: 小栗　むつみ
+  kana_name: オグリ　ムツミ
+  birth_date: 1954-12-21
+  sex: 2
+  resd_add: 神戸市灘区岩屋中町５丁目２‐２１
+  shokumei: 家庭支援専門相談員
+  saiyobi: 1989-10-21
+
+data34:
+  id: 395296880
+  name: 清水　雅子
+  kana_name: シミズ　マサコ
+  birth_date: 1974-07-30
+  sex: 2
+  resd_add: 神戸市兵庫区下沢通３丁目２‐４
+  shokumei: 嘱託医
+  saiyobi: 1995-04-01
+
+data35:
+  id: 446796857
+  name: 中野　秀彦
+  kana_name: ナカノ　ヒデヒコ
+  birth_date: 1982-05-14
+  sex: 1
+  resd_add: 神戸市
+  tel: 
+  tel_hp: 
+  shokumei: 指導員
+  saiyobi: 2005-03-20
+  user_id: 55
+
+data36:
+  id: 489721155
+  name: 木下　和美
+  kana_name: キノシタ　カズミ
+  birth_date: 1975-05-22
+  sex: 2
+  resd_add: 神戸市西区井吹台北町１丁目１９‐５１２
+  per_add: 神戸市兵庫区平野町
+  tel: 078-000-9999
+  tel_hp: 090-0000-9999
+  shokumei: 指導員
+  saiyobi: 1996-04-01
+  user_id: 52
+
+data37:
+  id: 496991792
+  name: 新村　杜美子
+  kana_name: シムラ　トミコ
+  birth_date: 1945-03-14
+  sex: 2
+  resd_add: 神戸市東灘区鴨子ヶ原２丁目３‐１０
+  shokumei: 副院長
+  saiyobi: 1979-07-01
+  user_id: 3314852
+
+data38:
+  id: 498433416
+  name: 千野　昭
+  kana_name: チノ　アキラ
+  birth_date: 1944-10-16
+  sex: 1
+  resd_add: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+  shokumei: 書記
+  saiyobi: 2001-06-01
+
+data39:
+  id: 510090021
+  name: 樋口　清美
+  kana_name: ヒグチ　キヨミ
+  birth_date: 1968-12-11
+  sex: 2
+  resd_add: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+  shokumei: 調理員
+  saiyobi: 1987-04-01
+
+data40:
+  id: 618207847
+  name: 松下　千草
+  kana_name: マツシタ　チグサ
+  birth_date: 1970-07-03
+  sex: 2
+  resd_add: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+  shokumei: 調理員
+  saiyobi: 1992-09-21
+
+data41:
+  id: 655502223
+  name: 宮崎　茂子
+  kana_name: ミヤザキ　シゲコ
+  birth_date: 1957-08-01
+  sex: 2
+  resd_add: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+  saiyobi: 1975-09-02
+  user_id: 54
+
+data42:
+  id: 762465971
+  name: 永野　良昌
+  kana_name: ナガノ　ヨシアキ
+  birth_date: 1972-03-25
+  sex: 1
+  resd_add: 宝塚市ふじが丘９‐２０
+  shokumei: 保育士
+  saiyobi: 2007-04-01
+  user_id: 3314854
+
+data43:
+  id: 851123180
+  name: 金子　良史
+  kana_name: カネコ　リョウジ
+  birth_date: 1949-08-03
+  sex: 1
+  resd_add: 神戸市兵庫区平野町天王谷奥東服山２７０番地
+  tel: 078-521-5478
+  tel_hp: 090-9056-3629
+  shokumei: 院長
+  saiyobi: 1974-04-03
+  user_id: 3314851
+
+data44:
+  id: 941985544
+  name: 栄永　博美
+  kana_name: エイナガ　ヒロミ
+  birth_date: 1960-09-08
+  sex: 2
+  resd_add: 神戸市北区ひよどり台２丁目２番地の１００
+  per_add: 神戸市兵庫区平野町
+  tel: 078-000-9999
+  tel_hp: 090-0000-9999
+  shokumei: 保育士
+  saiyobi: 1991-04-01
+  user_id: 53
+
+data45:
+  id: 970894036
+  name: 鳥取　圭世
+  kana_name: トットリ
+  birth_date: 1973-06-16
+  sex: 2
+  resd_add: 神戸市西区押部谷西盛２１１ｰ１
+  shokumei: 指導員　心理療法担当職員
+  saiyobi: 1994-04-01
+  user_id: 3314850
+
+data46:
+  id: 970894038
+  name: 安井
+  kana_name: ヤスイ
+  birth_date: 1949-11-15
+  sex: 1
+  resd_add: 
+  tel: 
+  tel_hp: 
+  shokumei: 
+  user_id: 50
+
+data47:
+  id: 970894039
+  name: 高寺千里
+  kana_name: タカテラチサト
+  birth_date: 1988-07-12
+  sex: 2
+  shokumei: 保育士
+  saiyobi: 2009-04-01
+  user_id: 3314856
+
+data48:
+  id: 970894040
+  name: 佐藤　由夏
+  kana_name: サトウ　ユカ
+  birth_date: 1980-07-24
+  sex: 2
+  resd_add: 
+  tel: 
+  tel_hp: 
+  shokumei: 保育士
+  saiyobi: 2009-11-01
+  user_id: 3314857
+
+data49:
+  id: 970894041
+  name: かり
+  kana_name: カリ
+  birth_date: 1980-01-01
+  sex: 1
+  resd_add: 
+  tel: 
+  tel_hp: 
+  shokumei: 保育士
+  saiyobi: 2000-04-01
+  user_id: 3314858
+
+data50:
+  id: 970894042
+  name: 佐藤　由夏
+  kana_name: サトウ　ユカ
+  birth_date: 1990-01-02
+  sex: 2
+  resd_add: 
+  tel: 
+  tel_hp: 
+  shokumei: 指導員
+  saiyobi: 2010-02-03
+  user_id: 3314859
+
+data51:
+  id: 970894043
+  name: 木下　知憲
+  kana_name: キノシタ　トモノリ
+  birth_date: 1988-07-20
+  sex: 1
+  resd_add: 神戸市
+  tel: 
+  tel_hp: 
+  shokumei: 保育士
+  saiyobi: 2010-04-01
+  user_id: 3314861
+
+data52:
+  id: 970894044
+  name: ワシノ　ジュリ
+  kana_name: 鷲野　樹里
+  birth_date: 1989-10-10
+  sex: 2
+  resd_add: 神戸市
+  tel: 
+  tel_hp: 
+  shokumei: 保育士
+  saiyobi: 2010-04-01
+  user_id: 3314860
+

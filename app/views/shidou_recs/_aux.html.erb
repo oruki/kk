@@ -1,0 +1,32 @@
+﻿<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=4>特定事項</td>
+    <td colspan=28>
+      <% form_tag 'aux_field', :action => "update_aux_field", :id => 'aux_field' do %>
+<!-- 
+        <label style="text-align:left; width:90px;">
+            <%= check_box_tag 'g_00', 'show', false %>ヒヤリハット</label>
+        <label style="text-align:left; width:90px;">
+            <%= check_box_tag 'g_01', 'show', false %>学校</label>
+        <label style="text-align:left; width:90px;">
+            <%= check_box_tag 'g_02', 'show', false %>医療</label>
+        <label style="text-align:left; width:90px;">
+            <%= check_box_tag 'g_03', 'show', false %>外泊・面会</label>
+-->          	
+<% for i in [['ヒヤリハット','g_00'],['学校','g_01'],['医療','g_02'],['外泊・面会','g_03']] %>
+        <div style="text-align:left; float:left;"> 
+        <div style="text-align:left; width:90px;">	  
+          <%= check_box_tag(i[1], 'show', false) %> 
+          <%= i[0] %>
+        </div>  
+        </div>
+<% end %>          	
+         
+      <% end -%>
+      <%= observe_form 'aux_field', :url => { :action => 'update_aux_field' },
+        :frequency => 0.5,:update => "" %>
+    </td>
+  </tr>    
+</table>     
+

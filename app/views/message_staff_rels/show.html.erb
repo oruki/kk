@@ -1,0 +1,13 @@
+<p>
+  <b>Message:</b>
+  <%=h @message_staff_rel.message_id %>
+</p>
+
+<p>
+  <b>Staff:</b>
+  <%=h @message_staff_rel.staff_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_staff_rel_path(@message_staff_rel) %> |
+<%= link_to 'Back', message_staff_rels_path %>

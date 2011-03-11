@@ -1,0 +1,14 @@
+
+<!--  ************************************************************  -->
+<%= title_bar("rec", "指導記録（一覧）") %>
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "shidou_recs"} %>
+
+<%= render :partial => "shared/kikan_select",
+           :locals => {:ctrl => "shidou_recs", :act => "index"} %>
+<div ID = "shidou_recs">
+  <%= render :partial => "shared/shidou_recs2",
+             :object => @shidou_recs %>     
+</div>
+

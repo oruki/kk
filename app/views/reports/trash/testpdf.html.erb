@@ -1,0 +1,8 @@
+<%
+  @pdf = TCPDF.new()
+  @pdf.SetMargins(15, 27, 15);
+  @pdf.AddPage();
+  text_options = {:font => "freeserif"}
+  @pdf.draw_text(15, 10, "text", {:font_size => 12, :font => "freeserif"})
+%>
+<%=@pdf.Output()%>

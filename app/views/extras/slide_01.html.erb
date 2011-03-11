@@ -1,0 +1,12 @@
+<h2>01.ログイン直後のウェルカム画面</h2>
+<%= date_jpn(Date.today) %><br>
+<%= date_jpn(Message.find(:first).date) %><br>
+<%= Message.find(:first).date.to_jdate %>
+
+<table>
+  <tr>
+    <td>  </td>
+    <td><img src="http://bb.emu.railsplayground.net/images/slide01.JPG"></td>
+  </tr>
+
+</table>

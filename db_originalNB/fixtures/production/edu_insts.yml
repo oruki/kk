@@ -1,0 +1,205 @@
+#shougakou-7---------------------------------------------
+
+mizuki_sho:
+  name:      山本小学校
+  cat:       小学校
+  kana_name: ヤマモトショウガッコウ
+  zip:       GGG-6666
+  add:       大樹市栃木区山本通3丁目201
+  tel:       DDD-YYY-8360
+  fax:       DDD-YYY-8360
+
+arata_sho:
+  name:      吹田小学校
+  cat:       小学校
+  kana_name: スイタショウガッコウ
+  zip:       GGG-0000
+  add:       大樹市栃木区吹田町5丁目71
+  tel:       DDD-XXX-8888
+  fax:       DDD-XXX-0000
+
+kikusui_sho:
+  name:      菊池小学校
+  cat:       小学校
+  kana_name: キクチショウガッコウ
+  zip:       EEE-0000
+  add:       大樹市栃木区菊池町１丁目１
+  tel:       SSS-XXX-9999
+  fax:       SSS-XXX-0000
+
+hirano_sho:
+  name:      平松小学校
+  cat:       小学校
+  kana_name: ヒラマツショウガッコウ
+  zip:       EEE-0000
+  add:       大樹栃木区中平松町4-998
+  tel:       RRR-XXX-3333
+  fax:       RRR-XXX-0000
+
+minatogawatamon_sho:
+  name:      喜田川小学校
+  cat:       小学校
+  kana_name: キタガワショウガッコウ
+  zip:       EEE-0000
+  add:       大樹市欅山区喜田川町2丁目2-5
+  tel:       AAA-YYY-1111
+  fax:       AAA-YYY-0000
+
+hyougotaikai_sho:
+  name:      太閤小学校
+  cat:       小学校
+  kana_name: タイコウショウガッコウ
+  zip:       EEE-DDDD
+  add:       大樹市栃木区太閤町10丁目93
+  tel:       AAA-XXX-1111
+  fax:       AAA-XXX-0000
+
+egeyama_sho:
+  name:      下里小学校
+  cat:       小学校
+  kana_name: シモザトショウガッコウ
+  zip:       EEE-0000
+  add:       大樹市栃木区上沢通１丁目３－２６
+  tel:       AAA-XXX-5555
+  fax:       AAA-XXX-0000
+
+#chugakkou-4-----------------------------------------------
+
+minato_chu:
+  name:      港山中学校
+  cat:       中学校
+  kana_name: ミナトヤマチュウガッコウ
+  zip:       FFF-0000
+  add:       大樹市栃木区下港山町5-5
+  tel:       AAA-XXX-0000
+  fax:       AAA-XXX-9999
+
+hyougo_chu:
+  name:      武庫山中学校
+  cat:       中学校
+  kana_name: ムコヤマチュウガッコウ
+  zip:       FFF-5555
+  add:       大樹市栃木区武庫山通6丁目101
+  tel:       AAA-XXX-7777
+  fax:       AAA-XXX-4444
+
+minatogawa_chu:
+  name:      湊台中学校
+  cat:       中学校
+  kana_name: ミナトダイチュウガッコウ
+  zip:       GGG-0000
+  add:       大樹市栃木区湊台通１丁目１－１
+  tel:       AAA-XXX-0000
+  fax:       AAA-XXX-9999
+
+yumeno_chu:
+  name:      中野中学校
+  cat:       中学校
+  kana_name: ナカノチュウガッコウ
+  zip:       GGG-0000
+  add:       大樹市栃木区中野町8丁目210
+  tel:       AAA-XXX-9999
+  fax:       AAA-XXX-0000
+
+#koukou-6--------------------------------------------------
+
+kusunoki_kogyo:
+  name:      楠河高等学校
+  cat:       高等学校
+  kana_name: クスカワコウトウガッコウ
+  zip:       GGG-0000
+  add:       大樹市栃木区楠河通3丁目11
+  tel:       AAA-YYY-0000
+  fax:       AAA-YYY-6666
+
+hyogo_kogyo:
+  name:      瀬戸山工業高等学校
+  cat:       高等学校
+  kana_name: セトヤマコウギョウコウトウガッコウ
+  zip:       HHH-0000
+  add:       大樹市栃木区瀬戸山10丁目651
+  tel:       AAA-ZZZ-0000
+  fax:       AAA-ZZZ-2222
+
+koubekouhoku_kou:
+  name:      甲山西高校
+  cat:       高校
+  kana_name: カブトヤマニシコウコウ
+  zip:       650-0000
+  add:       大樹市北区甲山西町2-2
+  tel:       AAA-ZZZ-8888
+  fax:       AAA-ZZZ-0000
+
+suzurandai_kou:
+  name:      鈴鹿台高等学校
+  cat:       高校
+  kana_name: スズカダイコウトウガッコウ
+  zip:       KKK-0000
+  add:       大樹市北区鈴鹿台町下里山1-11
+  tel:       AAA-QQQ-3333
+  fax:       AAA-QQQ-0000
+
+yumenodai_kou:
+  name:      弓場谷高等学校
+  cat:       高校
+  kana_name: ユミバダイコウトウガッコウ
+  zip:       KKK-0000
+  add:       大樹市長田区弓場谷町10丁目33
+  tel:       AAA-XXX-8888
+  fax:       AAA-XXX-0000
+
+koubeyamatejoshi_kou:
+  name:      北山東女子高等学校
+  cat:       高校
+  kana_name: キタヤマヒガシジョシコウトウガッコウ
+  zip:       KKK-0000
+  add:       大樹市楠区北山東町1-6
+  tel:       AAA-XXX-6666
+  fax:       AAA-XXX-0000
+
+#daigaku-5-------------------------------------------------
+
+kobegakuin_dai:
+  name:      新陽学院大学
+  cat:       大学
+  kana_name: シンヨウガクインダイガク
+  zip:       KKK-0000
+  add:       大樹市欅山区新陽島1-8-38
+  tel:       AAA-XXX-9999
+  fax:       AAA-XXX-0000
+
+kobeshinna_dai:
+  name:      大樹成和女子大学
+  cat:       大学
+  kana_name: タイジュセイワダイガク
+  zip:       MMM-0000
+  add:       大樹市北区北町１２丁目３－１
+  tel:       XXX-AAA-ABAB
+  fax:       XXX-AAA-ABCD
+
+kobe_shukugawa_gakuin_dai:
+  name:      十川学院大学
+  cat:       大学
+  kana_name: トガワガクインダイガク
+  zip:       MMM-0000
+  add:       大樹市欅山区出島9丁目201
+  tel:       XXX-YYY-1111
+  fax:       XXX-YYY-2222
+
+koshien_dai:
+  name:      六甲園大学
+  cat:       大学
+  kana_name: ロッコウエンダイガク
+  zip:       DDD-1111
+  add:       楡山市菊ガ谷120-1
+  tel:       XXXY-SS-9999
+  fax:       XXXY-SS-8888
+
+kansai_dai:
+  name:      関星大学
+  cat:       大学
+  kana_name: カンセイダイガク
+  zip:       MMM-9999
+  add:       楓市山桜町13丁目2番5号
+  tel:       AA-ZZZZ-1111
+  fax:       AA-ZZZZ-1111

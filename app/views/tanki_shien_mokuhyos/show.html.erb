@@ -1,0 +1,51 @@
+<TABLE ID="rec" CLASS="title">
+  <tr>
+    <td>短期支援目標</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part"
+<tr>
+  <td style="text-align:right;">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_edit(@tanki_shien_mokuhyo) %> &nbsp;
+    <%= go_list %>
+  </td>
+</tr>
+</TABLE>
+
+<TABLE CLASS="part">
+<%= table_col(32) %>
+<tr>
+  <th colspan=12>支援計画</th>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.shien_keikaku_id %></td>
+</tr>
+
+<tr>
+  <th colspan=12>支援上の課題</th>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.kadai %></td>
+</tr>
+
+<tr>
+  <th colspan=12>支援目標</th>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.mokuhyo %></td>
+</tr>
+
+<tr>
+  <th colspan=12>支援内容・方法</th>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.naiyou %></td>
+</tr>
+
+<tr>
+  <th colspan=12>評価・期日</th>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.hyoka %></td>
+</tr>
+
+<tr>
+  <th colspan=12>作成日</b>
+  <td colspan=20><%=h @tanki_shien_mokuhyo.date %></td>
+</tr>
+</TABLE>

@@ -1,0 +1,20 @@
+<%= title_bar("rec", "指導記録（編集）") %>  
+<TABLE CLASS="part">
+<tr>
+  <td style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_list %> &nbsp;
+  </td>
+</tr>
+</TABLE>
+
+<!-- EDIT -->
+   <%= render(:partial => "shared/shidou_rec", 
+              :object => @shidou_rec) %>
+
+<!-- INDEX -->
+   <%#= render(:partial => "shared/shidou", 
+               :object => @shidou_recs) %>

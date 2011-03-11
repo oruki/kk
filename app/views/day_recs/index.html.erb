@@ -1,0 +1,12 @@
+
+<%= title_bar("rec", "業務記録（一覧）") %>
+
+<%= render(:partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "day_recs"}) %>
+<%= render(:partial => "shared/kikan_select",
+           :locals => {:ctrl => "day_recs", :act => "index"}) %>
+
+<div ID="DayRecsPart">
+  <%= render (:partial => 'shared/day_recs', 
+              :object => @day_recs) %>              
+</div>

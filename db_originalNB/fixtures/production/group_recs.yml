@@ -1,0 +1,63 @@
+# 2008-08-15
+# yml-fixture for group_recs
+
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+<% desc = %w{男の子は公園の木々が途切れた場所に立っていました。その先にはなめらかな芝生が、坂のふもとの大きなお屋敷まで、すべり込むように緩やかに広がっていました。} %>
+<% desc << "男の子が着ているのは、ニッカーボッカーと大きく裂けてボタンがとれたシャツだけでした。そのため男の子のはだけた足と首と胸は、月の光を受けて銀色に輝いていました。" %>
+<% desc << "昼間は、男の子の髪の毛はぼさぼさでもじゃもじゃの金髪でしたが、今は頭上にぼんやりと浮かぶ黒雲のようでした。それに比べて顔はひどく白く、まるで死んでいるようでした。" %>
+<% desc << "男の子は露に濡れて輝く薔薇と百合の大きな花束を腕の中に抱えていました。それらは公園の花壇から盗んだもので、その冷たい花びらが男の子の頬を叩き、痛いほどの香りが鼻孔を満たしていました。" %>
+<% desc << "暗がりの中で薔薇のとげが両腕をあちこち引っかき、男の子はひどい痛みをかんじました。けれどもこの鋭い痛みの愛撫は、男の子を外套のように包み込んでいる夜の不思議をいっそう深める役にしか立ちませんでした。" %>
+
+<% misc = %w{保母Sさん私用のため早引き} %>
+<% misc << "指導員Tさん本日より休暇" %>
+<% misc << "指導員Oさん研修のため半日外出" %>
+<% misc << "指導員Kさん大阪へ出張" %>
+<% misc << "保母Mさん本日宿直当番" %>
+
+<% misc << "催し物のためホームセンターにて買い物" %>
+<% misc << "学生ボランティア２名研修" %>
+<% misc << "グループで花火遊び" %>
+<% misc << "児童室工事のため全員退避" %>
+<% misc << "学園祭準備作業を行う" %>
+
+<% misc << "ワークキャンプに参加４名" %>
+<% misc << "行事で遅くなり車で迎えに行く" %>
+<% misc << "グループで合唱練習開始" %>
+<% misc << "特になし" %>
+<% misc << "特になし" %>
+
+<% query = %w{音楽会の招待状は100枚必要ですか} %>
+<% query << "夏休みの班分け表を作りました" %>
+<% query << "神戸祭りの参加申し込みはどうしますか" %>
+<% query << "文具品の購入は何時ですか" %>
+<% query << "特にありません" %>
+
+<% ss       = [staffs_5, staffs_3, staffs_4, staffs_1] %>
+
+<% tt=Time.mktime (2008, 1, 1, 0, 0, 0) %>
+<% gg = %w{ grp-aa grp-bb grp-cc grp-dd } %>
+
+<% 1.upto(365) do |i| %>
+    <% tt = tt.since(24*60*60).to_date %>
+  <%# for j in gg %>
+  <% 0.upto(3) do |j|%>
+<%= gg[j] %>_<%= i %>:
+  group:   <%= gg[j] %>
+  staff:   <%= ss[j][rand(4)] %>
+  desc:    <%= desc[rand(5)] %>
+  misc:    <%= misc[rand(15)] %>
+  query:   <%= i.to_s %>■<%= query[rand(5)] %>
+  hizuke:  <%= tt %>
+  <% end %>
+<% end %>

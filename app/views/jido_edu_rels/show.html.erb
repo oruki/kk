@@ -1,0 +1,19 @@
+<%= title_bar("mst", "児童教育機関関係（表示）")%>
+<%= fn_bar2 %>
+
+<TABLE CLASS="part"> 
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=12>児 童</th>
+    <td colspan=20>
+      <%=h @jido_edu_rel.boy.name %>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan=12>教育機関</th>
+    <td colspan=20>
+      <%=h @jido_edu_rel.edu_inst.name %>
+    </td>
+  </tr>
+</TABLE> 

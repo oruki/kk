@@ -1,0 +1,47 @@
+<%= title_bar("bok", "児童台帳（一覧）")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=5>児童名</td>
+    <th colspan=4>入所日<br>退所日</td>
+    <th colspan=6>前住所/本籍</td>
+    <th colspan=4>措置</td>    	
+    <th colspan=8>記述1・2・3</th>
+    <th colspan=5>備考</th>    
+  </tr>
+
+<% for daicho in @daichos %>
+  <tr>
+    <td colspan=5>
+      <%=h daicho.boy.name %><br>
+      <span style="font-size:9px">
+        <%=h daicho.boy_id %>
+      </span>
+    </td>
+    <td colspan=4>
+      <%= "#{daicho.day_ent}" %><br>
+      <%= "#{daicho.day_ext}" %>
+
+    </td>
+    <td colspan=6>
+      <%= daicho.add_prev %><br>
+      <%= daicho.add_perm %><br>
+    </td>
+    <td colspan=4>
+      <%= daicho.sochi %>
+    </td>    
+    <td colspan=8>
+      <%=h "1:#{daicho.desc1.hln(8)}" %><br>
+      <%=h "2:#{daicho.desc2.hln(8)}" %><br>
+      <%=h "3:#{daicho.desc3.hln(8)}" %><br>
+    </td>
+    <td colspan=3>
+      <%=h "備考:#{daicho.misc.hln(16)}" %>
+    </td>    
+    <td colspan=1><%= go_report(daicho) %></td>
+    <td colspan=1><%= go_edit(daicho) %></td>
+  </tr>
+<% end %>
+</table>

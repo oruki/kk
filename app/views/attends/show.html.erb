@@ -1,0 +1,180 @@
+<!--
+000<%#= session[:days_to_show] %>////
+@gshidou_recs.size  <%= @shidou_recs.size  if @shidou_recs   %>
+-->
+<%= title_bar("bok", "指導員勤務記録(#{current_user.staff.name if current_user.staff})")%>
+
+<TABLE CLASS="part"> 
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=32 style="text-align:right">
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+<!--  
+      <span style="padding:0px 0px 0px 15px;font-weight:bold;float:right; ">	
+        <%#= select_attend_date %>
+        <%#= day_prev %>
+        <%#= day_nav %>
+        <%#= day_next %>
+        <%#= go_edit(@attend) %> &nbsp;
+        <%#= go_list %>
+      </span>
+-->     
+<!--   
+      <span style="padding:0px 15px 0px 15px;float:right;">	
+        <% form_tag({:action => :show}, {:method => :get}) do %>
+          <%= select_tag "attn_id",
+             options_for_select( @option_for_attend_date ),
+             :onchange => "submit();" %>
+          <% submit_tag "選択" %>
+        <% end %>
+      </span> 
+-->      
+      <span style="padding:0px 15px 0px 15px;float:right;">	
+        <% select_attend_date %>
+      </span>     
+           
+    </td>
+  </tr>
+</TABLE>
+
+<TABLE CLASS="part"> 
+  <%= table_col(32) %>
+
+  <tr>
+   <th colspan=23>所属児童ﾘｽﾄ(担当児童<%= @attend.staff.boys.size %>人)</th>
+   <th colspan=9>指導員</th>
+  </tr>
+<!-- ■1■所属児童_myjido■■ -->
+  <tr>
+    <td colspan=23>  
+      <div CLASS="portal-180">
+        <%= render(:partial => "myjido", :object => @boysincharge5) %>
+      </div>
+    </td>
+
+<!-- ■2■指導員■■ -->
+    <td colspan=9>
+      <%= render(:partial => "staff") %>
+    </td>
+  </tr>
+</TABLE>
+<!-- ■3■児童ｸﾞﾙｰﾌﾟの記録■■ 
+--> 
+<TABLE CLASS="part">	
+  <%= table_col(32) %>
+<!--  <%# session[:ext] = GroupRec.of_attend_dates(@attend,3).of_attend_grp(@attend) %> -->
+  <tr>
+    <th colspan=32>
+      <span style="float:right; font-weight:normal"> 	  
+        <span ID="recnbr_for_grp_recs" style="margin-right:25px;">
+          レコード件数：<%= @group_recs.size if @group_recs %>件
+        </span>  
+        <%= link_new("group_recs") %>
+        <%= stretch_collapse('group_recs') %>        
+      </span>
+      <span style=" margin-right:25px;float:right; font-weight:normal">
+        <%= dd %>
+      </span>
+              
+      <span ID="hide_icon01" style="display:no0ne;">
+      </span>
+      </span>
+      ｸﾞﾙｰﾌﾟの記録
+    </th>
+  </tr> 
+</TABLE>
+<div ID="grp_recs" style="display:normal;">
+  	<div ID="group_recs">
+      <%= render(
+          :partial => "shared/group_recs",
+          :object => @group_recs ) if @group_recs %>
+    </div>      
+</div>
+
+<!-- ■3■指導員の個人記録■■ 
+-->
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=32>
+      <span style="float:right; font-weight:normal;">
+        <%= stretch_cillapse('staff_rec') %>  <!-- 折畳み用のアイコン-->   	
+        <span ID="hide_icon01" style="display:none;">
+        </span>
+      </span>
+      <%= "#{@attend.staff.name}の記録"%>
+    </th>
+  </tr>
+  <tr>
+    <td colspan=32>
+      <div ID="staff_rec" style="display:none;">
+        <div ID="diary">
+          <%= render(:partial => "diary", :object => @staff_recs,
+          :locals => {:attnd => @attend.id, :hh => @hh}) %>
+        </div>
+      </div>
+    </td>
+  </tr>
+</TABLE>
+
+<!-- ■4■児童の各記録について切替/選択パネル■■
+レコード件数表示部のIDをグループ記録部分のIDと区別できるように変更
+表示はAJAX更新以外の画面推移ではsession[:ext]を使用する
+--> 
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=32>
+      <span style="float:right; font-weight:normal;">
+        <%= stretch_cillapse('each_rec') %>
+      </span>
+      <span ID = "recnbr" style="float:right; font-weight:normal;">
+      	  レコード件数：<%#= session[:ext].size if session[:ext] %>件
+      </span> 
+      <span ID = "session_info"
+            title = <%= "jj:#{session[:jj]}|yy:#{session[:yy]}|
+                         mm:#{session[:mm]}|kk:#{session[:kk]}|
+                         n1:#{session[:n1]}|n2:#{session[:n2]}"%>
+            style = "float:right; font-weight:normal;">
+        ｾｯｼｮﾝ情報：
+      </span> 
+         
+      <span style="float:right; font-weight:normal;">	
+      <% form_tag(
+           {:action => :show, :id=>@attend},
+           {:method => :get}) do %>
+
+          <span style="padding:0px 15px 0px 15px">
+            表示する日数：
+            <%= select_tag 'days_to_show',
+                  options_for_select(
+                    ['0','1','2','3','4','5','6','7'],session[:days_to_show]
+                  ),
+                  :onchange => 'submit();' %>
+            <!-- submit_tag "選択" を非表示にする（4/24）-->
+            <% submit_tag "選択" %>   
+          </span>
+      <% end %>
+      </span>
+      <span ID="hide_icon02" style="display:none;">         
+      </span>
+      各記録
+    </th>
+  </tr> 
+</TABLE>
+<!-- ■5■ 児童の各記録表示部■■
+style="display:none;　⇒　style="display:normal;　
+-->	
+<div ID="each_rec" style="display:normal;">
+  <%= render(
+        :partial => "shared/selector2",
+        :locals => {:id => @attend}) %>
+  <% x = "#{session_to_partial}" %>
+
+  <div ID = <%= "#{session[:kk]}_recs" %> >
+    <%= render :partial => "shared/#{session_to_partial}",   
+          :object => session_to_obj if session_to_obj %>
+  </div>
+</div>

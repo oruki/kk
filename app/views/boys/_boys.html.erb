@@ -1,0 +1,44 @@
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=5>ＩＤ</td>
+    <th colspan=5>氏　名</td>
+    <th colspan=5>ﾌﾘｶﾞﾅ</td>
+    <th colspan=5>生年月日</td>
+    <th colspan=2 style="text-align:center;">年齢</td>
+    <th colspan=2 style="text-align:center;">性別</td>
+    <th colspan=3 style="text-align:center;">状態</td>
+    <th colspan=5 style="text-align:center;">学年</td>    	
+  </tr>
+ <% for b in boys %>
+  <tr>
+    <td colspan=5><%= b.id %></td>
+    <td colspan=5><%= b.name %></td>
+    <td colspan=5><%= b.kana_name %></td>
+    <td colspan=5><%= b.birthdate %></td>
+    <td colspan=2 style="text-align:center;"><%= b.try(:birthdate).age %></td>
+    <td colspan=2 style="text-align:center;"><%= b.sex.to_jsex %></td>
+    
+    
+    
+    
+    <td colspan=2 style="text-align:center;">
+      <%= link_to_remote(
+            b.sex.to_jsex,
+            :url =>{
+                    :action => "boys_list", 
+                    :id => b,
+                    :sex => b.sex},
+            :spinner => :spinner) %> 
+	  </td>
+    
+    
+    
+    
+    
+    <td colspan=3 style="text-align:center;"><%= to_status(b.status) %></td>
+    <td colspan=4 style="text-align:center;"><%= b.try(:birthdate).age2 %></td>
+    <td><%= go_edit(b) %></td>
+  </tr>
+ <% end %>
+</TABLE>

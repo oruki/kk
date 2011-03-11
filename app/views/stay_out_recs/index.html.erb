@@ -1,0 +1,11 @@
+<%= title_bar("rec", "面接外泊記録（一覧）") %>  
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "stay_out_recs"} %>
+                      
+<%= render :partial => "shared/kikan_select",
+           :locals => {:ctrl => "stay_out_recs", :act => "index"} %>
+<div ID = "stay_out_recs">
+  <%= render :partial => "shared/stay_out_recs2",
+             :object => @stay_out_recs %>       
+</div>

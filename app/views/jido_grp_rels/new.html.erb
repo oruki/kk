@@ -1,0 +1,59 @@
+<%#= debug(params) %>
+
+<TABLE ID="mst" CLASS="title">
+  <tr>
+    <td>児童ｸﾞﾙｰﾌﾟ関係（新規登録）</td>
+  </tr>  
+</TABLE>
+
+<TABLE CLASS="part">
+<%= error_messages_for :jido_grp_rel %>
+<% g=Group.find(:all).map{|i| [i.name, i.id] } %>
+  <tr>
+    <td colspan=32 style="text-align:right; ">
+    <span style="float:left;">
+      <%= link_to_back %>
+    </span>
+    <%= link_to_mypage %> &nbsp;
+    <%= go_list %>
+  </td>
+</tr>
+<tr>
+  <% 32.times do %>
+    <td></td>
+  <% end %>
+</tr>
+<% form_for(@jido_grp_rel) do |f| %>
+  <tr>
+    <th colspan=12>児童</th>
+    <td colspan=20>
+    	<%#= f.select(:boy_id, Boy.find(:all).map{|i|[i.name,i.id]}, {:include_blank => true} ) %>
+
+<select name="jido_grp_rel[boy_id]" id="jido_grp_rel_boy_id">
+ <%=option_groups_from_collection_for_select(Boy::OPTIONS,
+            :options, :type_name,:id, :name, @jido_grp_rel.boy_id)%>
+</select>
+
+	</td>
+  </tr>
+
+  <tr colspan=12>
+    <th colspan=12>グループ</b><br />
+    <td colspan=20><%= f.select(:group_id, Group.find(:all).map{|i|[i.name,i.id]}, {:include_blank => true} ) %></td>
+  </tr>
+
+  <tr colspan=12>
+    <th colspan=12>期限</th>
+    <td colspan=20>
+      <%= f.date_select(:date_expired,{:include_blank=>true,
+                                    :start_year=>1985, :end_year=>Date.today.year.to_i,
+                                    :use_month_numbers => true}) %> 
+    </td>
+  </tr>
+
+  <tr colspan=12>
+    <th colspan=12>登録/更新</th>
+    <td colspan=20><%= f.submit "登録/更新" %></td>
+  </tr>
+<% end %>
+</TABLE>

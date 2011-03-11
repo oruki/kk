@@ -1,0 +1,36 @@
+<div CLASS="welcome">
+    <br><br><br><br>
+    <p style="font-size:14px;">こんにちわ『<%= current_user.login %>』さん、<br>
+    ログインに成功しました。</p>
+    <p>今日は<%= Time.zone.now.strftime( "%Y年%m月%d日(%a)" ) %>です</p>
+    <hr style="width:80%">
+    <%= link_to 'ログアウト', logout_url %>&nbsp;|&nbsp;
+    <span>
+      <%= link_to 'マイページにすすむ', new_attend_path, :sender=>"welcome" %>
+    </span>
+    <hr style="width:80%">
+    current_user.login⇒　<%= current_user.login %>　です<br>
+    current_user.idは　<%= current_user.id %>　です<br>
+    <% if current_user.staff %>
+      staffName⇒<%= current_user.staff.name %>
+    <% else %>
+      このﾕｰｻﾞｰに該当するｽﾀｯﾌはいません
+    <% end %>
+</div>
+
+
+<div style="width:442px; margin-left:auto; margin-right:auto; border:solid 1px #bbb; padding:3px;
+            font-size:10px; color:#888">
+<table>
+<tr>
+  <td>
+    プログラムを試験運用する上で相当量の仮データが必要なためプログラムには多くの団体名や人名、住所などが
+    含まれています。これらの全ての氏名、住所、団体名称等は無作為に生成された架空のものであり、実在する名称
+    住所とは一切関係はありません。またダミーデータの文章として青空文庫提供の「月の子たち」（ミドルトン リチャード・バラム著）
+    より文章の一部を引用しています。初期画面で使用している画像は"Free Photo Com"
+    <a href="http://www.freefoto.com/preview/15-19-44?ffid=15-19-44&k=Sycamore+Tree%2C+Northumberland">
+    http://www.freefoto.com</a>よりダウンロードしたものです。
+  </td>
+</tr>
+</table>
+</div>

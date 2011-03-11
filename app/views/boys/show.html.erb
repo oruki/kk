@@ -1,0 +1,25 @@
+<%= title_bar("mst", "児童（表示）") %>
+<%= fn_bar3(@boy) %>
+<table CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <th colspan=10>児童名:</th>
+    <td colspan=22><%=h @boy.name %></td>
+  </tr>
+  <tr>
+    <th colspan=10>生年月日:</th>
+    <td colspan=22><%= h @boy.birthdate %></td>
+  </tr>
+  <tr>
+    <th colspan=10>年齢:</th>
+    <td colspan=22><%= h @boy.try(:birthdate).age %></td>
+  </tr>
+  <tr>
+    <th colspan=10>性　別:</th>
+    <td colspan=22><%= h @boy.sex %></td>
+  </tr>
+  <tr>
+    <th colspan=10>状　態:</th>
+    <td colspan=22><%= h @boy.status %></td>
+  </tr>
+</table>

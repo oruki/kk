@@ -1,0 +1,80 @@
+takeda_seikei:
+  cat:       整形外科
+  name:      竹田整形外科 
+  kana_name: タケダセイケイゲカ
+  tel:       AAA-XXX-YYYY
+  fax:       AAA-XXX-ZZZZ
+  add:       大樹市北区鈴鹿東町5丁目121
+  zip:       XX1-1112
+
+hamano_iin:
+  cat:       内科
+  name:      浜の医院
+  kana_name: ハマノイイン
+  tel:       AAA-XXX-GGGG
+  fax:       AAA-XXX-KKKK
+  add:       大樹市栃木区湊山町5-5
+  zip:       XX1-1112
+
+kobe_chuo:
+  cat:       総合
+  name:      大樹中央病院
+  kana_name: タイジュチュウオウ
+  tel:       AAA-XXX-0000
+  fax:       AAA-XXX-0000
+  add:       大樹市北区
+  zip:       YY0-0000
+
+miyawaki_clinic:
+  cat:       内科
+  name:      宮脇クリニック
+  kana_name: ミヤワキクリニック
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市北区
+  zip:       YY0-0000
+
+tanaka_clinic:
+  cat:       整形外科
+  name:      田中医院
+  kana_name: タナカイイン
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市栃木区
+  zip:       YY0-0000
+
+sakai_clinic:
+  cat:       内科
+  name:      酒井田クリニック
+  kana_name: サカイダクリニック
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市栃木区
+  zip:       YY0-0000
+
+nagata_dent:
+  cat:       歯科
+  name:      長田歯科医院
+  kana_name: ナガタシカイイン
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市栃木区
+  zip:       YY0-0000
+
+kaji_dent:
+  cat:       歯科
+  name:      楡デンタルクリニック
+  kana_name: ニレデンタルクリニック
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市中央区
+  zip:       YY0-0000
+
+yamashita_seikei:
+  cat:       整形外科
+  name:      山上整形外科医院
+  kana_name: ヤマガミセイケイゲカ
+  tel:       AAA-000-0000
+  fax:       AAA-000-0000
+  add:       大樹市北区
+  zip:       YY0-0000

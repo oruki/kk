@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ApplicationHelper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ApplicationHelper</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/app/helpers/application_helper_rb.html">
+                app/helpers/application_helper.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+Methods added to this helper will be available to all templates in the
+application.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000355">aaa</a>&nbsp;&nbsp;
+      <a href="#M000350">collapse</a>&nbsp;&nbsp;
+      <a href="#M000332">date_jp</a>&nbsp;&nbsp;
+      <a href="#M000333">date_jpn</a>&nbsp;&nbsp;
+      <a href="#M000338">fn_bar</a>&nbsp;&nbsp;
+      <a href="#M000339">fn_bar2</a>&nbsp;&nbsp;
+      <a href="#M000340">fn_bar3</a>&nbsp;&nbsp;
+      <a href="#M000330">get_period</a>&nbsp;&nbsp;
+      <a href="#M000346">go_edit</a>&nbsp;&nbsp;
+      <a href="#M000348">go_list</a>&nbsp;&nbsp;
+      <a href="#M000345">go_new</a>&nbsp;&nbsp;
+      <a href="#M000347">go_report</a>&nbsp;&nbsp;
+      <a href="#M000344">link_new</a>&nbsp;&nbsp;
+      <a href="#M000342">link_pdf</a>&nbsp;&nbsp;
+      <a href="#M000341">link_pdf_obj</a>&nbsp;&nbsp;
+      <a href="#M000354">link_to_back</a>&nbsp;&nbsp;
+      <a href="#M000352">link_to_mypage</a>&nbsp;&nbsp;
+      <a href="#M000351">link_to_path</a>&nbsp;&nbsp;
+      <a href="#M000353">link_to_remote</a>&nbsp;&nbsp;
+      <a href="#M000328">session_to_ctrl</a>&nbsp;&nbsp;
+      <a href="#M000327">session_to_obj</a>&nbsp;&nbsp;
+      <a href="#M000329">session_to_partial</a>&nbsp;&nbsp;
+      <a href="#M000326">set_period_session</a>&nbsp;&nbsp;
+      <a href="#M000343">slider</a>&nbsp;&nbsp;
+      <a href="#M000349">stretch</a>&nbsp;&nbsp;
+      <a href="#M000335">table_col</a>&nbsp;&nbsp;
+      <a href="#M000334">table_grid</a>&nbsp;&nbsp;
+      <a href="#M000336">title_bar</a>&nbsp;&nbsp;
+      <a href="#M000337">title_bar_2</a>&nbsp;&nbsp;
+      <a href="#M000331">to_status</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+    <div id="includes">
+      <h3 class="section-bar">Included Modules</h3>
+
+      <div id="includes-list">
+        <span class="include-name">CalendarHelper</span>
+        <span class="include-name"><a href="DatePickerHelper.html">DatePickerHelper</a></span>
+      </div>
+    </div>
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000355" class="method-detail">
+        <a name="M000355"></a>
+
+        <div class="method-heading">
+          <a href="#M000355" class="method-signature">
+          <span class="method-name">aaa</span><span class="method-args">(tmp,items,cont)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+■複数選択可能なチェックボックス入力
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000355-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000355-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 266</span>
+266:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">aaa</span>(<span class="ruby-identifier">tmp</span>,<span class="ruby-identifier">items</span>,<span class="ruby-identifier">cont</span>)
+267: ??
+268:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">item</span> <span class="ruby-keyword kw">in</span> <span class="ruby-identifier">items</span>
+269:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cont</span>
+270:           <span class="ruby-identifier">flag</span> = <span class="ruby-identifier">cont</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">item</span>)
+271:         <span class="ruby-keyword kw">else</span>
+272:           <span class="ruby-identifier">flag</span> = <span class="ruby-keyword kw">false</span>
+273:         <span class="ruby-keyword kw">end</span>
+274:         <span class="ruby-identifier">check_box_tag</span>(<span class="ruby-node">&quot;#{tmp}&quot;</span>, <span class="ruby-identifier">item</span>, <span class="ruby-identifier">flag</span>)
+275:       <span class="ruby-keyword kw">end</span>
+276:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000350" class="method-detail">
+        <a name="M000350"></a>
+
+        <div class="method-heading">
+          <a href="#M000350" class="method-signature">
+          <span class="method-name">collapse</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000350-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000350-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 229</span>
+229:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">collapse</span>(<span class="ruby-identifier">x</span>)
+230:     <span class="ruby-identifier">link_to_function</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;minimize.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;たたむ&quot;</span>) ,<span class="ruby-identifier">visual_effect</span>(<span class="ruby-identifier">:fade</span>, <span class="ruby-identifier">x</span>)
+231:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000332" class="method-detail">
+        <a name="M000332"></a>
+
+        <div class="method-heading">
+          <a href="#M000332" class="method-signature">
+          <span class="method-name">date_jp</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000332-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000332-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 101</span>
+101:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">date_jp</span>
+102:         <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>( <span class="ruby-node">&quot;%Y年%m月%d日(#{%w(日 月 火 水 木 金 土)[Time.zone.now.wday]})&quot;</span>)
+103:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000333" class="method-detail">
+        <a name="M000333"></a>
+
+        <div class="method-heading">
+          <a href="#M000333" class="method-signature">
+          <span class="method-name">date_jpn</span><span class="method-args">(t)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000333-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000333-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 105</span>
+105:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">date_jpn</span>(<span class="ruby-identifier">t</span>)
+106:         <span class="ruby-identifier">t</span>.<span class="ruby-identifier">strftime</span>( <span class="ruby-node">&quot;%Y年%m月%d日(#{%w(日 月 火 水 木 金 土)[Time.zone.now.wday]})&quot;</span>)
+107:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000338" class="method-detail">
+        <a name="M000338"></a>
+
+        <div class="method-heading">
+          <a href="#M000338" class="method-signature">
+          <span class="method-name">fn_bar</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+　■各ﾍﾟｰｼﾞのアイコン機能帯■
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000338-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000338-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 143</span>
+143:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fn_bar</span>
+144:   <span class="ruby-node">&quot;&lt;TABLE CLASS=part&gt;
+145:      &lt;tr&gt;
+146:        &lt;td style=text-align:right;&gt;
+147:          &lt;span style=float:left&gt;
+148:            #{link_to_back}
+149:          &lt;/span&gt;  
+150:          &lt;span style=margin-right:20px&gt;レコード数：#{@rec_count}件&lt;/span&gt;
+151:          #{link_to_mypage} &amp;nbsp;
+152:          #{go_new}
+153:          #{link_pdf}
+154:        &lt;/td&gt;
+155:      &lt;/tr&gt;
+156:   &lt;/TABLE&gt;&quot;</span>
+157:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000339" class="method-detail">
+        <a name="M000339"></a>
+
+        <div class="method-heading">
+          <a href="#M000339" class="method-signature">
+          <span class="method-name">fn_bar2</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000339-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000339-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 159</span>
+159:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fn_bar2</span>
+160:     <span class="ruby-node">&quot;&lt;TABLE CLASS=part&gt;
+161:       &lt;tr&gt;
+162:         &lt;td style=text-align:right&gt;
+163:         &lt;span style=float:left&gt;
+164:           #{link_to_back}
+165:         &lt;/span&gt;
+166:         #{link_to_mypage} &amp;nbsp;
+167:         #{go_list}
+168:         &lt;/td&gt;
+169:      &lt;/tr&gt;
+170:     &lt;/TABLE&gt;&quot;</span>
+171:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000340" class="method-detail">
+        <a name="M000340"></a>
+
+        <div class="method-heading">
+          <a href="#M000340" class="method-signature">
+          <span class="method-name">fn_bar3</span><span class="method-args">(obj)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000340-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000340-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 173</span>
+173:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fn_bar3</span>(<span class="ruby-identifier">obj</span>)
+174:     <span class="ruby-node">&quot;&lt;TABLE CLASS=part&gt;
+175:       &lt;tr&gt;
+176:         &lt;td style=text-align:right&gt;
+177:         &lt;span style=float:left&gt;
+178:           #{link_to_back}
+179:         &lt;/span&gt;
+180:         #{link_to_mypage} &amp;nbsp;
+181:         #{go_edit(obj)} &amp;nbsp;
+182:         #{go_list}
+183:         #{link_pdf_obj(obj)}
+184:         &lt;/td&gt;
+185:      &lt;/tr&gt;
+186:     &lt;/TABLE&gt;&quot;</span>
+187:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000330" class="method-detail">
+        <a name="M000330"></a>
+
+        <div class="method-heading">
+          <a href="#M000330" class="method-signature">
+          <span class="method-name">get_period</span><span class="method-args">(y,m)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000330-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000330-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 69</span>
+69:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_period</span>(<span class="ruby-identifier">y</span>,<span class="ruby-identifier">m</span>)
+70:     <span class="ruby-identifier">now</span>=<span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+71:     <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">m</span>
+72:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;aa&quot;</span>
+73:             [<span class="ruby-node">&quot;#{y}-6-1&quot;</span>.<span class="ruby-identifier">to_date</span>.<span class="ruby-identifier">at_beginning_of_year</span>.<span class="ruby-identifier">to_date</span>,
+74:             <span class="ruby-node">&quot;#{y}-6-1&quot;</span>.<span class="ruby-identifier">to_date</span>.<span class="ruby-identifier">at_end_of_year</span>.<span class="ruby-identifier">to_date</span>]
+75:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;tm&quot;</span>
+76:             [<span class="ruby-identifier">now</span>.<span class="ruby-identifier">at_beginning_of_month</span>.<span class="ruby-identifier">to_date</span>,
+77:             <span class="ruby-identifier">now</span>.<span class="ruby-identifier">at_end_of_month</span>.<span class="ruby-identifier">to_date</span>]
+78:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;tw&quot;</span>
+79:             [<span class="ruby-value">1</span>.<span class="ruby-identifier">week</span>.<span class="ruby-identifier">ago</span>.<span class="ruby-identifier">to_date</span>,
+80:             <span class="ruby-identifier">now</span>.<span class="ruby-identifier">at_end_of_week</span>.<span class="ruby-identifier">to_date</span>]
+81:      <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;td&quot;</span>  
+82:             [<span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_date</span>,<span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_date</span>]
+83:      <span class="ruby-keyword kw">else</span>
+84:         [<span class="ruby-node">&quot;#{y}-#{m}-1&quot;</span>.<span class="ruby-identifier">to_date</span>,
+85:         <span class="ruby-node">&quot;#{y}-#{m}-1&quot;</span>.<span class="ruby-identifier">to_date</span>.<span class="ruby-identifier">at_end_of_month</span>.<span class="ruby-identifier">to_date</span>]
+86:     <span class="ruby-keyword kw">end</span>
+87:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000346" class="method-detail">
+        <a name="M000346"></a>
+
+        <div class="method-heading">
+          <a href="#M000346" class="method-signature">
+          <span class="method-name">go_edit</span><span class="method-args">(x, y = params[:controller])</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000346-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000346-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 213</span>
+213:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">go_edit</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:controller</span>])
+214:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;reply.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;編　集&quot;</span>), <span class="ruby-identifier">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">y</span>, <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span>, <span class="ruby-identifier">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">x</span>
+215:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000348" class="method-detail">
+        <a name="M000348"></a>
+
+        <div class="method-heading">
+          <a href="#M000348" class="method-signature">
+          <span class="method-name">go_list</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000348-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000348-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 221</span>
+221:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">go_list</span>
+222:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;list.png&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;リスト表示&quot;</span>), <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;index&quot;</span>
+223:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000345" class="method-detail">
+        <a name="M000345"></a>
+
+        <div class="method-heading">
+          <a href="#M000345" class="method-signature">
+          <span class="method-name">go_new</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000345-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000345-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 208</span>
+208:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">go_new</span>()
+209:     <span class="ruby-comment cmt">#link_to image_tag (&quot;action_add.gif&quot;, :border=&gt;0, :title=&gt;&quot;新規作成&quot;), x</span>
+210:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;action_add.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;新規作成&quot;</span>), <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span>
+211:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000347" class="method-detail">
+        <a name="M000347"></a>
+
+        <div class="method-heading">
+          <a href="#M000347" class="method-signature">
+          <span class="method-name">go_report</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000347-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000347-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 217</span>
+217:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">go_report</span>(<span class="ruby-identifier">x</span>)
+218:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;report.png&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;表　示&quot;</span>), <span class="ruby-identifier">x</span>
+219:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000344" class="method-detail">
+        <a name="M000344"></a>
+
+        <div class="method-heading">
+          <a href="#M000344" class="method-signature">
+          <span class="method-name">link_new</span><span class="method-args">(x=params[:controller])</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000344-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000344-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 204</span>
+204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_new</span>(<span class="ruby-identifier">x</span>=<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:controller</span>])
+205:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;action_add.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;新規作成&quot;</span>), <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span>, <span class="ruby-identifier">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">x</span>
+206:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000342" class="method-detail">
+        <a name="M000342"></a>
+
+        <div class="method-heading">
+          <a href="#M000342" class="method-signature">
+          <span class="method-name">link_pdf</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000342-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000342-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 196</span>
+196:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_pdf</span>
+197:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span> (<span class="ruby-value str">&quot;topdf.jpg&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;PDF作成&quot;</span>), <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;index&quot;</span>, <span class="ruby-identifier">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;pdf&quot;</span>
+198:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000341" class="method-detail">
+        <a name="M000341"></a>
+
+        <div class="method-heading">
+          <a href="#M000341" class="method-signature">
+          <span class="method-name">link_pdf_obj</span><span class="method-args">(obj)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000341-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000341-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 189</span>
+189:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_pdf_obj</span>(<span class="ruby-identifier">obj</span>)
+190:         <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span> (<span class="ruby-value str">&quot;topdf.jpg&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;PDF作成&quot;</span>),
+191:           <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;show&quot;</span>,
+192:           <span class="ruby-identifier">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">obj</span>,
+193:           <span class="ruby-identifier">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;pdf&quot;</span>
+194:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000354" class="method-detail">
+        <a name="M000354"></a>
+
+        <div class="method-heading">
+          <a href="#M000354" class="method-signature">
+          <span class="method-name">link_to_back</span><span class="method-args">(description = image_tag(&quot;arrow_undo.png&quot;, :border=&gt;0, :title =&gt; &quot;&amp;</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000354-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000354-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 253</span>
+253:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_back</span> (<span class="ruby-identifier">description</span> = <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;arrow_undo.png&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;&amp;#12418;&amp;#12393;&amp;#12427;&quot;</span>))
+254:     <span class="ruby-identifier">referer</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">env</span>[<span class="ruby-value str">&quot;HTTP_REFERER&quot;</span>]
+255:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">referer</span>
+256:     <span class="ruby-identifier">getIt</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">env</span>[<span class="ruby-value str">&quot;REQUEST_URI&quot;</span>].<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot;?&quot;</span>)[<span class="ruby-value">1</span>]
+257:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">getIt</span>.<span class="ruby-identifier">nil?</span>
+258:       <span class="ruby-identifier">getIt</span> = <span class="ruby-value str">&quot;&quot;</span>
+259:     <span class="ruby-keyword kw">else</span>
+260:       <span class="ruby-identifier">getIt</span> = <span class="ruby-value str">&quot;?&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">getIt</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">getIt</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/\?/</span>)
+261:     <span class="ruby-keyword kw">end</span>
+262:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">description</span>, <span class="ruby-identifier">referer</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">getIt</span>
+263:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000352" class="method-detail">
+        <a name="M000352"></a>
+
+        <div class="method-heading">
+          <a href="#M000352" class="method-signature">
+          <span class="method-name">link_to_mypage</span><span class="method-args">(description = image_tag(&quot;user.gif&quot;, :border=&gt;0, :title=&gt;&quot;マイページ&quot;))</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000352-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000352-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 237</span>
+237:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_mypage</span>(<span class="ruby-identifier">description</span> = <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;user.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;マイページ&quot;</span>))
+238:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:attend</span>]
+239:       <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">description</span>, <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:attend</span>]
+240:     <span class="ruby-keyword kw">end</span>
+241:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000351" class="method-detail">
+        <a name="M000351"></a>
+
+        <div class="method-heading">
+          <a href="#M000351" class="method-signature">
+          <span class="method-name">link_to_path</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000351-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000351-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 233</span>
+233:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_path</span> (<span class="ruby-identifier">x</span>)
+234:     <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;list.png&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>), <span class="ruby-identifier">x</span>
+235:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000353" class="method-detail">
+        <a name="M000353"></a>
+
+        <div class="method-heading">
+          <a href="#M000353" class="method-signature">
+          <span class="method-name">link_to_remote</span><span class="method-args">(name, options = {}, html_options = nil)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+from marugotoRubyp.232
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000353-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000353-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 244</span>
+244:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = <span class="ruby-keyword kw">nil</span>)
+245:     <span class="ruby-identifier">spinner</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">:spinner</span>)
+246:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">spinner</span>
+247:       <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:loading</span>]  = <span class="ruby-value str">&quot;$('%s').show(); %s&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-identifier">spinner</span>, <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:loading</span>]]
+248:       <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:complete</span>] = <span class="ruby-value str">&quot;$('%s').hide(); %s&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-identifier">spinner</span>, <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:complete</span>]]
+249:     <span class="ruby-keyword kw">end</span>
+250:     <span class="ruby-keyword kw">super</span>
+251:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000328" class="method-detail">
+        <a name="M000328"></a>
+
+        <div class="method-heading">
+          <a href="#M000328" class="method-signature">
+          <span class="method-name">session_to_ctrl</span><span class="method-args">(x = session[:kk])</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000328-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000328-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 44</span>
+44:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">session_to_ctrl</span>(<span class="ruby-identifier">x</span> = <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>])
+45:         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">x</span>
+46:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;school&quot;</span>
+47:         <span class="ruby-value str">&quot;school_recs&quot;</span>
+48:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;med&quot;</span>
+49:         <span class="ruby-value str">&quot;med_recs&quot;</span>
+50:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;stay_out&quot;</span>
+51:         <span class="ruby-value str">&quot;stay_out_recs&quot;</span>          
+52:       <span class="ruby-keyword kw">else</span> 
+53:         <span class="ruby-value str">&quot;shidou_recs&quot;</span>    
+54:     <span class="ruby-keyword kw">end</span>
+55:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000327" class="method-detail">
+        <a name="M000327"></a>
+
+        <div class="method-heading">
+          <a href="#M000327" class="method-signature">
+          <span class="method-name">session_to_obj</span><span class="method-args">(x = session[:kk])</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000327-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000327-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 31</span>
+31:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">session_to_obj</span>(<span class="ruby-identifier">x</span> = <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>])
+32:         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">x</span>
+33:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;school&quot;</span>
+34:         <span class="ruby-ivar">@school_recs</span>
+35:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;med&quot;</span>
+36:         <span class="ruby-ivar">@med_recs</span>
+37:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;stay_out&quot;</span>
+38:         <span class="ruby-ivar">@stay_out_recs</span>
+39:       <span class="ruby-keyword kw">else</span> 
+40:         <span class="ruby-ivar">@shidou_recs</span>
+41:     <span class="ruby-keyword kw">end</span>
+42:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000329" class="method-detail">
+        <a name="M000329"></a>
+
+        <div class="method-heading">
+          <a href="#M000329" class="method-signature">
+          <span class="method-name">session_to_partial</span><span class="method-args">(x = session[:kk])</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000329-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000329-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 57</span>
+57:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">session_to_partial</span>(<span class="ruby-identifier">x</span> = <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>])
+58:         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">x</span>
+59:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;school&quot;</span>
+60:         <span class="ruby-value str">&quot;school_recs2&quot;</span>
+61:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;med&quot;</span>
+62:         <span class="ruby-value str">&quot;med_recs2&quot;</span>
+63:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;stay_out&quot;</span>
+64:         <span class="ruby-value str">&quot;stay_out_recs2&quot;</span>         
+65:       <span class="ruby-keyword kw">else</span> 
+66:         <span class="ruby-value str">&quot;shidou2&quot;</span>
+67:     <span class="ruby-keyword kw">end</span>
+68:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000326" class="method-detail">
+        <a name="M000326"></a>
+
+        <div class="method-heading">
+          <a href="#M000326" class="method-signature">
+          <span class="method-name">set_period_session</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000326-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000326-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 13</span>
+13:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_period_session</span>
+14:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]      <span class="ruby-comment cmt">#params[:year]が設定されていない場合はyyを今年に設定する</span>
+15:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:year</span>]
+16:     <span class="ruby-keyword kw">else</span>
+17:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:yy</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-value str">&quot;%Y&quot;</span>)      
+18:     <span class="ruby-keyword kw">end</span>
+19:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]     <span class="ruby-comment cmt">#params[:year]が設定されていない場合はmmを今月に設定する</span>
+20:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:mm</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:month</span>]
+21:     <span class="ruby-keyword kw">else</span>
+22:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:mm</span>] <span class="ruby-operator">||=</span> <span class="ruby-value str">&quot;tm&quot;</span>     
+23:     <span class="ruby-keyword kw">end</span>
+24:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:knd</span>]
+25:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:knd</span>]
+26:     <span class="ruby-keyword kw">else</span>
+27:       <span class="ruby-identifier">session</span>[<span class="ruby-identifier">:kk</span>] <span class="ruby-operator">||=</span> <span class="ruby-value str">&quot;shidou&quot;</span>
+28:     <span class="ruby-keyword kw">end</span>  
+29:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000343" class="method-detail">
+        <a name="M000343"></a>
+
+        <div class="method-heading">
+          <a href="#M000343" class="method-signature">
+          <span class="method-name">slider</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000343-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000343-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 200</span>
+200:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">slider</span>(<span class="ruby-identifier">x</span>)
+201:         <span class="ruby-identifier">link_to</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;bll.GIF&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>, <span class="ruby-identifier">:width=</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">x</span> ,<span class="ruby-identifier">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span> ), <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;index&quot;</span>
+202:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000349" class="method-detail">
+        <a name="M000349"></a>
+
+        <div class="method-heading">
+          <a href="#M000349" class="method-signature">
+          <span class="method-name">stretch</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000349-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000349-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 225</span>
+225:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">stretch</span> (<span class="ruby-identifier">x</span>)
+226:     <span class="ruby-identifier">link_to_function</span> <span class="ruby-identifier">image_tag</span>(<span class="ruby-value str">&quot;maximize.gif&quot;</span>, <span class="ruby-identifier">:border=</span><span class="ruby-operator">&gt;</span><span class="ruby-value">0</span>, <span class="ruby-identifier">:title=</span><span class="ruby-operator">&gt;</span><span class="ruby-value str">&quot;ひろげる&quot;</span>) ,<span class="ruby-identifier">visual_effect</span>(<span class="ruby-identifier">:appear</span>, <span class="ruby-identifier">x</span>)
+227:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000335" class="method-detail">
+        <a name="M000335"></a>
+
+        <div class="method-heading">
+          <a href="#M000335" class="method-signature">
+          <span class="method-name">table_col</span><span class="method-args">(n)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000335-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000335-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 113</span>
+113:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table_col</span>(<span class="ruby-identifier">n</span>)
+114:          <span class="ruby-value str">&quot;&lt;tr style='height:0px'&gt;&quot;</span> <span class="ruby-operator">+</span> 
+115:          <span class="ruby-value str">&quot;&lt;td style='border:none 0px #555;visibility:hidden;padding:0;background-color:orange;'&gt;&lt;/td&gt;&quot;</span> <span class="ruby-operator">*</span><span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> 
+116:          <span class="ruby-value str">&quot;&lt;/tr&gt;&quot;</span>
+117:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000334" class="method-detail">
+        <a name="M000334"></a>
+
+        <div class="method-heading">
+          <a href="#M000334" class="method-signature">
+          <span class="method-name">table_grid</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000334-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000334-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 109</span>
+109:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table_grid</span>
+110:         <span class="ruby-value str">&quot;&lt;td style='visibility:visible;padding:5;background-color:red;'&gt;&lt;/td&gt;&quot;</span> <span class="ruby-operator">*</span><span class="ruby-value">32</span>
+111:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000336" class="method-detail">
+        <a name="M000336"></a>
+
+        <div class="method-heading">
+          <a href="#M000336" class="method-signature">
+          <span class="method-name">title_bar</span><span class="method-args">(id,v)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+　■各ﾍﾟｰｼﾞの表題色帯■　id mst rec
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000336-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000336-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 120</span>
+120:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">title_bar</span>(<span class="ruby-identifier">id</span>,<span class="ruby-identifier">v</span>)
+121:         <span class="ruby-node">&quot;&lt;TABLE ID=#{id} CLASS=title&gt;
+122:        &lt;tr&gt;
+123:          &lt;td&gt;
+124:            #{v}
+125:          &lt;/td&gt;
+126:        &lt;/tr&gt;  
+127:     &lt;/TABLE&gt;&quot;</span>
+128:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000337" class="method-detail">
+        <a name="M000337"></a>
+
+        <div class="method-heading">
+          <a href="#M000337" class="method-signature">
+          <span class="method-name">title_bar_2</span><span class="method-args">(id,v,w)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+編集画面タイトルで対象レコードを表記するときボールドとしない
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000337-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000337-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 130</span>
+130:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">title_bar_2</span>(<span class="ruby-identifier">id</span>,<span class="ruby-identifier">v</span>,<span class="ruby-identifier">w</span>)
+131:         <span class="ruby-node">&quot;&lt;TABLE ID=#{id} CLASS=title&gt;
+132:        &lt;tr&gt;
+133:          &lt;td&gt;
+134:            #{v}
+135:            &lt;span style='font-size:12px; font-weight:normal'&gt;
+136:             #{w}
+137:            &lt;/span&gt;
+138:          &lt;/td&gt;
+139:        &lt;/tr&gt;  
+140:     &lt;/TABLE&gt;&quot;</span>
+141:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000331" class="method-detail">
+        <a name="M000331"></a>
+
+        <div class="method-heading">
+          <a href="#M000331" class="method-signature">
+          <span class="method-name">to_status</span><span class="method-args">(x)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000331-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000331-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/application_helper.rb, line 91</span>
+ 91:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_status</span>(<span class="ruby-identifier">x</span>)
+ 92:         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">x</span>
+ 93:         <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;10&quot;</span>
+ 94:                 <span class="ruby-value str">&quot;在院&quot;</span>
+ 95:         <span class="ruby-keyword kw">when</span> <span class="ruby-value str">&quot;00&quot;</span>
+ 96:                 <span class="ruby-value str">&quot;退所&quot;</span>
+ 97:         <span class="ruby-keyword kw">else</span>
+ 98:                 <span class="ruby-value str">''</span>
+ 99:         <span class="ruby-keyword kw">end</span>
+100:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

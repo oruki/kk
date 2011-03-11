@@ -1,0 +1,45 @@
+<% form_tag({:action => :show, :id => id}, {:method => :get}) do %>
+<%# form_remote_tag(:url=>{:action=>'show02',:id => id},:update=>'') do %>
+<TABLE CLASS="part">
+  <%= table_col(32) %>
+  <tr>
+    <td colspan=3 style="font-size:12px;">
+      対　象：
+    </td>
+    <td colspan=29>
+      <label style="margin-left:20px;">
+        <%= radio_button_tag (
+              :knd, 'shidou',
+              checked = (session[:kk]=='shidou'),
+              :onchange => 'submit();') %>
+        生活記録
+      </label>   
+      
+      <label style="margin-left:20px;">
+        <%= radio_button_tag (
+              :knd, 'school',
+              checked = (session[:kk]=='school'),
+              :onchange => 'submit();') %>
+        学校記録
+      </label>
+      
+      <label style="margin-left:20px;">
+        <%= radio_button_tag (
+              :knd, 'med',
+              checked = (session[:kk]=='med'),
+              :onchange => 'submit();') %>
+        医療記録
+      </label>
+      
+      <label style="margin-left:20px;">
+        <%= radio_button_tag (
+              :knd, 'stay_out',
+              checked = (session[:kk]=='stay_out'),
+              :onchange => 'submit();') %>
+        面会外泊記録
+      </label>
+    </td>
+  </tr>
+</TABLE>
+
+<% end %>

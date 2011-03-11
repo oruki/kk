@@ -1,0 +1,47 @@
+<%= title_bar("mst", "伝言板（新規登録）")%>
+<%= fn_bar %>
+
+<TABLE CLASS="part"> 
+<%= error_messages_for :message %>
+<% s = Staff.find(:all).map{|i| [i.name, i.id] } %>
+<%= table_col(32) %>
+<% form_for(@message) do |f| %>
+  <%= f.error_messages %>
+  <tr>
+    <th colspan=10>日付</th>
+    <td colspan=22>
+      <%= f.date_select :date %>
+    </td>    
+  </tr>
+
+  <tr>
+    <th colspan=10>ｽﾀｯﾌ</th>
+    <td colspan=22>
+      <%= f.select(:staff_id, s, {:include_blank => true}) %>
+    </td>    
+  </tr>
+
+  <tr>
+    <th colspan=10>送り先</th>
+    <td colspan=22>
+      <%= f.text_field :msg_to %>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan=10>内容</th>
+    <td colspan=22>
+      <%= f.text_area :msg, :rows=>4 %>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan=10>登録／変更</th>
+    <td colspan=22>
+      <%= f.submit "&#30331;&#37682;/&#26356;&#26032;" %>
+      <%= link_to 'このレコードを削除する ', @message, :confirm => '&#26412;&#24403;&#12395;&#21066;&#38500;&#12375;&#12414;&#12377;&#12363;?', :method => :delete %>          
+    </td>
+
+  </tr>
+<% end %>
+</TABLE>

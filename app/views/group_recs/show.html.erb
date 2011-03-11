@@ -1,0 +1,38 @@
+<%= title_bar("rec", "ｸﾞﾙｰﾌ業務記録（表示）") %>  
+<%= fn_bar2 %>
+
+<table CLASS="part">
+<%= table_col(32) %>
+<tr>
+  <th colspan=10>日　付:</th>
+  <td colspan=22><%=h @group_rec.hizuke %></td>
+</tr>
+<tr>
+  <th colspan=10>グループ:</th>
+  <td colspan=22><%=h @group_rec.group_id %></td>
+</tr>
+<tr>
+  <th colspan=10>指導員:</th>
+  <td colspan=22><%=h @group_rec.staff.name %></td>
+</tr>
+<tr>
+  <th colspan=10>カテゴリー:</th>
+  <td colspan=22><%=h @group_rec.cat %></td>
+</tr>
+<tr>
+  <th colspan=10>内　容:</th>
+  <td colspan=22><%=h @group_rec.desc %></td>
+</tr>
+<!--
+<tr>
+  <th colspan=10>伺い:</th>
+  <td colspan=22><%=h @group_rec.query %></td>
+</tr>
+<tr>
+  <th colspan=10>備　考:</th>
+  <td colspan=22><%=h @group_rec.misc %></td>
+</tr>
+-->
+
+</table>
+

@@ -1,0 +1,18 @@
+﻿<% dsp = "none" %>
+<% dsp = "normal" if params[:action]=="edit" && flag %>
+
+
+  <tr ID="aux_00a" style= <%="display:#{dsp}"%> >
+    <td colspan=4 rowspan=2>ヒヤリハット</td>
+    <td colspan=4>対策</td>
+    <td colspan=24 style="color:green">
+      <%= text_area :shidou_rec, :taisaku, :cols=>52, :rows=>3 %>
+    </td>
+  </tr>
+
+  <tr ID="aux_00b" style= <%="display:#{dsp}"%> >
+    <td colspan=4>場所</td>
+    <td colspan=24 style="color:green">
+      <%= text_field :shidou_rec, :basho, :size=>72 %>
+    </td>
+  </tr>

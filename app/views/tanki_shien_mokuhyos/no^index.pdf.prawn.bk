@@ -1,0 +1,255 @@
+t = [] 
+for k in @tanki_shien_mokuhyos
+t << [
+    k.kadai,
+    k.mokuhyo,
+    k.naiyou,
+    k.hyoka
+    ]
+end
+
+ my_data = @tanki_shien_mokuhyos.map{|i| [i.id, i.kadai, i.mokuhyo, i.naiyou, i.hyoka ] }
+
+pdf.font "ipag.ttf"
+
+pdf.text t[0][0]
+
+# pdf.text_options.update(:wrap => :character, :size => 10)
+
+# encoding: utf-8
+
+# If this looks a somewhat Byzantine, don't worry.  It's a temporary interface
+# to low level objects I'll be using for table building support (and other fun
+# stuff )
+
+pdf.text_options.update(:wrap => :spaces)
+pdf.instance_eval do
+
+  text "自立支援計画表", :align => :center, :size => 14    
+  
+  bounding_box [0,750], :width => 80 do
+    text "施設名　神戸実業学院"
+    stroke do
+      line bounds.bottom_left, bounds.bottom_right
+    end
+  end
+  bounding_box [320,750], :width => 80 do
+    text "作成者名：○○　○○ "
+    stroke do
+      line bounds.bottom_left, bounds.bottom_right
+    end
+  end
+  move_down(10)
+  cell = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 75,
+    :text => "ﾌﾘｶﾞﾅ\n子ども氏名", :document => self)
+  cell2 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 125,
+    :text => "ミライコウタ\n未来　幸太", :document => self)
+  cell3 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 50, 
+    :text => "性別", :document => self)
+  cell4 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 50, 
+    :text => "○男\n女", :document => self)
+  cell5 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 75, 
+    :text => "生年月日", :document => self)   
+  cell6 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 125, 
+    :text => "1995年11月23日\n（11才）", :document => self)     
+
+  b01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 75,
+    :text => "保護者氏名", :document => self)
+  b02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 125,
+    :text => "ミライリョウ\n未来　良", :document => self)
+  b03 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 50, 
+    :text => "続柄", :document => self)
+  b04 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 50, 
+    :text => "実父", :document => self)
+  b05 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 75, 
+    :text => "作成年月日", :document => self)   
+  b06 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 125, 
+    :text => "2008年11月05日", :document => self) 
+    
+  c01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 75,
+    :text => "主たる問題", :document => self)
+  c02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 425,
+    :text => "被虐待経験によるトラウマ・行動上の問題", :document => self)
+
+
+      block_a = Prawn::Graphics::CellBlock.new(self)
+      block_a << cell << cell2 << cell3 << cell4 << cell5 << cell6
+      block_a.draw
+      block_b = Prawn::Graphics::CellBlock.new(self)
+      block_b << b01 << b02 << b03 << b04 << b05 << b06
+      block_b.draw
+      block_c = Prawn::Graphics::CellBlock.new(self)
+      block_c << c01 << c02
+      block_c.draw
+      
+
+  text_options.update(:wrap => :character, :size => 8)
+  
+  d01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 150,
+    :text => "本人の意向",
+    :document => self)
+  d02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 350,
+    :text => "母が自分の間違いを認め、誤りたいと言っていると聞いて、母に対するいやな気持ちは持っているが、" +
+             "確かめてみてもいいという気持ちもある。早く家庭復帰をし、出身学校に通いたい" ,
+    :document => self)
+  e01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 150,
+    :text => "保護者の意向",
+    :document => self)
+  e02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 350,
+    :text => "母が自分の間違いを認め、誤りたいと言っていると聞いて、母に対するいやな気持ちは持っているが、" +
+             "確かめてみてもいいという気持ちもある。早く家庭復帰をし、出身学校に通いたい" ,
+    :document => self) 
+  f01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 150,
+    :text => "市町村・学校・保育所\n職場などの意向",
+    :document => self)
+  f02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 350,
+    :text => "母が自分の間違いを認め、誤りたいと言っていると聞いて、母に対するいやな気持ちは持っているが、" +
+             "確かめてみてもいいという気持ちもある。早く家庭復帰をし、出身学校に通いたい" ,
+    :document => self)  
+  g01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 150,
+    :text => "児童相談所との\n協議内容",
+    :document => self)
+  g02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 350,
+    :text => "母が自分の間違いを認め、誤りたいと言っていると聞いて、母に対するいやな気持ちは持っているが、" +
+             "確かめてみてもいいという気持ちもある。早く家庭復帰をし、出身学校に通いたい" ,
+    :document => self)  
+  h01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 500,
+    :text => "【支援方針】本児童の行動上の問題点の改善およびトラウマからの回復を図るとともに、父親の養育参加などによる母親の養育ストレスを経験しつつ養育方法について体得できるように指導を" +
+             "行いその上で家族の再統合を図る" ,
+    :document => self)  
+
+      block_d = Prawn::Graphics::CellBlock.new(self)
+      block_d << d01 << d02
+      block_d.draw
+      
+      block_e = Prawn::Graphics::CellBlock.new(self)
+      block_e << e01 << e02
+      block_e.draw
+      
+      block_f = Prawn::Graphics::CellBlock.new(self)
+      block_f << f01 << f02
+      block_f.draw
+      
+      block_g = Prawn::Graphics::CellBlock.new(self)
+      block_g << g01 << g02
+      block_g.draw
+      
+      block_h = Prawn::Graphics::CellBlock.new(self)
+      block_h << h01
+      block_h.draw
+  move_down(10)  
+
+    text "第○回　支援計画の策定及び評価　　　　次回検討"
+  move_down(10) 
+  
+  i01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 20,
+    :text => " " ,
+    :document => self) 
+  i02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120,
+    :text => "支援上の課題" ,
+    :document => self) 
+  i03 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120,
+    :text => "支援目標" ,
+    :document => self) 
+  i04 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120,
+    :text => "支援内容・方法" ,
+    :document => self) 
+  i05 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120,
+    :text => "評価（内容・期日）" ,
+    :document => self)   
+      block_i = Prawn::Graphics::CellBlock.new(self)
+      block_i << i01 << i02 << i03 << i04 << i05
+      block_i.draw
+      
+
+pdf.text_options.update(:wrap => :character, :size => 5)     
+      
+  j01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 3, :width => 20,
+    :text => " " ,
+    :document => self) 
+  j02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 3, :width => 120,
+    :text => t[0][0],
+    :document => self) 
+  j03 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 3, :width => 120,
+    :text => t[0][1],
+    :document => self) 
+  j04 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 3, :width => 120,
+    :text => t[0][2],
+    :document => self) 
+  j05 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 3, :width => 120,
+    :text => t[0][3],
+    :document => self) 
+      block_j = Prawn::Graphics::CellBlock.new(self)
+      block_j << j01 << j02 << j03 << j04 << j05
+      block_j.draw
+      
+  j01 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 20, :height =>100,
+    :text => " " ,
+    :document => self) 
+  j02 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120, :height =>100,
+    :text => t[1][0],
+    :document => self) 
+  j03 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120, :height =>100,
+    :text => t[1][1],
+    :document => self) 
+  j04 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120, :height =>100,
+    :text => t[1][2],
+    :document => self) 
+  j05 = Prawn::Graphics::Cell.new(
+    :border_width => 1, :padding => 5, :width => 120, :height =>100,
+    :text => t[1][3],
+    :document => self) 
+      block_j = Prawn::Graphics::CellBlock.new(self)
+      block_j << j01 << j02 << j03 << j04 << j05
+      block_j.draw
+      
+  text_options.update(:wrap => :character, :size => 5)     
+ 
+  table my_data,
+    #:font_size  => 12,
+    :horizontal_padding => 3,
+    :vertical_padding   => 2,
+    :position           => :center,
+    :row_colors         =>["ffffff", "eeeeee"],
+    :headers            => ["ID","支援上の課題","支援目標","支援内容・方法","評価（内容・期日）"],
+    :widths             => {0=>20, 1=>120, 2=>120, 3=>120, 4=>120 }         
+      
+end  
+ 

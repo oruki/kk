@@ -1,0 +1,156 @@
+data23:
+  id: 50
+  login: yasui
+  email: ikuro.yasui@gmail.com
+  crypted_password: 275af2b11749306e84c374d2f985b2f074d19353
+  salt: 94e7fd6a22d3153e6527d287999f4e4c3cc43bfd
+
+data24:
+  id: 51
+  login: morimoto
+  email: morimoto@emu.com
+  crypted_password: f9f6fbddb7c975ac3c76f00424ab25e010089aca
+  salt: emu
+
+data25:
+  id: 52
+  login: kinoshita
+  email: kinoshita@emu.com
+  crypted_password: c8c31e29bd19c328a7b04c1f3a51618b6f33505e
+  salt: emu
+
+data26:
+  id: 53
+  login: einaga
+  email: einaga@emu.com
+  crypted_password: de5921f0aaaf7b88ec25ac2075585aee3ce94c0b
+  salt: emu
+
+data27:
+  id: 54
+  login: miyazaki
+  email: miyazaki@emu.com
+  crypted_password: 4f949d2142660d3c2231f3786f3d341fd3e7e4c7
+  salt: emu
+
+data28:
+  id: 55
+  login: nakano
+  email: nakano@emu.com
+  crypted_password: 34b4df6477ef707c2ea6fed200fd5cc5f9cdf96f
+  salt: emu
+
+data29:
+  id: 56
+  login: funano
+  email: funano@emu.com
+  crypted_password: 05ae86fa8c0e382bee65233f6377a06e0be5b68d
+  salt: emu
+
+data30:
+  id: 3247208
+  login: imoto
+  email: imoto@emu.com
+  crypted_password: d794d5361fa93e849152a427caeefbb68c88d340
+  salt: emu
+  remember_token_expires_at: 2010-10-10
+
+data31:
+  id: 3247209
+  login: sasa
+  email: sasa@emu.com
+  crypted_password: 61d55c15130853ece84c23a3447846d3728a391f
+  salt: emu
+
+data32:
+  id: 3314848
+  login: ueda
+  email: ueda@emu.com
+  crypted_password: fb040f2fd258728dc6a58b7027d4392e05b0b7c0
+  salt: emu
+
+data33:
+  id: 3314850
+  login: tottori
+  email: tottori@emu.com
+  crypted_password: 1a6b51487ac55c4f65ca0d4595361a3dba098895
+  salt: emu
+
+data34:
+  id: 3314851
+  login: kaneko
+  email: kaneko@emu.com
+  crypted_password: 53cbf316308c0caa0477871374debf2fec0b8df3
+  salt: emu
+
+data35:
+  id: 3314852
+  login: shimura
+  email: shimura@emu.com
+  crypted_password: 5c1b88c9ee48f1357a57d7e87c990c4a497dc181
+  salt: emu
+
+data36:
+  id: 3314853
+  login: chino
+  email: chino@emu.com
+  crypted_password: b73694c71f89fbf242a95d1c0e47998ad9054404
+  salt: emu
+  remember_token_expires_at: 2010-10-10
+
+data37:
+  id: 3314854
+  login: nagano
+  email: nagano@emu.com
+  crypted_password: e29883b31045073814309dfbcd5dbc0675e1712a
+  salt: emu
+
+data38:
+  id: 3314855
+  login: urabe
+  email: urabe@emu.com
+  crypted_password: 77fc19959193c73b5df9d67a05d8b40d015332df
+  salt: emu
+
+data39:
+  id: 3314856
+  login: takatera
+  email: takatera@emu
+  crypted_password: 478303cb1cfbdd7ec7e5f04ac765185b24fed70d
+  salt: emu
+
+data40:
+  id: 3314857
+  login: newuser
+  email: newuser@emu.com
+  crypted_password: 6c9a843e2ec5e7bfcd83d6622ebdee5de6bfb5c7
+  salt: emu
+
+data41:
+  id: 3314858
+  login: new_member
+  email: new_member@emu
+  crypted_password: f200c62d8833f220f9154e9884e33a91e4c89de0
+  salt: emu
+
+data42:
+  id: 3314859
+  login: sato
+  email: sato@emu
+  crypted_password: fde1937fccf2ef806590695de1446c0ab0f26576
+  salt: emu
+
+data43:
+  id: 3314860
+  login: washino
+  email: washino@emu
+  crypted_password: 8150966c0a9411df30be5c93f09d369ee8941058
+  salt: emu
+
+data44:
+  id: 3314861
+  login: t.kinoshita
+  email: t.kinoshita@emu
+  crypted_password: 3a99500bbae8ff2dd5106b84458caf7bbf1edbc5
+  salt: emu
+

@@ -1,0 +1,5 @@
+﻿<% for i in %w{00 15 30 45} %>
+    <%= link_to_remote "#{p}:#{i}", :update => "",
+    :url => { :action => "reg_date", :thetime => "#{p}:#{i}:00", :id=>id } %>
+    <%= back %>
+<% end %>

@@ -1,0 +1,49 @@
+<%= title_bar("mst", "教育機関（表示）")%>
+<%= fn_bar2 %>
+
+<TABLE CLASS="part">
+<%= error_messages_for :edu_inst %>
+<%= table_col(32) %>
+<tr>
+  <th colspan=10>フリガナ</th>
+  <td colspan=22>
+    <%=h @edu_inst.kana_name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>名　称</th>
+  <td colspan=22>
+    <%=h @edu_inst.name %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>分　類</th>
+  <td colspan=22>
+    <%=h @edu_inst.cat %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>郵便番号</th>
+  <td colspan=22>
+    <%=h @edu_inst.zip %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>住　所</th>
+  <td colspan=22>
+    <%=h @edu_inst.add %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>電話番号</th>
+  <td colspan=22>
+    <%=h @edu_inst.tel %>
+  </td>
+</tr>
+<tr>
+  <th colspan=10>ﾌｧｯｸｽ番号</th>
+  <td colspan=22>
+    <%=h @edu_inst.fax %>
+  </td>
+</tr>
+</TABLE>

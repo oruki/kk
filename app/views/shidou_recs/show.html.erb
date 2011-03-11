@@ -1,0 +1,41 @@
+<%= title_bar("rec", "指導記録") %>  
+<%= fn_bar3(@shidou_rec) %>
+
+<TABLE CLASS="part">
+<%= table_col(32) %>
+
+<tr>
+  <th colspan=12>日付</th>
+  <td colspan=20><%=h @shidou_rec.date %></td>
+</tr>
+
+<tr>
+  <th colspan=12>児童</th>
+    <td colspan=20><%=h @shidou_rec.boy.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>指導員</th>
+  <td colspan=20><%=h @shidou_rec.staff.name %></td>
+</tr>
+
+<tr>
+  <th colspan=12>カテゴリー</th>
+  <td colspan=20><%=h @shidou_rec.cat %></td>
+</tr>
+
+<tr>
+  <th colspan=12>指導内容</th>
+  <td colspan=20><%=h @shidou_rec.desc %></td>
+</tr>
+
+<tr>
+  <th colspan=12>対策</th>
+  <td colspan=20><%=h @shidou_rec.taisaku %></td>
+</tr>
+
+<tr>
+  <th colspan=12>場所</th>
+  <td colspan=20><%=h @shidou_rec.basho %></td>
+</tr>
+</TABLE>

@@ -1,0 +1,11 @@
+<%= title_bar("rec", "医療･健康記録（一覧）") %> 
+
+<%= render :partial => "shared/header_com2",
+           :locals => {:cnt=>session[:ext].size, :ctrl => "med_recs"} %>
+                  
+<%= render :partial => "shared/kikan_select",
+           :locals => {:ctrl => "med_recs", :act => "index"} %>
+<div ID = "med_recs">
+  <%= render :partial => "shared/med_recs2",
+             :object => @med_recs %>          
+</div>

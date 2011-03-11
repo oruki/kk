@@ -1,0 +1,13 @@
+page.replace_html("shidou_recs",
+  :partial => "shared/shidou2",
+  :object => @shidou_recs)
+
+page.replace_html :recnbr, "レコード件数：#{@shidou_recs.size}件"
+page[:recnbr].visual_effect :highlight,
+                                  :startcolor => "#ff9900",
+                                  :endcolor   => "#ffff99"           
+page[:shidou_recs].visual_effect :highlight,
+                                  :startcolor => "#ff9900",
+                                  :endcolor   => "#ffff99"
+
+                             

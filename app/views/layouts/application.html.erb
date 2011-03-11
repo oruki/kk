@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>bBoys: <%= controller.action_name %></title>
+  
+<!-- ■ StyleSheets Added below -->
+  <%= stylesheet_link_tag 'table_a' %> 
+  <%= stylesheet_link_tag 'scaffold' %> 
+  <%= stylesheet_link_tag 'base' %>
+  <!-- jquery-1 -->
+  <%= stylesheet_link_tag 'day_pick' %> 
+  <%= stylesheet_link_tag 'tab_smooth' %>
+  <!-- jquery-2 -->
+  <%= stylesheet_link_tag 'jquery.contextMenu' %>
+  
+<!-- 参考01　http://www.css-lecture.com/log/javascript/029.html -->
+<!-- 参考02　http://semooh.jp/jquery/ref/cont/with_prototype/ -->
+<!-- ■ STOP defaults -->  
+  <%#= javascript_include_tag :defaults %>
+  
+<!-- ■ GoogleAPI -->
+  <script type="text/javascript" src="http://www.google.com/jsapi">
+  </script>
+  
+<!-- ■ prototype -->
+<script type="text/javascript">
+  google.load("prototype", "1.6");
+  google.load("scriptaculous", "1");
+</script>
+
+<!-- ■ jquery -->
+<script type="text/javascript">
+  google.load("jquery", "1.3");
+  google.load("jqueryui", "1");
+</script>
+
+<!-- ■ jrails -->
+<%= javascript_include_tag "jrails" %>
+
+<!-- ■ contextMenu 
+ここで読み込んではならない。
+-->
+<%#= javascript_include_tag "jquery.contextMenu" %>
+
+<!-- ■ noConflict -->
+<script type="text/javascript">  
+  jQuery.noConflict();  
+  var j$ = jQuery;  
+</script> 
+
+<!-- ■ contextMenu
+次のﾌﾟﾗｸﾞｲﾝは直上のコンフリクト対策スクリプトの後に読み込むこと 
+オリジナルのコードで「$」→「j$」の全置換すること
+javascript_include_tagのファイルファイル名は拡張子なしでもよい。
+-->
+<%= javascript_include_tag "jquery.contextMenu" %>
+
+<!-- 
+  <script type="text/javascript">
+    translations={"OK":"OK","Now":"現在","Today":"今日"}
+    Date.weekdays = $w("日 月 火 水 木 金 土");
+    Date.months =   $w("1 2 3 4 5 6 7 8 9 10 11 12" );
+  </script>
+-->  
+ <!-- superfish menu use -->
+ 
+
+ </head>
+ <body>
+ <div id=container>
+
+<!--■上のヘッダーボックス■ -->
+  <div id=header style="font-size:8pt">
+     <!-- <img src ="/images/bigtree.jpg" width="100%"><br> -->
+     <%= render(:partial => "shared/nav") %>
+  </div>
+
+<!-- ■左のメインボックス■ 
+-->
+  <div id=left style="color: #888; font-size:8pt; z-index:0">
+     <span style="color: green;font-size:8pt"><%= flash[:notice] %></span>
+     <%= yield  %>
+  </div>
+
+<!--■右のサイドボックス■ -->
+  <div id=right style="padding:3px;color:grey;text-align:center;background-color:#FBFBF6;z-index:9">
+
+<!-- ■03■
+伝言板表示
+表示順序を修正　attends_controller/new
+-->
+    <div CLASS="portal-270" style="border:solid 0px green;background-color:#eeeeaa; ;font-weight:bold;margin-top:18px; padding:5px;">
+      <% if session[:message] %>
+        <%= render (:partial => "shared/messages", :object => session[:message]) %>
+      <% end %>  
+    </div>
+
+<!-- ■01■
+current_user.staffの氏名表示と担当児童の氏名リスト表示
+-->
+    <div style="border:solid 1px green; margin-top:18px; padding:5px; font-size:10px; ">
+      <% if current_user %> 
+        <% if current_user.staff %>
+            こんにちわ&nbsp; <b><%= current_user.login %></b>&nbsp; さん、<br>
+            あなたは&nbsp;
+              <%= current_user.staff.name if current_user.staff %>
+              &nbsp; さんですね<br>
+            <hr>
+            <% if current_user.staff.boys %>
+                <% k = current_user.staff.boys.map{|i| [i.name]} %>
+                  あなたの担当児童は：<br>
+                  <% for i in k %>
+                    <div style="text-align:left; float:right; border:solid 0px; width:45%;">
+                        <%= i %>
+                    </div>
+                  <% end %>
+            <% end %>
+        <% else %>
+           あなたはこのシステムのスタッフとして登録されていません。登録しますか？<br>
+        <% end %>
+      <% end %>
+<!--
+    session[:checktime]は各コントローラーのbefor_filterで更新される時刻
+    参照先：app/controller/application_controller
+    ■02■　ログイン時間、経過時間、直近操作以降の経過分数（アイドル時間）の表示
+-->
+    <hr style="clear: both">
+    <table style="font-size:9px;">
+        <tr>
+            <td colspan=2>
+                <% if current_user %>
+                    <%= "ﾛｸﾞｲﾝ中：#{current_user.login}" %> &nbsp;
+                    <%= link_to 'ﾛｸﾞｱｳﾄ', logout_url %><br>
+                <% end %>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <%= link_to 'ホーム',:controller=>'welcome', :action=>'index' %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ﾛｸﾞｲﾝ時刻：
+            </td>
+            <td>
+                <%= session[:login_time].strftime( "%H：%M") %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ﾛｸﾞｲﾝ経過：
+            </td>
+            <td>
+                <%= (Time.zone.now - session[:login_time]).div 60 %>分
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ｱｲﾄﾞﾙ時間：
+            </td>
+            <td>
+                <%=(Time.zone.now - session[:timecheck]).div 60 if session[:timecheck] %>
+            </td>
+        </tr>					
+    </table>       
+    </div>
+    
+<!-- ■02■
+時間表示修正time.zone.now（20080929）
+<%= Time.zone.now.strftime( "%Y年%m月%d日(%a)" ) %><br>
+曜日が表示できるように変更　ヘルパー化、クラス拡張の方法不明
+-->
+    <div style="font-size:11.5px;border:solid 1px green;font-weight:bold;margin-top:18px; padding:5px">
+      <%#= Time.zone.now.strftime(
+        "%Y年%m月%d日(#{%w(日 月 火 水 木 金 土)[Time.zone.now.wday]})"
+      )%>
+      <%= date_jp %>
+    </div>
+
+  </div>
+
+ </div>
+ </body>
+</html>

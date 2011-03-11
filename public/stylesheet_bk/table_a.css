@@ -1,0 +1,179 @@
+/* 00:CLASS title -------------------------------------------------------- */
+/* タイトル枠のID */
+table.title{
+table-layout: fixed;
+width:100%;
+}
+.title TD {
+border-width: 1px;                             /* 枠線の太さ */
+border-style: solid;                           /* 枠線のスタイル:実線 */
+border-color: #ECECEC #CECECE #CECECE #ECECEC; /* 枠線の色（上・右・下・左） */
+background-color:#eeeeaa;                      /* セル（TD）の背景色 */
+padding: 6px;                                  /* セル内の余白 */
+
+text-align: center;    /* タイトル文字の位置＞中央 */
+color:#777755;         /*タイトル文字色*/
+font-weight:bold;      /* タイトル文字をボールド*/
+font-size:18px;        /* タイトル文字のフォントサイズ */
+letter-spacing:0.5ex;    /*タイトル文字の間隔を指定*/
+}
+
+/* タイトル色のID */
+/* 記録: */
+#rec TD {
+background-color:#eeeeaa;                      /* original_yellow */
+}
+/* 報告 */
+#rep TD {
+background-color:#b4decf;                      /* pale green */
+}
+/* ﾏｽﾀｰ */
+#mst TD {
+background-color:#bfd0e5;                      /* med_blue */
+}
+/* 台帳 */
+#bok TD {
+background-color:#d9eacb;                      /* green */
+}
+/* 管理 */
+#adm TD {
+background-color:#deb4c2;                      /* maloon */
+}
+/* 補足 */
+#aux TD {
+background-color:#eacbd9;                      /* pale pink */
+background-color:#deb4c2;                      /* maloon */
+background-color:#bab4de;                      /* purple */
+background-color:#e8eb98;                      /* mastard */
+background-color:#deb4c2;                      /* maloon */
+background-color:#dfecff;                      /* blue */
+background-color:#bfd0e5;                      /* med_blue */
+background-color:#7ea0cb;                      /* dark_blue */
+background-color:#b4decf;                      /* pale green */
+background-color:#d9eacb;                      /* green */
+background-color:#d8deb4;                      /* green */
+}
+
+
+table.report{
+}
+.report TD {
+border-width: 1px; /* 枠線の太さ */
+border-style: solid; /* 枠線のスタイル */
+border-color: #ECECEC #CECECE #CECECE #ECECEC;; /* 枠線の色（上・右・下・左） */
+background-color: #FBFBF6;/* セルの背景色 */
+padding: 1px 3px 1px 3px; /* セル内の余白 */
+text-align: left; /* リンク文字の位置 */
+line-height:15px; /* ラインハイト */
+font-size:11.5px;
+}
+.report TH {
+border-width: 1px; /* 枠線の太さ */
+border-style: solid; /* 枠線のスタイル */
+border-color: #ECECEC #CECECE #CECECE #ECECEC;; /* 枠線の色（上・右・下・左） */
+background-color: #FBFBE0;/* セルの背景色 */
+padding: 1px 3px 1px 3px; /* セル内の余白 */
+text-align: left; /* リンク文字の位置 */
+line-height:15px; /* ラインハイト */
+font-size:11.5px;
+color:#9a9a9a;
+}
+
+
+/* 01:CLASS portal -------------------------------------------------------- */
+.portal{
+height:75px;
+overflow:auto;
+}
+.portal-150{
+height:150px;
+overflow:auto;
+}
+.portal-175{
+height:175px;
+overflow:auto;
+}
+.portal-180{
+height:180px;
+overflow:auto;
+}
+.portal-200{
+height:200px;
+overflow:auto;
+}
+
+/* 02:CLASS part -------------------------------------------------------- */
+table.part{
+table-layout: fixed;
+border-collapse: separate;  /*枠線の表示方法（重ねない） */
+empty-cells: show;
+width:100%;
+}
+.part TD {
+border-width: 1px; /* 枠線の太さ */
+border-style: solid; /* 枠線のスタイル */
+border-color: #ECECEC #CECECE #CECECE #ECECEC;; /* 枠線の色（上・右・下・左） */
+background-color: #FBFBF6;/* セルの背景色 */
+padding: 1px 3px 1px 3px; /* セル内の余白 */
+text-align: left; /* リンク文字の位置 */
+line-height:15px; /* ラインハイト */
+font-size:11.5px;
+}
+.part TH {
+border-width: 1px; /* 枠線の太さ */
+border-style: solid; /* 枠線のスタイル */
+border-color: #ECECEC #CECECE #CECECE #ECECEC;; /* 枠線の色（上・右・下・左） */
+background-color: #FBFBE0;/* セルの背景色 */
+padding: 1px 3px 1px 3px; /* セル内の余白 */
+text-align: left; /* リンク文字の位置 */
+line-height:15px; /* ラインハイト */
+font-size:11.5px;
+color:#9a9a9a;
+}
+.part TEXTAREA,TEXTFIELD {
+color:#9a9a9a;
+font-size:12px;
+padding:3px;
+}
+.part HR {
+size:1px;
+}
+.part A {
+text-decoration: none; /* リンク文字の下線なし */
+font-size: 8pt; /* リンク文字のサイズ */
+/*font-weight: bold;  リンク文字の太さ */
+}
+.part A:hover {
+color: #6A67FF /* ポイント時の文字色 */
+}
+
+/* 03:CLASS welcom-------------------------------------------------------- */
+
+div.welcome {
+width:450px; height:240px;
+margin-top:40px;
+margin-bottom:20px;
+font-size:11.5px;
+text-align: center; /* リンク文字の位置 */
+line-height:15px; /* ラインハイト */
+margin-left:auto; margin-right:auto; border:solid 0px grey;
+background-image: url(http://bb.emu.railsplayground.net/images/bigTree.png);
+background-repeat : no-repeat; background-position:center;"
+}
+.welcome  HR {
+width:80%;
+}
+.welcome A:hover {
+color: #DD0000; /* ポイント時の文字色 */
+}
+
+/* 05:CLASS misc-------------------------------------------------------- */
+
+table.fix{
+table-layout: fixed;
+width:100%;
+}
+
+.hidden{
+visibility:hidden;
+}

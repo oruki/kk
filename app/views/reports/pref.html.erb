@@ -1,0 +1,36 @@
+これは「大樹」システムの設定ファイルです<br>
+・設定ファイルのパス：　/tmp/my_pref/taiju_pref.yml<br>
+・システムで利用する設定情報はすべてここに記載します
+<!-- 
+設定ファイルの値は定数「PREF」に格納される（application_controller.rb）
+PREF = YAML.load_file(RAILS_ROOT + "/tmp/my_pref/taiju_pref.yml")
+TENKI = PREF['weather'].split 配列が得られます
+-->
+<hr>
+設定登録日　　　　：<%= PREF['reg_date'] %><br>
+登録施設の名称　：<%= PREF['inst_name'] %><br>
+Ｅメールアドレス　　：<%= PREF['inst_email'] %><br>
+カテゴリー語句リスト：<%= PREF['category'] %><br>
+セッション持続時間：<%= PREF['session_period'] %><br>
+天気の記入項目：<%= PREF['weather'] %><br>
+職名の記入項目：<%= PREF['shokumei'] %><br>
+<hr>
+■　開発メモランダム
+セッション維持秒数は仮に下記で設定している
+　下記の制限秒数「60」を設定ファイルの値から取得するように変更する
+　class ApplicationController < ActionController::Base
+	# 2009.06.07 added next line
+	before_filter :timecheck
+	
+	#added on 2006.06.07
+	def timecheck
+		if (Time.zone.now - session[:timecheck]).round > 60
+			flash[:notice] = "60秒以上経ったのでﾛｸﾞｱｳﾄします"
+			redirect_to(:controller => 'sessions', :action => 'new')
+			#redirect_to(:controller => 'sessions', :action => 'destroy')
+		else
+			flash[:notice] = "#{(Time.zone.now - session[:timecheck]).round}秒経過"
+		end	
+		session[:timecheck] = Time.zone.now
+	end	
+

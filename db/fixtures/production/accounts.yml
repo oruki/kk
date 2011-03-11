@@ -1,0 +1,102 @@
+# 2008-08-08
+# base data
+<% boys_aa = %w{hosoda sakaguchi shimoyama matsumura fujita tani tom} %>
+<% boys_bb = %w{sugita arai suzuki shiraishi kinoshita nishikawa urakawa} %>
+<% boys_cc = %w{adachi kojima yamamoto sunayama susuda mizutani nishio} %>
+<% boys_dd = %w{yasuda nakatani yasui kato shimizu aida} %>
+
+<% staffs_1 = %w{nogami shintani kazama} %> #管理
+<% staffs_2 = %w{fukami kunisaki kojima hasegawa kawanishi} %> #嘱託
+<% staffs_3 = %w{miyadai ota mashima saigo} %> #指導員-01
+<% staffs_4 = %w{takarada gotoda shirako takenaka} %> #指導員-02
+<% staffs_5 = %w{tsuji kurata tanashi fujikawa} %> #保育士
+<% staffs_6 = %w{fukushima matsuoka yamano yagi} %> #調理士
+
+<% acnt = %w{郵便貯金 銀行Ａ 銀行Ｂ 銀行Ｃ 金庫 その他} %>
+<% desc = %w{入所時預金 保険金 給付金 寄付金 面会時預金 その他} %>
+<% misc = %w{保護者より送金あり 傷害保険受取 学校保健より給付 その他} %>
+
+# 幼児ｸﾞﾙｰﾌﾟ　2003年以降出生　7人
+
+<% 1.upto(50) do |i| %>
+
+<% dd = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% jj = boys_aa[rand(7)] %>
+<% ss = staffs_5[rand(4)] %>
+<% des = desc[rand(20)] %>
+<% amt = 5000+rand(10)*5000+rand(10)*500 %>
+
+acnt_<%= i %>:
+ hizuke:    <%= dd %>
+ boy:       <%= jj %>
+ guardian:  <%= jj %>
+ amount:    <%= amt %>
+ rcv_name:  <%= ss %>
+ acnt:      <%= acnt[rand(6)] %>
+ desc:      <%= desc[rand(6)] %>
+ misc:      <%= misc[rand(4)] %>
+<% end %>
+
+# 男児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% 51.upto(100) do |i| %>
+
+<% dd = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% jj = boys_bb[rand(7)] %>
+<% ss = staffs_3[rand(4)] %>
+<% des = desc[rand(20)] %>
+<% amt = 5000+rand(10)*5000+rand(10)*500 %>
+
+acnt_<%= i %>:
+ hizuke:    <%= dd %>
+ boy:       <%= jj %>
+ guardian:  <%= jj %>
+ amount:    <%= amt %>
+ rcv_name:  <%= ss %>
+ acnt:      <%= acnt[rand(6)] %>
+ desc:      <%= desc[rand(6)] %>
+ misc:      <%= misc[rand(4)] %>
+<% end %>
+
+# 女児ｸﾞﾙｰﾌﾟ　1990-2001年出生　7人
+
+<% 101.upto(150) do |i| %>
+
+<% dd = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% jj = boys_cc[rand(7)] %>
+<% ss = staffs_4[rand(4)] %>
+<% des = desc[rand(20)] %>
+<% amt = 5000+rand(10)*5000+rand(10)*500 %>
+
+acnt_<%= i %>:
+ hizuke:    <%= dd %>
+ boy:       <%= jj %>
+ guardian:  <%= jj %>
+ amount:    <%= amt %>
+ rcv_name:  <%= ss %>
+ acnt:      <%= acnt[rand(6)] %>
+ desc:      <%= desc[rand(6)] %>
+ misc:      <%= misc[rand(4)] %>
+<% end %>
+
+
+# 卒業生　1989以前出生 6人
+
+<% 151.upto(200) do |i| %>
+
+<% dd = Time.mktime (2008, rand(12)+1, rand(30)+1, 0, 0, 0).to_date %>
+<% jj = boys_dd[rand(6)] %>
+<% ss = staffs_1[rand(3)] %>
+<% des = desc[rand(20)] %>
+<% amt = 5000+rand(10)*5000+rand(10)*500 %>
+
+acnt_<%= i %>:
+ hizuke:    <%= dd %>
+ boy:       <%= jj %>
+ guardian:  <%= jj %>
+ amount:    <%= amt %>
+ rcv_name:  <%= ss %>
+ acnt:      <%= acnt[rand(6)] %>
+ desc:      <%= desc[rand(6)] %>
+ misc:      <%= misc[rand(4)] %>
+<% end %>

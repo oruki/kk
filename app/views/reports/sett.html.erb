@@ -1,0 +1,8 @@
+あなたが担当する児童は
+<h3><%= @boys_on.map{|k| k.name}.join('｜') %></h3>
+<hr>
+あなたの担当しない児童は 
+<h3><%= @boys_off.map{|k| k.name}.join('｜') %></h3>
+<br>
+間違いがなければ登録更新してください
+<%= link_to "update", :action => :update_jido_staff_rels, :on=> @boys_on, :off=> @boys_off %>

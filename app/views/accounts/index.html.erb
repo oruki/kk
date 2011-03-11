@@ -1,0 +1,12 @@
+
+<%= title_bar("bok","児童預金台帳（一覧表示）") %>
+
+<%= render(:partial => "shared/header_com",
+           :locals => {:recs => @accounts}) %>
+               
+<div id='account'>
+  <div ID="tag">
+    <%= render(:partial => "shared/accounts",
+               :object => @accounts ) %>
+  </div>
+</div>

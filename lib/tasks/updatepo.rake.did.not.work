@@ -1,0 +1,23 @@
+#Q108 p276
+#Also reffer to http://www.yotabanana.com/hiki/ja/ruby-gettext-howto-ror.html?ruby-gettext-howto-ror#Rakefile
+#http://d.hatena.ne.jp/jun66j5/20060905/1157386050  どうも require 'gettext/utils' と rdoc 系のタスクは共存できないようです
+require 'rubygems'
+require 'gettext/utils'
+
+namespace :gettext do
+  desc "Update pot/po files."
+  task :updatepo do
+    require 'gettext/utils'
+    files = Dir.glob("{app,config,components,lib}/**/*.{rb,rhtml,rxml,rjs}").sort
+    GetText.update_pofiles("bb_ja", files, "bb_ja 1.0.0")
+  end
+
+  desc "Create mo-files"
+  task :makemo do
+    require 'gettext/utils'
+    GetText.create_mofiles(true, "po", "locale")
+  end
+end
+
+task :updatepo => "gettext:updatepo"
+task :makemo => "gettext:makemo"

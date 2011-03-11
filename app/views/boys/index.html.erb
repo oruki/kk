@@ -1,0 +1,37 @@
+<!-- ■本体 -->
+<%= title_bar("mst", "児童（一覧表示）") %>  
+<TABLE CLASS="part">
+  <tr>
+    <td style="text-align:right; vertical-align:center;">
+<!-- 
+検索データの入力用フォーム 
+radio_button_tag(name, value, checked = false, options = {}) 
+-->
+
+      <span style="margin-right:20px">
+  <% form_tag({:action=>:index},{:method=>:get}) do %>
+      <span style="float:left;">
+        <%= link_to_back %>
+      </span>
+      <%= radio_button_tag("abc", "0", checked = (params[:abc]=="0"),
+    	:onchange => 'submit();') %>全児童
+      <%= radio_button_tag("abc", "1", checked = (params[:abc]=="1"),
+    	:onchange => 'submit();') %>男子
+      <%= radio_button_tag("abc", "2", checked = (params[:abc]=="2"),
+    	:onchange => 'submit();') %>女子&nbsp;&nbsp;
+      <% submit_tag "選択" %>
+      <span style="margin-right:20px">レコード数：<%= @n %>件</span>
+        <%= link_to_mypage %> &nbsp;
+        <%= go_new %>    
+        <%= link_to image_tag (
+          "topdf.jpg", :border=>0, :title=>"PDF作成"
+       ), :action => "index",:abc=>params[:abc],
+           :format => "pdf" %>
+  <% end -%>
+      </span>
+    </td>
+  </tr>
+</TABLE>
+  <div id="boys">
+  <%= render (:partial => "boys", :object => @boys ) %>
+  </div>

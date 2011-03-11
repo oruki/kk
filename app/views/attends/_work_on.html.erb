@@ -1,0 +1,15 @@
+﻿<span style="float:left;">
+<%= select_tag 'hour_on',
+      options_for_select(
+        (5..24).to_a,session[:hh].to_i #default
+      ),
+        {:onchange => remote_function(
+                        :update => "",
+                        :url => {:action =>'test'},
+                        :with => "'hour_on='+ escape(value)"
+                      )}%>
+<%= select_tag "min_on",
+      options_for_select (
+        %w{00 15 30 45},session[:mm]
+      )%>
+</span>      

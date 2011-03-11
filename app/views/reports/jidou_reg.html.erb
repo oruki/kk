@@ -1,0 +1,102 @@
+
+<!--
+-->
+<div style="padding:5px">
+  <b><%= "#{current_user.staff.name}さん、担当児童を選んでください" %></b><br>
+  &nbsp;&nbsp;&nbsp;※全ての児童が指導グループに属するようにしてください。担当児童の登録と更新が可能です。
+</div>
+  <% grp_ids=[428321002,428388652,428456302,428523952] %>
+<!-- ■ observe fiels
+-->
+  <% form_tag 'form_group_ck', :action => "update_group", :id => 'form_group_ck' do %>
+    <label><%= check_box_tag 'g_00', 'show', true %>幼児</label>
+    <label><%= check_box_tag 'g_01', 'show', true %>男子グループ</label>
+    <label><%= check_box_tag 'g_02', 'show', true %>女子グループ</label>
+    <label><%= check_box_tag 'g_03', 'show', true %>その他グループ</label>
+  <% end %>
+  <%= observe_form 'form_group_ck',
+        :url => {:action => 'update_group'},
+        :frequency => 0.5,:update => "" %>
+  <br>
+<!-- ■ link_to_function
+-->
+  <span style="margin-left:5px">
+    <%= link_to_function "全てみせる" do |page|
+      page['00'].show
+      page['01'].show
+      page['02'].show
+      page['03'].show
+    end %>
+    <%= link_to_function "全てかくす" do |page|
+      page['00'].hide
+      page['01'].hide
+      page['02'].hide
+      page['03'].hide
+    end %>
+  </span>
+
+<div id="group">  
+
+ <% form_tag :action => :sett do %>
+ <table>
+  <tr>
+    <td style="text-align:left; padding-right:100px">
+      <div style="float:left;width:90px">幼児グループ</div>
+      <%= stretch ('00') %><%= collapse ('00') %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id='00'>
+        <%#= render (:partial => "jido_list", :object => Group.find(grp_ids[0]).boys ) %>
+        <%= render (:partial => "jido_list",
+          :object => Boy.scoped_by_status(10).otoko.age_between(0,6) ) %>
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:left; padding-right:100px">
+      <div style="float:left;width:90px">男子グループ</div>
+      <%= stretch ('01') %><%= collapse ('01') %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id='01'>
+        <%= render (:partial => "jido_list",
+          :object => Boy.scoped_by_status('10').otoko.age_between(6,25) ) %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:left; padding-right:100px">
+      <div style="float:left;width:90px">女子グループ</div>
+      <%= stretch ('02') %><%= collapse ('02') %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id='02'>
+        <%= render (:partial => "jido_list",
+          :object => Boy.scoped_by_status('10').onna.age_between(6,25) ) %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:left; padding-right:100px">
+      <div style="float:left;width:90px">その他グループ</div>
+      <%= stretch ('03') %><%= collapse ('03') %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id='03'>
+        <%= render (:partial => "jido_list", :object => Boy.scoped_by_status('00') ) %>
+      </div>
+    </td>
+  </tr>
+ </table>  
+ <%= submit_tag "更新する" %>
+ <% end %>  
+</div>

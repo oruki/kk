@@ -1,0 +1,84 @@
+data15:
+  id: 57774908
+  name: 平野KIZ踊り子隊
+  cat: よさこい
+  misc: 小栗
+
+data16:
+  id: 428523953
+  name: 神戸東陣
+  cat: よさこい
+  misc: 小栗
+
+data17:
+  id: 428523954
+  name: 平野っ子歌舞伎
+  cat: 歌舞伎
+  misc: 上田
+
+data18:
+  id: 428523956
+  name: 中学男児
+  cat: 男児部
+  misc: s kondo,y taoka,y kondo,k yamashita,h taoka,k tada
+
+data19:
+  id: 428523957
+  name: 小学男児
+  cat: 男児部
+  misc: y higuchi,s taneike,y yamashita,t ikenaga
+
+data20:
+  id: 428523958
+  name: 高校男児
+  cat: 男児部
+  misc: k meisho,y mitishita
+
+data21:
+  id: 428523959
+  name: 大学男児
+  cat: 男児部
+  misc: m tanigawa
+
+data22:
+  id: 428523960
+  name: 男児部
+  cat: 男児部
+  misc: masataka,kouichi m,yuki m,yuji,shouta,yusuke,kentarou,haruki,kouichi t,yuki h,shunpei,yutaro,toya
+
+data23:
+  id: 428523961
+  name: 全体
+  cat: 全体
+  misc: 全てのグループに共通な事柄
+
+data24:
+  id: 428523962
+  name: 女子部
+  cat: 女子部
+  misc: 女子児童全員
+
+data25:
+  id: 428523963
+  name: 小学生女児
+  cat: 女子部
+  misc: riona,sachika,kirara,sarina,nozomi,misaki,aoi
+
+data26:
+  id: 428523964
+  name: 中学生女児
+  cat: 女子部
+  misc: yuki,reina,mika.ayuri
+
+data27:
+  id: 428523965
+  name: 高校生女児
+  cat: 女子部
+  misc: erika,keiko,miyuki,akie
+
+data28:
+  id: 428523966
+  name: 幼児部
+  cat: 幼児部
+  misc: ryuki,kota,maria,miyuna
+
